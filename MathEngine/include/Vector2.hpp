@@ -15,4 +15,23 @@ public:
 	[[nodiscard]] double SqrMagnitude() const;
 	Vector2 Normalized();
 	[[nodiscard]] std::string ToString() const;
+
+	Vector2 operator+(const Vector2& other) const;
+	Vector2 operator-(const Vector2& other) const;
+	Vector2 operator*(const Vector2& other) const;
+	Vector2 operator/(const Vector2& other) const;
+
+	Vector2 operator+=(const Vector2& other);
+	Vector2 operator-=(const Vector2& other);
+	Vector2 operator*=(const Vector2& other);
+	Vector2 operator/=(const Vector2& other);
+
+	Vector2 operator+=(double scalar);
+	Vector2 operator-=(double scalar);
+	Vector2 operator*=(double scalar);
+	Vector2 operator/=(double scalar);
+	friend Vector2 operator+(Vector2 vec, double scalar);
+	friend Vector2 operator-(Vector2 vec, double scalar);
+	friend Vector2 operator*(Vector2 vec, double scalar);
+	friend Vector2 operator/(Vector2 vec, double scalar);
 };

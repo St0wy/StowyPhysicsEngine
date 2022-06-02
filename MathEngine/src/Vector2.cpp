@@ -25,3 +25,100 @@ std::string Vector2::ToString() const
 	ss << "{x: " << x << ", y: " << y << "}";
 	return ss.str();
 }
+
+Vector2 Vector2::operator+(const Vector2& other) const
+{
+	return { this->x + other.x, this->y + other.y };
+}
+
+Vector2 Vector2::operator-(const Vector2& other) const
+{
+	return { this->x - other.x, this->y - other.y };
+}
+
+Vector2 Vector2::operator*(const Vector2& other) const
+{
+	return { this->x * other.x, this->y * other.y };
+}
+
+Vector2 Vector2::operator/(const Vector2& other) const
+{
+	return { this->x / other.x, this->y / other.y };
+}
+
+Vector2 Vector2::operator+=(const Vector2& other)
+{
+	this->x += other.x;
+	this->y += other.y;
+	return *this;
+}
+
+Vector2 Vector2::operator-=(const Vector2& other)
+{
+	this->x -= other.x;
+	this->y -= other.y;
+	return *this;
+}
+
+Vector2 Vector2::operator*=(const Vector2& other)
+{
+	this->x *= other.x;
+	this->y *= other.y;
+	return *this;
+}
+
+Vector2 Vector2::operator/=(const Vector2& other)
+{
+	this->x /= other.x;
+	this->y /= other.y;
+	return *this;
+}
+
+Vector2 Vector2::operator+=(const double scalar)
+{
+	this->x += scalar;
+	this->y += scalar;
+	return *this;
+}
+
+Vector2 Vector2::operator-=(const double scalar)
+{
+	this->x -= scalar;
+	this->y -= scalar;
+	return *this;
+}
+
+Vector2 Vector2::operator*=(const double scalar)
+{
+	this->x *= scalar;
+	this->y *= scalar;
+	return *this;
+}
+
+Vector2 Vector2::operator/=(const double scalar)
+{
+	this->x /= scalar;
+	this->y /= scalar;
+	return *this;
+}
+
+
+Vector2 operator+(Vector2 vec, const double scalar)
+{
+	return vec += scalar;
+}
+
+Vector2 operator-(Vector2 vec, const double scalar)
+{
+	return vec -= scalar;
+}
+
+Vector2 operator*(Vector2 vec, const double scalar)
+{
+	return vec *= scalar;
+}
+
+Vector2 operator/(Vector2 vec, const double scalar)
+{
+	return vec /= scalar;
+}
