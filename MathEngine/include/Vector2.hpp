@@ -35,3 +35,5 @@ public:
 	friend Vector2 operator*(Vector2 vec, double scalar);
 	friend Vector2 operator/(Vector2 vec, double scalar);
 };
+
+std::ostream& operator<<(std::ostream& os, const Vector2& vec);

@@ -20,7 +20,7 @@ int main()
 
 	const Vector2 test{2, 2};
 
-	std::cout << "Division" << "\n" << (vec2 / test).ToString() << "\n";
+	std::cout << "Division" << "\n" << vec2 / test << "\n";
 
 	std::cin.get();
 }

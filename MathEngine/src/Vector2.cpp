@@ -102,6 +102,11 @@ Vector2 Vector2::operator/=(const double scalar)
 	return *this;
 }
 
+std::ostream& operator<<(std::ostream& os, const Vector2& vec)
+{
+	os << "{x: " << vec.x << ", y: " << vec.y << "}";
+	return os;
+}
 
 Vector2 operator+(Vector2 vec, const double scalar)
 {
