@@ -1,8 +1,8 @@
-#include "Game.h"
+#include "Game.hpp"
 
 #include <spdlog/spdlog.h>
 
-#include "Consts.h"
+#include "Consts.hpp"
 
 Game::Game()
 	: _window(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), WINDOW_NAME, sf::Style::Close)

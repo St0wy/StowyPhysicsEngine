@@ -1,6 +1,6 @@
 #include <spdlog/spdlog.h>
 
-#include "Game.h"
+#include "Game.hpp"
 
 int main()
 {
