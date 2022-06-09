@@ -20,7 +20,7 @@ int main()
 
 	const Vector2 test{2, 2};
 
-	std::cout << "Division" << "\n" << vec2 / test << "\n";
+	std::cout << "Division" << "\n" << vec2 << "\n";
 
 	std::cin.get();
 }

@@ -1,5 +1,5 @@
 {
 	"name": "physics-engine",
 	"version-string": "0.1.0",
-	"dependencies": ["sfml", "box2d"]
+	"dependencies": [ "sfml", "spdlog" ]
 }

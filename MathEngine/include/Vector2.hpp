@@ -14,17 +14,17 @@ public:
 	[[nodiscard]] double Magnitude() const;
 	[[nodiscard]] double SqrMagnitude() const;
 	Vector2 Normalized();
+	[[nodiscard]] double Dot(const Vector2& other) const;
+	[[nodiscard]] double Distance(const Vector2& other) const;
+	[[nodiscard]] double Angle(const Vector2& other) const;
+
 	[[nodiscard]] std::string ToString() const;
 
 	Vector2 operator+(const Vector2& other) const;
 	Vector2 operator-(const Vector2& other) const;
-	Vector2 operator*(const Vector2& other) const;
-	Vector2 operator/(const Vector2& other) const;
 
 	Vector2 operator+=(const Vector2& other);
 	Vector2 operator-=(const Vector2& other);
-	Vector2 operator*=(const Vector2& other);
-	Vector2 operator/=(const Vector2& other);
 
 	Vector2 operator+=(double scalar);
 	Vector2 operator-=(double scalar);
