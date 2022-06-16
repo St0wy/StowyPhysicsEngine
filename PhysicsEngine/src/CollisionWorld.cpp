@@ -66,14 +66,14 @@ void CollisionWorld::ResolveCollisions(const float deltaTime) const
 		{
 			if (a == b) break;
 
-			if (!a->collider || !b->collider) continue;
+			if (!a->Col() || !b->Col()) continue;
 
-			const CollisionPoints points = a->collider->TestCollision(
-				a->transform, b->collider, b->transform);
+			const CollisionPoints points = a->Col()->TestCollision(
+				a->Trans(), b->Col(), b->Trans());
 
 			if (!points.hasCollision) continue;
 
-			if (a->isTrigger || b->isTrigger)
+			if (a->IsTrigger() || b->IsTrigger())
 			{
 				triggers.emplace_back(a, b, points);
 			}

@@ -7,5 +7,5 @@ struct Transform
 public:
 	sf::Vector2f position;
 	sf::Vector2f scale{1, 1};
-	float rotation;
+	float rotation{};
 };

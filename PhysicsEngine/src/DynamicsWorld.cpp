@@ -2,9 +2,9 @@
 
 void DynamicsWorld::AddRigidbody(Rigidbody* rigidbody)
 {
-	if (rigidbody->takesGravity)
+	if (rigidbody->TakesGravity())
 	{
-		rigidbody->gravityForce = _gravity;
+		rigidbody->SetGravityForce(_gravity);
 	}
 
 	AddCollisionBody(rigidbody);
@@ -18,7 +18,7 @@ void DynamicsWorld::ApplyGravity() const
 
 		// ReSharper disable once CppCStyleCast
 		const auto rigidbody = (Rigidbody*)body;
-		rigidbody->ApplyForce(rigidbody->gravityForce * rigidbody->mass);
+		rigidbody->ApplyForce(rigidbody->GravityForce() * rigidbody->Mass());
 	}
 }
 
@@ -31,13 +31,13 @@ void DynamicsWorld::MoveBodies(const float deltaTime) const
 		// ReSharper disable once CppCStyleCast
 		const auto rigidbody = (Rigidbody*)body;
 
-		const sf::Vector2f vel = rigidbody->velocity + rigidbody->force / rigidbody->mass * deltaTime;
-		rigidbody->velocity = vel;
+		const sf::Vector2f vel = rigidbody->Velocity() + rigidbody->Force() / rigidbody->Mass() * deltaTime;
+		rigidbody->SetVelocity(vel);
 
-		sf::Vector2f pos = rigidbody->Position() + rigidbody->velocity * deltaTime;
+		sf::Vector2f pos = rigidbody->Position() + rigidbody->Velocity() * deltaTime;
 		rigidbody->SetPosition(pos);
 
-		rigidbody->force = { 0, 0 };
+		rigidbody->SetForce({ 0, 0 });
 	}
 }
 

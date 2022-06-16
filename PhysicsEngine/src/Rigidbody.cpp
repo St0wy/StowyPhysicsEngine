@@ -1,16 +1,86 @@
 #include "Rigidbody.hpp"
 
+const sf::Vector2f& Rigidbody::GravityForce() const
+{
+	return _gravityForce;
+}
+
+void Rigidbody::SetGravityForce(const sf::Vector2f& gravityForce)
+{
+	_gravityForce = gravityForce;
+}
+
+const sf::Vector2f& Rigidbody::Force() const
+{
+	return _force;
+}
+
 void Rigidbody::ApplyForce(const sf::Vector2f& addedForce)
 {
-	this->force += addedForce;
+	this->_force += addedForce;
 }
 
-sf::Vector2f Rigidbody::Position() const
+void Rigidbody::SetForce(const sf::Vector2f& force)
 {
-	return transform->position;
+	_force = force;
 }
 
-void Rigidbody::SetPosition(const sf::Vector2f& position) const
+const sf::Vector2f& Rigidbody::Velocity() const
 {
-	transform->position = position;
+	return _velocity;
+}
+
+void Rigidbody::SetVelocity(const sf::Vector2f& velocity)
+{
+	_velocity = velocity;
+}
+
+float Rigidbody::Mass() const
+{
+	return _mass;
+}
+
+void Rigidbody::SetMass(const float mass)
+{
+	_mass = mass;
+}
+
+bool Rigidbody::TakesGravity() const
+{
+	return _takesGravity;
+}
+
+void Rigidbody::SetTakesGravity(const bool takesGravity)
+{
+	_takesGravity = takesGravity;
+}
+
+float Rigidbody::StaticFriction() const
+{
+	return _staticFriction;
+}
+
+void Rigidbody::SetStaticFriction(const float staticFriction)
+{
+	_staticFriction = staticFriction;
+}
+
+float Rigidbody::DynamicFriction() const
+{
+	return _dynamicFriction;
+}
+
+void Rigidbody::SetDynamicFriciton(const float dynamicFriciton)
+{
+	_dynamicFriction = dynamicFriciton;
+}
+
+float Rigidbody::Restitution() const
+{
+	return _restitution;
+}
+
+void Rigidbody::SetRestitution(const float restitution)
+{
+	_restitution = restitution;
 }
