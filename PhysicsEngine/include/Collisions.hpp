@@ -3,7 +3,8 @@
 #include "CollisionPoints.hpp"
 #include "Collider.hpp"
 #include "Transform.hpp"
-#include "CollisionBody.hpp"
+
+struct CollisionBody;
 
 namespace algo
 {

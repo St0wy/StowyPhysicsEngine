@@ -1,6 +1,7 @@
 // ReSharper disable CppClangTidyReadabilitySuspiciousCallArgument
 #include "Collider.hpp"
 #include "Collisions.hpp"
+#include "CollisionPoints.hpp"
 
 CollisionPoints BoxCollider::TestCollision(const Transform* transform, const Collider* collider,
 	const Transform* colliderTransform) const
