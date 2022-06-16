@@ -40,6 +40,11 @@ float Rigidbody::Mass() const
 	return _mass;
 }
 
+float Rigidbody::InvMass() const
+{
+	return 1.0f / Mass();
+}
+
 void Rigidbody::SetMass(const float mass)
 {
 	_mass = mass;

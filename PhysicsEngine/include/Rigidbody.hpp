@@ -18,6 +18,7 @@ public:
 	void SetVelocity(const sf::Vector2f& velocity);
 
 	[[nodiscard]] float Mass() const;
+	[[nodiscard]] float InvMass() const;
 	void SetMass(float mass);
 
 	[[nodiscard]] bool TakesGravity() const;

@@ -10,6 +10,16 @@ void CollisionBody::SetTransform(const Transform& transform)
 	_transform = transform;
 }
 
+Transform* CollisionBody::LastTransform()
+{
+	return &_lastTransform;
+}
+
+void CollisionBody::UpdateLastTransform()
+{
+	_lastTransform = _transform;
+}
+
 Collider* CollisionBody::Col() const
 {
 	return _collider;
@@ -51,6 +61,16 @@ const sf::Vector2f& CollisionBody::Position() const
 void CollisionBody::SetPosition(const sf::Vector2f& position)
 {
 	_transform.position = position;
+}
+
+bool CollisionBody::IsKinematic() const
+{
+	return _isKinematic;
+}
+
+void CollisionBody::SetIsKinematic(const bool isKinematic)
+{
+	_isKinematic = isKinematic;
 }
 
 bool CollisionBody::IsDynamic() const

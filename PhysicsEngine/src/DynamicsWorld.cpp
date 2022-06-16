@@ -34,6 +34,8 @@ void DynamicsWorld::MoveBodies(const float deltaTime) const
 		const sf::Vector2f vel = rigidbody->Velocity() + rigidbody->Force() / rigidbody->Mass() * deltaTime;
 		rigidbody->SetVelocity(vel);
 
+		rigidbody->UpdateLastTransform();
+
 		sf::Vector2f pos = rigidbody->Position() + rigidbody->Velocity() * deltaTime;
 		rigidbody->SetPosition(pos);
 
