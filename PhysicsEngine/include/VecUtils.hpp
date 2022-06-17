@@ -53,3 +53,9 @@ sf::Vector2<T> Lerp(const sf::Vector2<T>& a, const sf::Vector2<T>& b, float t)
 		a.y + (b.y - a.y) * t,
 	};
 }
+
+template<typename T>
+T Dot(const sf::Vector2<T>& a, const sf::Vector2<T>& b)
+{
+	return a.x * b.x + a.y * b.y;
+}
