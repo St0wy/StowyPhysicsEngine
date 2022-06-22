@@ -7,8 +7,6 @@
 
 void SmoothPositionSolver::Solve(const std::vector<Collision>& collisions, float deltaTime)
 {
-	//std::vector<std::pair<sf::Vector2f, sf::Vector2f>> deltas;
-
 	for (const auto& [bodyA, bodyB, points] : collisions)
 	{
 		// ReSharper disable CppCStyleCast

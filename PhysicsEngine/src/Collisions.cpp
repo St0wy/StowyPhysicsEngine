@@ -1,5 +1,7 @@
 #include "Collisions.hpp"
 
+#include <vector>
+
 #include "VecUtils.hpp"
 
 CollisionPoints algo::FindCircleCirlceCollisionPoints(
@@ -34,11 +36,21 @@ CollisionPoints algo::FindCircleCirlceCollisionPoints(
 	};
 }
 
-CollisionPoints algo::FindCircleBoxCollisionPoints(const CircleCollider* a, const Transform* ta, const BoxCollider* b,
-	const Transform* tb)
+CollisionPoints algo::FindCircleBoxCollisionPoints(
+	const CircleCollider* a,
+	const Transform* ta,
+	const BoxCollider* b,
+	const Transform* tb
+)
 {
-	// TODO : Implement
-	return {};
+	sf::Vector2f circlePos = a->center + ta->position;
+	sf::Vector2f boxPos = b->center + tb->position;
+
+	const float circleRadius = a->radius * Major(ta->scale);
+	const float scaledHalfWidth = b->width * tb->scale.x / 2.0f;
+	const float scaledHalfHeight = b->height * tb->scale.y / 2.0f;
+
+	
 }
 
 CollisionPoints algo::FindBoxCircleCollisionPoints(const BoxCollider* a, const Transform* ta, const CircleCollider* b,
