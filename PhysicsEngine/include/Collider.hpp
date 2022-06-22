@@ -1,7 +1,10 @@
 #pragma once
 
+#include <array>
+
 #include "CollisionPoints.hpp"
 #include "Transform.hpp"
+
 
 struct CircleCollider;
 struct BoxCollider;
@@ -53,6 +56,10 @@ struct BoxCollider final : Collider
 		const CircleCollider* collider,
 		const Transform* circleTransform
 	) const override;
+
+	[[nodiscard]] std::array<sf::Vector2f, 4> GetVertices() const;
+	[[nodiscard]] std::array<sf::Vector2f, 4> GetTransformedVertices(const Transform& transform) const;
+
 };
 
 struct CircleCollider final : Collider
