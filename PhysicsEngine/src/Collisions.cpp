@@ -1,8 +1,10 @@
 #include "Collisions.hpp"
 
-#include <vector>
+#include <limits>
 
 #include "VecUtils.hpp"
+#include "Projection.hpp"
+#include "Edge.hpp"
 
 CollisionPoints algo::FindCircleCirlceCollisionPoints(
 	const CircleCollider* a, const Transform* ta,
@@ -25,13 +27,13 @@ CollisionPoints algo::FindCircleCirlceCollisionPoints(
 	aPos += Normalized(aToB) * aRadius;
 	bPos += Normalized(bToA) * bRadius;
 
-	const sf::Vector2f scaledAToB = bPos - aPos;
+	const sf::Vector2f collisionPointsDistance = bPos - aPos;
 
 	return {
 		aPos,
 		bPos,
-		Normalized(scaledAToB),
-		Magnitude(scaledAToB),
+		Normalized(collisionPointsDistance),
+		Magnitude(collisionPointsDistance),
 		true
 	};
 }
@@ -50,7 +52,7 @@ CollisionPoints algo::FindCircleBoxCollisionPoints(
 	const float scaledHalfWidth = b->width * tb->scale.x / 2.0f;
 	const float scaledHalfHeight = b->height * tb->scale.y / 2.0f;
 
-	
+	return {};
 }
 
 CollisionPoints algo::FindBoxCircleCollisionPoints(const BoxCollider* a, const Transform* ta, const CircleCollider* b,
@@ -60,9 +62,80 @@ CollisionPoints algo::FindBoxCircleCollisionPoints(const BoxCollider* a, const T
 	return {};
 }
 
-CollisionPoints algo::FindBoxBoxCollisionPoints(const BoxCollider* a, const Transform* ta, const BoxCollider* b,
-	const Transform* tb)
+CollisionPoints algo::FindBoxBoxCollisionPoints(
+	const BoxCollider* a,
+	const Transform* ta,
+	const BoxCollider* b,
+	const Transform* tb
+)
 {
-	// TODO : Implement
-	return {};
+	float overlap = std::numeric_limits<float>::max();
+	sf::Vector2f smallestAxis;
+
+	const auto verticesA = a->GetTransformedVertices(*ta);
+	const auto verticesB = b->GetTransformedVertices(*tb);
+	const auto axesA = BoxCollider::GetAxes(*ta, verticesA);
+	const auto axesB = BoxCollider::GetAxes(*tb, verticesB);
+
+	auto findCollision = [&](const sf::Vector2f& axis)
+	{
+		const Projection pA = BoxCollider::Project(axis, verticesA);
+		const Projection pB = BoxCollider::Project(axis, verticesB);
+
+		if (!pA.Overlap(pB))
+		{
+			return false;
+		}
+
+		const float o = pA.GetOverlap(pB);
+
+		if (o < overlap)
+		{
+			overlap = o;
+			smallestAxis = axis;
+		}
+
+		return true;
+	};
+
+	for (const auto& axis : axesA)
+	{
+		if (!findCollision(axis))
+		{
+			return CollisionPoints::Empty();
+		}
+	}
+
+	for (const auto& axis : axesB)
+	{
+		if (!findCollision(axis))
+		{
+			return CollisionPoints::Empty();
+		}
+	}
+
+	Edge edgeA = BoxCollider::GetBestEdge(smallestAxis, verticesA);
+	Edge edgeB = BoxCollider::GetBestEdge(-smallestAxis, verticesB);
+
+	Edge reference, incident;
+	bool flip = false;
+
+	if (std::abs(edgeA.VecDot(smallestAxis)) <= std::abs(edgeB.VecDot(smallestAxis)))
+	{
+		reference = edgeA;
+		incident = edgeB;
+	}
+	else
+	{
+		reference = edgeB;
+		incident = edgeA;
+		flip = true;
+	}
+
+	sf::Vector2f referenceVector = Normalized(reference.EdgeVector());
+	float o1 = Dot(referenceVector, reference.p1);
+
+	// A Collision happenned 
+	return {
+	};
 }

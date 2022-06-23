@@ -59,3 +59,34 @@ T Dot(const sf::Vector2<T>& a, const sf::Vector2<T>& b)
 {
 	return a.x * b.x + a.y * b.y;
 }
+
+template<typename T>
+sf::Vector2<T> Rotate(const sf::Vector2<T>& v, const T angle)
+{
+	const T ca = std::cos(angle);
+	const T sa = std::sin(angle);
+	return sf::Vector2<T>(ca * v.x - sa * v.y, sa * v.x + ca * v.y);
+}
+
+template<typename T>
+sf::Vector2<T> RotateAround(const sf::Vector2<T>& v, const sf::Vector2<T>& center, const T angle)
+{
+	const sf::Vector2<T> relative = v - center;
+	const T ca = std::cos(angle);
+	const T sa = std::sin(angle);
+	const sf::Vector2<T> rotated = sf::Vector2<T>(ca * v.x - sa * v.y, sa * v.x + ca * v.y);
+	return rotated + center;
+}
+
+template<typename T>
+sf::Vector2<T> Normal(const sf::Vector2<T>& v)
+{
+	return { -v.y, v.x };
+}
+
+template<typename T>
+sf::Vector2<T> SetMagnitude(const sf::Vector2<T>& v, T newMagnitude)
+{
+	T magnitude = Magnitude(v);
+	return v / magnitude * newMagnitude;
+}

@@ -23,7 +23,7 @@ void SmoothPositionSolver::Solve(const std::vector<Collision>& collisions, float
 		constexpr float slop = 0.01f;
 
 		sf::Vector2f correction = points.normal * percent
-			* std::fmax(Magnitude(resolution) - slop, 0.0f)
+			* std::max(Magnitude(resolution) - slop, 0.0f)
 			/ (aInvMass + bInvMass);
 
 		if (aBody ? aBody->IsKinematic() : false)
