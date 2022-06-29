@@ -1,9 +1,11 @@
 ﻿# CMakeList.txt : CMake project for Formative10, include source and define
 # project specific logic here.
-cmake_minimum_required (VERSION 3.8)
+cmake_minimum_required (VERSION 3.15)
+
+project("Demo" VERSION 0.1.0)
 
 set (CMAKE_CXX_STANDARD 20)
-set (CMAKE_CXX_STANDARD_REQUIRED ON)
+set (CMAKE_CXX_STANDARD_REQUIRED True)
 
 set_property(GLOBAL PROPERTY USE_FOLDERS On)
 
@@ -26,28 +28,35 @@ foreach(DATA ${DATA_FILES})
 endforeach()
 
 add_custom_target(
-        DataTarget-${EXECUTABLE_CUSTOM_NAME}
+        DataTarget-${PROJECT_NAME}
         DEPENDS ${DATA_BINARY_FILES} ${DATA_FILES})
 
 # Get SFML and box2d libraries
 find_package(OpenGL REQUIRED)
 find_package(SFML COMPONENTS system window graphics main CONFIG REQUIRED)
+find_package(spdlog REQUIRED)
+
 include_directories(include/)
 
-# Add source to this project's executable.  
-file(GLOB_RECURSE PROJECT_SRC src/*.cpp include/*.hpp)
+add_executable(${PROJECT_NAME})
+# add_executable(${PROJECT_NAME} win32)
 
-add_executable(${EXECUTABLE_CUSTOM_NAME} ${PROJECT_SRC})
-# add_executable(${EXECUTABLE_CUSTOM_NAME} win32 ${PROJECT_SRC})
+target_sources(${PROJECT_NAME}
+    PRIVATE
+    src/main.cpp
+)
 
 # Add data dependencies
-add_dependencies(${EXECUTABLE_CUSTOM_NAME} DataTarget-${EXECUTABLE_CUSTOM_NAME})
+add_dependencies(${PROJECT_NAME} DataTarget-${PROJECT_NAME})
 
 # Link libraries
-target_link_libraries(${EXECUTABLE_CUSTOM_NAME} PRIVATE sfml-main sfml-graphics sfml-audio sfml-window sfml-system)
+target_link_libraries(${PROJECT_NAME} PRIVATE StowyPhysicsEngine)
+target_link_libraries(${PROJECT_NAME} PRIVATE spdlog::spdlog)
+
+target_link_libraries(${PROJECT_NAME} PRIVATE sfml-main sfml-graphics sfml-audio sfml-window sfml-system)
 
 if(MSVC)
-target_link_libraries(${EXECUTABLE_CUSTOM_NAME} PRIVATE sfml-main FLAC OpenAL OpenGL Vorbis)
+    target_link_libraries(${PROJECT_NAME} PRIVATE sfml-main FLAC OpenAL OpenGL Vorbis)
 else()
-target_link_libraries(${EXECUTABLE_CUSTOM_NAME} PRIVATE X11 FLAC UDev OpenAL  ${OPENGL_LIBRARIES} )
+    target_link_libraries(${PROJECT_NAME} PRIVATE X11 FLAC UDev OpenAL  ${OPENGL_LIBRARIES} )
 endif()
