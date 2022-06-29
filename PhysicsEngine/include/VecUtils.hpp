@@ -78,10 +78,22 @@ sf::Vector2<T> RotateAround(const sf::Vector2<T>& v, const sf::Vector2<T>& cente
 	return rotated + center;
 }
 
+/**
+ * Rotates the vector by +90 degrees
+ */
 template<typename T>
 sf::Vector2<T> Normal(const sf::Vector2<T>& v)
 {
 	return { -v.y, v.x };
+}
+
+/**
+ * Rotates the vector by -90 degrees
+ */
+template<typename T>
+sf::Vector2<T> OppositeNormal(const sf::Vector2<T>& v)
+{
+	return { v.y, -v.x };
 }
 
 template<typename T>
@@ -89,4 +101,21 @@ sf::Vector2<T> SetMagnitude(const sf::Vector2<T>& v, T newMagnitude)
 {
 	T magnitude = Magnitude(v);
 	return v / magnitude * newMagnitude;
+}
+
+/**
+ * \brief Computes the triple product such as p = a x (b x c)
+ * \tparam T number type supported by SFML.
+ * \param a first vector
+ * \param b second vector
+ * \param c third vector
+ * \return The triple product of these vectors.
+ */
+template<typename T>
+sf::Vector2<T> TripleProduct(const sf::Vector2<T>& a, const sf::Vector2<T>& b, const sf::Vector2<T>& c)
+{
+	return {
+		a.y * (b.x * c.y - b.y * c.x),
+		a.x * (b.y * c.x - b.x * c.y)
+	};
 }

@@ -5,6 +5,7 @@
 #include "VecUtils.hpp"
 #include "Projection.hpp"
 #include "Edge.hpp"
+#include "Simplex.hpp"
 
 CollisionPoints algo::FindCircleCirlceCollisionPoints(
 	const CircleCollider* a, const Transform* ta,
@@ -138,4 +139,107 @@ CollisionPoints algo::FindBoxBoxCollisionPoints(
 	// A Collision happenned 
 	return {
 	};
+}
+
+sf::Vector2f algo::Support(const Collider* colliderA, const Collider* colliderB, const sf::Vector2f& direction)
+{
+	return colliderA->FindFurthestPoint(direction) - colliderB->FindFurthestPoint(-direction);
+}
+
+bool algo::Gjk(const Collider* colliderA, const Collider* colliderB)
+{
+	sf::Vector2f support = Support(colliderA, colliderB, sf::Vector2f(1, 0));
+
+	Simplex points;
+	points.PushFront(support);
+
+	// New direction is towards the origin
+	sf::Vector2f direction = -support;
+
+	while (true)
+	{
+		support = Support(colliderA, colliderB, direction);
+
+		if (Dot(support, direction) <= 0)
+		{
+			return false;
+		}
+
+		points.PushFront(support);
+
+		if (NextSimplex(points, direction))
+		{
+			return true;
+		}
+	}
+}
+
+bool algo::NextSimplex(Simplex& points, sf::Vector2f& direction)
+{
+	switch (points.Size())
+	{
+	case 2: return Line(points, direction);
+	case 3: return Triangle(points, direction);
+	default: return false;
+	}
+}
+
+bool algo::SameDirection(const sf::Vector2f direction, const sf::Vector2f ao)
+{
+	return Dot(direction, ao) > 0;
+}
+
+bool algo::Line(Simplex& points, sf::Vector2f& direction)
+{
+	sf::Vector2f a = points[0];
+	const sf::Vector2f b = points[0];
+	const sf::Vector2f ab = b - a;
+	const sf::Vector2f ao = -a;
+
+	if (SameDirection(ab, ao))
+	{
+		direction = TripleProduct(ab, ao, ab);
+	}
+	else
+	{
+		points = { a };
+		direction = ao;
+	}
+
+	return false;
+}
+
+bool algo::Triangle(Simplex& points, sf::Vector2f& direction)
+{
+	sf::Vector2f a = points[0];
+	sf::Vector2f b = points[1];
+	sf::Vector2f c = points[2];
+
+	const sf::Vector2f ab = b - a;
+	const sf::Vector2f ac = c - a;
+	const sf::Vector2f ao = -a;
+
+	const sf::Vector2f tripple = TripleProduct(ac, ac, ab);
+	if (SameDirection(tripple, ao))
+	{
+		if (SameDirection(ac, ao))
+		{
+			points = { a, c };
+			direction = TripleProduct(ac, ao, ac);
+		}
+		else
+		{
+			return Line(points = { a, b }, direction);
+		}
+	}
+	else
+	{
+		if (SameDirection(TripleProduct(ab, ab, ac), ao))
+		{
+			return Line(points = { a, b }, direction);
+		}
+		return true;
+	}
+
+	return false;
 }

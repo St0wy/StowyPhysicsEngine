@@ -25,6 +25,24 @@ CollisionPoints BoxCollider::TestCollision(const Transform* transform, const Cir
 	return algo::FindBoxCircleCollisionPoints(this, transform, collider, circleTransform);
 }
 
+sf::Vector2f BoxCollider::FindFurthestPoint(const sf::Vector2f& direction) const
+{
+	sf::Vector2f maxPoint;
+	float maxDistance = -std::numeric_limits<float>::max();
+
+	for (const sf::Vector2f& vertex : GetVertices())
+	{
+		const float distance = Dot(vertex, direction);
+		if(distance > maxDistance)
+		{
+			maxDistance = distance;
+			maxPoint = vertex;
+		}
+	}
+
+	return maxPoint;
+}
+
 std::array<sf::Vector2f, 4> BoxCollider::GetVertices() const
 {
 	return GetTransformedVertices(

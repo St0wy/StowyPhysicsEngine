@@ -33,6 +33,8 @@ public:
 		const CircleCollider* collider,
 		const Transform* circleTransform
 	) const = 0;
+
+	[[nodiscard]] virtual sf::Vector2f FindFurthestPoint(const sf::Vector2f& direction) const = 0;
 };
 
 struct BoxCollider final : Collider
@@ -59,6 +61,8 @@ struct BoxCollider final : Collider
 		const Transform* circleTransform
 	) const override;
 
+	[[nodiscard]] sf::Vector2f FindFurthestPoint(const sf::Vector2f& direction) const override;
+	
 	[[nodiscard]] std::array<sf::Vector2f, 4> GetVertices() const;
 	[[nodiscard]] std::array<sf::Vector2f, 4> GetTransformedVertices(const Transform& transform) const;
 	[[nodiscard]] static std::array<sf::Vector2f, 4> GetAxes(
