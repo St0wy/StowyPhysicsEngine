@@ -13,13 +13,14 @@ public:
 	{}
 
 	Simplex& operator=(std::initializer_list<sf::Vector2f> list);
-	sf::Vector2f operator[] (unsigned i) const;
+	sf::Vector2f operator[] (std::size_t i) const;
 	void PushFront(sf::Vector2f point);
 	[[nodiscard]] std::size_t Size() const;
-	[[nodiscard]] auto Begin() const;
-	[[nodiscard]] auto End() const;
+	[[nodiscard]] std::array<sf::Vector2f, MAX_SIZE>::const_iterator Begin() const;
+	[[nodiscard]] std::array<sf::Vector2f, MAX_SIZE>::const_iterator End() const;
+	void IncrementSize();
 
 private:
-	std::array<sf::Vector2f, 3> _points;
+	std::array<sf::Vector2f, MAX_SIZE> _points;
 	std::size_t _size;
 };

@@ -25,14 +25,41 @@ namespace algo
 		const BoxCollider* a, const Transform* ta,
 		const BoxCollider* b, const Transform* tb);
 
-	sf::Vector2f Support(const Collider* colliderA, const Collider* colliderB, const sf::Vector2f& direction);
+	CollisionPoints Sat(
+		const Collider* colliderA,
+		const Transform* transformA,
+		const Collider* colliderB,
+		const Transform* transformB
+	);
 
-	bool Gjk(const Collider* colliderA, const Collider* colliderB);
+	sf::Vector2f Support(
+		const Collider* colliderA,
+		const Transform* transformA,
+		const Collider* colliderB,
+		const Transform* transformB,
+		const sf::Vector2f& direction
+	);
+
+	CollisionPoints Gjk(
+		const Collider* colliderA,
+		const Transform* transformA,
+		const Collider* colliderB,
+		const Transform* transformB
+	);
+
 	bool NextSimplex(Simplex& points, sf::Vector2f& direction);
-	bool SameDirection(const sf::Vector2f direction, const sf::Vector2f ao);
+	bool SameDirection(sf::Vector2f direction, sf::Vector2f ao);
 
 	bool Line(Simplex& points, sf::Vector2f& direction);
 	bool Triangle(Simplex& points, sf::Vector2f& direction);
+
+	CollisionPoints Epa(
+		const Simplex& simplex,
+		const Collider* colliderA,
+		const Transform* transformA,
+		const Collider* colliderB,
+		const Transform* transformB
+	);
 }
 
 struct Collision

@@ -1,10 +1,9 @@
 #include "Collisions.hpp"
 
 #include <limits>
+#include <vector>
 
 #include "VecUtils.hpp"
-#include "Projection.hpp"
-#include "Edge.hpp"
 #include "Simplex.hpp"
 
 CollisionPoints algo::FindCircleCirlceCollisionPoints(
@@ -46,21 +45,13 @@ CollisionPoints algo::FindCircleBoxCollisionPoints(
 	const Transform* tb
 )
 {
-	sf::Vector2f circlePos = a->center + ta->position;
-	sf::Vector2f boxPos = b->center + tb->position;
-
-	const float circleRadius = a->radius * Major(ta->scale);
-	const float scaledHalfWidth = b->width * tb->scale.x / 2.0f;
-	const float scaledHalfHeight = b->height * tb->scale.y / 2.0f;
-
-	return {};
+	return FindBoxCircleCollisionPoints(b, tb, a, ta);
 }
 
 CollisionPoints algo::FindBoxCircleCollisionPoints(const BoxCollider* a, const Transform* ta, const CircleCollider* b,
 	const Transform* tb)
 {
-	// TODO : Implement
-	return {};
+	return Gjk(a, ta, b, tb);
 }
 
 CollisionPoints algo::FindBoxBoxCollisionPoints(
@@ -70,85 +61,90 @@ CollisionPoints algo::FindBoxBoxCollisionPoints(
 	const Transform* tb
 )
 {
-	float overlap = std::numeric_limits<float>::max();
-	sf::Vector2f smallestAxis;
-
-	const auto verticesA = a->GetTransformedVertices(*ta);
-	const auto verticesB = b->GetTransformedVertices(*tb);
-	const auto axesA = BoxCollider::GetAxes(*ta, verticesA);
-	const auto axesB = BoxCollider::GetAxes(*tb, verticesB);
-
-	auto findCollision = [&](const sf::Vector2f& axis)
-	{
-		const Projection pA = BoxCollider::Project(axis, verticesA);
-		const Projection pB = BoxCollider::Project(axis, verticesB);
-
-		if (!pA.Overlap(pB))
-		{
-			return false;
-		}
-
-		const float o = pA.GetOverlap(pB);
-
-		if (o < overlap)
-		{
-			overlap = o;
-			smallestAxis = axis;
-		}
-
-		return true;
-	};
-
-	for (const auto& axis : axesA)
-	{
-		if (!findCollision(axis))
-		{
-			return CollisionPoints::Empty();
-		}
-	}
-
-	for (const auto& axis : axesB)
-	{
-		if (!findCollision(axis))
-		{
-			return CollisionPoints::Empty();
-		}
-	}
-
-	Edge edgeA = BoxCollider::GetBestEdge(smallestAxis, verticesA);
-	Edge edgeB = BoxCollider::GetBestEdge(-smallestAxis, verticesB);
-
-	Edge reference, incident;
-	bool flip = false;
-
-	if (std::abs(edgeA.VecDot(smallestAxis)) <= std::abs(edgeB.VecDot(smallestAxis)))
-	{
-		reference = edgeA;
-		incident = edgeB;
-	}
-	else
-	{
-		reference = edgeB;
-		incident = edgeA;
-		flip = true;
-	}
-
-	sf::Vector2f referenceVector = Normalized(reference.EdgeVector());
-	float o1 = Dot(referenceVector, reference.p1);
-
-	// A Collision happenned 
-	return {
-	};
+	return Gjk(a, ta, b, tb);
 }
 
-sf::Vector2f algo::Support(const Collider* colliderA, const Collider* colliderB, const sf::Vector2f& direction)
+CollisionPoints algo::Sat(
+	const Collider* colliderA,
+	const Transform* transformA,
+	const Collider* colliderB,
+	const Transform* transformB
+)
 {
-	return colliderA->FindFurthestPoint(direction) - colliderB->FindFurthestPoint(-direction);
+	// Not working, but I keep the code just in case
+	//float overlap = std::numeric_limits<float>::max();
+	//sf::Vector2f smallestAxis;
+
+	//const auto verticesA = a->GetTransformedVertices(*ta);
+	//const auto verticesB = b->GetTransformedVertices(*tb);
+	//const auto axesA = BoxCollider::GetAxes(*ta, verticesA);
+	//const auto axesB = BoxCollider::GetAxes(*tb, verticesB);
+
+	//auto findCollision = [&](const sf::Vector2f& axis)
+	//{
+	//	const Projection pA = BoxCollider::Project(axis, verticesA);
+	//	const Projection pB = BoxCollider::Project(axis, verticesB);
+
+	//	if (!pA.Overlap(pB))
+	//	{
+	//		return false;
+	//	}
+
+	//	const float o = pA.GetOverlap(pB);
+
+	//	if (o < overlap)
+	//	{
+	//		overlap = o;
+	//		smallestAxis = axis;
+	//	}
+
+	//	return true;
+	//};
+
+	//for (const auto& axis : axesA)
+	//{
+	//	if (!findCollision(axis))
+	//	{
+	//		return CollisionPoints::Empty();
+	//	}
+	//}
+
+	//for (const auto& axis : axesB)
+	//{
+	//	if (!findCollision(axis))
+	//	{
+	//		return CollisionPoints::Empty();
+	//	}
+	//}
+
+	//CollisionPoints points;
+	//points.normal = smallestAxis;
+	//points.depth = overlap;
+	//points.hasCollision = true;
+
+	return {};
 }
 
-bool algo::Gjk(const Collider* colliderA, const Collider* colliderB)
+sf::Vector2f algo::Support(
+	const Collider* colliderA,
+	const Transform* transformA,
+	const Collider* colliderB,
+	const Transform* transformB,
+	const sf::Vector2f& direction
+)
 {
-	sf::Vector2f support = Support(colliderA, colliderB, sf::Vector2f(1, 0));
+	return colliderA->FindFurthestPoint(transformA, direction) -
+		colliderB->FindFurthestPoint(transformB, -direction);
+}
+
+CollisionPoints algo::Gjk(
+	const Collider* colliderA,
+	const Transform* transformA,
+	const Collider* colliderB,
+	const Transform* transformB
+)
+{
+	sf::Vector2f support = Support(colliderA, transformA, colliderB, transformB, sf::Vector2f(1, 0));
 
 	Simplex points;
 	points.PushFront(support);
@@ -158,18 +154,18 @@ bool algo::Gjk(const Collider* colliderA, const Collider* colliderB)
 
 	while (true)
 	{
-		support = Support(colliderA, colliderB, direction);
+		support = Support(colliderA, transformA, colliderB, transformB, direction);
 
 		if (Dot(support, direction) <= 0)
 		{
-			return false;
+			return CollisionPoints::Empty();
 		}
 
 		points.PushFront(support);
 
 		if (NextSimplex(points, direction))
 		{
-			return true;
+			return Epa(points, colliderA, transformA, colliderB, transformB);
 		}
 	}
 }
@@ -242,4 +238,77 @@ bool algo::Triangle(Simplex& points, sf::Vector2f& direction)
 	}
 
 	return false;
+}
+
+CollisionPoints algo::Epa(
+	const Simplex& simplex,
+	const Collider* colliderA,
+	const Transform* transformA,
+	const Collider* colliderB,
+	const Transform* transformB
+)
+{
+	std::vector polytope(simplex.Begin(), simplex.End());
+
+	sf::Vector2f minNormal;
+	float minDistance = std::numeric_limits<float>::infinity();
+	std::size_t minIndex = 0;
+
+	std::size_t iterations = 0;
+	constexpr std::size_t maxIter = 30;
+	while (minDistance == std::numeric_limits<float>::infinity())  // NOLINT(clang-diagnostic-float-equal)
+	{
+		if (iterations++ > maxIter)
+		{
+			break;
+		}
+
+		for (std::size_t i = 0; i < polytope.size(); ++i)
+		{
+			const std::size_t j = (i + 1) % polytope.size();
+
+			sf::Vector2f vertexI = polytope[i];
+			sf::Vector2f vertexJ = polytope[j];
+
+			sf::Vector2f ij = vertexJ - vertexI;
+
+			sf::Vector2f normal = Normalized(OppositeNormal(ij));
+			float distance = Dot(normal, vertexI);
+
+			if (distance < 0.0f)
+			{
+				distance *= -1.0f;
+				normal *= -1.0f;
+			}
+
+			if (distance < minDistance)
+			{
+				minDistance = distance;
+				minNormal = normal;
+				minIndex = i;
+			}
+		}
+
+		sf::Vector2f support = Support(colliderA, transformA, colliderB, transformB, minNormal);
+		const float sDistance = Dot(minNormal, support);
+
+		if (std::abs(sDistance - minDistance) > 0.001f)
+		{
+			minDistance = std::numeric_limits<float>::infinity();
+			const auto convIndex = static_cast<long long>(minIndex);
+			polytope.insert(polytope.begin() + convIndex + 1ll, support);
+		}
+	}
+
+	if (minDistance == std::numeric_limits<float>::infinity())  // NOLINT(clang-diagnostic-float-equal)
+	{
+		return CollisionPoints::Empty();
+	}
+
+	CollisionPoints points;
+	points.normal = minNormal;
+	points.depth = minDistance + 0.001f;
+	points.hasCollision = true;
+
+	return points;
 }

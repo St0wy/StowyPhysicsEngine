@@ -34,7 +34,7 @@ public:
 		const Transform* circleTransform
 	) const = 0;
 
-	[[nodiscard]] virtual sf::Vector2f FindFurthestPoint(const sf::Vector2f& direction) const = 0;
+	[[nodiscard]] virtual sf::Vector2f FindFurthestPoint(const Transform* transform, const sf::Vector2f& direction) const = 0;
 };
 
 struct BoxCollider final : Collider
