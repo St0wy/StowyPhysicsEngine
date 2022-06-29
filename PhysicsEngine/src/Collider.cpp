@@ -25,15 +25,15 @@ CollisionPoints BoxCollider::TestCollision(const Transform* transform, const Cir
 	return algo::FindBoxCircleCollisionPoints(this, transform, collider, circleTransform);
 }
 
-sf::Vector2f BoxCollider::FindFurthestPoint(const sf::Vector2f& direction) const
+sf::Vector2f BoxCollider::FindFurthestPoint(const Transform* transform, const sf::Vector2f& direction) const
 {
 	sf::Vector2f maxPoint;
 	float maxDistance = -std::numeric_limits<float>::max();
 
-	for (const sf::Vector2f& vertex : GetVertices())
+	for (const sf::Vector2f& vertex : GetTransformedVertices(*transform))
 	{
 		const float distance = Dot(vertex, direction);
-		if(distance > maxDistance)
+		if (distance > maxDistance)
 		{
 			maxDistance = distance;
 			maxPoint = vertex;
@@ -79,75 +79,6 @@ std::array<sf::Vector2f, 4> BoxCollider::GetTransformedVertices(const Transform&
 	};
 }
 
-std::array<sf::Vector2f, 4> BoxCollider::GetAxes(
-	const Transform& transform,
-	const std::array<sf::Vector2f, 4>& vertices
-)
-{
-	std::array<sf::Vector2f, 4> axes;
-
-	for (std::size_t i = 0; i < vertices.size(); ++i)
-	{
-		sf::Vector2f p1 = vertices[i];
-		sf::Vector2f p2 = vertices[i + 1 % vertices.size()];
-		sf::Vector2f edge = p1 - p2;
-		sf::Vector2f normal = Normal(edge);
-		axes[i] = Normalized(normal);
-	}
-
-	return axes;
-}
-
-Projection BoxCollider::Project(const sf::Vector2f& axis, const std::array<sf::Vector2f, 4>& vertices)
-{
-	float min = Dot(axis, vertices[0]);
-	float max = min;
-
-	for (const sf::Vector2f& vertex : vertices)
-	{
-		const float p = Dot(axis, vertex);
-		if (p < min)
-		{
-			min = p;
-		}
-		else if (p > max)
-		{
-			max = p;
-		}
-	}
-
-	return { min, max };
-}
-
-Edge BoxCollider::GetBestEdge(const sf::Vector2f& separationNormal, const std::array<sf::Vector2f, 4>& vertices)
-{
-	float max = -std::numeric_limits<float>::max();
-	std::size_t index = 0;
-	for (std::size_t i = 0; i < vertices.size(); ++i)
-	{
-		const float projection = Dot(separationNormal, vertices[i]);
-		if (projection > max)
-		{
-			max = projection;
-			index = i;
-		}
-	}
-
-	const sf::Vector2f v = vertices[index];
-	const sf::Vector2f v1 = vertices[index + 1 % vertices.size()];
-	const sf::Vector2f v0 = vertices[index - 1 % vertices.size()];
-
-	// TODO : Check that they both point towards the maximum point
-	const sf::Vector2f v1ToV = Normalized(v - v1);
-	const sf::Vector2f v0ToV = Normalized(v - v0);
-
-	if (Dot(v0ToV, separationNormal) <= Dot(v1ToV, separationNormal))
-	{
-		return { v, v0, v };
-	}
-	return { v, v, v1 };
-}
-
 CollisionPoints CircleCollider::TestCollision(const Transform* transform, const Collider* collider,
 	const Transform* colliderTransform) const
 {
@@ -164,4 +95,9 @@ CollisionPoints CircleCollider::TestCollision(const Transform* transform, const 
 	const Transform* circleTransform) const
 {
 	return algo::FindCircleCirlceCollisionPoints(this, transform, collider, circleTransform);
+}
+
+sf::Vector2f CircleCollider::FindFurthestPoint(const Transform* transform, const sf::Vector2f& direction) const
+{
+	return center + transform->position + radius * Normalized(direction) * Major(transform->scale);
 }
