@@ -8,6 +8,7 @@ Sphere::Sphere(DynamicsWorld& dynWorld, const float radius, const sf::Vector2f p
 	_collider->radius = radius;
 	_dynWorld.AddRigidbody(RigidBody());
 	_rb->SetCollider(_collider.get());
+	_shape.setOrigin(radius, radius);
 }
 
 Sphere::~Sphere()

@@ -8,7 +8,7 @@
 #include "collision/ManifoldFactory.hpp"
 
 Manifold BoxCollider::TestCollision(const Transform* transform, const Collider* collider,
-                                    const Transform* colliderTransform) const
+	const Transform* colliderTransform) const
 {
 	return collider->TestCollision(colliderTransform, this, transform);
 }
@@ -19,8 +19,11 @@ Manifold BoxCollider::TestCollision(const Transform* transform, const BoxCollide
 	return algo::FindBoxBoxCollisionPoints(this, transform, collider, boxTransform);
 }
 
-Manifold BoxCollider::TestCollision(const Transform* transform, const CircleCollider* collider,
-	const Transform* circleTransform) const
+Manifold BoxCollider::TestCollision(
+	const Transform* transform,
+	const CircleCollider* collider,
+	const Transform* circleTransform
+) const
 {
 	return algo::FindBoxCircleCollisionPoints(this, transform, collider, circleTransform);
 }
@@ -56,14 +59,14 @@ std::array<sf::Vector2f, 4> BoxCollider::GetVertices() const
 
 std::array<sf::Vector2f, 4> BoxCollider::GetTransformedVertices(const Transform& transform) const
 {
-	const float halfWidth = width / 2.0f * transform.scale.x;
-	const float halfHeight = height / 2.0f * transform.scale.y;
+	const float scaledHalfWidth = halfWidth * transform.scale.x;
+	const float scaledHalfHeight = halfHeight * transform.scale.y;
 	const sf::Vector2f newCenter = center + transform.position;
 
-	sf::Vector2f topLeft = { newCenter.x - halfWidth, newCenter.y + halfHeight };
-	sf::Vector2f topRight = { newCenter.x + halfWidth, newCenter.y + halfHeight };
-	sf::Vector2f bottomRight = { newCenter.x - halfWidth, newCenter.y - halfHeight };
-	sf::Vector2f bottomLeft = { newCenter.x + halfWidth, newCenter.y - halfHeight };
+	sf::Vector2f topLeft = { newCenter.x - scaledHalfWidth, newCenter.y + scaledHalfHeight };
+	sf::Vector2f topRight = { newCenter.x + scaledHalfWidth, newCenter.y + scaledHalfHeight };
+	sf::Vector2f bottomRight = { newCenter.x + scaledHalfWidth, newCenter.y - scaledHalfHeight };
+	sf::Vector2f bottomLeft = { newCenter.x - scaledHalfWidth, newCenter.y - scaledHalfHeight };
 
 	topLeft = RotateAround(topLeft, newCenter, transform.rotation);
 	topRight = RotateAround(topRight, newCenter, transform.rotation);

@@ -2,6 +2,7 @@
 
 #include <limits>
 #include <vector>
+#include <spdlog/spdlog.h>
 
 #include "VecUtils.hpp"
 #include "collision/Collider.hpp"
@@ -85,13 +86,18 @@ Manifold algo::Gjk(
 	const Transform* transformB
 )
 {
-	sf::Vector2f support = Support(colliderA, transformA, colliderB, transformB, sf::Vector2f(1, 0));
+	sf::Vector2f direction = Normalized(transformB->position - transformA->position);
+
+	sf::Vector2f support = Support(
+		colliderA, transformA,
+		colliderB, transformB,
+		direction);
 
 	Simplex points;
 	points.PushFront(support);
 
 	// New direction is towards the origin
-	sf::Vector2f direction = -support;
+	direction = Normalized(-support);
 
 	while (true)
 	{
@@ -126,22 +132,13 @@ bool algo::SameDirection(const sf::Vector2f direction, const sf::Vector2f ao)
 	return Dot(direction, ao) > 0;
 }
 
-bool algo::Line(Simplex& points, sf::Vector2f& direction)
+bool algo::Line(const Simplex& points, sf::Vector2f& direction)
 {
-	sf::Vector2f a = points[0];
-	const sf::Vector2f b = points[0];
-	const sf::Vector2f ab = b - a;
-	const sf::Vector2f ao = -a;
-
-	if (SameDirection(ab, ao))
-	{
-		direction = TripleProduct(ab, ao, ab);
-	}
-	else
-	{
-		points = { a };
-		direction = ao;
-	}
+	const sf::Vector2f a = points[0];
+	const sf::Vector2f b = points[1];
+	const sf::Vector2f ab = Normalized(b - a);
+	const sf::Vector2f ao = Normalized(-a);
+	direction = TripleProduct(ab, ao, ab);
 
 	return false;
 }
@@ -152,33 +149,23 @@ bool algo::Triangle(Simplex& points, sf::Vector2f& direction)
 	sf::Vector2f b = points[1];
 	sf::Vector2f c = points[2];
 
-	const sf::Vector2f ab = b - a;
-	const sf::Vector2f ac = c - a;
-	const sf::Vector2f ao = -a;
+	const sf::Vector2f ab = Normalized(b - a);
+	const sf::Vector2f ac = Normalized(c - a);
+	const sf::Vector2f ao = Normalized(-a);
 
-	const sf::Vector2f tripple = TripleProduct(ac, ac, ab);
-	if (SameDirection(tripple, ao))
-	{
-		if (SameDirection(ac, ao))
-		{
-			points = { a, c };
-			direction = TripleProduct(ac, ao, ac);
-		}
-		else
-		{
-			return Line(points = { a, b }, direction);
-		}
-	}
-	else
-	{
-		if (SameDirection(TripleProduct(ab, ab, ac), ao))
-		{
-			return Line(points = { a, b }, direction);
-		}
-		return true;
-	}
+	//const sf::Vector2f tripple = TripleProduct(ac, ac, ab);
+	const sf::Vector2f abf = TripleProduct(ac, ab, ab);
+	const sf::Vector2f acf = TripleProduct(ab, ac, ac);
 
-	return false;
+	if (SameDirection(abf, ao))
+	{
+		return Line(points = { a, b }, direction = abf);
+	}
+	if (SameDirection(acf, ao))
+	{
+		return Line(points = { a, c }, direction = acf);
+	}
+	return true;
 }
 
 Manifold algo::Epa(
@@ -199,9 +186,13 @@ Manifold algo::Epa(
 	constexpr std::size_t maxIter = 30;
 	while (minDistance == std::numeric_limits<float>::infinity())  // NOLINT(clang-diagnostic-float-equal)
 	{
-		if (iterations++ > maxIter) break;
+		if (iterations++ > maxIter)
+		{
+			spdlog::debug("Too many iterations. Breaking.");
+			break;
+		}
 
-		for (std::size_t i = 0; i < polytope.size(); ++i)
+		for (std::size_t i = 0; i < polytope.size(); i++)
 		{
 			const std::size_t j = (i + 1) % polytope.size();
 
@@ -238,14 +229,14 @@ Manifold algo::Epa(
 		}
 	}
 
-	if (minDistance == std::numeric_limits<float>::infinity())  // NOLINT(clang-diagnostic-float-equal)
+	if (minDistance == std::numeric_limits<float>::infinity()) // NOLINT(clang-diagnostic-float-equal)
 	{
 		return Manifold::Empty();
 	}
 
 	Manifold points;
 	points.normal = minNormal;
-	points.depth = minDistance + 0.001f;
+	points.depth = minDistance;
 	points.hasCollision = true;
 
 	return points;

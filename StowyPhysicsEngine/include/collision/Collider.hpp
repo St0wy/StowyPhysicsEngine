@@ -42,8 +42,8 @@ public:
 struct BoxCollider : Collider
 {
 	sf::Vector2f center;
-	float width;
-	float height;
+	float halfWidth;
+	float halfHeight;
 
 	Manifold TestCollision(
 		const Transform* transform,

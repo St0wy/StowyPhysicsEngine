@@ -1,11 +1,12 @@
-#include "DemoBalls.hpp"
+#include "DemoBallsAndCube.hpp"
 
 #include <spdlog/spdlog.h>
 
 #include "Consts.hpp"
 #include "Sphere.hpp"
+#include "Box.hpp"
 
-DemoBalls::DemoBalls()
+DemoBallsAndCube::DemoBallsAndCube()
 	: _window(
 		sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT),
 		WINDOW_NAME,
@@ -25,19 +26,35 @@ DemoBalls::DemoBalls()
 	_world.SetWorldGravity({ 0,0 });
 }
 
-void DemoBalls::StartMainLoop()
+void DemoBallsAndCube::StartMainLoop()
 {
 	_entities.push_back(
-		std::make_unique<Sphere>(_world, 1.0f, sf::Vector2f(-3.0f, 3.0f)));
-	const Entity* staticBall = _entities[_entities.size() - 1].get();
-	staticBall->RigidBody()->SetIsKinematic(false);
-	_entities.push_back(
-		std::make_unique<Sphere>(_world, 1.0f, sf::Vector2f(0.0f, 3.0f)));
+		std::make_unique<Box>(
+			_world,
+			sf::Vector2f(1.f, 10.0f),
+			sf::Vector2f(-3.0f, 3.0f)
+			)
+	);
+
+	const Box* lefty = (Box*)_entities[_entities.size() - 1].get();
+	//lefty->RigidBody()->SetIsKinematic(false);
+	
+
+	//_entities.push_back(
+	//	std::make_unique<Box>(
+	//		_world,
+	//		sf::Vector2f(1.f, 10.0f),
+	//		sf::Vector2f(0.0f, 3.0f)
+	//		)
+	//);
+
+	//const Entity* mabox = _entities[_entities.size() - 1].get();
+	//mabox->RigidBody()->SetIsKinematic(false);
+
 	_entities.push_back(
 		std::make_unique<Sphere>(_world, 1.0f, sf::Vector2f(3.0f, 3.0f)));
 
 	const Entity* maball = _entities[_entities.size() - 1].get();
-
 
 	spdlog::debug("Starting main loop");
 
@@ -57,8 +74,6 @@ void DemoBalls::StartMainLoop()
 			{
 				auto posi = sf::Mouse::getPosition(_window);
 				auto posf = _window.mapPixelToCoords(posi);
-				posf.x -= 1.0f;
-				posf.y -= 1.0f;
 				posf.y *= -1.0f;
 				_entities.push_back(
 					std::make_unique<Sphere>(_world, 1.0f, posf));
@@ -74,7 +89,8 @@ void DemoBalls::StartMainLoop()
 			entity->Update(deltaTime);
 		}
 
-		maball->Push(sf::Vector2f(-2.0f, 0.f));
+		maball->Push(Normalized(sf::Vector2f(-2.0f, -0.4f)));
+		//mabox->Push(sf::Vector2f(-2.0f, 0.f));
 
 		// Clear the window
 		_window.clear(sf::Color::Black);

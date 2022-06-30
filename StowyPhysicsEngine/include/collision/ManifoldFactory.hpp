@@ -43,7 +43,7 @@ namespace algo
 	bool NextSimplex(Simplex& points, sf::Vector2f& direction);
 	bool SameDirection(sf::Vector2f direction, sf::Vector2f ao);
 
-	bool Line(Simplex& points, sf::Vector2f& direction);
+	bool Line(const Simplex& points, sf::Vector2f& direction);
 	bool Triangle(Simplex& points, sf::Vector2f& direction);
 
 	Manifold Epa(
