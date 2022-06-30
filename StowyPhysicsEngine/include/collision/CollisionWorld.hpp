@@ -3,7 +3,6 @@
 #include <vector>
 
 #include "CollisionBody.hpp"
-#include "Collisions.hpp"
 #include "Solver.hpp"
 
 class CollisionWorld

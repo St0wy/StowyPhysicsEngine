@@ -4,7 +4,7 @@
 
 #include "Transform.hpp"
 #include "Collider.hpp"
-#include "Collisions.hpp"
+#include "collision/ManifoldFactory.hpp"
 
 struct Collision;
 

@@ -4,7 +4,6 @@
 #include <vector>
 
 #include "VecUtils.hpp"
-
 #include "collision/Collider.hpp"
 #include "collision/Manifold.hpp"
 #include "collision/Simplex.hpp"
@@ -200,10 +199,7 @@ Manifold algo::Epa(
 	constexpr std::size_t maxIter = 30;
 	while (minDistance == std::numeric_limits<float>::infinity())  // NOLINT(clang-diagnostic-float-equal)
 	{
-		if (iterations++ > maxIter)
-		{
-			break;
-		}
+		if (iterations++ > maxIter) break;
 
 		for (std::size_t i = 0; i < polytope.size(); ++i)
 		{

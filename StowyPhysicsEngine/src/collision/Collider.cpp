@@ -3,12 +3,12 @@
 
 #include <array>
 
-#include "collision/Collisions.hpp"
 #include "collision/Manifold.hpp"
 #include "VecUtils.hpp"
+#include "collision/ManifoldFactory.hpp"
 
 Manifold BoxCollider::TestCollision(const Transform* transform, const Collider* collider,
-	const Transform* colliderTransform) const
+                                    const Transform* colliderTransform) const
 {
 	return collider->TestCollision(colliderTransform, this, transform);
 }
