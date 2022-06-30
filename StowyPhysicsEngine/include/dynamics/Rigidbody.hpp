@@ -4,9 +4,11 @@
 
 #include "collision/CollisionBody.hpp"
 
-struct Rigidbody : CollisionBody
+struct Rigidbody : public CollisionBody
 {
 public:
+	Rigidbody();
+
 	[[nodiscard]] const sf::Vector2f& GravityForce() const;
 	void SetGravityForce(const sf::Vector2f& gravityForce);
 

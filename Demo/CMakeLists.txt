@@ -43,7 +43,7 @@ target_sources(${PROJECT_NAME}
     PRIVATE
     src/main.cpp
     src/Game.cpp
-)
+ "src/Entity.cpp" "src/Sphere.cpp")
 
 # Add data dependencies
 add_dependencies(${PROJECT_NAME} DataTarget-${PROJECT_NAME})

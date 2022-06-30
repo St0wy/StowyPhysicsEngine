@@ -14,8 +14,8 @@ public:
 	Transform* Trans();
 	void SetTransform(const Transform& transform);
 
-	Transform* LastTransform();
-	void UpdateLastTransform();
+	//Transform* LastTransform();
+	//void UpdateLastTransform();
 
 	[[nodiscard]] Collider* Col() const;
 	void SetCollider(Collider* collider);

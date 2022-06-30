@@ -1,5 +1,14 @@
 #include "dynamics/Rigidbody.hpp"
 
+Rigidbody::Rigidbody()
+	:
+	_mass(1),
+	_takesGravity(true),
+	_restitution(1)
+{
+	_isDynamic = true;
+}
+
 const sf::Vector2f& Rigidbody::GravityForce() const
 {
 	return _gravityForce;

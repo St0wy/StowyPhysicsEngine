@@ -10,15 +10,15 @@ void CollisionBody::SetTransform(const Transform& transform)
 	_transform = transform;
 }
 
-Transform* CollisionBody::LastTransform()
-{
-	return &_lastTransform;
-}
-
-void CollisionBody::UpdateLastTransform()
-{
-	_lastTransform = _transform;
-}
+//Transform* CollisionBody::LastTransform()
+//{
+//	return &_lastTransform;
+//}
+//
+//void CollisionBody::UpdateLastTransform()
+//{
+//	_lastTransform = _transform;
+//}
 
 Collider* CollisionBody::Col() const
 {

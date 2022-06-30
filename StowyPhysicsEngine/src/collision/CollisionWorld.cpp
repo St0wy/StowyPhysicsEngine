@@ -49,7 +49,9 @@ void CollisionWorld::SendCollisionCallbacks(std::vector<Collision>& collisions, 
 {
 	for (Collision& collision : collisions)
 	{
-		_onCollision(collision, deltaTime);
+		if(_onCollision)
+			_onCollision(collision, deltaTime);
+		
 		collision.bodyA->OnCollision(collision, deltaTime);
 		collision.bodyB->OnCollision(collision, deltaTime);
 	}
