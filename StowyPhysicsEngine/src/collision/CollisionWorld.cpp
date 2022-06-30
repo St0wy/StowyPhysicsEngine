@@ -1,4 +1,4 @@
-#include "CollisionWorld.hpp"
+#include "collision/CollisionWorld.hpp"
 
 void CollisionWorld::AddCollisionBody(CollisionBody* body)
 {
@@ -68,7 +68,7 @@ void CollisionWorld::ResolveCollisions(const float deltaTime) const
 
 			if (!a->Col() || !b->Col()) continue;
 
-			const CollisionPoints points = a->Col()->TestCollision(
+			const Manifold points = a->Col()->TestCollision(
 				a->Trans(), b->Col(), b->Trans());
 
 			if (!points.hasCollision) continue;

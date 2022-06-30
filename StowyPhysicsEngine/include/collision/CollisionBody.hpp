@@ -6,6 +6,8 @@
 #include "Collider.hpp"
 #include "Collisions.hpp"
 
+struct Collision;
+
 struct CollisionBody
 {
 public:

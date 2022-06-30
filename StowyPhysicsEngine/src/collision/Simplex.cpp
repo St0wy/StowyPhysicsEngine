@@ -1,4 +1,4 @@
-#include "Simplex.hpp"
+#include "collision/Simplex.hpp"
 
 Simplex& Simplex::operator=(std::initializer_list<sf::Vector2f> list)
 {

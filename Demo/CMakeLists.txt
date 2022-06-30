@@ -1,6 +1,4 @@
-﻿# CMakeList.txt : CMake project for Formative10, include source and define
-# project specific logic here.
-cmake_minimum_required (VERSION 3.15)
+﻿cmake_minimum_required (VERSION 3.15)
 
 project("Demo" VERSION 0.1.0)
 
@@ -44,6 +42,7 @@ add_executable(${PROJECT_NAME})
 target_sources(${PROJECT_NAME}
     PRIVATE
     src/main.cpp
+    src/Game.cpp
 )
 
 # Add data dependencies

@@ -1,25 +1,25 @@
 // ReSharper disable CppClangTidyReadabilitySuspiciousCallArgument
-#include "Collider.hpp"
+#include "collision/Collider.hpp"
 
 #include <array>
 
-#include "Collisions.hpp"
-#include "CollisionPoints.hpp"
+#include "collision/Collisions.hpp"
+#include "collision/Manifold.hpp"
 #include "VecUtils.hpp"
 
-CollisionPoints BoxCollider::TestCollision(const Transform* transform, const Collider* collider,
+Manifold BoxCollider::TestCollision(const Transform* transform, const Collider* collider,
 	const Transform* colliderTransform) const
 {
 	return collider->TestCollision(colliderTransform, this, transform);
 }
 
-CollisionPoints BoxCollider::TestCollision(const Transform* transform, const BoxCollider* collider,
+Manifold BoxCollider::TestCollision(const Transform* transform, const BoxCollider* collider,
 	const Transform* boxTransform) const
 {
 	return algo::FindBoxBoxCollisionPoints(this, transform, collider, boxTransform);
 }
 
-CollisionPoints BoxCollider::TestCollision(const Transform* transform, const CircleCollider* collider,
+Manifold BoxCollider::TestCollision(const Transform* transform, const CircleCollider* collider,
 	const Transform* circleTransform) const
 {
 	return algo::FindBoxCircleCollisionPoints(this, transform, collider, circleTransform);
@@ -79,19 +79,19 @@ std::array<sf::Vector2f, 4> BoxCollider::GetTransformedVertices(const Transform&
 	};
 }
 
-CollisionPoints CircleCollider::TestCollision(const Transform* transform, const Collider* collider,
+Manifold CircleCollider::TestCollision(const Transform* transform, const Collider* collider,
 	const Transform* colliderTransform) const
 {
 	return collider->TestCollision(colliderTransform, this, transform);
 }
 
-CollisionPoints CircleCollider::TestCollision(const Transform* transform, const BoxCollider* collider,
+Manifold CircleCollider::TestCollision(const Transform* transform, const BoxCollider* collider,
 	const Transform* boxTransform) const
 {
 	return algo::FindCircleBoxCollisionPoints(this, transform, collider, boxTransform);
 }
 
-CollisionPoints CircleCollider::TestCollision(const Transform* transform, const CircleCollider* collider,
+Manifold CircleCollider::TestCollision(const Transform* transform, const CircleCollider* collider,
 	const Transform* circleTransform) const
 {
 	return algo::FindCircleCirlceCollisionPoints(this, transform, collider, circleTransform);

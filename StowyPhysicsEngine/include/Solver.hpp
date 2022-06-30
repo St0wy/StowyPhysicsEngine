@@ -1,7 +1,7 @@
 #pragma once
 
 #include <vector>
-#include "Collisions.hpp"
+#include "collision/Collision.hpp"
 
 class Solver
 {

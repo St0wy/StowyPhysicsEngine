@@ -1,4 +1,4 @@
-#include "CollisionBody.hpp"
+#include "collision/CollisionBody.hpp"
 
 Transform* CollisionBody::Trans()
 {

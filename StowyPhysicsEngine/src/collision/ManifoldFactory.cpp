@@ -1,12 +1,15 @@
-#include "Collisions.hpp"
+#include "collision/ManifoldFactory.hpp"
 
 #include <limits>
 #include <vector>
 
 #include "VecUtils.hpp"
-#include "Simplex.hpp"
 
-CollisionPoints algo::FindCircleCirlceCollisionPoints(
+#include "collision/Collider.hpp"
+#include "collision/Manifold.hpp"
+#include "collision/Simplex.hpp"
+
+Manifold algo::FindCircleCirlceCollisionPoints(
 	const CircleCollider* a, const Transform* ta,
 	const CircleCollider* b, const Transform* tb)
 {
@@ -21,7 +24,7 @@ CollisionPoints algo::FindCircleCirlceCollisionPoints(
 
 	if (Magnitude(aToB) > aRadius + bRadius)
 	{
-		return CollisionPoints::Empty();
+		return Manifold::Empty();
 	}
 
 	aPos += Normalized(aToB) * aRadius;
@@ -38,7 +41,7 @@ CollisionPoints algo::FindCircleCirlceCollisionPoints(
 	};
 }
 
-CollisionPoints algo::FindCircleBoxCollisionPoints(
+Manifold algo::FindCircleBoxCollisionPoints(
 	const CircleCollider* a,
 	const Transform* ta,
 	const BoxCollider* b,
@@ -48,13 +51,13 @@ CollisionPoints algo::FindCircleBoxCollisionPoints(
 	return FindBoxCircleCollisionPoints(b, tb, a, ta);
 }
 
-CollisionPoints algo::FindBoxCircleCollisionPoints(const BoxCollider* a, const Transform* ta, const CircleCollider* b,
+Manifold algo::FindBoxCircleCollisionPoints(const BoxCollider* a, const Transform* ta, const CircleCollider* b,
 	const Transform* tb)
 {
 	return Gjk(a, ta, b, tb);
 }
 
-CollisionPoints algo::FindBoxBoxCollisionPoints(
+Manifold algo::FindBoxBoxCollisionPoints(
 	const BoxCollider* a,
 	const Transform* ta,
 	const BoxCollider* b,
@@ -62,67 +65,6 @@ CollisionPoints algo::FindBoxBoxCollisionPoints(
 )
 {
 	return Gjk(a, ta, b, tb);
-}
-
-CollisionPoints algo::Sat(
-	const Collider* colliderA,
-	const Transform* transformA,
-	const Collider* colliderB,
-	const Transform* transformB
-)
-{
-	// Not working, but I keep the code just in case
-	//float overlap = std::numeric_limits<float>::max();
-	//sf::Vector2f smallestAxis;
-
-	//const auto verticesA = a->GetTransformedVertices(*ta);
-	//const auto verticesB = b->GetTransformedVertices(*tb);
-	//const auto axesA = BoxCollider::GetAxes(*ta, verticesA);
-	//const auto axesB = BoxCollider::GetAxes(*tb, verticesB);
-
-	//auto findCollision = [&](const sf::Vector2f& axis)
-	//{
-	//	const Projection pA = BoxCollider::Project(axis, verticesA);
-	//	const Projection pB = BoxCollider::Project(axis, verticesB);
-
-	//	if (!pA.Overlap(pB))
-	//	{
-	//		return false;
-	//	}
-
-	//	const float o = pA.GetOverlap(pB);
-
-	//	if (o < overlap)
-	//	{
-	//		overlap = o;
-	//		smallestAxis = axis;
-	//	}
-
-	//	return true;
-	//};
-
-	//for (const auto& axis : axesA)
-	//{
-	//	if (!findCollision(axis))
-	//	{
-	//		return CollisionPoints::Empty();
-	//	}
-	//}
-
-	//for (const auto& axis : axesB)
-	//{
-	//	if (!findCollision(axis))
-	//	{
-	//		return CollisionPoints::Empty();
-	//	}
-	//}
-
-	//CollisionPoints points;
-	//points.normal = smallestAxis;
-	//points.depth = overlap;
-	//points.hasCollision = true;
-
-	return {};
 }
 
 sf::Vector2f algo::Support(
@@ -137,7 +79,7 @@ sf::Vector2f algo::Support(
 		colliderB->FindFurthestPoint(transformB, -direction);
 }
 
-CollisionPoints algo::Gjk(
+Manifold algo::Gjk(
 	const Collider* colliderA,
 	const Transform* transformA,
 	const Collider* colliderB,
@@ -158,7 +100,7 @@ CollisionPoints algo::Gjk(
 
 		if (Dot(support, direction) <= 0)
 		{
-			return CollisionPoints::Empty();
+			return Manifold::Empty();
 		}
 
 		points.PushFront(support);
@@ -240,7 +182,7 @@ bool algo::Triangle(Simplex& points, sf::Vector2f& direction)
 	return false;
 }
 
-CollisionPoints algo::Epa(
+Manifold algo::Epa(
 	const Simplex& simplex,
 	const Collider* colliderA,
 	const Transform* transformA,
@@ -302,10 +244,10 @@ CollisionPoints algo::Epa(
 
 	if (minDistance == std::numeric_limits<float>::infinity())  // NOLINT(clang-diagnostic-float-equal)
 	{
-		return CollisionPoints::Empty();
+		return Manifold::Empty();
 	}
 
-	CollisionPoints points;
+	Manifold points;
 	points.normal = minNormal;
 	points.depth = minDistance + 0.001f;
 	points.hasCollision = true;

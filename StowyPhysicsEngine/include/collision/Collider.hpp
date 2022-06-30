@@ -2,7 +2,7 @@
 
 #include <array>
 
-#include "CollisionPoints.hpp"
+#include "Manifold.hpp"
 #include "Transform.hpp"
 #include "VecUtils.hpp"
 
@@ -15,19 +15,19 @@ struct Collider
 protected:
 	~Collider() = default;
 public:
-	virtual CollisionPoints TestCollision(
+	virtual Manifold TestCollision(
 		const Transform* transform,
 		const Collider* collider,
 		const Transform* colliderTransform
 	) const = 0;
 
-	virtual CollisionPoints TestCollision(
+	virtual Manifold TestCollision(
 		const Transform* transform,
 		const BoxCollider* collider,
 		const Transform* boxTransform
 	) const = 0;
 
-	virtual CollisionPoints TestCollision(
+	virtual Manifold TestCollision(
 		const Transform* transform,
 		const CircleCollider* collider,
 		const Transform* circleTransform
@@ -45,19 +45,19 @@ struct BoxCollider : Collider
 	float width;
 	float height;
 
-	CollisionPoints TestCollision(
+	Manifold TestCollision(
 		const Transform* transform,
 		const Collider* collider,
 		const Transform* colliderTransform
 	) const override;
 
-	CollisionPoints TestCollision(
+	Manifold TestCollision(
 		const Transform* transform,
 		const BoxCollider* collider,
 		const Transform* boxTransform
 	) const override;
 
-	CollisionPoints TestCollision(
+	Manifold TestCollision(
 		const Transform* transform,
 		const CircleCollider* collider,
 		const Transform* circleTransform
@@ -78,19 +78,19 @@ public:
 	sf::Vector2f center;
 	float radius;
 
-	CollisionPoints TestCollision(
+	Manifold TestCollision(
 		const Transform* transform,
 		const Collider* collider,
 		const Transform* colliderTransform
 	) const override;
 
-	CollisionPoints TestCollision(
+	Manifold TestCollision(
 		const Transform* transform,
 		const BoxCollider* collider,
 		const Transform* boxTransform
 	) const override;
 
-	CollisionPoints TestCollision(
+	Manifold TestCollision(
 		const Transform* transform,
 		const CircleCollider* collider,
 		const Transform* circleTransform

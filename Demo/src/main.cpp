@@ -1,9 +1,10 @@
-#include <iostream>
-#include "Vector2.hpp"
+#include <spdlog/spdlog.h>
+
+#include "Game.hpp"
 
 int main()
 {
-	Vector2 test(2, 2);
-	std::cout << "Hello World\n" << test << "\n";
-	std::cin.get();
+	spdlog::set_level(spdlog::level::debug);
+	Game game;
+	game.StartMainLoop();
 }

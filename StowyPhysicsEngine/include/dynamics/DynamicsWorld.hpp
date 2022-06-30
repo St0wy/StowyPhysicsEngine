@@ -2,7 +2,7 @@
 
 #include <SFML/System.hpp>
 
-#include "CollisionWorld.hpp"
+#include "collision/CollisionWorld.hpp"
 #include "Rigidbody.hpp"
 
 class DynamicsWorld : public CollisionWorld

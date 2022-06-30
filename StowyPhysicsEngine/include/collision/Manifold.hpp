@@ -2,7 +2,7 @@
 
 #include <SFML/System.hpp>
 
-struct CollisionPoints
+struct Manifold
 {
 public:
 	sf::Vector2f a;
@@ -11,7 +11,7 @@ public:
 	float depth{};
 	bool hasCollision{};
 
-	static CollisionPoints Empty()
+	static Manifold Empty()
 	{
 		return {
 			{0, 0},

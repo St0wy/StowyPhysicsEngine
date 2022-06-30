@@ -2,7 +2,7 @@
 
 #include <SFML/System.hpp>
 
-#include "CollisionBody.hpp"
+#include "collision/CollisionBody.hpp"
 
 struct Rigidbody : CollisionBody
 {

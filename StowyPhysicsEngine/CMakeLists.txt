@@ -18,20 +18,16 @@ add_library(${PROJECT_NAME} STATIC)
 
 target_sources(${PROJECT_NAME} 
     PRIVATE
-    src/Collider.cpp
-    src/CollisionBody.cpp
-    src/CollisionWorld.cpp
-    src/Collisions.cpp
-    src/DynamicsWorld.cpp
-    src/Edge.cpp
-    src/Game.cpp
-    src/ImpulseSolver.cpp
-    src/Projection.cpp
-    src/Rigidbody.cpp
-    src/Simplex.cpp
-    src/SmoothPositionSolver.cpp
-    src/Vector2.cpp
-    src/main.cpp
+    src/collision/Collider.cpp
+    src/collision/CollisionBody.cpp
+    src/collision/CollisionWorld.cpp
+    "src/collision/ManifoldFactory.cpp"
+    src/collision/Simplex.cpp
+    src/dynamics/DynamicsWorld.cpp
+    src/dynamics/ImpulseSolver.cpp
+    src/dynamics/Rigidbody.cpp
+    src/dynamics/SmoothPositionSolver.cpp
+    src/math/Vector2.cpp
 )
 
 target_include_directories(${PROJECT_NAME}
@@ -46,24 +42,21 @@ target_include_directories(${PROJECT_NAME}
 )
 
 set(public_headers
-    include/Collider.hpp
-    include/CollisionBody.hpp
-    include/CollisionPoints.hpp
-    include/CollisionWorld.hpp
-    include/Collisions.hpp
-    include/Consts.hpp
-    include/DynamicsWorld.hpp
-    include/Edge.hpp
-    include/Game.hpp
-    include/ImpulseSolver.hpp
-    include/Projection.hpp
-    include/Rigidbody.hpp
-    include/Simplex.hpp
-    include/SmoothPositionSolver.hpp
     include/Solver.hpp
     include/Transform.hpp
     include/VecUtils.hpp
-    include/Vector2.hpp
+    include/collision/Collider.hpp
+    include/collision/Collision.hpp
+    include/collision/CollisionBody.hpp
+    include/collision/CollisionWorld.hpp
+    include/collision/ManifoldFactory.hpp
+    include/collision/Manifold.hpp
+    include/collision/Simplex.hpp
+    include/dynamics/DynamicsWorld.hpp
+    include/dynamics/ImpulseSolver.hpp
+    include/dynamics/Rigidbody.hpp
+    include/dynamics/SmoothPositionSolver.hpp
+    include/math/Vector2.hpp
 )
 
 # not for MSVC

@@ -1,5 +1,10 @@
 #pragma once
 
+#include <cmath>
+#include <algorithm>
+
+#include "SFML/System/Vector2.hpp"
+
 template<typename T>
 sf::Vector2<T> Normalized(const sf::Vector2<T>& vec)
 {

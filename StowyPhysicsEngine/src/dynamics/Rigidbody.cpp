@@ -1,4 +1,4 @@
-#include "Rigidbody.hpp"
+#include "dynamics/Rigidbody.hpp"
 
 const sf::Vector2f& Rigidbody::GravityForce() const
 {

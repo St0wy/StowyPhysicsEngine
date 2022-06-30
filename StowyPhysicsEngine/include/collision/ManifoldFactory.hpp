@@ -1,6 +1,6 @@
 #pragma once
 
-#include "CollisionPoints.hpp"
+#include "Manifold.hpp"
 #include "Collider.hpp"
 #include "Simplex.hpp"
 #include "Transform.hpp"
@@ -9,28 +9,21 @@ struct CollisionBody;
 
 namespace algo
 {
-	CollisionPoints FindCircleCirlceCollisionPoints(
+	Manifold FindCircleCirlceCollisionPoints(
 		const CircleCollider* a, const Transform* ta,
 		const CircleCollider* b, const Transform* tb);
 
-	CollisionPoints FindCircleBoxCollisionPoints(
+	Manifold FindCircleBoxCollisionPoints(
 		const CircleCollider* a, const Transform* ta,
 		const BoxCollider* b, const Transform* tb);
 
-	CollisionPoints FindBoxCircleCollisionPoints(
+	Manifold FindBoxCircleCollisionPoints(
 		const BoxCollider* a, const Transform* ta,
 		const CircleCollider* b, const Transform* tb);
 
-	CollisionPoints FindBoxBoxCollisionPoints(
+	Manifold FindBoxBoxCollisionPoints(
 		const BoxCollider* a, const Transform* ta,
 		const BoxCollider* b, const Transform* tb);
-
-	CollisionPoints Sat(
-		const Collider* colliderA,
-		const Transform* transformA,
-		const Collider* colliderB,
-		const Transform* transformB
-	);
 
 	sf::Vector2f Support(
 		const Collider* colliderA,
@@ -40,7 +33,7 @@ namespace algo
 		const sf::Vector2f& direction
 	);
 
-	CollisionPoints Gjk(
+	Manifold Gjk(
 		const Collider* colliderA,
 		const Transform* transformA,
 		const Collider* colliderB,
@@ -53,7 +46,7 @@ namespace algo
 	bool Line(Simplex& points, sf::Vector2f& direction);
 	bool Triangle(Simplex& points, sf::Vector2f& direction);
 
-	CollisionPoints Epa(
+	Manifold Epa(
 		const Simplex& simplex,
 		const Collider* colliderA,
 		const Transform* transformA,
@@ -61,10 +54,3 @@ namespace algo
 		const Transform* transformB
 	);
 }
-
-struct Collision
-{
-	CollisionBody* bodyA{};
-	CollisionBody* bodyB{};
-	CollisionPoints points;
-};

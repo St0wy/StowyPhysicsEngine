@@ -1,7 +1,8 @@
-#include "ImpulseSolver.hpp"
+#include "dynamics/ImpulseSolver.hpp"
 
-#include "Rigidbody.hpp"
+#include "dynamics/Rigidbody.hpp"
 #include "VecUtils.hpp"
+#include "collision/Collision.hpp"
 
 void ImpulseSolver::Solve(const std::vector<Collision>& collisions, float deltaTime)
 {

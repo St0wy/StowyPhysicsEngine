@@ -1,4 +1,6 @@
-#include "DynamicsWorld.hpp"
+#include "dynamics/DynamicsWorld.hpp"
+
+#include "collision/CollisionBody.hpp"
 
 void DynamicsWorld::AddRigidbody(Rigidbody* rigidbody)
 {
