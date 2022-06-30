@@ -42,7 +42,7 @@ add_executable(${PROJECT_NAME})
 target_sources(${PROJECT_NAME}
     PRIVATE
     src/main.cpp
-    src/Game.cpp
+    "src/DemoBalls.cpp"
  "src/Entity.cpp" "src/Sphere.cpp")
 
 # Add data dependencies

@@ -1,10 +1,10 @@
 #include <spdlog/spdlog.h>
 
-#include "Game.hpp"
+#include "DemoBalls.hpp"
 
 int main()
 {
 	spdlog::set_level(spdlog::level::debug);
-	Game game;
+	DemoBalls game;
 	game.StartMainLoop();
 }

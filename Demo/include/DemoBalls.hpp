@@ -7,10 +7,10 @@
 #include "dynamics/ImpulseSolver.hpp"
 #include "dynamics/SmoothPositionSolver.hpp"
 
-class Game
+class DemoBalls
 {
 public:
-	Game();
+	DemoBalls();
 
 	void StartMainLoop();
 
