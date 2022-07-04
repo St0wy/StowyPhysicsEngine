@@ -150,6 +150,11 @@ Vector2 Vector2::operator/=(const float scalar)
 	return *this;
 }
 
+bool Vector2::operator==(const Vector2& scalar) const
+{
+	return (x == scalar.x && y == scalar.y);
+}
+
 Vector2 Vector2::operator-() const
 {
 	return { -x, -y };

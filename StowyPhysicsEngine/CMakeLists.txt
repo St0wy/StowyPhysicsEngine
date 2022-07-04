@@ -28,7 +28,7 @@ target_sources(${PROJECT_NAME}
     src/dynamics/Rigidbody.cpp
     src/dynamics/SmoothPositionSolver.cpp
     src/math/Vector2.cpp
- "src/collision/Manifold.cpp")
+ "src/collision/Manifold.cpp" )
 
 target_include_directories(${PROJECT_NAME}
     PRIVATE

@@ -4,7 +4,7 @@
 
 #include <spdlog/spdlog.h>
 
-Box::Box(DynamicsWorld& dynWorld, const Vector2 size, const Vector2 pos)
+Box::Box(DynamicsWorld& dynWorld, const Vector2 size, const Vector2 pos, const bool takesGravity)
 	: Entity(dynWorld, pos),
 	_shape(SpeVecToSfml(size)),
 	_collider(std::make_unique<AabbCollider>())
@@ -12,13 +12,10 @@ Box::Box(DynamicsWorld& dynWorld, const Vector2 size, const Vector2 pos)
 	const Vector2 halfSize = size / 2.0f;
 	_collider->halfWidth = halfSize.x;
 	_collider->halfHeight = halfSize.y;
-	_dynWorld.AddRigidbody(RigidBody());
 	_rb->SetCollider(_collider.get());
+	_rb->SetTakesGravity(takesGravity);
 	_shape.setOrigin(halfSize.x, halfSize.y);
-	_rb->SetCollisionCallback([&](const Collision& col, float num)
-	{
-		_shape.setFillColor(sf::Color::Red);
-	});
+	_dynWorld.AddRigidbody(RigidBody());
 }
 
 Box::~Box()
@@ -26,7 +23,7 @@ Box::~Box()
 	_dynWorld.RemoveCollisionBody(RigidBody());
 }
 
-const sf::RectangleShape& Box::Shape() const
+sf::RectangleShape& Box::Shape()
 {
 	return _shape;
 }

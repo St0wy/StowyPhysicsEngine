@@ -66,6 +66,10 @@ bool Rigidbody::TakesGravity() const
 void Rigidbody::SetTakesGravity(const bool takesGravity)
 {
 	_takesGravity = takesGravity;
+	if (!_takesGravity)
+	{
+		SetGravityForce(Vector2(0, 0));
+	}
 }
 
 float Rigidbody::StaticFriction() const

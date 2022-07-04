@@ -113,7 +113,7 @@ public:
 	) const override;
 
 	Manifold TestCollision(const Transform* transform, const AabbCollider* collider,
-		const Transform* circleTransform) const override;
+		const Transform* aabbTransform) const override;
 
 	[[nodiscard]] Vector2 FindFurthestPoint(
 		const Transform* transform,

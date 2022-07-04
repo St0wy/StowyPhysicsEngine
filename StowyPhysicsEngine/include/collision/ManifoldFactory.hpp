@@ -29,6 +29,10 @@ namespace algo
 		const AabbCollider* a, const Transform* ta,
 		const AabbCollider* b, const Transform* tb);
 
+	Manifold FindAabbCircleCollisionPoints(
+		const AabbCollider* a, const Transform* ta,
+		const CircleCollider* b, const Transform* tb);
+
 	Vector2 Support(
 		const Collider* colliderA,
 		const Transform* transformA,

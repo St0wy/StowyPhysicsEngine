@@ -24,35 +24,20 @@ DemoBallsAndCube::DemoBallsAndCube()
 	_smoothPositionSolver = std::make_unique<SmoothPositionSolver>();
 	_world.AddSolver(_impulseSolver.get());
 	_world.AddSolver(_smoothPositionSolver.get());
-	_world.SetWorldGravity({ 0,0 });
+	//_world.SetWorldGravity({ 0,0 });
 }
 
 void DemoBallsAndCube::StartMainLoop()
 {
-	_entities.push_back(
-		std::make_unique<Box>(
-			_world,
-			Vector2(1.f, 10.0f),
-			Vector2(-3.0f, 3.0f)
-			)
-	);
-	const Box* lefty = (Box*)_entities[_entities.size() - 1].get();
-	lefty->Push(Vector2(1.0f, 0.0f));
-	//lefty->RigidBody()->SetIsKinematic(false);
-
-	_entities.push_back(
-		std::make_unique<Box>(
-			_world,
-			Vector2(1.f, 10.0f),
-			Vector2(0.0f, 3.0f)
-			)
-	);
-	const Entity* mabox = _entities[_entities.size() - 1].get();
-	mabox->Push(Vector2(-1.0f, -0.2f));
-
-	//_entities.push_back(
-	//	std::make_unique<Circle>(_world, 1.0f, Vector2(3.0f, 3.0f)));
-	//const Entity* maball = _entities[_entities.size() - 1].get();
+	auto ground = std::make_unique<Box>(
+		_world,
+		Vector2(20.f, 1.0f),
+		Vector2(0.0f, -5.0f),
+		false
+		);
+	ground->RigidBody()->SetIsKinematic(false);
+	ground->RigidBody()->SetTakesGravity(false);
+	_entities.push_back(std::move(ground));
 
 	spdlog::debug("Starting main loop");
 
@@ -70,10 +55,13 @@ void DemoBallsAndCube::StartMainLoop()
 			}
 			else if (event.type == sf::Event::MouseButtonPressed)
 			{
+				if (!sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)) break;
 				auto posi = sf::Mouse::getPosition(_window);
 				auto posf = _window.mapPixelToCoords(posi);
+				auto physicsPos = SfmlPosToSpe(posf);
+				spdlog::debug("Spawn pos : {}", physicsPos);
 				_entities.push_back(
-					std::make_unique<Circle>(_world, 1.0f, SfmlPosToSpe(posf)));
+					std::make_unique<Circle>(_world, 1.0f, physicsPos));
 			}
 		}
 

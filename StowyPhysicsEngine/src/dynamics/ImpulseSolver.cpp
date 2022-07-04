@@ -29,7 +29,7 @@ void ImpulseSolver::Solve(const std::vector<Collision>& collisions, float deltaT
 
 		// Impulse
 
-		const float e = std::min(aBody ? aBody->Restitution() : 1.0f, bBody ? bBody->Restitution() : 1.0f);
+		const float e = (aBody ? aBody->Restitution() : 1.0f) * (bBody ? bBody->Restitution() : 1.0f);
 		const float j = -(1.0f + e) * velocityAlongNormal / (aInvMass + bInvMass);
 
 		const Vector2 impulse = j * manifold.normal;

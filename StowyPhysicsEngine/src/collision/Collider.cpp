@@ -107,10 +107,9 @@ Manifold CircleCollider::TestCollision(const Transform* transform, const CircleC
 }
 
 Manifold CircleCollider::TestCollision(const Transform* transform, const AabbCollider* collider,
-	const Transform* circleTransform) const
+	const Transform* aabbTransform) const
 {
-	// TODO : Implement
-	return Manifold::Empty();
+	return algo::FindAabbCircleCollisionPoints(collider, aabbTransform, this, transform);
 }
 
 Vector2 CircleCollider::FindFurthestPoint(const Transform* transform, const Vector2& direction) const
@@ -134,8 +133,7 @@ Manifold AabbCollider::TestCollision(const Transform* transform, const BoxCollid
 Manifold AabbCollider::TestCollision(const Transform* transform, const CircleCollider* collider,
 	const Transform* circleTransform) const
 {
-	// TODO : Implement
-	return Manifold::Empty();
+	return algo::FindAabbCircleCollisionPoints(this, transform, collider, circleTransform);
 }
 
 Manifold AabbCollider::TestCollision(const Transform* transform, const AabbCollider* collider,

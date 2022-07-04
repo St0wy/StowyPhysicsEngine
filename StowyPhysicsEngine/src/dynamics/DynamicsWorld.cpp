@@ -22,13 +22,13 @@ void DynamicsWorld::ApplyGravity() const
 
 		// ReSharper disable once CppCStyleCast
 		const auto rigidbody = (Rigidbody*)body;
-		rigidbody->ApplyForce(rigidbody->GravityForce() * rigidbody->Mass());
+		const Vector2 force = rigidbody->GravityForce() * rigidbody->Mass();
+		rigidbody->ApplyForce(force);
 	}
 }
 
 void DynamicsWorld::MoveBodies(const float deltaTime) const
 {
-	std::size_t count = 0;
 	for (CollisionBody* body : _bodies)
 	{
 		if (!body->IsDynamic()) continue;
@@ -37,8 +37,6 @@ void DynamicsWorld::MoveBodies(const float deltaTime) const
 		const auto rigidbody = (Rigidbody*)body;
 
 		const Vector2 vel = rigidbody->Velocity() + rigidbody->Force() * rigidbody->InvMass() * deltaTime;
-		if (count++ % 2 == 1)
-			//spdlog::debug(vel);
 		rigidbody->SetVelocity(vel);
 
 		//rigidbody->UpdateLastTransform();

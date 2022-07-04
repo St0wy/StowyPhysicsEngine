@@ -82,6 +82,7 @@ void CollisionWorld::ResolveCollisions(const float deltaTime) const
 
 
 			if (!manifold.hasCollision) continue;
+			//spdlog::debug(manifold);
 
 			if (a->IsTrigger() || b->IsTrigger())
 			{

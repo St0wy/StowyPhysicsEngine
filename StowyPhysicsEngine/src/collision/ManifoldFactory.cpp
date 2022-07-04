@@ -110,6 +110,79 @@ Manifold algo::FindAabbAabbCollisionPoints(
 	return { normal, yOverlap };
 }
 
+Manifold algo::FindAabbCircleCollisionPoints(
+	const AabbCollider* a, const Transform* ta,
+	const CircleCollider* b, const Transform* tb)
+{
+	// Represent AABBs with top left (min) and bottom right (max) points
+	const Vector2 transformedCenterA = ta->position + a->center;
+	const float scaledHWidth = a->halfWidth * ta->scale.x;
+	const float scaledHHeight = a->halfHeight * ta->scale.y;
+	const Vector2 aMin = { transformedCenterA.x - scaledHWidth, transformedCenterA.y - scaledHHeight };
+	const Vector2 aMax = { transformedCenterA.x + scaledHWidth,transformedCenterA.y + scaledHHeight };
+
+	const Vector2 transformedCenterB = tb->position + b->center;
+	const float scaledRadius = b->radius * tb->scale.Major();
+
+	const Vector2 aToB = transformedCenterB - transformedCenterA;
+	Vector2 closest = aToB;
+
+	const float xExtent = (aMax.x - aMin.x) / 2.0f;
+	const float yExtent = (aMax.y - aMin.y) / 2.0f;
+
+	// Clamp point to the edge of the AABB
+	closest.x = std::clamp(closest.x, -xExtent, xExtent);
+	closest.y = std::clamp(closest.y, -yExtent, yExtent);
+
+	bool isCircleInside = false;
+
+	// Circle is inside the AABB, so we need to clamp the circle's center to the edge
+	if (aToB == closest)
+	{
+		isCircleInside = true;
+
+		// Find closest axis
+		if (std::abs(aToB.x) > std::abs(aToB.y))
+		{
+			// Clamp to the closest extent
+			if (closest.x > 0)
+			{
+				closest.x = xExtent;
+			}
+			else
+			{
+				closest.x = -xExtent;
+			}
+		}
+		else
+		{
+			if (closest.y > 0)
+			{
+				closest.y = yExtent;
+			}
+			else
+			{
+				closest.y = -yExtent;
+			}
+		}
+	}
+
+	Vector2 normal = aToB - closest;
+	float d = normal.SqrMagnitude();
+	if (d > scaledRadius * scaledRadius && !isCircleInside) return Manifold::Empty();
+
+	d = std::sqrt(d);
+
+	// Collision normal needs to be flipped to point outside if circle was
+	// inside the AABB
+	if (isCircleInside)
+	{
+		return { -normal, scaledRadius - d };
+	}
+
+	return { normal, scaledRadius - d };
+}
+
 Vector2 algo::Support(
 	const Collider* colliderA,
 	const Transform* transformA,
@@ -281,10 +354,5 @@ Manifold algo::Epa(
 		return Manifold::Empty();
 	}
 
-	Manifold points;
-	points.normal = minNormal;
-	points.depth = minDistance;
-	points.hasCollision = true;
-
-	return points;
+	return { minNormal, minDistance };
 }

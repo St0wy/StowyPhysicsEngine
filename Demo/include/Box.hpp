@@ -8,10 +8,10 @@
 class Box final : public Entity
 {
 public:
-	Box(DynamicsWorld& dynWorld, Vector2 size, Vector2 pos);
+	Box(DynamicsWorld& dynWorld, Vector2 size, Vector2 pos, bool takesGravity);
 	~Box() override;
 
-	const sf::RectangleShape& Shape() const;
+	sf::RectangleShape& Shape();
 
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 private:
