@@ -7,7 +7,7 @@
 Box::Box(DynamicsWorld& dynWorld, const Vector2 size, const Vector2 pos)
 	: Entity(dynWorld, pos),
 	_shape(SpeVecToSfml(size)),
-	_collider(std::make_unique<BoxCollider>())
+	_collider(std::make_unique<AabbCollider>())
 {
 	const Vector2 halfSize = size / 2.0f;
 	_collider->halfWidth = halfSize.x;

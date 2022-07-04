@@ -16,6 +16,7 @@ Entity::Entity(DynamicsWorld& dynWorld, const Vector2 pos)
 	_rb->SetTransform({ pos, Vector2(1, 1), 0 });
 	_rb->SetTakesGravity(true);
 	_rb->SetIsKinematic(true);
+	_rb->SetRestitution(1.0f);
 }
 
 Rigidbody* Entity::RigidBody() const
@@ -25,7 +26,9 @@ Rigidbody* Entity::RigidBody() const
 
 void Entity::Push(const Vector2 force) const
 {
-	_rb->ApplyForce(force);
+	auto vel = _rb->Velocity();
+	vel += force;
+	_rb->SetVelocity(force);
 }
 
 void Entity::Update(sf::Time deltaTime)

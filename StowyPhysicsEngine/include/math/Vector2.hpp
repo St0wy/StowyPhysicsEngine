@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include "spdlog/fmt/ostr.h"
 
 struct Vector2
 {

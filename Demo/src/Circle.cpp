@@ -1,6 +1,6 @@
-#include "Sphere.hpp"
+#include "Circle.hpp"
 
-Sphere::Sphere(DynamicsWorld& dynWorld, const float radius, const Vector2 pos)
+Circle::Circle(DynamicsWorld& dynWorld, const float radius, const Vector2 pos)
 	: Entity(dynWorld, pos),
 	_shape(radius),
 	_collider(std::make_unique<CircleCollider>())
@@ -11,12 +11,12 @@ Sphere::Sphere(DynamicsWorld& dynWorld, const float radius, const Vector2 pos)
 	_shape.setOrigin(radius, radius);
 }
 
-Sphere::~Sphere()
+Circle::~Circle()
 {
 	_dynWorld.RemoveCollisionBody(RigidBody());
 }
 
-void Sphere::draw(sf::RenderTarget& target, sf::RenderStates states) const
+void Circle::draw(sf::RenderTarget& target, sf::RenderStates states) const
 {
 	states.transform *= getTransform();
 	target.draw(_shape, states);

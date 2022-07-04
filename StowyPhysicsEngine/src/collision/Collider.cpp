@@ -27,6 +27,13 @@ Manifold BoxCollider::TestCollision(
 	return algo::FindBoxCircleCollisionPoints(this, transform, collider, circleTransform);
 }
 
+Manifold BoxCollider::TestCollision(const Transform* transform, const AabbCollider* collider,
+	const Transform* circleTransform) const
+{
+	// TODO : Implement
+	return Manifold::Empty();
+}
+
 Vector2 BoxCollider::FindFurthestPoint(const Transform* transform, const Vector2& direction) const
 {
 	Vector2 maxPoint;
@@ -99,7 +106,45 @@ Manifold CircleCollider::TestCollision(const Transform* transform, const CircleC
 	return algo::FindCircleCirlceCollisionPoints(this, transform, collider, circleTransform);
 }
 
+Manifold CircleCollider::TestCollision(const Transform* transform, const AabbCollider* collider,
+	const Transform* circleTransform) const
+{
+	// TODO : Implement
+	return Manifold::Empty();
+}
+
 Vector2 CircleCollider::FindFurthestPoint(const Transform* transform, const Vector2& direction) const
 {
 	return center + transform->position + radius * direction.Normalized() * transform->scale.Major();
+}
+
+Manifold AabbCollider::TestCollision(const Transform* transform, const Collider* collider,
+	const Transform* colliderTransform) const
+{
+	return collider->TestCollision(colliderTransform, this, transform);
+}
+
+Manifold AabbCollider::TestCollision(const Transform* transform, const BoxCollider* collider,
+	const Transform* boxTransform) const
+{
+	// TODO : Implement
+	return Manifold::Empty();
+}
+
+Manifold AabbCollider::TestCollision(const Transform* transform, const CircleCollider* collider,
+	const Transform* circleTransform) const
+{
+	// TODO : Implement
+	return Manifold::Empty();
+}
+
+Manifold AabbCollider::TestCollision(const Transform* transform, const AabbCollider* collider,
+	const Transform* aabbTransform) const
+{
+	return algo::FindAabbAabbCollisionPoints(this, transform, collider, aabbTransform);
+}
+
+Vector2 AabbCollider::FindFurthestPoint(const Transform* transform, const Vector2& direction) const
+{
+	return Vector2();
 }

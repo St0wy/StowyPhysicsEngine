@@ -25,6 +25,10 @@ namespace algo
 		const BoxCollider* a, const Transform* ta,
 		const BoxCollider* b, const Transform* tb);
 
+	Manifold FindAabbAabbCollisionPoints(
+		const AabbCollider* a, const Transform* ta,
+		const AabbCollider* b, const Transform* tb);
+
 	Vector2 Support(
 		const Collider* colliderA,
 		const Transform* transformA,
@@ -40,11 +44,11 @@ namespace algo
 		const Transform* transformB
 	);
 
-	bool NextSimplex(Simplex& points, Vector2& direction);
+	bool NextSimplex(const Simplex& points, Vector2& direction);
 	bool SameDirection(Vector2 direction, Vector2 ao);
 
 	bool Line(const Simplex& points, Vector2& direction);
-	bool Triangle(Simplex& points, Vector2& direction);
+	bool Triangle(const Simplex& points, Vector2& direction);
 
 	Manifold Epa(
 		const Simplex& simplex,

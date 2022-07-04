@@ -3,9 +3,11 @@
 #include "dynamics/Rigidbody.hpp"
 #include "collision/Collision.hpp"
 
+#include <spdlog/spdlog.h>
+
 void ImpulseSolver::Solve(const std::vector<Collision>& collisions, float deltaTime)
 {
-	for (const auto& [bodyA, bodyB, points] : collisions)
+	for (const auto& [bodyA, bodyB, manifold] : collisions)
 	{
 		// ReSharper disable CppCStyleCast
 		Rigidbody* aBody = bodyA->IsDynamic() ? (Rigidbody*)bodyA : nullptr;
@@ -14,20 +16,23 @@ void ImpulseSolver::Solve(const std::vector<Collision>& collisions, float deltaT
 
 		Vector2 aVel = aBody ? aBody->Velocity() : Vector2(0, 0);
 		Vector2 bVel = bBody ? bBody->Velocity() : Vector2(0, 0);
-		Vector2 rVel = bVel - aVel;
-		float nVel = rVel.Dot(points.normal);
+		Vector2 relativeVelocity = bVel - aVel;
 
-		if (nVel >= 0) continue;
+		// Calculate relative velocity in terms of the normal direction
+		float velocityAlongNormal = relativeVelocity.Dot(manifold.normal);
 
-		const float aInvMass = aBody ? aBody->InvMass() : 0.0f;
-		const float bInvMass = bBody ? bBody->InvMass() : 0.0f;
+		// Do not resolve if velocities are separating
+		if (velocityAlongNormal >= 0) continue;
+
+		const float aInvMass = aBody ? aBody->InvMass() : 1.0f;
+		const float bInvMass = bBody ? bBody->InvMass() : 1.0f;
 
 		// Impulse
 
-		const float e = (aBody ? aBody->Restitution() : 0.0f) * (bBody ? bBody->Restitution() : 0.0f);
-		const float j = -(1.0f + e) * nVel / (aInvMass + bInvMass);
+		const float e = std::min(aBody ? aBody->Restitution() : 1.0f, bBody ? bBody->Restitution() : 1.0f);
+		const float j = -(1.0f + e) * velocityAlongNormal / (aInvMass + bInvMass);
 
-		const Vector2 impulse = j * points.normal;
+		const Vector2 impulse = j * manifold.normal;
 
 		if (aBody ? aBody->IsKinematic() : false)
 		{
@@ -40,11 +45,11 @@ void ImpulseSolver::Solve(const std::vector<Collision>& collisions, float deltaT
 		}
 
 		// Friction
-		rVel = bVel - aVel;
-		nVel = rVel.Dot(points.normal);
+		relativeVelocity = bVel - aVel;
+		velocityAlongNormal = relativeVelocity.Dot(manifold.normal);
 
-		Vector2 tangent = Vector2::Normalize(rVel - nVel * points.normal);
-		const float fVel = rVel.Dot(tangent);
+		Vector2 tangent = Vector2::Normalize(relativeVelocity - velocityAlongNormal * manifold.normal);
+		const float fVel = relativeVelocity.Dot(tangent);
 
 		const float aSf = aBody ? aBody->StaticFriction() : 0.0f;
 		const float bSf = bBody ? bBody->StaticFriction() : 0.0f;
@@ -56,6 +61,7 @@ void ImpulseSolver::Solve(const std::vector<Collision>& collisions, float deltaT
 		Vector2 friction;
 		if (std::abs(f) < j * mu)
 		{
+
 			friction = f * tangent;
 		}
 		else
@@ -68,7 +74,6 @@ void ImpulseSolver::Solve(const std::vector<Collision>& collisions, float deltaT
 		{
 			aBody->SetVelocity(aVel - friction * aInvMass);
 		}
-
 
 		if (bBody ? bBody->IsKinematic() : false)
 		{

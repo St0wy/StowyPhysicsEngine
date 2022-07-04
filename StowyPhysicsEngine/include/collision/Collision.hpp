@@ -6,5 +6,5 @@ struct Collision
 {
 	CollisionBody* bodyA{};
 	CollisionBody* bodyB{};
-	Manifold points;
+	Manifold manifold;
 };

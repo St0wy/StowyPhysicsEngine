@@ -2,7 +2,7 @@
 
 Rigidbody::Rigidbody()
 	:
-	_mass(1),
+	_invMass(1),
 	_takesGravity(true)
 {
 	_isDynamic = true;
@@ -45,17 +45,17 @@ void Rigidbody::SetVelocity(const Vector2& velocity)
 
 float Rigidbody::Mass() const
 {
-	return _mass;
+	return 1.0f / _invMass;
 }
 
 float Rigidbody::InvMass() const
 {
-	return 1.0f / Mass();
+	return _invMass;
 }
 
 void Rigidbody::SetMass(const float mass)
 {
-	_mass = mass;
+	_invMass = 1.0f / mass;
 }
 
 bool Rigidbody::TakesGravity() const

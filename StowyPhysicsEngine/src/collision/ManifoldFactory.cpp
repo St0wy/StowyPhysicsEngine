@@ -35,8 +35,7 @@ Manifold algo::FindCircleCirlceCollisionPoints(
 		aPos,
 		bPos,
 		collisionPointsDistance.Normalized(),
-		collisionPointsDistance.Magnitude(),
-		true
+		collisionPointsDistance.Magnitude()
 	};
 }
 
@@ -64,6 +63,51 @@ Manifold algo::FindBoxBoxCollisionPoints(
 )
 {
 	return Gjk(a, ta, b, tb);
+}
+
+Manifold algo::FindAabbAabbCollisionPoints(
+	const AabbCollider* a, const Transform* ta,
+	const AabbCollider* b, const Transform* tb)
+{
+	// Represent AABBs with top left (min) and bottom right (max) points
+	const Vector2 transformedCenterA = ta->position + a->center;
+	float scaledHWidth = a->halfWidth * ta->scale.x;
+	float scaledHHeight = a->halfHeight * ta->scale.y;
+	const Vector2 aMin = { transformedCenterA.x - scaledHWidth, transformedCenterA.y - scaledHHeight };
+	const Vector2 aMax = { transformedCenterA.x + scaledHWidth,transformedCenterA.y + scaledHHeight };
+
+	const Vector2 transformedCenterB = tb->position + b->center;
+	scaledHWidth = b->halfWidth * tb->scale.x;
+	scaledHHeight = b->halfHeight * tb->scale.y;
+	const Vector2 bMin = { transformedCenterB.x - scaledHWidth, transformedCenterB.y - scaledHHeight };
+	const Vector2 bMax = { transformedCenterB.x + scaledHWidth, transformedCenterB.y + scaledHHeight };
+
+	const Vector2 aToB = transformedCenterB - transformedCenterA;
+	const float aExtentX = (aMax.x - aMin.x) / 2.0f;
+	const float bExtentX = (bMax.x - bMin.x) / 2.0f;
+	const float xOverlap = aExtentX + bExtentX - std::abs(aToB.x);
+
+	// Overlap test on x axis
+	if (xOverlap <= 0.0f) return Manifold::Empty();
+
+	const float aExtentY = (aMax.y - aMin.y) / 2.0f;
+	const float bExtentY = (bMax.y - aMin.y) / 2.0f;
+	const float yOverlap = aExtentY + bExtentY - std::abs(aToB.y);
+
+	// Overlap test on y axis
+	if (yOverlap <= 0.0f) return Manifold::Empty();
+
+	// Find out which axis is axis of least penetration
+	if (xOverlap > yOverlap)
+	{
+		// Point towards B knowing that aToB points from A to B
+		const Vector2 normal = aToB.x < 0.0f ? Vector2(-1.0f, 0.0f) : Vector2(1, 0);
+		return { normal, xOverlap };
+	}
+
+	// Point towards B knowing that aToB points from A to B
+	const Vector2 normal = aToB.y < 0.0f ? Vector2(0.0f, -1.0f) : Vector2(0, 1);
+	return { normal, yOverlap };
 }
 
 Vector2 algo::Support(
@@ -116,7 +160,7 @@ Manifold algo::Gjk(
 	}
 }
 
-bool algo::NextSimplex(Simplex& points, Vector2& direction)
+bool algo::NextSimplex(const Simplex& points, Vector2& direction)
 {
 	switch (points.Size())
 	{
@@ -142,11 +186,11 @@ bool algo::Line(const Simplex& points, Vector2& direction)
 	return false;
 }
 
-bool algo::Triangle(Simplex& points, Vector2& direction)
+bool algo::Triangle(const Simplex& points, Vector2& direction)
 {
-	Vector2 a = points[0];
-	Vector2 b = points[1];
-	Vector2 c = points[2];
+	const Vector2 a = points[0];
+	const Vector2 b = points[1];
+	const Vector2 c = points[2];
 
 	const Vector2 ab = Vector2::Normalize(b - a);
 	const Vector2 ac = Vector2::Normalize(c - a);
@@ -191,7 +235,7 @@ Manifold algo::Epa(
 	{
 		if (iterations++ > maxIter)
 		{
-			spdlog::debug("Too many iterations. Breaking.");
+			spdlog::info("Too many iterations. Breaking.");
 			break;
 		}
 

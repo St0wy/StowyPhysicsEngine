@@ -2,7 +2,7 @@
 
 #include "Solver.hpp"
 
-class ImpulseSolver : public Solver
+class ImpulseSolver final : public Solver
 {
 public:
 	void Solve(const std::vector<Collision>& collisions, float deltaTime) override;

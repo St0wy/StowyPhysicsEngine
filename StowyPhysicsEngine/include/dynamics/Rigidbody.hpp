@@ -38,7 +38,7 @@ private:
 	Vector2 _force;
 	Vector2 _velocity;
 
-	float _mass{};
+	float _invMass{};
 	bool _takesGravity{};
 
 	float _staticFriction{};

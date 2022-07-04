@@ -5,11 +5,11 @@
 #include "Entity.hpp"
 #include "collision/Collider.hpp"
 
-class Sphere : public Entity
+class Circle : public Entity
 {
 public:
-	Sphere(DynamicsWorld& dynWorld, float radius, Vector2 pos);
-	~Sphere() override;
+	Circle(DynamicsWorld& dynWorld, float radius, Vector2 pos);
+	~Circle() override;
 
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 private:

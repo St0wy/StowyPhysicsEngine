@@ -4,7 +4,7 @@
 
 #include "Consts.hpp"
 #include "MathUtils.hpp"
-#include "Sphere.hpp"
+#include "Circle.hpp"
 
 DemoBalls::DemoBalls()
 	: _window(
@@ -29,13 +29,13 @@ DemoBalls::DemoBalls()
 void DemoBalls::StartMainLoop()
 {
 	_entities.push_back(
-		std::make_unique<Sphere>(_world, 1.0f, Vector2(-3.0f, 3.0f)));
+		std::make_unique<Circle>(_world, 1.0f, Vector2(-3.0f, 3.0f)));
 	const Entity* staticBall = _entities[_entities.size() - 1].get();
 	staticBall->RigidBody()->SetIsKinematic(false);
 	_entities.push_back(
-		std::make_unique<Sphere>(_world, 1.0f, Vector2(0.0f, 3.0f)));
+		std::make_unique<Circle>(_world, 1.0f, Vector2(0.0f, 3.0f)));
 	_entities.push_back(
-		std::make_unique<Sphere>(_world, 1.0f, Vector2(3.0f, 3.0f)));
+		std::make_unique<Circle>(_world, 1.0f, Vector2(3.0f, 3.0f)));
 
 	const Entity* maball = _entities[_entities.size() - 1].get();
 
@@ -62,7 +62,7 @@ void DemoBalls::StartMainLoop()
 				posf.x -= radius;
 				posf.y -= radius;
 				_entities.push_back(
-					std::make_unique<Sphere>(_world, radius, SfmlPosToSpe(posf)));
+					std::make_unique<Circle>(_world, radius, SfmlPosToSpe(posf)));
 			}
 		}
 
