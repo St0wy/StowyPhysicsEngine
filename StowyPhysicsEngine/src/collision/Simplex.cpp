@@ -1,6 +1,6 @@
 #include "collision/Simplex.hpp"
 
-Simplex& Simplex::operator=(std::initializer_list<sf::Vector2f> list)
+Simplex& Simplex::operator=(std::initializer_list<Vector2> list)
 {
 	for (auto v = list.begin(); v != list.end(); v++)
 	{
@@ -11,12 +11,12 @@ Simplex& Simplex::operator=(std::initializer_list<sf::Vector2f> list)
 	return *this;
 }
 
-sf::Vector2f Simplex::operator[](const std::size_t i) const
+Vector2 Simplex::operator[](const std::size_t i) const
 {
 	return _points[i];
 }
 
-void Simplex::PushFront(const sf::Vector2f point)
+void Simplex::PushFront(const Vector2 point)
 {
 	_points = { point, _points[0], _points[1] };
 	IncrementSize();
@@ -32,12 +32,12 @@ void Simplex::IncrementSize()
 	_size = std::min(_size + 1, MAX_SIZE);
 }
 
-std::array<sf::Vector2f, Simplex::MAX_SIZE>::const_iterator Simplex::End() const
+std::array<Vector2, Simplex::MAX_SIZE>::const_iterator Simplex::End() const
 {
 	return _points.end();
 }
 
-std::array<sf::Vector2f, Simplex::MAX_SIZE>::const_iterator Simplex::Begin() const
+std::array<Vector2, Simplex::MAX_SIZE>::const_iterator Simplex::Begin() const
 {
 	return _points.begin();
 }

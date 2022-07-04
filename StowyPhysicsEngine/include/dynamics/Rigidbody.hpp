@@ -1,7 +1,5 @@
 #pragma once
 
-#include <SFML/System.hpp>
-
 #include "collision/CollisionBody.hpp"
 
 struct Rigidbody : public CollisionBody
@@ -9,15 +7,15 @@ struct Rigidbody : public CollisionBody
 public:
 	Rigidbody();
 
-	[[nodiscard]] const sf::Vector2f& GravityForce() const;
-	void SetGravityForce(const sf::Vector2f& gravityForce);
+	[[nodiscard]] const Vector2& GravityForce() const;
+	void SetGravityForce(const Vector2& gravityForce);
 
-	[[nodiscard]] const sf::Vector2f& Force() const;
-	void ApplyForce(const sf::Vector2f& addedForce);
-	void SetForce(const sf::Vector2f& force);
+	[[nodiscard]] const Vector2& Force() const;
+	void ApplyForce(const Vector2& addedForce);
+	void SetForce(const Vector2& force);
 
-	[[nodiscard]] const sf::Vector2f& Velocity() const;
-	void SetVelocity(const sf::Vector2f& velocity);
+	[[nodiscard]] const Vector2& Velocity() const;
+	void SetVelocity(const Vector2& velocity);
 
 	[[nodiscard]] float Mass() const;
 	[[nodiscard]] float InvMass() const;
@@ -36,9 +34,9 @@ public:
 	void SetRestitution(float restitution);
 
 private:
-	sf::Vector2f _gravityForce;
-	sf::Vector2f _force;
-	sf::Vector2f _velocity;
+	Vector2 _gravityForce;
+	Vector2 _force;
+	Vector2 _velocity;
 
 	float _mass{};
 	bool _takesGravity{};

@@ -11,11 +11,11 @@ class Entity
 {
 public:
 	explicit Entity(DynamicsWorld& dynWorld);
-	Entity(DynamicsWorld& dynWorld, sf::Vector2f pos);
+	Entity(DynamicsWorld& dynWorld, Vector2 pos);
 
 	Rigidbody* RigidBody() const;
 
-	void Push(sf::Vector2f force) const;
+	void Push(Vector2 force) const;
 
 	/**
 	 * \brief The update function that is called at each frame.

@@ -33,12 +33,12 @@ void DynamicsWorld::MoveBodies(const float deltaTime) const
 		// ReSharper disable once CppCStyleCast
 		const auto rigidbody = (Rigidbody*)body;
 
-		const sf::Vector2f vel = rigidbody->Velocity() + rigidbody->Force() / rigidbody->Mass() * deltaTime;
+		const Vector2 vel = rigidbody->Velocity() + rigidbody->Force() / rigidbody->Mass() * deltaTime;
 		rigidbody->SetVelocity(vel);
 
 		//rigidbody->UpdateLastTransform();
 
-		sf::Vector2f pos = rigidbody->Position() + rigidbody->Velocity() * deltaTime;
+		Vector2 pos = rigidbody->Position() + rigidbody->Velocity() * deltaTime;
 		rigidbody->SetPosition(pos);
 
 		rigidbody->SetForce({ 0, 0 });
@@ -52,7 +52,7 @@ void DynamicsWorld::Step(const float deltaTime) const
 	MoveBodies(deltaTime);
 }
 
-void DynamicsWorld::SetWorldGravity(const sf::Vector2f gravity)
+void DynamicsWorld::SetWorldGravity(const Vector2 gravity)
 {
 	_gravity = gravity;
 }

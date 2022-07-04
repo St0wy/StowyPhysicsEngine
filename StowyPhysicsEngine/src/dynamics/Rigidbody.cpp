@@ -8,37 +8,37 @@ Rigidbody::Rigidbody()
 	_isDynamic = true;
 }
 
-const sf::Vector2f& Rigidbody::GravityForce() const
+const Vector2& Rigidbody::GravityForce() const
 {
 	return _gravityForce;
 }
 
-void Rigidbody::SetGravityForce(const sf::Vector2f& gravityForce)
+void Rigidbody::SetGravityForce(const Vector2& gravityForce)
 {
 	_gravityForce = gravityForce;
 }
 
-const sf::Vector2f& Rigidbody::Force() const
+const Vector2& Rigidbody::Force() const
 {
 	return _force;
 }
 
-void Rigidbody::ApplyForce(const sf::Vector2f& addedForce)
+void Rigidbody::ApplyForce(const Vector2& addedForce)
 {
 	this->_force += addedForce;
 }
 
-void Rigidbody::SetForce(const sf::Vector2f& force)
+void Rigidbody::SetForce(const Vector2& force)
 {
 	_force = force;
 }
 
-const sf::Vector2f& Rigidbody::Velocity() const
+const Vector2& Rigidbody::Velocity() const
 {
 	return _velocity;
 }
 
-void Rigidbody::SetVelocity(const sf::Vector2f& velocity)
+void Rigidbody::SetVelocity(const Vector2& velocity)
 {
 	_velocity = velocity;
 }

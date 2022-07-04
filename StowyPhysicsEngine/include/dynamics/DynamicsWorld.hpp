@@ -1,7 +1,5 @@
 #pragma once
 
-#include <SFML/System.hpp>
-
 #include "collision/CollisionWorld.hpp"
 #include "Rigidbody.hpp"
 
@@ -12,8 +10,8 @@ public:
 	void ApplyGravity() const;
 	void MoveBodies(float deltaTime) const;
 	void Step(float deltaTime) const;
-	void SetWorldGravity(sf::Vector2f gravity);
+	void SetWorldGravity(Vector2 gravity);
 
 private:
-	sf::Vector2f _gravity = {0, -9.81f};
+	Vector2 _gravity = {0, -9.81f};
 };

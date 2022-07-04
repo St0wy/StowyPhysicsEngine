@@ -5,6 +5,7 @@
 #include "Consts.hpp"
 #include "Sphere.hpp"
 #include "Box.hpp"
+#include "MathUtils.hpp"
 
 DemoBallsAndCube::DemoBallsAndCube()
 	: _window(
@@ -31,8 +32,8 @@ void DemoBallsAndCube::StartMainLoop()
 	_entities.push_back(
 		std::make_unique<Box>(
 			_world,
-			sf::Vector2f(1.f, 10.0f),
-			sf::Vector2f(-3.0f, 3.0f)
+			Vector2(1.f, 10.0f),
+			Vector2(-3.0f, 3.0f)
 			)
 	);
 
@@ -43,8 +44,8 @@ void DemoBallsAndCube::StartMainLoop()
 	//_entities.push_back(
 	//	std::make_unique<Box>(
 	//		_world,
-	//		sf::Vector2f(1.f, 10.0f),
-	//		sf::Vector2f(0.0f, 3.0f)
+	//		Vector2(1.f, 10.0f),
+	//		Vector2(0.0f, 3.0f)
 	//		)
 	//);
 
@@ -52,7 +53,7 @@ void DemoBallsAndCube::StartMainLoop()
 	//mabox->RigidBody()->SetIsKinematic(false);
 
 	_entities.push_back(
-		std::make_unique<Sphere>(_world, 1.0f, sf::Vector2f(3.0f, 3.0f)));
+		std::make_unique<Sphere>(_world, 1.0f, Vector2(3.0f, 3.0f)));
 
 	const Entity* maball = _entities[_entities.size() - 1].get();
 
@@ -74,9 +75,8 @@ void DemoBallsAndCube::StartMainLoop()
 			{
 				auto posi = sf::Mouse::getPosition(_window);
 				auto posf = _window.mapPixelToCoords(posi);
-				posf.y *= -1.0f;
 				_entities.push_back(
-					std::make_unique<Sphere>(_world, 1.0f, posf));
+					std::make_unique<Sphere>(_world, 1.0f, SfmlPosToSpe(posf)));
 			}
 		}
 
@@ -89,8 +89,8 @@ void DemoBallsAndCube::StartMainLoop()
 			entity->Update(deltaTime);
 		}
 
-		maball->Push(Normalized(sf::Vector2f(-2.0f, -0.4f)));
-		//mabox->Push(sf::Vector2f(-2.0f, 0.f));
+		maball->Push(Vector2(-2.0f, -0.4f).Normalized());
+		//mabox->Push(Vector2(-2.0f, 0.f));
 
 		// Clear the window
 		_window.clear(sf::Color::Black);

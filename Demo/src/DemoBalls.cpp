@@ -3,6 +3,7 @@
 #include <spdlog/spdlog.h>
 
 #include "Consts.hpp"
+#include "MathUtils.hpp"
 #include "Sphere.hpp"
 
 DemoBalls::DemoBalls()
@@ -28,13 +29,13 @@ DemoBalls::DemoBalls()
 void DemoBalls::StartMainLoop()
 {
 	_entities.push_back(
-		std::make_unique<Sphere>(_world, 1.0f, sf::Vector2f(-3.0f, 3.0f)));
+		std::make_unique<Sphere>(_world, 1.0f, Vector2(-3.0f, 3.0f)));
 	const Entity* staticBall = _entities[_entities.size() - 1].get();
 	staticBall->RigidBody()->SetIsKinematic(false);
 	_entities.push_back(
-		std::make_unique<Sphere>(_world, 1.0f, sf::Vector2f(0.0f, 3.0f)));
+		std::make_unique<Sphere>(_world, 1.0f, Vector2(0.0f, 3.0f)));
 	_entities.push_back(
-		std::make_unique<Sphere>(_world, 1.0f, sf::Vector2f(3.0f, 3.0f)));
+		std::make_unique<Sphere>(_world, 1.0f, Vector2(3.0f, 3.0f)));
 
 	const Entity* maball = _entities[_entities.size() - 1].get();
 
@@ -57,11 +58,11 @@ void DemoBalls::StartMainLoop()
 			{
 				auto posi = sf::Mouse::getPosition(_window);
 				auto posf = _window.mapPixelToCoords(posi);
-				posf.x -= 1.0f;
-				posf.y -= 1.0f;
-				posf.y *= -1.0f;
+				constexpr float radius = 1.0f;
+				posf.x -= radius;
+				posf.y -= radius;
 				_entities.push_back(
-					std::make_unique<Sphere>(_world, 1.0f, posf));
+					std::make_unique<Sphere>(_world, radius, SfmlPosToSpe(posf)));
 			}
 		}
 
@@ -74,7 +75,7 @@ void DemoBalls::StartMainLoop()
 			entity->Update(deltaTime);
 		}
 
-		maball->Push(sf::Vector2f(-2.0f, 0.f));
+		maball->Push(Vector2(-2.0f, 0.f));
 
 		// Clear the window
 		_window.clear(sf::Color::Black);

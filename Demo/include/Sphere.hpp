@@ -8,7 +8,7 @@
 class Sphere : public Entity
 {
 public:
-	Sphere(DynamicsWorld& dynWorld, float radius, sf::Vector2f pos);
+	Sphere(DynamicsWorld& dynWorld, float radius, Vector2 pos);
 	~Sphere() override;
 
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const override;

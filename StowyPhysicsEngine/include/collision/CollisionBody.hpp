@@ -26,8 +26,8 @@ public:
 	void SetCollisionCallback(const std::function<void(const Collision&, float)>& callback);
 	void OnCollision(const Collision& collision, float deltaTime) const;
 
-	[[nodiscard]] const sf::Vector2f& Position() const;
-	void SetPosition(const sf::Vector2f& position);
+	[[nodiscard]] const Vector2& Position() const;
+	void SetPosition(const Vector2& position);
 
 	[[nodiscard]] bool IsKinematic() const;
 	void SetIsKinematic(bool isKinematic);

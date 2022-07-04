@@ -1,6 +1,6 @@
 #include "Sphere.hpp"
 
-Sphere::Sphere(DynamicsWorld& dynWorld, const float radius, const sf::Vector2f pos)
+Sphere::Sphere(DynamicsWorld& dynWorld, const float radius, const Vector2 pos)
 	: Entity(dynWorld, pos),
 	_shape(radius),
 	_collider(std::make_unique<CircleCollider>())

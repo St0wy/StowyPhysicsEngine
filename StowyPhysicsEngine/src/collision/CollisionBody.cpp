@@ -53,12 +53,12 @@ void CollisionBody::OnCollision(const Collision& collision, const float deltaTim
 	}
 }
 
-const sf::Vector2f& CollisionBody::Position() const
+const Vector2& CollisionBody::Position() const
 {
 	return _transform.position;
 }
 
-void CollisionBody::SetPosition(const sf::Vector2f& position)
+void CollisionBody::SetPosition(const Vector2& position)
 {
 	_transform.position = position;
 }

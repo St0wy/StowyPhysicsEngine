@@ -1,11 +1,13 @@
 #pragma once
 
+#include "math/Vector2.hpp"
+
 #include <SFML/System.hpp>
 
 struct Transform
 {
 public:
-	sf::Vector2f position;
-	sf::Vector2f scale{1, 1};
+	Vector2 position;
+	Vector2 scale{1, 1};
 	float rotation{};
 };

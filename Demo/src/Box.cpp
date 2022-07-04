@@ -1,13 +1,15 @@
 #include "Box.hpp"
 
+#include "MathUtils.hpp"
+
 #include <spdlog/spdlog.h>
 
-Box::Box(DynamicsWorld& dynWorld, const sf::Vector2f size, const sf::Vector2f pos)
+Box::Box(DynamicsWorld& dynWorld, const Vector2 size, const Vector2 pos)
 	: Entity(dynWorld, pos),
-	_shape(size),
+	_shape(SpeVecToSfml(size)),
 	_collider(std::make_unique<BoxCollider>())
 {
-	const sf::Vector2f halfSize = size / 2.0f;
+	const Vector2 halfSize = size / 2.0f;
 	_collider->halfWidth = halfSize.x;
 	_collider->halfHeight = halfSize.y;
 	_dynWorld.AddRigidbody(RigidBody());

@@ -4,7 +4,6 @@
 #include <array>
 
 #include "collision/Manifold.hpp"
-#include "VecUtils.hpp"
 #include "collision/ManifoldFactory.hpp"
 
 Manifold BoxCollider::TestCollision(const Transform* transform, const Collider* collider,
@@ -28,14 +27,14 @@ Manifold BoxCollider::TestCollision(
 	return algo::FindBoxCircleCollisionPoints(this, transform, collider, circleTransform);
 }
 
-sf::Vector2f BoxCollider::FindFurthestPoint(const Transform* transform, const sf::Vector2f& direction) const
+Vector2 BoxCollider::FindFurthestPoint(const Transform* transform, const Vector2& direction) const
 {
-	sf::Vector2f maxPoint;
+	Vector2 maxPoint;
 	float maxDistance = -std::numeric_limits<float>::max();
 
-	for (const sf::Vector2f& vertex : GetTransformedVertices(*transform))
+	for (const Vector2& vertex : GetTransformedVertices(*transform))
 	{
-		const float distance = Dot(vertex, direction);
+		const float distance = vertex.Dot(direction);
 		if (distance > maxDistance)
 		{
 			maxDistance = distance;
@@ -46,7 +45,7 @@ sf::Vector2f BoxCollider::FindFurthestPoint(const Transform* transform, const sf
 	return maxPoint;
 }
 
-std::array<sf::Vector2f, 4> BoxCollider::GetVertices() const
+std::array<Vector2, 4> BoxCollider::GetVertices() const
 {
 	return GetTransformedVertices(
 		{
@@ -57,21 +56,21 @@ std::array<sf::Vector2f, 4> BoxCollider::GetVertices() const
 	);
 }
 
-std::array<sf::Vector2f, 4> BoxCollider::GetTransformedVertices(const Transform& transform) const
+std::array<Vector2, 4> BoxCollider::GetTransformedVertices(const Transform& transform) const
 {
 	const float scaledHalfWidth = halfWidth * transform.scale.x;
 	const float scaledHalfHeight = halfHeight * transform.scale.y;
-	const sf::Vector2f newCenter = center + transform.position;
+	const Vector2 newCenter = center + transform.position;
 
-	sf::Vector2f topLeft = { newCenter.x - scaledHalfWidth, newCenter.y + scaledHalfHeight };
-	sf::Vector2f topRight = { newCenter.x + scaledHalfWidth, newCenter.y + scaledHalfHeight };
-	sf::Vector2f bottomRight = { newCenter.x + scaledHalfWidth, newCenter.y - scaledHalfHeight };
-	sf::Vector2f bottomLeft = { newCenter.x - scaledHalfWidth, newCenter.y - scaledHalfHeight };
+	Vector2 topLeft = { newCenter.x - scaledHalfWidth, newCenter.y + scaledHalfHeight };
+	Vector2 topRight = { newCenter.x + scaledHalfWidth, newCenter.y + scaledHalfHeight };
+	Vector2 bottomRight = { newCenter.x + scaledHalfWidth, newCenter.y - scaledHalfHeight };
+	Vector2 bottomLeft = { newCenter.x - scaledHalfWidth, newCenter.y - scaledHalfHeight };
 
-	topLeft = RotateAround(topLeft, newCenter, transform.rotation);
-	topRight = RotateAround(topRight, newCenter, transform.rotation);
-	bottomRight = RotateAround(bottomRight, newCenter, transform.rotation);
-	bottomLeft = RotateAround(bottomLeft, newCenter, transform.rotation);
+	topLeft.RotateAround(newCenter, transform.rotation);
+	topRight.RotateAround(newCenter, transform.rotation);
+	bottomRight.RotateAround(newCenter, transform.rotation);
+	bottomLeft.RotateAround(newCenter, transform.rotation);
 
 	return
 	{
@@ -100,7 +99,7 @@ Manifold CircleCollider::TestCollision(const Transform* transform, const CircleC
 	return algo::FindCircleCirlceCollisionPoints(this, transform, collider, circleTransform);
 }
 
-sf::Vector2f CircleCollider::FindFurthestPoint(const Transform* transform, const sf::Vector2f& direction) const
+Vector2 CircleCollider::FindFurthestPoint(const Transform* transform, const Vector2& direction) const
 {
-	return center + transform->position + radius * Normalized(direction) * Major(transform->scale);
+	return center + transform->position + radius * direction.Normalized() * transform->scale.Major();
 }

@@ -8,7 +8,7 @@
 class Box : public Entity
 {
 public:
-	Box(DynamicsWorld& dynWorld, sf::Vector2f size, sf::Vector2f pos);
+	Box(DynamicsWorld& dynWorld, Vector2 size, Vector2 pos);
 	~Box() override;
 
 	const sf::RectangleShape& Shape() const;

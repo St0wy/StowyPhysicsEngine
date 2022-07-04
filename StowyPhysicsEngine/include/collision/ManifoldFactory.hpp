@@ -25,12 +25,12 @@ namespace algo
 		const BoxCollider* a, const Transform* ta,
 		const BoxCollider* b, const Transform* tb);
 
-	sf::Vector2f Support(
+	Vector2 Support(
 		const Collider* colliderA,
 		const Transform* transformA,
 		const Collider* colliderB,
 		const Transform* transformB,
-		const sf::Vector2f& direction
+		const Vector2& direction
 	);
 
 	Manifold Gjk(
@@ -40,11 +40,11 @@ namespace algo
 		const Transform* transformB
 	);
 
-	bool NextSimplex(Simplex& points, sf::Vector2f& direction);
-	bool SameDirection(sf::Vector2f direction, sf::Vector2f ao);
+	bool NextSimplex(Simplex& points, Vector2& direction);
+	bool SameDirection(Vector2 direction, Vector2 ao);
 
-	bool Line(const Simplex& points, sf::Vector2f& direction);
-	bool Triangle(Simplex& points, sf::Vector2f& direction);
+	bool Line(const Simplex& points, Vector2& direction);
+	bool Triangle(Simplex& points, Vector2& direction);
 
 	Manifold Epa(
 		const Simplex& simplex,

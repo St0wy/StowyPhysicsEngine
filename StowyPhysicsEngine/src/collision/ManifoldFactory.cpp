@@ -4,7 +4,6 @@
 #include <vector>
 #include <spdlog/spdlog.h>
 
-#include "VecUtils.hpp"
 #include "collision/Collider.hpp"
 #include "collision/Manifold.hpp"
 #include "collision/Simplex.hpp"
@@ -13,30 +12,30 @@ Manifold algo::FindCircleCirlceCollisionPoints(
 	const CircleCollider* a, const Transform* ta,
 	const CircleCollider* b, const Transform* tb)
 {
-	sf::Vector2f aPos = a->center + ta->position;
-	sf::Vector2f bPos = b->center + tb->position;
+	Vector2 aPos = a->center + ta->position;
+	Vector2 bPos = b->center + tb->position;
 
-	const float aRadius = a->radius * Major(ta->scale);
-	const float bRadius = b->radius * Major(tb->scale);
+	const float aRadius = a->radius * ta->scale.Major();
+	const float bRadius = b->radius * tb->scale.Major();
 
-	const sf::Vector2f aToB = bPos - aPos;
-	const sf::Vector2f bToA = aPos - bPos;
+	const Vector2 aToB = bPos - aPos;
+	const Vector2 bToA = aPos - bPos;
 
-	if (Magnitude(aToB) > aRadius + bRadius)
+	if (aToB.Magnitude() > aRadius + bRadius)
 	{
 		return Manifold::Empty();
 	}
 
-	aPos += Normalized(aToB) * aRadius;
-	bPos += Normalized(bToA) * bRadius;
+	aPos += aToB.Normalized() * aRadius;
+	bPos += bToA.Normalized() * bRadius;
 
-	const sf::Vector2f collisionPointsDistance = bPos - aPos;
+	const Vector2 collisionPointsDistance = bPos - aPos;
 
 	return {
 		aPos,
 		bPos,
-		Normalized(collisionPointsDistance),
-		Magnitude(collisionPointsDistance),
+		collisionPointsDistance.Normalized(),
+		collisionPointsDistance.Magnitude(),
 		true
 	};
 }
@@ -67,12 +66,12 @@ Manifold algo::FindBoxBoxCollisionPoints(
 	return Gjk(a, ta, b, tb);
 }
 
-sf::Vector2f algo::Support(
+Vector2 algo::Support(
 	const Collider* colliderA,
 	const Transform* transformA,
 	const Collider* colliderB,
 	const Transform* transformB,
-	const sf::Vector2f& direction
+	const Vector2& direction
 )
 {
 	return colliderA->FindFurthestPoint(transformA, direction) -
@@ -86,9 +85,9 @@ Manifold algo::Gjk(
 	const Transform* transformB
 )
 {
-	sf::Vector2f direction = Normalized(transformB->position - transformA->position);
+	Vector2 direction = Vector2::Normalize(transformB->position - transformA->position);
 
-	sf::Vector2f support = Support(
+	Vector2 support = Support(
 		colliderA, transformA,
 		colliderB, transformB,
 		direction);
@@ -97,13 +96,13 @@ Manifold algo::Gjk(
 	points.PushFront(support);
 
 	// New direction is towards the origin
-	direction = Normalized(-support);
+	direction = Vector2::Normalize(-support);
 
 	while (true)
 	{
 		support = Support(colliderA, transformA, colliderB, transformB, direction);
 
-		if (Dot(support, direction) <= 0)
+		if (support.Dot(direction) <= 0)
 		{
 			return Manifold::Empty();
 		}
@@ -117,7 +116,7 @@ Manifold algo::Gjk(
 	}
 }
 
-bool algo::NextSimplex(Simplex& points, sf::Vector2f& direction)
+bool algo::NextSimplex(Simplex& points, Vector2& direction)
 {
 	switch (points.Size())
 	{
@@ -127,43 +126,47 @@ bool algo::NextSimplex(Simplex& points, sf::Vector2f& direction)
 	}
 }
 
-bool algo::SameDirection(const sf::Vector2f direction, const sf::Vector2f ao)
+bool algo::SameDirection(const Vector2 direction, const Vector2 ao)
 {
-	return Dot(direction, ao) > 0;
+	return direction.Dot(ao) > 0;
 }
 
-bool algo::Line(const Simplex& points, sf::Vector2f& direction)
+bool algo::Line(const Simplex& points, Vector2& direction)
 {
-	const sf::Vector2f a = points[0];
-	const sf::Vector2f b = points[1];
-	const sf::Vector2f ab = Normalized(b - a);
-	const sf::Vector2f ao = Normalized(-a);
-	direction = TripleProduct(ab, ao, ab);
+	const Vector2 a = points[0];
+	const Vector2 b = points[1];
+	const Vector2 ab = Vector2::Normalize(b - a);
+	const Vector2 ao = Vector2::Normalize(-a);
+	direction = Vector2::TripleProduct(ab, ao, ab);
 
 	return false;
 }
 
-bool algo::Triangle(Simplex& points, sf::Vector2f& direction)
+bool algo::Triangle(Simplex& points, Vector2& direction)
 {
-	sf::Vector2f a = points[0];
-	sf::Vector2f b = points[1];
-	sf::Vector2f c = points[2];
+	Vector2 a = points[0];
+	Vector2 b = points[1];
+	Vector2 c = points[2];
 
-	const sf::Vector2f ab = Normalized(b - a);
-	const sf::Vector2f ac = Normalized(c - a);
-	const sf::Vector2f ao = Normalized(-a);
+	const Vector2 ab = Vector2::Normalize(b - a);
+	const Vector2 ac = Vector2::Normalize(c - a);
+	const Vector2 ao = Vector2::Normalize(-a);
 
-	//const sf::Vector2f tripple = TripleProduct(ac, ac, ab);
-	const sf::Vector2f abf = TripleProduct(ac, ab, ab);
-	const sf::Vector2f acf = TripleProduct(ab, ac, ac);
+	//const Vector2 tripple = TripleProduct(ac, ac, ab);
+	const Vector2 abf = Vector2::TripleProduct(ac, ab, ab);
+	const Vector2 acf = Vector2::TripleProduct(ab, ac, ac);
 
 	if (SameDirection(abf, ao))
 	{
-		return Line(points = { a, b }, direction = abf);
+		direction = abf;
+		return false;
+		//return Line(points = { a, b }, direction);
 	}
 	if (SameDirection(acf, ao))
 	{
-		return Line(points = { a, c }, direction = acf);
+		direction = acf;
+		return false;
+		//return Line(points = { a, c }, direction);
 	}
 	return true;
 }
@@ -178,7 +181,7 @@ Manifold algo::Epa(
 {
 	std::vector polytope(simplex.Begin(), simplex.End());
 
-	sf::Vector2f minNormal;
+	Vector2 minNormal;
 	float minDistance = std::numeric_limits<float>::infinity();
 	std::size_t minIndex = 0;
 
@@ -196,13 +199,13 @@ Manifold algo::Epa(
 		{
 			const std::size_t j = (i + 1) % polytope.size();
 
-			sf::Vector2f vertexI = polytope[i];
-			sf::Vector2f vertexJ = polytope[j];
+			Vector2 vertexI = polytope[i];
+			Vector2 vertexJ = polytope[j];
 
-			sf::Vector2f ij = vertexJ - vertexI;
+			Vector2 ij = vertexJ - vertexI;
 
-			sf::Vector2f normal = Normalized(OppositeNormal(ij));
-			float distance = Dot(normal, vertexI);
+			Vector2 normal = ij.NegativePerpendicular().Normalized();
+			float distance = normal.Dot(vertexI);
 
 			if (distance < 0.0f)
 			{
@@ -218,8 +221,8 @@ Manifold algo::Epa(
 			}
 		}
 
-		sf::Vector2f support = Support(colliderA, transformA, colliderB, transformB, minNormal);
-		const float sDistance = Dot(minNormal, support);
+		Vector2 support = Support(colliderA, transformA, colliderB, transformB, minNormal);
+		const float sDistance = minNormal.Dot(support);
 
 		if (std::abs(sDistance - minDistance) > 0.001f)
 		{

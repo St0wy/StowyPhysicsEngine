@@ -4,8 +4,8 @@
 
 #include "Manifold.hpp"
 #include "Transform.hpp"
-#include "VecUtils.hpp"
 
+#include "math/Vector2.hpp"
 
 struct CircleCollider;
 struct BoxCollider;
@@ -33,15 +33,15 @@ public:
 		const Transform* circleTransform
 	) const = 0;
 
-	[[nodiscard]] virtual sf::Vector2f FindFurthestPoint(
+	[[nodiscard]] virtual Vector2 FindFurthestPoint(
 		const Transform* transform,
-		const sf::Vector2f& direction
+		const Vector2& direction
 	) const = 0;
 };
 
 struct BoxCollider : Collider
 {
-	sf::Vector2f center;
+	Vector2 center;
 	float halfWidth;
 	float halfHeight;
 
@@ -63,19 +63,19 @@ struct BoxCollider : Collider
 		const Transform* circleTransform
 	) const override;
 
-	[[nodiscard]] sf::Vector2f FindFurthestPoint(
+	[[nodiscard]] Vector2 FindFurthestPoint(
 		const Transform* transform,
-		const sf::Vector2f& direction
+		const Vector2& direction
 	) const override;
 
-	[[nodiscard]] std::array<sf::Vector2f, 4> GetTransformedVertices(const Transform& transform) const;
-	[[nodiscard]] std::array<sf::Vector2f, 4> GetVertices() const;
+	[[nodiscard]] std::array<Vector2, 4> GetTransformedVertices(const Transform& transform) const;
+	[[nodiscard]] std::array<Vector2, 4> GetVertices() const;
 };
 
 struct CircleCollider final : Collider
 {
 public:
-	sf::Vector2f center;
+	Vector2 center;
 	float radius;
 
 	Manifold TestCollision(
@@ -96,8 +96,8 @@ public:
 		const Transform* circleTransform
 	) const override;
 
-	[[nodiscard]] sf::Vector2f FindFurthestPoint(
+	[[nodiscard]] Vector2 FindFurthestPoint(
 		const Transform* transform,
-		const sf::Vector2f& direction
+		const Vector2& direction
 	) const override;
 };

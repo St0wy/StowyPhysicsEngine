@@ -1,13 +1,13 @@
 #pragma once
 
-#include <SFML/System.hpp>
+#include "math/Vector2.hpp"
 
 struct Manifold
 {
 public:
-	sf::Vector2f a;
-	sf::Vector2f b;
-	sf::Vector2f normal;
+	Vector2 a;
+	Vector2 b;
+	Vector2 normal;
 	float depth{};
 	bool hasCollision{};
 

@@ -44,7 +44,6 @@ target_include_directories(${PROJECT_NAME}
 set(public_headers
     include/Solver.hpp
     include/Transform.hpp
-    include/VecUtils.hpp
     include/collision/Collider.hpp
     include/collision/Collision.hpp
     include/collision/CollisionBody.hpp
@@ -71,18 +70,8 @@ set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 message(STATUS "CMake module path: ${CMAKE_MODULE_PATH}")
 include(Installing)
 
-# Get SFML
-find_package(OpenGL REQUIRED)
-find_package(SFML COMPONENTS system window graphics main CONFIG REQUIRED)
+# Get spdlog
 find_package(spdlog REQUIRED)
 
 # Link libraries
 target_link_libraries(${PROJECT_NAME} PRIVATE spdlog::spdlog)
-
-target_link_libraries(${PROJECT_NAME} PRIVATE sfml-main sfml-graphics sfml-audio sfml-window sfml-system)
-
-if(MSVC)
-    target_link_libraries(${PROJECT_NAME} PRIVATE sfml-main FLAC OpenAL OpenGL Vorbis)
-else()
-    target_link_libraries(${PROJECT_NAME} PRIVATE X11 FLAC UDev OpenAL  ${OPENGL_LIBRARIES} )
-endif()
