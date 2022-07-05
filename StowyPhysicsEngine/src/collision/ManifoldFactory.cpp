@@ -101,12 +101,12 @@ Manifold algo::FindAabbAabbCollisionPoints(
 	if (xOverlap > yOverlap)
 	{
 		// Point towards B knowing that aToB points from A to B
-		const Vector2 normal = aToB.x < 0.0f ? Vector2(-1.0f, 0.0f) : Vector2(1, 0);
+		const Vector2 normal = aToB.x < 0.0f ? Vector2(-1.0f, 0.0f) : Vector2(1.0f, 0);
 		return { normal, xOverlap };
 	}
 
 	// Point towards B knowing that aToB points from A to B
-	const Vector2 normal = aToB.y < 0.0f ? Vector2(0.0f, -1.0f) : Vector2(0, 1);
+	const Vector2 normal = aToB.y < 0.0f ? Vector2(0.0f, -1.0f) : Vector2(0, 1.0f);
 	return { normal, yOverlap };
 }
 

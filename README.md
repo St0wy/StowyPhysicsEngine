@@ -6,7 +6,8 @@ It uses SFML to display the demo scenes, but the physics engine in itself doesn'
 ## Getting started
 
 1. Install [Vcpkg](https://vcpkg.io/)
-2. Build with CMake :
+2. Get a C++20 compiler
+3. Build with CMake :
 
 ```bash
 cmake -S . -B .\build\
