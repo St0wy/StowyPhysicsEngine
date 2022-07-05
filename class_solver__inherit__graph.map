@@ -1,5 +1,5 @@
 <map id="Solver" name="Solver">
-<area shape="rect" id="node1" title=" " alt="" coords="105,5,163,32"/>
-<area shape="rect" id="node2" href="$class_impulse_solver.html" title=" " alt="" coords="5,80,111,107"/>
-<area shape="rect" id="node3" href="$class_smooth_position_solver.html" title=" " alt="" coords="135,80,285,107"/>
+<area shape="rect" id="node1" title="Generic class for all solvers." alt="" coords="105,5,163,32"/>
+<area shape="rect" id="node2" href="$class_impulse_solver.html" title="Solver with impulse and friction." alt="" coords="5,80,111,107"/>
+<area shape="rect" id="node3" href="$class_smooth_position_solver.html" title="A solver to smooth out collision with collider that are in a tower placement." alt="" coords="135,80,285,107"/>
 </map>

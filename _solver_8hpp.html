@@ -87,6 +87,9 @@ $(document).ready(function(){initNavTree('_solver_8hpp.html',''); initResizable(
   <div class="headertitle"><div class="title">Solver.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Contains the <a class="el" href="class_solver.html" title="Generic class for all solvers.">Solver</a> struct.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;<a class="el" href="_collision_8hpp_source.html">collision/Collision.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -94,21 +97,20 @@ Include dependency graph for Solver.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="_solver_8hpp__incl.png" border="0" usemap="#ainclude_2_solver_8hpp" alt=""/></div>
 <map name="ainclude_2_solver_8hpp" id="ainclude_2_solver_8hpp">
-<area shape="rect" title=" " alt="" coords="59,5,187,32"/>
+<area shape="rect" title="Contains the Solver struct." alt="" coords="59,5,187,32"/>
 <area shape="rect" title=" " alt="" coords="31,80,90,107"/>
-<area shape="rect" href="_collision_8hpp.html" title=" " alt="" coords="114,80,261,107"/>
-<area shape="rect" href="_collision_body_8hpp.html" title=" " alt="" coords="125,155,249,181"/>
+<area shape="rect" href="_collision_8hpp.html" title="Contains the Collision struct." alt="" coords="114,80,261,107"/>
+<area shape="rect" href="_collision_body_8hpp.html" title="Contains the CollisionBody struct." alt="" coords="125,155,249,181"/>
 <area shape="rect" title=" " alt="" coords="5,229,84,256"/>
-<area shape="rect" href="_transform_8hpp.html" title=" " alt="" coords="103,379,208,405"/>
-<area shape="rect" href="_collider_8hpp.html" title=" " alt="" coords="327,304,416,331"/>
-<area shape="rect" href="_manifold_factory_8hpp.html" title=" " alt="" coords="159,229,349,256"/>
-<area shape="rect" href="_vector2_8hpp.html" title=" " alt="" coords="289,453,413,480"/>
-<area shape="rect" title=" " alt="" coords="90,453,221,480"/>
+<area shape="rect" href="_transform_8hpp.html" title="Contains the Transform struct." alt="" coords="73,379,179,405"/>
+<area shape="rect" href="_collider_8hpp.html" title="Contains all the Colliders struct." alt="" coords="288,304,377,331"/>
+<area shape="rect" href="_manifold_factory_8hpp.html" title="Contains the algo namespace which contains the functions to detect a collision." alt="" coords="159,229,349,256"/>
+<area shape="rect" href="_vector2_8hpp.html" title="Contains the Vector2 struct." alt="" coords="273,453,397,480"/>
 <area shape="rect" title=" " alt="" coords="319,528,373,555"/>
-<area shape="rect" title=" " alt="" coords="397,528,516,555"/>
-<area shape="rect" title=" " alt="" coords="283,379,334,405"/>
-<area shape="rect" href="_manifold_8hpp.html" title=" " alt="" coords="409,379,504,405"/>
-<area shape="rect" href="_simplex_8hpp.html" title=" " alt="" coords="211,304,303,331"/>
+<area shape="rect" title=" " alt="" coords="176,528,295,555"/>
+<area shape="rect" title=" " alt="" coords="373,379,423,405"/>
+<area shape="rect" href="_manifold_8hpp.html" title="Contains the Manifold class." alt="" coords="203,379,297,405"/>
+<area shape="rect" href="_simplex_8hpp.html" title="Contains the Simplex struct." alt="" coords="401,304,493,331"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -116,11 +118,11 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="_solver_8hpp__dep__incl.png" border="0" usemap="#ainclude_2_solver_8hppdep" alt=""/></div>
 <map name="ainclude_2_solver_8hppdep" id="ainclude_2_solver_8hppdep">
-<area shape="rect" title=" " alt="" coords="497,5,625,32"/>
-<area shape="rect" href="_collision_world_8hpp.html" title=" " alt="" coords="247,80,413,121"/>
-<area shape="rect" href="_impulse_solver_8hpp.html" title=" " alt="" coords="475,80,647,121"/>
-<area shape="rect" href="_smooth_position_solver_8hpp.html" title=" " alt="" coords="674,80,893,121"/>
-<area shape="rect" href="_dynamics_world_8hpp.html" title=" " alt="" coords="23,169,205,211"/>
+<area shape="rect" title="Contains the Solver struct." alt="" coords="497,5,625,32"/>
+<area shape="rect" href="_collision_world_8hpp.html" title="Contains the CollisionWorld class." alt="" coords="247,80,413,121"/>
+<area shape="rect" href="_impulse_solver_8hpp.html" title="Contains the ImpulseSolver class." alt="" coords="475,80,647,121"/>
+<area shape="rect" href="_smooth_position_solver_8hpp.html" title="Contains the SmoothPositionSolver class." alt="" coords="674,80,893,121"/>
+<area shape="rect" href="_dynamics_world_8hpp.html" title="Contains the DynamicsWorld class." alt="" coords="23,169,205,211"/>
 <area shape="rect" href="_collision_world_8cpp.html" title=" " alt="" coords="229,177,431,203"/>
 <area shape="rect" href="_dynamics_world_8cpp.html" title=" " alt="" coords="5,259,223,285"/>
 <area shape="rect" href="_impulse_solver_8cpp.html" title=" " alt="" coords="455,177,666,203"/>
@@ -133,9 +135,16 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_solver.html">Solver</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic class for all solvers.  <a href="class_solver.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Contains the <a class="el" href="class_solver.html" title="Generic class for all solvers.">Solver</a> struct. </p>
+<dl class="section author"><dt>Author</dt><dd>Fabian Huber (<a href="#" onclick="location.href='mai'+'lto:'+'fab'+'ia'+'n.h'+'br'+'@pr'+'ot'+'onm'+'ai'+'l.c'+'h'; return false;">fabia<span class="obfuscator">.nosp@m.</span>n.hb<span class="obfuscator">.nosp@m.</span>r@pro<span class="obfuscator">.nosp@m.</span>tonm<span class="obfuscator">.nosp@m.</span>ail.c<span class="obfuscator">.nosp@m.</span>h</a>) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>05.07.2022</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>SAE (c) 2022 </dd></dl>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

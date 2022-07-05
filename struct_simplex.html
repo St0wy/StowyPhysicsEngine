@@ -90,6 +90,9 @@ $(document).ready(function(){initNavTree('struct_simplex.html',''); initResizabl
 </div><!--header-->
 <div class="contents">
 
+<p>Struct representing the simplest form that can "select" an area in any dimension.  
+ <a href="struct_simplex.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_simplex_8hpp_source.html">Simplex.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -101,22 +104,28 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3dffebee1841d19bf3a7621a9f3aeb75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_simplex.html#a3dffebee1841d19bf3a7621a9f3aeb75">operator[]</a> (std::size_t i) const</td></tr>
 <tr class="separator:a3dffebee1841d19bf3a7621a9f3aeb75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26cd4b8398e352057618be4027ad724f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_simplex.html#a26cd4b8398e352057618be4027ad724f">PushFront</a> (<a class="el" href="struct_vector2.html">Vector2</a> point)</td></tr>
+<tr class="memdesc:a26cd4b8398e352057618be4027ad724f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a point in the simplex.  <a href="struct_simplex.html#a26cd4b8398e352057618be4027ad724f">More...</a><br /></td></tr>
 <tr class="separator:a26cd4b8398e352057618be4027ad724f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2993b307bf05c7dc1da4279251f3eade"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_simplex.html#a2993b307bf05c7dc1da4279251f3eade">Size</a> () const</td></tr>
+<tr class="memdesc:a2993b307bf05c7dc1da4279251f3eade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the size of the array.  <a href="struct_simplex.html#a2993b307bf05c7dc1da4279251f3eade">More...</a><br /></td></tr>
 <tr class="separator:a2993b307bf05c7dc1da4279251f3eade"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ce9fda6844f2311bd0c9a754de18d77"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="struct_vector2.html">Vector2</a>, <a class="el" href="struct_simplex.html#aedd179af754c3ec9d96615481daab860">MAX_SIZE</a> &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_simplex.html#a1ce9fda6844f2311bd0c9a754de18d77">Begin</a> () const</td></tr>
 <tr class="separator:a1ce9fda6844f2311bd0c9a754de18d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e23e764496f67f1320e24744b335de3"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="struct_vector2.html">Vector2</a>, <a class="el" href="struct_simplex.html#aedd179af754c3ec9d96615481daab860">MAX_SIZE</a> &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_simplex.html#a4e23e764496f67f1320e24744b335de3">End</a> () const</td></tr>
 <tr class="separator:a4e23e764496f67f1320e24744b335de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae293bae2b5cf2f4a273062ef0179f80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_simplex.html#aae293bae2b5cf2f4a273062ef0179f80">IncrementSize</a> ()</td></tr>
+<tr class="memdesc:aae293bae2b5cf2f4a273062ef0179f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increments the size of the simplex with a max at MAX_SIZE.  <a href="struct_simplex.html#aae293bae2b5cf2f4a273062ef0179f80">More...</a><br /></td></tr>
 <tr class="separator:aae293bae2b5cf2f4a273062ef0179f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:aedd179af754c3ec9d96615481daab860"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_simplex.html#aedd179af754c3ec9d96615481daab860">MAX_SIZE</a> = 3ull</td></tr>
+<tr class="memdesc:aedd179af754c3ec9d96615481daab860"><td class="mdescLeft">&#160;</td><td class="mdescRight">The max size of this simplex.  <a href="struct_simplex.html#aedd179af754c3ec9d96615481daab860">More...</a><br /></td></tr>
 <tr class="separator:aedd179af754c3ec9d96615481daab860"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Struct representing the simplest form that can "select" an area in any dimension. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6111f5657ca04b243a5823b645b70bc6" name="a6111f5657ca04b243a5823b645b70bc6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6111f5657ca04b243a5823b645b70bc6">&#9670;&nbsp;</a></span>Simplex()</h2>
 
@@ -192,6 +201,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Increments the size of the simplex with a max at MAX_SIZE. </p>
+
 </div>
 </div>
 <a id="abf4720e433d1b6ac1d5072ad07a59b15" name="abf4720e433d1b6ac1d5072ad07a59b15"></a>
@@ -245,13 +256,21 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Adds a point in the simplex. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>Point to add in the simplex. </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_simplex_a26cd4b8398e352057618be4027ad724f_cgraph.png" border="0" usemap="#astruct_simplex_a26cd4b8398e352057618be4027ad724f_cgraph" alt=""/></div>
 <map name="astruct_simplex_a26cd4b8398e352057618be4027ad724f_cgraph" id="astruct_simplex_a26cd4b8398e352057618be4027ad724f_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,140,32"/>
-<area shape="rect" href="struct_simplex.html#aae293bae2b5cf2f4a273062ef0179f80" title=" " alt="" coords="188,5,345,32"/>
+<area shape="rect" title="Adds a point in the simplex." alt="" coords="5,5,140,32"/>
+<area shape="rect" href="struct_simplex.html#aae293bae2b5cf2f4a273062ef0179f80" title="Increments the size of the simplex with a max at MAX_SIZE." alt="" coords="188,5,345,32"/>
 </map>
 </div>
 
@@ -271,6 +290,9 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Gets the size of the array. </p>
+<dl class="section return"><dt>Returns</dt><dd>The size of the array. </dd></dl>
 
 </div>
 </div>
@@ -294,6 +316,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The max size of this simplex. </p>
 
 </div>
 </div>

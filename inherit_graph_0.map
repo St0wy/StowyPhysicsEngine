@@ -1,6 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$struct_collider.html" title=" " alt="" coords="5,56,71,83"/>
-<area shape="rect" id="node2" href="$struct_aabb_collider.html" title=" " alt="" coords="121,5,215,32"/>
-<area shape="rect" id="node3" href="$struct_box_collider.html" title=" " alt="" coords="125,56,211,83"/>
-<area shape="rect" id="node4" href="$struct_circle_collider.html" title=" " alt="" coords="119,107,217,133"/>
+<area shape="rect" id="node1" href="$struct_collider.html" title="A pure virtual struct that represents colliders." alt="" coords="5,56,71,83"/>
+<area shape="rect" id="node2" href="$struct_aabb_collider.html" title="An Axis Aligned Bounding Box collider." alt="" coords="121,5,215,32"/>
+<area shape="rect" id="node3" href="$struct_box_collider.html" title="A rotatable box collider." alt="" coords="125,56,211,83"/>
+<area shape="rect" id="node4" href="$struct_circle_collider.html" title="A circle collider." alt="" coords="119,107,217,133"/>
 </map>

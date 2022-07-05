@@ -92,6 +92,9 @@ $(document).ready(function(){initNavTree('struct_vector2.html',''); initResizabl
 </div><!--header-->
 <div class="contents">
 
+<p>A struct representing a 2D Vector.  
+ <a href="struct_vector2.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_vector2_8hpp_source.html">Vector2.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -101,28 +104,40 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad2627dc96707a74ae925145c3bbe9d8d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vector2.html#ad2627dc96707a74ae925145c3bbe9d8d">Vector2</a> (const float <a class="el" href="struct_vector2.html#a046bb8d17a876acc49415128dc0502f2">x</a>, const float <a class="el" href="struct_vector2.html#a0e07bad05f01ed811b909a2eef97f9e2">y</a>)</td></tr>
 <tr class="separator:ad2627dc96707a74ae925145c3bbe9d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16b13aa4859a54eaec1a76ae2ca4f94d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vector2.html#a16b13aa4859a54eaec1a76ae2ca4f94d">Magnitude</a> () const</td></tr>
+<tr class="memdesc:a16b13aa4859a54eaec1a76ae2ca4f94d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the magnitude of this vector.  <a href="struct_vector2.html#a16b13aa4859a54eaec1a76ae2ca4f94d">More...</a><br /></td></tr>
 <tr class="separator:a16b13aa4859a54eaec1a76ae2ca4f94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af96e796e20fe3af56c495bedb8f4fc14"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14">SqrMagnitude</a> () const</td></tr>
+<tr class="memdesc:af96e796e20fe3af56c495bedb8f4fc14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size comparison.  <a href="struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14">More...</a><br /></td></tr>
 <tr class="separator:af96e796e20fe3af56c495bedb8f4fc14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34aead675305c3de65455935d3bfcf8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vector2.html#a34aead675305c3de65455935d3bfcf8d">Normalized</a> () const</td></tr>
+<tr class="memdesc:a34aead675305c3de65455935d3bfcf8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets this vector normalized.  <a href="struct_vector2.html#a34aead675305c3de65455935d3bfcf8d">More...</a><br /></td></tr>
 <tr class="separator:a34aead675305c3de65455935d3bfcf8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23ceee12380716c9cb3458c6e0b86c90"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vector2.html#a23ceee12380716c9cb3458c6e0b86c90">Dot</a> (const <a class="el" href="struct_vector2.html">Vector2</a> &amp;other) const</td></tr>
+<tr class="memdesc:a23ceee12380716c9cb3458c6e0b86c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the dot product between this and other.  <a href="struct_vector2.html#a23ceee12380716c9cb3458c6e0b86c90">More...</a><br /></td></tr>
 <tr class="separator:a23ceee12380716c9cb3458c6e0b86c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac18df2fbdf4c1e297c43e06ce7ba5736"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vector2.html#ac18df2fbdf4c1e297c43e06ce7ba5736">Distance</a> (const <a class="el" href="struct_vector2.html">Vector2</a> &amp;other) const</td></tr>
+<tr class="memdesc:ac18df2fbdf4c1e297c43e06ce7ba5736"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the distance between this and other.  <a href="struct_vector2.html#ac18df2fbdf4c1e297c43e06ce7ba5736">More...</a><br /></td></tr>
 <tr class="separator:ac18df2fbdf4c1e297c43e06ce7ba5736"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99d12dfbc69edfbf0cc310ca806b1281"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vector2.html#a99d12dfbc69edfbf0cc310ca806b1281">Angle</a> (const <a class="el" href="struct_vector2.html">Vector2</a> &amp;other) const</td></tr>
+<tr class="memdesc:a99d12dfbc69edfbf0cc310ca806b1281"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the vector between this and other.  <a href="struct_vector2.html#a99d12dfbc69edfbf0cc310ca806b1281">More...</a><br /></td></tr>
 <tr class="separator:a99d12dfbc69edfbf0cc310ca806b1281"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a034384ad890b6ceeaa7da3d88d566b5d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vector2.html#a034384ad890b6ceeaa7da3d88d566b5d">Major</a> () const</td></tr>
+<tr class="memdesc:a034384ad890b6ceeaa7da3d88d566b5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the biggest component of this vector.  <a href="struct_vector2.html#a034384ad890b6ceeaa7da3d88d566b5d">More...</a><br /></td></tr>
 <tr class="separator:a034384ad890b6ceeaa7da3d88d566b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a520a801e368bec42889c511e6dbd7593"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vector2.html#a520a801e368bec42889c511e6dbd7593">PositivePerpendicular</a> () const</td></tr>
+<tr class="memdesc:a520a801e368bec42889c511e6dbd7593"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the perpendicular vector in +90 degrees.  <a href="struct_vector2.html#a520a801e368bec42889c511e6dbd7593">More...</a><br /></td></tr>
 <tr class="separator:a520a801e368bec42889c511e6dbd7593"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3d1aec20b1ba958b60dc86e8df9cc6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vector2.html#ad3d1aec20b1ba958b60dc86e8df9cc6c">NegativePerpendicular</a> () const</td></tr>
+<tr class="memdesc:ad3d1aec20b1ba958b60dc86e8df9cc6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the perpendicular vector in -90 degrees.  <a href="struct_vector2.html#ad3d1aec20b1ba958b60dc86e8df9cc6c">More...</a><br /></td></tr>
 <tr class="separator:ad3d1aec20b1ba958b60dc86e8df9cc6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9efc9a927e6a26034a471ff58b91c987"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vector2.html#a9efc9a927e6a26034a471ff58b91c987">SetMagnitude</a> (float newMagnitude)</td></tr>
+<tr class="memdesc:a9efc9a927e6a26034a471ff58b91c987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the magnitude of this vector.  <a href="struct_vector2.html#a9efc9a927e6a26034a471ff58b91c987">More...</a><br /></td></tr>
 <tr class="separator:a9efc9a927e6a26034a471ff58b91c987"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a745c1b2d41e9f92fab739c3e24a684ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vector2.html#a745c1b2d41e9f92fab739c3e24a684ce">RotateAround</a> (const <a class="el" href="struct_vector2.html">Vector2</a> &amp;center, float angle)</td></tr>
+<tr class="memdesc:a745c1b2d41e9f92fab739c3e24a684ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates this vector around the provided axis.  <a href="struct_vector2.html#a745c1b2d41e9f92fab739c3e24a684ce">More...</a><br /></td></tr>
 <tr class="separator:a745c1b2d41e9f92fab739c3e24a684ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82954202994563f3cdcac400fc100bbf"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vector2.html#a82954202994563f3cdcac400fc100bbf">ToString</a> () const</td></tr>
+<tr class="memdesc:a82954202994563f3cdcac400fc100bbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a string representing this vector.  <a href="struct_vector2.html#a82954202994563f3cdcac400fc100bbf">More...</a><br /></td></tr>
 <tr class="separator:a82954202994563f3cdcac400fc100bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53bdaa4ea8e1504f8a78ac78e6f151bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vector2.html#a53bdaa4ea8e1504f8a78ac78e6f151bf">operator+</a> (const <a class="el" href="struct_vector2.html">Vector2</a> &amp;other) const</td></tr>
 <tr class="separator:a53bdaa4ea8e1504f8a78ac78e6f151bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,17 +163,22 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a271b8fa518725c70f57e935f09ece61d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vector2.html#a271b8fa518725c70f57e935f09ece61d">Normalize</a> (const <a class="el" href="struct_vector2.html">Vector2</a> &amp;v)</td></tr>
+<tr class="memdesc:a271b8fa518725c70f57e935f09ece61d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalizes the given vector.  <a href="struct_vector2.html#a271b8fa518725c70f57e935f09ece61d">More...</a><br /></td></tr>
 <tr class="separator:a271b8fa518725c70f57e935f09ece61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaad41c4be8b5c2d13d34f7bbe25415d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vector2.html#afaad41c4be8b5c2d13d34f7bbe25415d">Lerp</a> (const <a class="el" href="struct_vector2.html">Vector2</a> &amp;a, const <a class="el" href="struct_vector2.html">Vector2</a> &amp;b, float t)</td></tr>
+<tr class="memdesc:afaad41c4be8b5c2d13d34f7bbe25415d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linearly interpolates between A and B.  <a href="struct_vector2.html#afaad41c4be8b5c2d13d34f7bbe25415d">More...</a><br /></td></tr>
 <tr class="separator:afaad41c4be8b5c2d13d34f7bbe25415d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6caeccc3443fcd92c2d01aa2467d531"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vector2.html#ae6caeccc3443fcd92c2d01aa2467d531">TripleProduct</a> (const <a class="el" href="struct_vector2.html">Vector2</a> &amp;a, const <a class="el" href="struct_vector2.html">Vector2</a> &amp;b, const <a class="el" href="struct_vector2.html">Vector2</a> &amp;c)</td></tr>
+<tr class="memdesc:ae6caeccc3443fcd92c2d01aa2467d531"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the triple product with all of these vectors as 3d vectors with z = 0. p = a x (b x c)  <a href="struct_vector2.html#ae6caeccc3443fcd92c2d01aa2467d531">More...</a><br /></td></tr>
 <tr class="separator:ae6caeccc3443fcd92c2d01aa2467d531"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a046bb8d17a876acc49415128dc0502f2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vector2.html#a046bb8d17a876acc49415128dc0502f2">x</a></td></tr>
+<tr class="memdesc:a046bb8d17a876acc49415128dc0502f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The X component of the 2D Vector.  <a href="struct_vector2.html#a046bb8d17a876acc49415128dc0502f2">More...</a><br /></td></tr>
 <tr class="separator:a046bb8d17a876acc49415128dc0502f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e07bad05f01ed811b909a2eef97f9e2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vector2.html#a0e07bad05f01ed811b909a2eef97f9e2">y</a></td></tr>
+<tr class="memdesc:a0e07bad05f01ed811b909a2eef97f9e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Y component of the 2D Vector.  <a href="struct_vector2.html#a0e07bad05f01ed811b909a2eef97f9e2">More...</a><br /></td></tr>
 <tr class="separator:a0e07bad05f01ed811b909a2eef97f9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -174,7 +194,9 @@ Friends</h2></td></tr>
 <tr class="memitem:ad50509984e48c3b049944e39bffa9ac8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vector2.html#ad50509984e48c3b049944e39bffa9ac8">operator/</a> (<a class="el" href="struct_vector2.html">Vector2</a> vec, float scalar)</td></tr>
 <tr class="separator:ad50509984e48c3b049944e39bffa9ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >A struct representing a 2D Vector. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a22104d1809be26a419ef1f959e3761bf" name="a22104d1809be26a419ef1f959e3761bf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a22104d1809be26a419ef1f959e3761bf">&#9670;&nbsp;</a></span>Vector2() <span class="overload">[1/2]</span></h2>
 
@@ -252,15 +274,24 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Computes the vector between this and other. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The other vector. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The angle between this and other. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_vector2_a99d12dfbc69edfbf0cc310ca806b1281_cgraph.png" border="0" usemap="#astruct_vector2_a99d12dfbc69edfbf0cc310ca806b1281_cgraph" alt=""/></div>
 <map name="astruct_vector2_a99d12dfbc69edfbf0cc310ca806b1281_cgraph" id="astruct_vector2_a99d12dfbc69edfbf0cc310ca806b1281_cgraph">
-<area shape="rect" title=" " alt="" coords="5,31,112,57"/>
-<area shape="rect" href="struct_vector2.html#a23ceee12380716c9cb3458c6e0b86c90" title=" " alt="" coords="180,5,273,32"/>
-<area shape="rect" href="struct_vector2.html#a16b13aa4859a54eaec1a76ae2ca4f94d" title=" " alt="" coords="160,56,293,83"/>
-<area shape="rect" href="struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title=" " alt="" coords="341,56,495,83"/>
+<area shape="rect" title="Computes the vector between this and other." alt="" coords="5,31,112,57"/>
+<area shape="rect" href="struct_vector2.html#a23ceee12380716c9cb3458c6e0b86c90" title="Computes the dot product between this and other." alt="" coords="180,5,273,32"/>
+<area shape="rect" href="struct_vector2.html#a16b13aa4859a54eaec1a76ae2ca4f94d" title="Gets the magnitude of this vector." alt="" coords="160,56,293,83"/>
+<area shape="rect" href="struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="341,56,495,83"/>
 </map>
 </div>
 
@@ -282,6 +313,15 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Computes the distance between this and other. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The other vector. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The distance between this and other. </dd></dl>
+
 </div>
 </div>
 <a id="a23ceee12380716c9cb3458c6e0b86c90" name="a23ceee12380716c9cb3458c6e0b86c90"></a>
@@ -299,6 +339,15 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Computes the dot product between this and other. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The other vector. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The dot product between this and other. </dd></dl>
 
 </div>
 </div>
@@ -342,6 +391,17 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Linearly interpolates between A and B. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>Start vector. </td></tr>
+    <tr><td class="paramname">b</td><td>End vector. </td></tr>
+    <tr><td class="paramname">t</td><td>Value indicating the progression between a and b. Should be between 0 and 1. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The linear interpolation between a and b. </dd></dl>
+
 </div>
 </div>
 <a id="a16b13aa4859a54eaec1a76ae2ca4f94d" name="a16b13aa4859a54eaec1a76ae2ca4f94d"></a>
@@ -358,13 +418,16 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Gets the magnitude of this vector. </p>
+<dl class="section return"><dt>Returns</dt><dd>The magnitude of this vector. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_vector2_a16b13aa4859a54eaec1a76ae2ca4f94d_cgraph.png" border="0" usemap="#astruct_vector2_a16b13aa4859a54eaec1a76ae2ca4f94d_cgraph" alt=""/></div>
 <map name="astruct_vector2_a16b13aa4859a54eaec1a76ae2ca4f94d_cgraph" id="astruct_vector2_a16b13aa4859a54eaec1a76ae2ca4f94d_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,139,32"/>
-<area shape="rect" href="struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title=" " alt="" coords="187,5,340,32"/>
+<area shape="rect" title="Gets the magnitude of this vector." alt="" coords="5,5,139,32"/>
+<area shape="rect" href="struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="187,5,340,32"/>
 </map>
 </div>
 
@@ -385,6 +448,9 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Gets the biggest component of this vector. </p>
+<dl class="section return"><dt>Returns</dt><dd>The biggest component of this vector. </dd></dl>
+
 </div>
 </div>
 <a id="ad3d1aec20b1ba958b60dc86e8df9cc6c" name="ad3d1aec20b1ba958b60dc86e8df9cc6c"></a>
@@ -401,6 +467,9 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Computes the perpendicular vector in -90 degrees. </p>
+<dl class="section return"><dt>Returns</dt><dd>The perpendicular vector in the negative direction. </dd></dl>
 
 </div>
 </div>
@@ -427,15 +496,24 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Normalizes the given vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>The vector to normalize. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The normalized vector. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_vector2_a271b8fa518725c70f57e935f09ece61d_cgraph.png" border="0" usemap="#astruct_vector2_a271b8fa518725c70f57e935f09ece61d_cgraph" alt=""/></div>
 <map name="astruct_vector2_a271b8fa518725c70f57e935f09ece61d_cgraph" id="astruct_vector2_a271b8fa518725c70f57e935f09ece61d_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,136,32"/>
-<area shape="rect" href="struct_vector2.html#a34aead675305c3de65455935d3bfcf8d" title=" " alt="" coords="184,5,323,32"/>
-<area shape="rect" href="struct_vector2.html#a16b13aa4859a54eaec1a76ae2ca4f94d" title=" " alt="" coords="371,5,504,32"/>
-<area shape="rect" href="struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title=" " alt="" coords="552,5,705,32"/>
+<area shape="rect" title="Normalizes the given vector." alt="" coords="5,5,136,32"/>
+<area shape="rect" href="struct_vector2.html#a34aead675305c3de65455935d3bfcf8d" title="Gets this vector normalized." alt="" coords="184,5,323,32"/>
+<area shape="rect" href="struct_vector2.html#a16b13aa4859a54eaec1a76ae2ca4f94d" title="Gets the magnitude of this vector." alt="" coords="371,5,504,32"/>
+<area shape="rect" href="struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="552,5,705,32"/>
 </map>
 </div>
 
@@ -455,14 +533,17 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Gets this vector normalized. </p>
+<dl class="section return"><dt>Returns</dt><dd>This vector normalized. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_vector2_a34aead675305c3de65455935d3bfcf8d_cgraph.png" border="0" usemap="#astruct_vector2_a34aead675305c3de65455935d3bfcf8d_cgraph" alt=""/></div>
 <map name="astruct_vector2_a34aead675305c3de65455935d3bfcf8d_cgraph" id="astruct_vector2_a34aead675305c3de65455935d3bfcf8d_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,144,32"/>
-<area shape="rect" href="struct_vector2.html#a16b13aa4859a54eaec1a76ae2ca4f94d" title=" " alt="" coords="192,5,325,32"/>
-<area shape="rect" href="struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title=" " alt="" coords="373,5,527,32"/>
+<area shape="rect" title="Gets this vector normalized." alt="" coords="5,5,144,32"/>
+<area shape="rect" href="struct_vector2.html#a16b13aa4859a54eaec1a76ae2ca4f94d" title="Gets the magnitude of this vector." alt="" coords="192,5,325,32"/>
+<area shape="rect" href="struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="373,5,527,32"/>
 </map>
 </div>
 
@@ -662,6 +743,9 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Computes the perpendicular vector in +90 degrees. </p>
+<dl class="section return"><dt>Returns</dt><dd>The perpendicular vector in the positive direction. </dd></dl>
+
 </div>
 </div>
 <a id="a745c1b2d41e9f92fab739c3e24a684ce" name="a745c1b2d41e9f92fab739c3e24a684ce"></a>
@@ -689,12 +773,21 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Rotates this vector around the provided axis. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">center</td><td>The axis to rotate around. </td></tr>
+    <tr><td class="paramname">angle</td><td>The angle by which this vector should be rotated. </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_vector2_a745c1b2d41e9f92fab739c3e24a684ce_cgraph.png" border="0" usemap="#astruct_vector2_a745c1b2d41e9f92fab739c3e24a684ce_cgraph" alt=""/></div>
 <map name="astruct_vector2_a745c1b2d41e9f92fab739c3e24a684ce_cgraph" id="astruct_vector2_a745c1b2d41e9f92fab739c3e24a684ce_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,157,32"/>
+<area shape="rect" title="Rotates this vector around the provided axis." alt="" coords="5,5,157,32"/>
 <area shape="rect" href="struct_vector2.html#a22104d1809be26a419ef1f959e3761bf" title=" " alt="" coords="205,5,324,32"/>
 </map>
 </div>
@@ -716,14 +809,22 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sets the magnitude of this vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newMagnitude</td><td>The new magnitude. </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_vector2_a9efc9a927e6a26034a471ff58b91c987_cgraph.png" border="0" usemap="#astruct_vector2_a9efc9a927e6a26034a471ff58b91c987_cgraph" alt=""/></div>
 <map name="astruct_vector2_a9efc9a927e6a26034a471ff58b91c987_cgraph" id="astruct_vector2_a9efc9a927e6a26034a471ff58b91c987_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,159,32"/>
-<area shape="rect" href="struct_vector2.html#a16b13aa4859a54eaec1a76ae2ca4f94d" title=" " alt="" coords="207,5,340,32"/>
-<area shape="rect" href="struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title=" " alt="" coords="388,5,541,32"/>
+<area shape="rect" title="Sets the magnitude of this vector." alt="" coords="5,5,159,32"/>
+<area shape="rect" href="struct_vector2.html#a16b13aa4859a54eaec1a76ae2ca4f94d" title="Gets the magnitude of this vector." alt="" coords="207,5,340,32"/>
+<area shape="rect" href="struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="388,5,541,32"/>
 </map>
 </div>
 
@@ -744,6 +845,9 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size comparison. </p>
+<dl class="section return"><dt>Returns</dt><dd>The squared magnitude of this vector. </dd></dl>
+
 </div>
 </div>
 <a id="a82954202994563f3cdcac400fc100bbf" name="a82954202994563f3cdcac400fc100bbf"></a>
@@ -760,6 +864,9 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Gets a string representing this vector. </p>
+<dl class="section return"><dt>Returns</dt><dd>A string representing this vector. </dd></dl>
 
 </div>
 </div>
@@ -802,6 +909,17 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Compute the triple product with all of these vectors as 3d vectors with z = 0. p = a x (b x c) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>Vector a. </td></tr>
+    <tr><td class="paramname">b</td><td>Vector b. </td></tr>
+    <tr><td class="paramname">c</td><td>Vector c. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The triple product with a, b and c. </dd></dl>
 
 </div>
 </div>
@@ -999,6 +1117,8 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>The X component of the 2D Vector. </p>
+
 </div>
 </div>
 <a id="a0e07bad05f01ed811b909a2eef97f9e2" name="a0e07bad05f01ed811b909a2eef97f9e2"></a>
@@ -1012,6 +1132,8 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The Y component of the 2D Vector. </p>
 
 </div>
 </div>

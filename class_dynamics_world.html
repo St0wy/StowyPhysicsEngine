@@ -89,14 +89,17 @@ $(document).ready(function(){initNavTree('class_dynamics_world.html',''); initRe
 </div><!--header-->
 <div class="contents">
 
+<p>A world with dynamics in it.  
+ <a href="class_dynamics_world.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_dynamics_world_8hpp_source.html">DynamicsWorld.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DynamicsWorld:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_dynamics_world__inherit__graph.png" border="0" usemap="#a_dynamics_world_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_dynamics_world_inherit__map" id="a_dynamics_world_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,80,117,107"/>
-<area shape="rect" href="class_collision_world.html" title=" " alt="" coords="9,5,113,32"/>
+<area shape="rect" title="A world with dynamics in it." alt="" coords="5,80,117,107"/>
+<area shape="rect" href="class_collision_world.html" title="Represents a world where collisions can happen. It does not have dynamics, for this you will need the..." alt="" coords="9,5,113,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -104,39 +107,52 @@ Collaboration diagram for DynamicsWorld:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_dynamics_world__coll__graph.png" border="0" usemap="#a_dynamics_world_coll__map" alt="Collaboration graph"/></div>
 <map name="a_dynamics_world_coll__map" id="a_dynamics_world_coll__map">
-<area shape="rect" title=" " alt="" coords="5,80,117,107"/>
-<area shape="rect" href="class_collision_world.html" title=" " alt="" coords="9,5,113,32"/>
+<area shape="rect" title="A world with dynamics in it." alt="" coords="5,80,117,107"/>
+<area shape="rect" href="class_collision_world.html" title="Represents a world where collisions can happen. It does not have dynamics, for this you will need the..." alt="" coords="9,5,113,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:abf5bc9fbe4be94332e08fa9fdb691559"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dynamics_world.html#abf5bc9fbe4be94332e08fa9fdb691559">AddRigidbody</a> (<a class="el" href="struct_rigidbody.html">Rigidbody</a> *rigidbody)</td></tr>
+<tr class="memdesc:abf5bc9fbe4be94332e08fa9fdb691559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a rigidbody in the world.  <a href="class_dynamics_world.html#abf5bc9fbe4be94332e08fa9fdb691559">More...</a><br /></td></tr>
 <tr class="separator:abf5bc9fbe4be94332e08fa9fdb691559"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f79713bf05015294493ba35a5294d9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dynamics_world.html#a5f79713bf05015294493ba35a5294d9d">ApplyGravity</a> () const</td></tr>
+<tr class="memdesc:a5f79713bf05015294493ba35a5294d9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the gravity to all the rigidbody.  <a href="class_dynamics_world.html#a5f79713bf05015294493ba35a5294d9d">More...</a><br /></td></tr>
 <tr class="separator:a5f79713bf05015294493ba35a5294d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb8c32dec7f89f85cd1f19b85228e237"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dynamics_world.html#aeb8c32dec7f89f85cd1f19b85228e237">MoveBodies</a> (float deltaTime) const</td></tr>
+<tr class="memdesc:aeb8c32dec7f89f85cd1f19b85228e237"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves all the rigidbodies.  <a href="class_dynamics_world.html#aeb8c32dec7f89f85cd1f19b85228e237">More...</a><br /></td></tr>
 <tr class="separator:aeb8c32dec7f89f85cd1f19b85228e237"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5d960f927eb4a9667529577999f734a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dynamics_world.html#af5d960f927eb4a9667529577999f734a">Step</a> (float deltaTime) const</td></tr>
+<tr class="memdesc:af5d960f927eb4a9667529577999f734a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Steps the world.  <a href="class_dynamics_world.html#af5d960f927eb4a9667529577999f734a">More...</a><br /></td></tr>
 <tr class="separator:af5d960f927eb4a9667529577999f734a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af66ea94ee4f214be1f9bf53d1afc65bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dynamics_world.html#af66ea94ee4f214be1f9bf53d1afc65bb">SetWorldGravity</a> (<a class="el" href="struct_vector2.html">Vector2</a> gravity)</td></tr>
+<tr class="memdesc:af66ea94ee4f214be1f9bf53d1afc65bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the gravity in the world.  <a href="class_dynamics_world.html#af66ea94ee4f214be1f9bf53d1afc65bb">More...</a><br /></td></tr>
 <tr class="separator:af66ea94ee4f214be1f9bf53d1afc65bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_collision_world"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_collision_world')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_collision_world.html">CollisionWorld</a></td></tr>
 <tr class="memitem:aece70c9058e004f0cf52bdfca739d551 inherit pub_methods_class_collision_world"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_world.html#aece70c9058e004f0cf52bdfca739d551">AddCollisionBody</a> (<a class="el" href="struct_collision_body.html">CollisionBody</a> *body)</td></tr>
+<tr class="memdesc:aece70c9058e004f0cf52bdfca739d551 inherit pub_methods_class_collision_world"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a collision body to the world.  <a href="class_collision_world.html#aece70c9058e004f0cf52bdfca739d551">More...</a><br /></td></tr>
 <tr class="separator:aece70c9058e004f0cf52bdfca739d551 inherit pub_methods_class_collision_world"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdb6781db6fe00f16a21b8c72fc4f596 inherit pub_methods_class_collision_world"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_world.html#acdb6781db6fe00f16a21b8c72fc4f596">RemoveCollisionBody</a> (<a class="el" href="struct_collision_body.html">CollisionBody</a> *body)</td></tr>
+<tr class="memdesc:acdb6781db6fe00f16a21b8c72fc4f596 inherit pub_methods_class_collision_world"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a collision body to the world.  <a href="class_collision_world.html#acdb6781db6fe00f16a21b8c72fc4f596">More...</a><br /></td></tr>
 <tr class="separator:acdb6781db6fe00f16a21b8c72fc4f596 inherit pub_methods_class_collision_world"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5e98b7b7d034564418807cfe564a497 inherit pub_methods_class_collision_world"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_world.html#ac5e98b7b7d034564418807cfe564a497">AddSolver</a> (<a class="el" href="class_solver.html">Solver</a> *solver)</td></tr>
+<tr class="memdesc:ac5e98b7b7d034564418807cfe564a497 inherit pub_methods_class_collision_world"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a solver to the world.  <a href="class_collision_world.html#ac5e98b7b7d034564418807cfe564a497">More...</a><br /></td></tr>
 <tr class="separator:ac5e98b7b7d034564418807cfe564a497 inherit pub_methods_class_collision_world"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13c695d42ef95c1be34cde9606d8d17b inherit pub_methods_class_collision_world"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_world.html#a13c695d42ef95c1be34cde9606d8d17b">RemoveSolver</a> (<a class="el" href="class_solver.html">Solver</a> *solver)</td></tr>
+<tr class="memdesc:a13c695d42ef95c1be34cde9606d8d17b inherit pub_methods_class_collision_world"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the solver from the world.  <a href="class_collision_world.html#a13c695d42ef95c1be34cde9606d8d17b">More...</a><br /></td></tr>
 <tr class="separator:a13c695d42ef95c1be34cde9606d8d17b inherit pub_methods_class_collision_world"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01b16bf7c208386a160f40b084a8ced4 inherit pub_methods_class_collision_world"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_world.html#a01b16bf7c208386a160f40b084a8ced4">SetCollisionCallback</a> (const std::function&lt; void(<a class="el" href="struct_collision.html">Collision</a> &amp;, float)&gt; &amp;callback)</td></tr>
+<tr class="memdesc:a01b16bf7c208386a160f40b084a8ced4 inherit pub_methods_class_collision_world"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the collision callback of this world.  <a href="class_collision_world.html#a01b16bf7c208386a160f40b084a8ced4">More...</a><br /></td></tr>
 <tr class="separator:a01b16bf7c208386a160f40b084a8ced4 inherit pub_methods_class_collision_world"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a240631da475b62b5c21e31da56659702 inherit pub_methods_class_collision_world"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_world.html#a240631da475b62b5c21e31da56659702">SolveCollisions</a> (const std::vector&lt; <a class="el" href="struct_collision.html">Collision</a> &gt; &amp;collisions, float deltaTime) const</td></tr>
+<tr class="memdesc:a240631da475b62b5c21e31da56659702 inherit pub_methods_class_collision_world"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves the collisions with the provided solvers.  <a href="class_collision_world.html#a240631da475b62b5c21e31da56659702">More...</a><br /></td></tr>
 <tr class="separator:a240631da475b62b5c21e31da56659702 inherit pub_methods_class_collision_world"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c1cafc3f85e7ab2ce94958c8ab10ef2 inherit pub_methods_class_collision_world"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_world.html#a0c1cafc3f85e7ab2ce94958c8ab10ef2">SendCollisionCallbacks</a> (std::vector&lt; <a class="el" href="struct_collision.html">Collision</a> &gt; &amp;collisions, float deltaTime) const</td></tr>
+<tr class="memdesc:a0c1cafc3f85e7ab2ce94958c8ab10ef2 inherit pub_methods_class_collision_world"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls the callbacks of all the bodies in each collisions.  <a href="class_collision_world.html#a0c1cafc3f85e7ab2ce94958c8ab10ef2">More...</a><br /></td></tr>
 <tr class="separator:a0c1cafc3f85e7ab2ce94958c8ab10ef2 inherit pub_methods_class_collision_world"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6813dd73cd0dd33cce8e281dede99591 inherit pub_methods_class_collision_world"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_world.html#a6813dd73cd0dd33cce8e281dede99591">ResolveCollisions</a> (float deltaTime) const</td></tr>
+<tr class="memdesc:a6813dd73cd0dd33cce8e281dede99591 inherit pub_methods_class_collision_world"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves all the collisions that happened in this world.  <a href="class_collision_world.html#a6813dd73cd0dd33cce8e281dede99591">More...</a><br /></td></tr>
 <tr class="separator:a6813dd73cd0dd33cce8e281dede99591 inherit pub_methods_class_collision_world"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
@@ -149,7 +165,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a0cec4dcb10188c6c8dbf08ba41ebe2d6 inherit pro_attribs_class_collision_world"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(<a class="el" href="struct_collision.html">Collision</a> &amp;, float)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_world.html#a0cec4dcb10188c6c8dbf08ba41ebe2d6">_onCollision</a></td></tr>
 <tr class="separator:a0cec4dcb10188c6c8dbf08ba41ebe2d6 inherit pro_attribs_class_collision_world"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >A world with dynamics in it. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="abf5bc9fbe4be94332e08fa9fdb691559" name="abf5bc9fbe4be94332e08fa9fdb691559"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abf5bc9fbe4be94332e08fa9fdb691559">&#9670;&nbsp;</a></span>AddRigidbody()</h2>
 
@@ -165,15 +183,23 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Adds a rigidbody in the world. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rigidbody</td><td><a class="el" href="struct_rigidbody.html" title="A Rigidbody that has dynamics.">Rigidbody</a> to add. </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_dynamics_world_abf5bc9fbe4be94332e08fa9fdb691559_cgraph.png" border="0" usemap="#aclass_dynamics_world_abf5bc9fbe4be94332e08fa9fdb691559_cgraph" alt=""/></div>
 <map name="aclass_dynamics_world_abf5bc9fbe4be94332e08fa9fdb691559_cgraph" id="aclass_dynamics_world_abf5bc9fbe4be94332e08fa9fdb691559_cgraph">
-<area shape="rect" title=" " alt="" coords="5,56,203,83"/>
-<area shape="rect" href="class_collision_world.html#aece70c9058e004f0cf52bdfca739d551" title=" " alt="" coords="251,5,461,32"/>
-<area shape="rect" href="struct_rigidbody.html#a0db5be92109bd41124eb71ced0e93323" title=" " alt="" coords="267,56,445,83"/>
-<area shape="rect" href="struct_rigidbody.html#a6b897b39be3e53af79e3a5ae8b17af8e" title=" " alt="" coords="275,107,437,133"/>
+<area shape="rect" title="Adds a rigidbody in the world." alt="" coords="5,56,203,83"/>
+<area shape="rect" href="class_collision_world.html#aece70c9058e004f0cf52bdfca739d551" title="Adds a collision body to the world." alt="" coords="251,5,461,32"/>
+<area shape="rect" href="struct_rigidbody.html#a0db5be92109bd41124eb71ced0e93323" title="Sets the gravity force." alt="" coords="267,56,445,83"/>
+<area shape="rect" href="struct_rigidbody.html#a6b897b39be3e53af79e3a5ae8b17af8e" title="Gets a boolean indicating whether this body takes gravity." alt="" coords="275,107,437,133"/>
 </map>
 </div>
 
@@ -194,6 +220,8 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Applies the gravity to all the rigidbody. </p>
+
 </div>
 </div>
 <a id="aeb8c32dec7f89f85cd1f19b85228e237" name="aeb8c32dec7f89f85cd1f19b85228e237"></a>
@@ -211,6 +239,14 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Moves all the rigidbodies. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deltaTime</td><td>Time elapsed since the last frame. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -230,6 +266,14 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Sets the gravity in the world. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gravity</td><td>Gravity to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="af5d960f927eb4a9667529577999f734a" name="af5d960f927eb4a9667529577999f734a"></a>
@@ -247,21 +291,29 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Steps the world. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deltaTime</td><td>Time elapsed since the last frame. </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_dynamics_world_af5d960f927eb4a9667529577999f734a_cgraph.png" border="0" usemap="#aclass_dynamics_world_af5d960f927eb4a9667529577999f734a_cgraph" alt=""/></div>
 <map name="aclass_dynamics_world_af5d960f927eb4a9667529577999f734a_cgraph" id="aclass_dynamics_world_af5d960f927eb4a9667529577999f734a_cgraph">
-<area shape="rect" title=" " alt="" coords="5,93,151,120"/>
-<area shape="rect" href="class_dynamics_world.html#a5f79713bf05015294493ba35a5294d9d" title=" " alt="" coords="210,43,401,69"/>
-<area shape="rect" href="class_dynamics_world.html#aeb8c32dec7f89f85cd1f19b85228e237" title=" " alt="" coords="210,93,401,120"/>
-<area shape="rect" href="class_collision_world.html#a6813dd73cd0dd33cce8e281dede99591" title=" " alt="" coords="199,144,412,171"/>
-<area shape="rect" href="struct_collision_body.html#a87cfaf648e060c8394e0ea50edc1559d" title=" " alt="" coords="497,5,622,32"/>
-<area shape="rect" href="struct_collision_body.html#ab14bd14aebef7e2e59ee412ee88ab77a" title=" " alt="" coords="481,56,638,83"/>
-<area shape="rect" href="class_collision_world.html#a0c1cafc3f85e7ab2ce94958c8ab10ef2" title=" " alt="" coords="465,107,654,149"/>
-<area shape="rect" href="class_collision_world.html#a240631da475b62b5c21e31da56659702" title=" " alt="" coords="460,173,659,200"/>
-<area shape="rect" href="struct_collider.html#af305c50dfe7802d1bf89e174032e57f1" title=" " alt="" coords="486,224,633,251"/>
-<area shape="rect" href="struct_collision_body.html#a3c7fa400d6376214005acc6d43e86b36" title=" " alt="" coords="490,275,629,301"/>
+<area shape="rect" title="Steps the world." alt="" coords="5,93,151,120"/>
+<area shape="rect" href="class_dynamics_world.html#a5f79713bf05015294493ba35a5294d9d" title="Applies the gravity to all the rigidbody." alt="" coords="210,43,401,69"/>
+<area shape="rect" href="class_dynamics_world.html#aeb8c32dec7f89f85cd1f19b85228e237" title="Moves all the rigidbodies." alt="" coords="210,93,401,120"/>
+<area shape="rect" href="class_collision_world.html#a6813dd73cd0dd33cce8e281dede99591" title="Resolves all the collisions that happened in this world." alt="" coords="199,144,412,171"/>
+<area shape="rect" href="struct_collision_body.html#a87cfaf648e060c8394e0ea50edc1559d" title="Gets the collider of the body." alt="" coords="497,5,622,32"/>
+<area shape="rect" href="struct_collision_body.html#ab14bd14aebef7e2e59ee412ee88ab77a" title="A boolean saying if the collider is a trigger collider. This means that it will not have a collision ..." alt="" coords="481,56,638,83"/>
+<area shape="rect" href="class_collision_world.html#a0c1cafc3f85e7ab2ce94958c8ab10ef2" title="Calls the callbacks of all the bodies in each collisions." alt="" coords="465,107,654,149"/>
+<area shape="rect" href="class_collision_world.html#a240631da475b62b5c21e31da56659702" title="Solves the collisions with the provided solvers." alt="" coords="460,173,659,200"/>
+<area shape="rect" href="struct_collider.html#af305c50dfe7802d1bf89e174032e57f1" title="Tests the collision against a generic collider." alt="" coords="486,224,633,251"/>
+<area shape="rect" href="struct_collision_body.html#a3c7fa400d6376214005acc6d43e86b36" title="Gets the transform of the body." alt="" coords="490,275,629,301"/>
 </map>
 </div>
 

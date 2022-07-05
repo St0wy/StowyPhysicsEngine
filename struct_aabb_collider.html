@@ -90,14 +90,17 @@ $(document).ready(function(){initNavTree('struct_aabb_collider.html',''); initRe
 </div><!--header-->
 <div class="contents">
 
+<p>An Axis Aligned Bounding Box collider.  
+ <a href="struct_aabb_collider.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_collider_8hpp_source.html">Collider.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for AabbCollider:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_aabb_collider__inherit__graph.png" border="0" usemap="#a_aabb_collider_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_aabb_collider_inherit__map" id="a_aabb_collider_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,80,100,107"/>
-<area shape="rect" href="struct_collider.html" title=" " alt="" coords="20,5,85,32"/>
+<area shape="rect" title="An Axis Aligned Bounding Box collider." alt="" coords="5,80,100,107"/>
+<area shape="rect" href="struct_collider.html" title="A pure virtual struct that represents colliders." alt="" coords="20,5,85,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -105,23 +108,28 @@ Collaboration diagram for AabbCollider:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_aabb_collider__coll__graph.png" border="0" usemap="#a_aabb_collider_coll__map" alt="Collaboration graph"/></div>
 <map name="a_aabb_collider_coll__map" id="a_aabb_collider_coll__map">
-<area shape="rect" title=" " alt="" coords="36,95,131,121"/>
-<area shape="rect" href="struct_collider.html" title=" " alt="" coords="5,5,71,32"/>
-<area shape="rect" href="struct_vector2.html" title=" " alt="" coords="95,5,162,32"/>
+<area shape="rect" title="An Axis Aligned Bounding Box collider." alt="" coords="36,95,131,121"/>
+<area shape="rect" href="struct_collider.html" title="A pure virtual struct that represents colliders." alt="" coords="5,5,71,32"/>
+<area shape="rect" href="struct_vector2.html" title="A struct representing a 2D Vector." alt="" coords="95,5,162,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac4519a24cb67ca50a108ad0e57dbeefc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_manifold.html">Manifold</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_aabb_collider.html#ac4519a24cb67ca50a108ad0e57dbeefc">TestCollision</a> (const <a class="el" href="struct_transform.html">Transform</a> *transform, const <a class="el" href="struct_collider.html">Collider</a> *collider, const <a class="el" href="struct_transform.html">Transform</a> *colliderTransform) const override</td></tr>
+<tr class="memdesc:ac4519a24cb67ca50a108ad0e57dbeefc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests the collision against a generic collider.  <a href="struct_aabb_collider.html#ac4519a24cb67ca50a108ad0e57dbeefc">More...</a><br /></td></tr>
 <tr class="separator:ac4519a24cb67ca50a108ad0e57dbeefc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64c58cfb82cd1e3e097961ebd84b75a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_manifold.html">Manifold</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_aabb_collider.html#a64c58cfb82cd1e3e097961ebd84b75a5">TestCollision</a> (const <a class="el" href="struct_transform.html">Transform</a> *transform, const <a class="el" href="struct_box_collider.html">BoxCollider</a> *collider, const <a class="el" href="struct_transform.html">Transform</a> *boxTransform) const override</td></tr>
+<tr class="memdesc:a64c58cfb82cd1e3e097961ebd84b75a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests the collision against a box collider.  <a href="struct_aabb_collider.html#a64c58cfb82cd1e3e097961ebd84b75a5">More...</a><br /></td></tr>
 <tr class="separator:a64c58cfb82cd1e3e097961ebd84b75a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70c028b959147da0a29f0349f20d9220"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_manifold.html">Manifold</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_aabb_collider.html#a70c028b959147da0a29f0349f20d9220">TestCollision</a> (const <a class="el" href="struct_transform.html">Transform</a> *transform, const <a class="el" href="struct_circle_collider.html">CircleCollider</a> *collider, const <a class="el" href="struct_transform.html">Transform</a> *circleTransform) const override</td></tr>
+<tr class="memdesc:a70c028b959147da0a29f0349f20d9220"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests the collision against a circle collider.  <a href="struct_aabb_collider.html#a70c028b959147da0a29f0349f20d9220">More...</a><br /></td></tr>
 <tr class="separator:a70c028b959147da0a29f0349f20d9220"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2067111397fc60befd3544e940663318"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_manifold.html">Manifold</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_aabb_collider.html#a2067111397fc60befd3544e940663318">TestCollision</a> (const <a class="el" href="struct_transform.html">Transform</a> *transform, const <a class="el" href="struct_aabb_collider.html">AabbCollider</a> *collider, const <a class="el" href="struct_transform.html">Transform</a> *aabbTransform) const override</td></tr>
+<tr class="memdesc:a2067111397fc60befd3544e940663318"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests the collision against a aabb collider.  <a href="struct_aabb_collider.html#a2067111397fc60befd3544e940663318">More...</a><br /></td></tr>
 <tr class="separator:a2067111397fc60befd3544e940663318"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c5cebac684b0e986635a40411de8d00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_aabb_collider.html#a2c5cebac684b0e986635a40411de8d00">FindFurthestPoint</a> (const <a class="el" href="struct_transform.html">Transform</a> *transform, const <a class="el" href="struct_vector2.html">Vector2</a> &amp;direction) const override</td></tr>
+<tr class="memdesc:a2c5cebac684b0e986635a40411de8d00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the furthest point in the specified direction.  <a href="struct_aabb_collider.html#a2c5cebac684b0e986635a40411de8d00">More...</a><br /></td></tr>
 <tr class="separator:a2c5cebac684b0e986635a40411de8d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_struct_collider"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_collider')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="struct_collider.html">Collider</a></td></tr>
 <tr class="memitem:ab55111a0e01b0a1f809aeb8ef776412d inherit pub_methods_struct_collider"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collider.html#ab55111a0e01b0a1f809aeb8ef776412d">Collider</a> ()=default</td></tr>
@@ -137,26 +145,36 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6b1928fd14b27a65926cb06fa73475f9 inherit pub_methods_struct_collider"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collider.html#a6b1928fd14b27a65926cb06fa73475f9">Collider</a> (const <a class="el" href="struct_collider.html">Collider</a> &amp;col)=default</td></tr>
 <tr class="separator:a6b1928fd14b27a65926cb06fa73475f9 inherit pub_methods_struct_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af305c50dfe7802d1bf89e174032e57f1 inherit pub_methods_struct_collider"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_manifold.html">Manifold</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collider.html#af305c50dfe7802d1bf89e174032e57f1">TestCollision</a> (const <a class="el" href="struct_transform.html">Transform</a> *transform, const <a class="el" href="struct_collider.html">Collider</a> *collider, const <a class="el" href="struct_transform.html">Transform</a> *colliderTransform) const =0</td></tr>
+<tr class="memdesc:af305c50dfe7802d1bf89e174032e57f1 inherit pub_methods_struct_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests the collision against a generic collider.  <a href="struct_collider.html#af305c50dfe7802d1bf89e174032e57f1">More...</a><br /></td></tr>
 <tr class="separator:af305c50dfe7802d1bf89e174032e57f1 inherit pub_methods_struct_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad657edd5001c2fedc42b4601fbc8d7a5 inherit pub_methods_struct_collider"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_manifold.html">Manifold</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collider.html#ad657edd5001c2fedc42b4601fbc8d7a5">TestCollision</a> (const <a class="el" href="struct_transform.html">Transform</a> *transform, const <a class="el" href="struct_box_collider.html">BoxCollider</a> *collider, const <a class="el" href="struct_transform.html">Transform</a> *boxTransform) const =0</td></tr>
+<tr class="memdesc:ad657edd5001c2fedc42b4601fbc8d7a5 inherit pub_methods_struct_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests the collision against a box collider.  <a href="struct_collider.html#ad657edd5001c2fedc42b4601fbc8d7a5">More...</a><br /></td></tr>
 <tr class="separator:ad657edd5001c2fedc42b4601fbc8d7a5 inherit pub_methods_struct_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3bdca6d92dba7ff13c8775f7c17d212 inherit pub_methods_struct_collider"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_manifold.html">Manifold</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collider.html#af3bdca6d92dba7ff13c8775f7c17d212">TestCollision</a> (const <a class="el" href="struct_transform.html">Transform</a> *transform, const <a class="el" href="struct_circle_collider.html">CircleCollider</a> *collider, const <a class="el" href="struct_transform.html">Transform</a> *circleTransform) const =0</td></tr>
+<tr class="memdesc:af3bdca6d92dba7ff13c8775f7c17d212 inherit pub_methods_struct_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests the collision against a circle collider.  <a href="struct_collider.html#af3bdca6d92dba7ff13c8775f7c17d212">More...</a><br /></td></tr>
 <tr class="separator:af3bdca6d92dba7ff13c8775f7c17d212 inherit pub_methods_struct_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24c76534d5304efa7181a03cc566a3f8 inherit pub_methods_struct_collider"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_manifold.html">Manifold</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collider.html#a24c76534d5304efa7181a03cc566a3f8">TestCollision</a> (const <a class="el" href="struct_transform.html">Transform</a> *transform, const <a class="el" href="struct_aabb_collider.html">AabbCollider</a> *collider, const <a class="el" href="struct_transform.html">Transform</a> *circleTransform) const =0</td></tr>
-<tr class="separator:a24c76534d5304efa7181a03cc566a3f8 inherit pub_methods_struct_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48d59d5c5e5029691bc860d332b1e2f4 inherit pub_methods_struct_collider"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_manifold.html">Manifold</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collider.html#a48d59d5c5e5029691bc860d332b1e2f4">TestCollision</a> (const <a class="el" href="struct_transform.html">Transform</a> *transform, const <a class="el" href="struct_aabb_collider.html">AabbCollider</a> *collider, const <a class="el" href="struct_transform.html">Transform</a> *aabbTransform) const =0</td></tr>
+<tr class="memdesc:a48d59d5c5e5029691bc860d332b1e2f4 inherit pub_methods_struct_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests the collision against a aabb collider.  <a href="struct_collider.html#a48d59d5c5e5029691bc860d332b1e2f4">More...</a><br /></td></tr>
+<tr class="separator:a48d59d5c5e5029691bc860d332b1e2f4 inherit pub_methods_struct_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74bb6d5110ff84b664bc3101ebf86d23 inherit pub_methods_struct_collider"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collider.html#a74bb6d5110ff84b664bc3101ebf86d23">FindFurthestPoint</a> (const <a class="el" href="struct_transform.html">Transform</a> *transform, const <a class="el" href="struct_vector2.html">Vector2</a> &amp;direction) const =0</td></tr>
+<tr class="memdesc:a74bb6d5110ff84b664bc3101ebf86d23 inherit pub_methods_struct_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the furthest point in the specified direction.  <a href="struct_collider.html#a74bb6d5110ff84b664bc3101ebf86d23">More...</a><br /></td></tr>
 <tr class="separator:a74bb6d5110ff84b664bc3101ebf86d23 inherit pub_methods_struct_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a8c2516e1e2dc0aa64ef125c7d17a3955"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_aabb_collider.html#a8c2516e1e2dc0aa64ef125c7d17a3955">center</a></td></tr>
+<tr class="memdesc:a8c2516e1e2dc0aa64ef125c7d17a3955"><td class="mdescLeft">&#160;</td><td class="mdescRight">Center of the box.  <a href="struct_aabb_collider.html#a8c2516e1e2dc0aa64ef125c7d17a3955">More...</a><br /></td></tr>
 <tr class="separator:a8c2516e1e2dc0aa64ef125c7d17a3955"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9539bf2300ff299325e96a42104f4c1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_aabb_collider.html#ab9539bf2300ff299325e96a42104f4c1">halfWidth</a></td></tr>
+<tr class="memdesc:ab9539bf2300ff299325e96a42104f4c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Half of the width of the box.  <a href="struct_aabb_collider.html#ab9539bf2300ff299325e96a42104f4c1">More...</a><br /></td></tr>
 <tr class="separator:ab9539bf2300ff299325e96a42104f4c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46ee43b5d0f006a8cfbdeaa4a0b0b3c9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_aabb_collider.html#a46ee43b5d0f006a8cfbdeaa4a0b0b3c9">halfHeight</a></td></tr>
+<tr class="memdesc:a46ee43b5d0f006a8cfbdeaa4a0b0b3c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Half of the height of the box.  <a href="struct_aabb_collider.html#a46ee43b5d0f006a8cfbdeaa4a0b0b3c9">More...</a><br /></td></tr>
 <tr class="separator:a46ee43b5d0f006a8cfbdeaa4a0b0b3c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >An Axis Aligned Bounding Box collider. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2c5cebac684b0e986635a40411de8d00" name="a2c5cebac684b0e986635a40411de8d00"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2c5cebac684b0e986635a40411de8d00">&#9670;&nbsp;</a></span>FindFurthestPoint()</h2>
 
@@ -190,6 +208,16 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Find the furthest point in the specified direction. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transform</td><td>The transform of this collider. </td></tr>
+    <tr><td class="paramname">direction</td><td>Direction in which to find the furthest point. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The furthest point. </dd></dl>
 
 <p>Implements <a class="el" href="struct_collider.html#a74bb6d5110ff84b664bc3101ebf86d23">Collider</a>.</p>
 
@@ -235,15 +263,26 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="struct_collider.html#a24c76534d5304efa7181a03cc566a3f8">Collider</a>.</p>
+<p>Tests the collision against a aabb collider. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transform</td><td>The transform of this collider. </td></tr>
+    <tr><td class="paramname">collider</td><td>The circle collider to collide with. </td></tr>
+    <tr><td class="paramname">aabbTransform</td><td>The transform of the collider to collide with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The manifold of that collision. </dd></dl>
+
+<p>Implements <a class="el" href="struct_collider.html#a48d59d5c5e5029691bc860d332b1e2f4">Collider</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_aabb_collider_a2067111397fc60befd3544e940663318_cgraph.png" border="0" usemap="#astruct_aabb_collider_a2067111397fc60befd3544e940663318_cgraph" alt=""/></div>
 <map name="astruct_aabb_collider_a2067111397fc60befd3544e940663318_cgraph" id="astruct_aabb_collider_a2067111397fc60befd3544e940663318_cgraph">
-<area shape="rect" title=" " alt="" coords="5,13,181,39"/>
-<area shape="rect" href="namespacealgo.html#aad5212147d65ff0180eb21c140f07c14" title=" " alt="" coords="229,5,416,47"/>
-<area shape="rect" href="struct_manifold.html#a2d38cacdc21e00dcc762a7be3dac2c7d" title=" " alt="" coords="464,13,577,39"/>
+<area shape="rect" title="Tests the collision against a aabb collider." alt="" coords="5,5,181,32"/>
+<area shape="rect" href="namespacealgo.html#aa5fc8bda5ca18e2fa7ddb34406e6658d" title="Finds the collision manifold between A and B." alt="" coords="229,5,416,32"/>
+<area shape="rect" href="struct_manifold.html#a2d38cacdc21e00dcc762a7be3dac2c7d" title="Gets an empty manifold with no collisions." alt="" coords="464,5,577,32"/>
 </map>
 </div>
 
@@ -289,14 +328,25 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Tests the collision against a box collider. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transform</td><td>The transform of this collider. </td></tr>
+    <tr><td class="paramname">collider</td><td>The box collider to collide with. </td></tr>
+    <tr><td class="paramname">boxTransform</td><td>The transform of the collider to collide with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The manifold of that collision. </dd></dl>
+
 <p>Implements <a class="el" href="struct_collider.html#ad657edd5001c2fedc42b4601fbc8d7a5">Collider</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_aabb_collider_a64c58cfb82cd1e3e097961ebd84b75a5_cgraph.png" border="0" usemap="#astruct_aabb_collider_a64c58cfb82cd1e3e097961ebd84b75a5_cgraph" alt=""/></div>
 <map name="astruct_aabb_collider_a64c58cfb82cd1e3e097961ebd84b75a5_cgraph" id="astruct_aabb_collider_a64c58cfb82cd1e3e097961ebd84b75a5_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,181,32"/>
-<area shape="rect" href="struct_manifold.html#a2d38cacdc21e00dcc762a7be3dac2c7d" title=" " alt="" coords="229,5,343,32"/>
+<area shape="rect" title="Tests the collision against a box collider." alt="" coords="5,5,181,32"/>
+<area shape="rect" href="struct_manifold.html#a2d38cacdc21e00dcc762a7be3dac2c7d" title="Gets an empty manifold with no collisions." alt="" coords="229,5,343,32"/>
 </map>
 </div>
 
@@ -342,17 +392,28 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Tests the collision against a circle collider. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transform</td><td>The transform of this collider. </td></tr>
+    <tr><td class="paramname">collider</td><td>The circle collider to collide with. </td></tr>
+    <tr><td class="paramname">circleTransform</td><td>The transform of the collider to collide with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The manifold of that collision. </dd></dl>
+
 <p>Implements <a class="el" href="struct_collider.html#af3bdca6d92dba7ff13c8775f7c17d212">Collider</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_aabb_collider_a70c028b959147da0a29f0349f20d9220_cgraph.png" border="0" usemap="#astruct_aabb_collider_a70c028b959147da0a29f0349f20d9220_cgraph" alt=""/></div>
 <map name="astruct_aabb_collider_a70c028b959147da0a29f0349f20d9220_cgraph" id="astruct_aabb_collider_a70c028b959147da0a29f0349f20d9220_cgraph">
-<area shape="rect" title=" " alt="" coords="5,56,181,83"/>
-<area shape="rect" href="namespacealgo.html#aeb70d8c2e46f3f91785d2081a5cd598e" title=" " alt="" coords="229,49,419,90"/>
-<area shape="rect" href="struct_manifold.html#a2d38cacdc21e00dcc762a7be3dac2c7d" title=" " alt="" coords="487,5,600,32"/>
-<area shape="rect" href="struct_vector2.html#a034384ad890b6ceeaa7da3d88d566b5d" title=" " alt="" coords="491,56,596,83"/>
-<area shape="rect" href="struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title=" " alt="" coords="467,107,620,133"/>
+<area shape="rect" title="Tests the collision against a circle collider." alt="" coords="5,56,181,83"/>
+<area shape="rect" href="namespacealgo.html#a6af93f14e8018b1b0e9c82577ded7e7c" title="Finds the collision manifold between A and B." alt="" coords="229,56,419,83"/>
+<area shape="rect" href="struct_manifold.html#a2d38cacdc21e00dcc762a7be3dac2c7d" title="Gets an empty manifold with no collisions." alt="" coords="487,5,600,32"/>
+<area shape="rect" href="struct_vector2.html#a034384ad890b6ceeaa7da3d88d566b5d" title="Gets the biggest component of this vector." alt="" coords="491,56,596,83"/>
+<area shape="rect" href="struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="467,107,620,133"/>
 </map>
 </div>
 
@@ -398,14 +459,25 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>Tests the collision against a generic collider. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transform</td><td>The transform of this collider. </td></tr>
+    <tr><td class="paramname">collider</td><td>The collider to collide with. </td></tr>
+    <tr><td class="paramname">colliderTransform</td><td>The transform of the collider to collide with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The manifold of that collision. </dd></dl>
+
 <p>Implements <a class="el" href="struct_collider.html#af305c50dfe7802d1bf89e174032e57f1">Collider</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_aabb_collider_ac4519a24cb67ca50a108ad0e57dbeefc_cgraph.png" border="0" usemap="#astruct_aabb_collider_ac4519a24cb67ca50a108ad0e57dbeefc_cgraph" alt=""/></div>
 <map name="astruct_aabb_collider_ac4519a24cb67ca50a108ad0e57dbeefc_cgraph" id="astruct_aabb_collider_ac4519a24cb67ca50a108ad0e57dbeefc_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,181,32"/>
-<area shape="rect" href="struct_collider.html#af305c50dfe7802d1bf89e174032e57f1" title=" " alt="" coords="229,5,376,32"/>
+<area shape="rect" title="Tests the collision against a generic collider." alt="" coords="5,5,181,32"/>
+<area shape="rect" href="struct_collider.html#af305c50dfe7802d1bf89e174032e57f1" title="Tests the collision against a generic collider." alt="" coords="229,5,376,32"/>
 </map>
 </div>
 
@@ -424,6 +496,8 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Center of the box. </p>
+
 </div>
 </div>
 <a id="a46ee43b5d0f006a8cfbdeaa4a0b0b3c9" name="a46ee43b5d0f006a8cfbdeaa4a0b0b3c9"></a>
@@ -438,6 +512,8 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Half of the height of the box. </p>
+
 </div>
 </div>
 <a id="ab9539bf2300ff299325e96a42104f4c1" name="ab9539bf2300ff299325e96a42104f4c1"></a>
@@ -451,6 +527,8 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Half of the width of the box. </p>
 
 </div>
 </div>

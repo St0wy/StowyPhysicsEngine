@@ -85,19 +85,20 @@ $(document).ready(function(){initNavTree('_impulse_solver_8hpp_source.html','');
   <div class="headertitle"><div class="title">ImpulseSolver.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_impulse_solver_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_solver_8hpp.html">Solver.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_impulse_solver.html">    5</a></span><span class="keyword">class </span><a class="code hl_class" href="class_impulse_solver.html">ImpulseSolver</a> final : <span class="keyword">public</span> <a class="code hl_class" href="class_solver.html">Solver</a></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_impulse_solver.html#a1ab7dd0437924b305ebd20e7c554e6f5">Solve</a>(<span class="keyword">const</span> std::vector&lt;Collision&gt;&amp; collisions, <span class="keywordtype">float</span> deltaTime) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>};</div>
-<div class="ttc" id="a_solver_8hpp_html"><div class="ttname"><a href="_solver_8hpp.html">Solver.hpp</a></div></div>
-<div class="ttc" id="aclass_impulse_solver_html"><div class="ttname"><a href="class_impulse_solver.html">ImpulseSolver</a></div><div class="ttdef"><b>Definition:</b> ImpulseSolver.hpp:6</div></div>
-<div class="ttc" id="aclass_impulse_solver_html_a1ab7dd0437924b305ebd20e7c554e6f5"><div class="ttname"><a href="class_impulse_solver.html#a1ab7dd0437924b305ebd20e7c554e6f5">ImpulseSolver::Solve</a></div><div class="ttdeci">void Solve(const std::vector&lt; Collision &gt; &amp;collisions, float deltaTime) override</div><div class="ttdef"><b>Definition:</b> ImpulseSolver.cpp:8</div></div>
-<div class="ttc" id="aclass_solver_html"><div class="ttname"><a href="class_solver.html">Solver</a></div><div class="ttdef"><b>Definition:</b> Solver.hpp:7</div></div>
+<a href="_impulse_solver_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_solver_8hpp.html">Solver.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_impulse_solver.html">   18</a></span><span class="keyword">class </span><a class="code hl_class" href="class_impulse_solver.html">ImpulseSolver</a> final : <span class="keyword">public</span> <a class="code hl_class" href="class_solver.html">Solver</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_impulse_solver.html#a1ab7dd0437924b305ebd20e7c554e6f5">Solve</a>(<span class="keyword">const</span> std::vector&lt;Collision&gt;&amp; collisions, <span class="keywordtype">float</span> deltaTime) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>};</div>
+<div class="ttc" id="a_solver_8hpp_html"><div class="ttname"><a href="_solver_8hpp.html">Solver.hpp</a></div><div class="ttdoc">Contains the Solver struct.</div></div>
+<div class="ttc" id="aclass_impulse_solver_html"><div class="ttname"><a href="class_impulse_solver.html">ImpulseSolver</a></div><div class="ttdoc">Solver with impulse and friction.</div><div class="ttdef"><b>Definition:</b> ImpulseSolver.hpp:19</div></div>
+<div class="ttc" id="aclass_impulse_solver_html_a1ab7dd0437924b305ebd20e7c554e6f5"><div class="ttname"><a href="class_impulse_solver.html#a1ab7dd0437924b305ebd20e7c554e6f5">ImpulseSolver::Solve</a></div><div class="ttdeci">void Solve(const std::vector&lt; Collision &gt; &amp;collisions, float deltaTime) override</div><div class="ttdoc">Solves the provided collisions.</div><div class="ttdef"><b>Definition:</b> ImpulseSolver.cpp:8</div></div>
+<div class="ttc" id="aclass_solver_html"><div class="ttname"><a href="class_solver.html">Solver</a></div><div class="ttdoc">Generic class for all solvers.</div><div class="ttdef"><b>Definition:</b> Solver.hpp:20</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

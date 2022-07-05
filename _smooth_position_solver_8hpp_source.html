@@ -85,18 +85,19 @@ $(document).ready(function(){initNavTree('_smooth_position_solver_8hpp_source.ht
   <div class="headertitle"><div class="title">SmoothPositionSolver.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_smooth_position_solver_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="_solver_8hpp.html">Solver.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="class_smooth_position_solver.html">    4</a></span><span class="keyword">class </span><a class="code hl_class" href="class_smooth_position_solver.html">SmoothPositionSolver</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_solver.html">Solver</a></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_smooth_position_solver.html#a4d4c8613738f9774df5387621822fc34">Solve</a>(<span class="keyword">const</span> std::vector&lt;Collision&gt;&amp; collisions, <span class="keywordtype">float</span> deltaTime) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>};</div>
-<div class="ttc" id="a_solver_8hpp_html"><div class="ttname"><a href="_solver_8hpp.html">Solver.hpp</a></div></div>
-<div class="ttc" id="aclass_smooth_position_solver_html"><div class="ttname"><a href="class_smooth_position_solver.html">SmoothPositionSolver</a></div><div class="ttdef"><b>Definition:</b> SmoothPositionSolver.hpp:5</div></div>
-<div class="ttc" id="aclass_smooth_position_solver_html_a4d4c8613738f9774df5387621822fc34"><div class="ttname"><a href="class_smooth_position_solver.html#a4d4c8613738f9774df5387621822fc34">SmoothPositionSolver::Solve</a></div><div class="ttdeci">void Solve(const std::vector&lt; Collision &gt; &amp;collisions, float deltaTime) override</div><div class="ttdef"><b>Definition:</b> SmoothPositionSolver.cpp:8</div></div>
-<div class="ttc" id="aclass_solver_html"><div class="ttname"><a href="class_solver.html">Solver</a></div><div class="ttdef"><b>Definition:</b> Solver.hpp:7</div></div>
+<a href="_smooth_position_solver_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_solver_8hpp.html">Solver.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_smooth_position_solver.html">   17</a></span><span class="keyword">class </span><a class="code hl_class" href="class_smooth_position_solver.html">SmoothPositionSolver</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_solver.html">Solver</a></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_smooth_position_solver.html#a4d4c8613738f9774df5387621822fc34">Solve</a>(<span class="keyword">const</span> std::vector&lt;Collision&gt;&amp; collisions, <span class="keywordtype">float</span> deltaTime) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>};</div>
+<div class="ttc" id="a_solver_8hpp_html"><div class="ttname"><a href="_solver_8hpp.html">Solver.hpp</a></div><div class="ttdoc">Contains the Solver struct.</div></div>
+<div class="ttc" id="aclass_smooth_position_solver_html"><div class="ttname"><a href="class_smooth_position_solver.html">SmoothPositionSolver</a></div><div class="ttdoc">A solver to smooth out collision with collider that are in a tower placement.</div><div class="ttdef"><b>Definition:</b> SmoothPositionSolver.hpp:18</div></div>
+<div class="ttc" id="aclass_smooth_position_solver_html_a4d4c8613738f9774df5387621822fc34"><div class="ttname"><a href="class_smooth_position_solver.html#a4d4c8613738f9774df5387621822fc34">SmoothPositionSolver::Solve</a></div><div class="ttdeci">void Solve(const std::vector&lt; Collision &gt; &amp;collisions, float deltaTime) override</div><div class="ttdoc">Solves the provided collisions.</div><div class="ttdef"><b>Definition:</b> SmoothPositionSolver.cpp:8</div></div>
+<div class="ttc" id="aclass_solver_html"><div class="ttname"><a href="class_solver.html">Solver</a></div><div class="ttdoc">Generic class for all solvers.</div><div class="ttdef"><b>Definition:</b> Solver.hpp:20</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

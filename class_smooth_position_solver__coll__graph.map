@@ -1,4 +1,4 @@
 <map id="SmoothPositionSolver" name="SmoothPositionSolver">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,156,107"/>
-<area shape="rect" id="node2" href="$class_solver.html" title=" " alt="" coords="51,5,110,32"/>
+<area shape="rect" id="node1" title="A solver to smooth out collision with collider that are in a tower placement." alt="" coords="5,80,156,107"/>
+<area shape="rect" id="node2" href="$class_solver.html" title="Generic class for all solvers." alt="" coords="51,5,110,32"/>
 </map>

@@ -90,14 +90,17 @@ $(document).ready(function(){initNavTree('struct_collision_body.html',''); initR
 </div><!--header-->
 <div class="contents">
 
+<p>A body that can receive collisions.  
+ <a href="struct_collision_body.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_collision_body_8hpp_source.html">CollisionBody.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for CollisionBody:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_collision_body__inherit__graph.png" border="0" usemap="#a_collision_body_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_collision_body_inherit__map" id="a_collision_body_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,5,105,32"/>
-<area shape="rect" href="struct_rigidbody.html" title=" " alt="" coords="16,80,95,107"/>
+<area shape="rect" title="A body that can receive collisions." alt="" coords="5,5,105,32"/>
+<area shape="rect" href="struct_rigidbody.html" title="A Rigidbody that has dynamics." alt="" coords="16,80,95,107"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -105,40 +108,53 @@ Collaboration diagram for CollisionBody:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_collision_body__coll__graph.png" border="0" usemap="#a_collision_body_coll__map" alt="Collaboration graph"/></div>
 <map name="a_collision_body_coll__map" id="a_collision_body_coll__map">
-<area shape="rect" title=" " alt="" coords="56,213,156,240"/>
-<area shape="rect" href="struct_transform.html" title=" " alt="" coords="5,109,87,136"/>
-<area shape="rect" href="struct_vector2.html" title=" " alt="" coords="13,5,79,32"/>
-<area shape="rect" href="struct_collider.html" title=" " alt="" coords="135,109,200,136"/>
+<area shape="rect" title="A body that can receive collisions." alt="" coords="56,213,156,240"/>
+<area shape="rect" href="struct_transform.html" title="A transform of an object. Contains position, scale and rotation." alt="" coords="5,109,87,136"/>
+<area shape="rect" href="struct_vector2.html" title="A struct representing a 2D Vector." alt="" coords="13,5,79,32"/>
+<area shape="rect" href="struct_collider.html" title="A pure virtual struct that represents colliders." alt="" coords="135,109,200,136"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3c7fa400d6376214005acc6d43e86b36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_transform.html">Transform</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#a3c7fa400d6376214005acc6d43e86b36">Trans</a> ()</td></tr>
+<tr class="memdesc:a3c7fa400d6376214005acc6d43e86b36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the transform of the body.  <a href="struct_collision_body.html#a3c7fa400d6376214005acc6d43e86b36">More...</a><br /></td></tr>
 <tr class="separator:a3c7fa400d6376214005acc6d43e86b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d836f1668e9c49425b0ffa8f30b9557"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#a4d836f1668e9c49425b0ffa8f30b9557">SetTransform</a> (const <a class="el" href="struct_transform.html">Transform</a> &amp;transform)</td></tr>
+<tr class="memdesc:a4d836f1668e9c49425b0ffa8f30b9557"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the transform of the body.  <a href="struct_collision_body.html#a4d836f1668e9c49425b0ffa8f30b9557">More...</a><br /></td></tr>
 <tr class="separator:a4d836f1668e9c49425b0ffa8f30b9557"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87cfaf648e060c8394e0ea50edc1559d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_collider.html">Collider</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#a87cfaf648e060c8394e0ea50edc1559d">Col</a> () const</td></tr>
+<tr class="memdesc:a87cfaf648e060c8394e0ea50edc1559d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the collider of the body.  <a href="struct_collision_body.html#a87cfaf648e060c8394e0ea50edc1559d">More...</a><br /></td></tr>
 <tr class="separator:a87cfaf648e060c8394e0ea50edc1559d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61f830e3c0593447fe1301c0c0858be6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#a61f830e3c0593447fe1301c0c0858be6">SetCollider</a> (<a class="el" href="struct_collider.html">Collider</a> *collider)</td></tr>
+<tr class="memdesc:a61f830e3c0593447fe1301c0c0858be6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the collider of the body.  <a href="struct_collision_body.html#a61f830e3c0593447fe1301c0c0858be6">More...</a><br /></td></tr>
 <tr class="separator:a61f830e3c0593447fe1301c0c0858be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab14bd14aebef7e2e59ee412ee88ab77a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#ab14bd14aebef7e2e59ee412ee88ab77a">IsTrigger</a> () const</td></tr>
+<tr class="memdesc:ab14bd14aebef7e2e59ee412ee88ab77a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean saying if the collider is a trigger collider. This means that it will not have a collision response and will only have a callback.  <a href="struct_collision_body.html#ab14bd14aebef7e2e59ee412ee88ab77a">More...</a><br /></td></tr>
 <tr class="separator:ab14bd14aebef7e2e59ee412ee88ab77a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66f9385cbb4429f77b92365d293bc499"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#a66f9385cbb4429f77b92365d293bc499">SetIsTrigger</a> (bool isTrigger)</td></tr>
+<tr class="memdesc:a66f9385cbb4429f77b92365d293bc499"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets is trigger on the body. True means that it will not have a collision response and will only have a callback.  <a href="struct_collision_body.html#a66f9385cbb4429f77b92365d293bc499">More...</a><br /></td></tr>
 <tr class="separator:a66f9385cbb4429f77b92365d293bc499"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4e347ec4e406124067401fc5ae3a5aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#ac4e347ec4e406124067401fc5ae3a5aa">SetCollisionCallback</a> (const std::function&lt; void(const <a class="el" href="struct_collision.html">Collision</a> &amp;, float)&gt; &amp;callback)</td></tr>
+<tr class="memdesc:ac4e347ec4e406124067401fc5ae3a5aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the collision callback function.  <a href="struct_collision_body.html#ac4e347ec4e406124067401fc5ae3a5aa">More...</a><br /></td></tr>
 <tr class="separator:ac4e347ec4e406124067401fc5ae3a5aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f588bb55e24c3b5a9a49860b1920404"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#a6f588bb55e24c3b5a9a49860b1920404">OnCollision</a> (const <a class="el" href="struct_collision.html">Collision</a> &amp;collision, float deltaTime) const</td></tr>
+<tr class="memdesc:a6f588bb55e24c3b5a9a49860b1920404"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggers the collision callback function.  <a href="struct_collision_body.html#a6f588bb55e24c3b5a9a49860b1920404">More...</a><br /></td></tr>
 <tr class="separator:a6f588bb55e24c3b5a9a49860b1920404"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9d88dbea0ca0e556a5abf86cab2c371"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_vector2.html">Vector2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#ae9d88dbea0ca0e556a5abf86cab2c371">Position</a> () const</td></tr>
+<tr class="memdesc:ae9d88dbea0ca0e556a5abf86cab2c371"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the position of the body in the world.  <a href="struct_collision_body.html#ae9d88dbea0ca0e556a5abf86cab2c371">More...</a><br /></td></tr>
 <tr class="separator:ae9d88dbea0ca0e556a5abf86cab2c371"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a360ba6867d42b9ba9f0d7287a80cea2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#a360ba6867d42b9ba9f0d7287a80cea2a">SetPosition</a> (const <a class="el" href="struct_vector2.html">Vector2</a> &amp;position)</td></tr>
+<tr class="memdesc:a360ba6867d42b9ba9f0d7287a80cea2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the position of the body in the world.  <a href="struct_collision_body.html#a360ba6867d42b9ba9f0d7287a80cea2a">More...</a><br /></td></tr>
 <tr class="separator:a360ba6867d42b9ba9f0d7287a80cea2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ff2d3e40a49f0999c1e7b245a93d337"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#a9ff2d3e40a49f0999c1e7b245a93d337">IsKinematic</a> () const</td></tr>
+<tr class="memdesc:a9ff2d3e40a49f0999c1e7b245a93d337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a boolean that indicates if this body will receive a collision response.  <a href="struct_collision_body.html#a9ff2d3e40a49f0999c1e7b245a93d337">More...</a><br /></td></tr>
 <tr class="separator:a9ff2d3e40a49f0999c1e7b245a93d337"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fa5a77f6edf9bcb66c1e8451a4ca5db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#a9fa5a77f6edf9bcb66c1e8451a4ca5db">SetIsKinematic</a> (bool isKinematic)</td></tr>
+<tr class="memdesc:a9fa5a77f6edf9bcb66c1e8451a4ca5db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a boolean that indicates if this body will receive a collision response.  <a href="struct_collision_body.html#a9fa5a77f6edf9bcb66c1e8451a4ca5db">More...</a><br /></td></tr>
 <tr class="separator:a9fa5a77f6edf9bcb66c1e8451a4ca5db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a775ec3d3a47bd2dbfd534c3914d3ab0b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#a775ec3d3a47bd2dbfd534c3914d3ab0b">IsDynamic</a> () const</td></tr>
+<tr class="memdesc:a775ec3d3a47bd2dbfd534c3914d3ab0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a boolean indicating if this body is dynamic. This means that this is a <a class="el" href="struct_rigidbody.html" title="A Rigidbody that has dynamics.">Rigidbody</a>.  <a href="struct_collision_body.html#a775ec3d3a47bd2dbfd534c3914d3ab0b">More...</a><br /></td></tr>
 <tr class="separator:a775ec3d3a47bd2dbfd534c3914d3ab0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
@@ -158,7 +174,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a354989ed5ab66e8983bbea9c4baf469c"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <a class="el" href="struct_collision.html">Collision</a> &amp;, float)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#a354989ed5ab66e8983bbea9c4baf469c">_onCollisions</a></td></tr>
 <tr class="separator:a354989ed5ab66e8983bbea9c4baf469c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >A body that can receive collisions. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a87cfaf648e060c8394e0ea50edc1559d" name="a87cfaf648e060c8394e0ea50edc1559d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a87cfaf648e060c8394e0ea50edc1559d">&#9670;&nbsp;</a></span>Col()</h2>
 
@@ -173,6 +191,9 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Gets the collider of the body. </p>
+<dl class="section return"><dt>Returns</dt><dd>The collider of the body. </dd></dl>
 
 </div>
 </div>
@@ -191,6 +212,10 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Gets a boolean indicating if this body is dynamic. This means that this is a <a class="el" href="struct_rigidbody.html" title="A Rigidbody that has dynamics.">Rigidbody</a>. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_rigidbody.html" title="A Rigidbody that has dynamics.">Rigidbody</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A boolean indicating if this body is dynamic. </dd></dl>
+
 </div>
 </div>
 <a id="a9ff2d3e40a49f0999c1e7b245a93d337" name="a9ff2d3e40a49f0999c1e7b245a93d337"></a>
@@ -208,6 +233,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Gets a boolean that indicates if this body will receive a collision response. </p>
+<dl class="section return"><dt>Returns</dt><dd>A boolean that indicates if this body is kinematic. </dd></dl>
+
 </div>
 </div>
 <a id="ab14bd14aebef7e2e59ee412ee88ab77a" name="ab14bd14aebef7e2e59ee412ee88ab77a"></a>
@@ -224,6 +252,9 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>A boolean saying if the collider is a trigger collider. This means that it will not have a collision response and will only have a callback. </p>
+<dl class="section return"><dt>Returns</dt><dd>If the collider is a trigger collider. </dd></dl>
 
 </div>
 </div>
@@ -253,6 +284,15 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Triggers the collision callback function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">collision</td><td>Object representing the collision. </td></tr>
+    <tr><td class="paramname">deltaTime</td><td>The time elapsed since the last frame. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ae9d88dbea0ca0e556a5abf86cab2c371" name="ae9d88dbea0ca0e556a5abf86cab2c371"></a>
@@ -269,6 +309,9 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Gets the position of the body in the world. </p>
+<dl class="section return"><dt>Returns</dt><dd>The position of the body in the world. </dd></dl>
 
 </div>
 </div>
@@ -288,6 +331,14 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Sets the collider of the body. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">collider</td><td>The collider to set on the body. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ac4e347ec4e406124067401fc5ae3a5aa" name="ac4e347ec4e406124067401fc5ae3a5aa"></a>
@@ -305,6 +356,14 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sets the collision callback function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>The callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -324,6 +383,14 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Sets a boolean that indicates if this body will receive a collision response. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isKinematic</td><td>The new isKinematic status. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a66f9385cbb4429f77b92365d293bc499" name="a66f9385cbb4429f77b92365d293bc499"></a>
@@ -341,6 +408,14 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sets is trigger on the body. True means that it will not have a collision response and will only have a callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isTrigger</td><td>The boolean saying if the collider is trigger. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -360,6 +435,14 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Sets the position of the body in the world. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>The new position of the body. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a4d836f1668e9c49425b0ffa8f30b9557" name="a4d836f1668e9c49425b0ffa8f30b9557"></a>
@@ -378,6 +461,14 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Sets the transform of the body. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transform</td><td><a class="el" href="struct_transform.html" title="A transform of an object. Contains position, scale and rotation.">Transform</a> to set to the body. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a3c7fa400d6376214005acc6d43e86b36" name="a3c7fa400d6376214005acc6d43e86b36"></a>
@@ -394,6 +485,9 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Gets the transform of the body. </p>
+<dl class="section return"><dt>Returns</dt><dd>The transform of the body. </dd></dl>
 
 </div>
 </div>

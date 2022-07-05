@@ -56,7 +56,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_collider_8cpp.html",
-"struct_vector2.html#a9efc9a927e6a26034a471ff58b91c987"
+"struct_vector2.html#a8d726d242c8ebba24be6525528675785"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

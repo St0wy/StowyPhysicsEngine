@@ -1,9 +1,9 @@
 <map id="CollisionWorld::ResolveCollisions" name="CollisionWorld::ResolveCollisions">
-<area shape="rect" id="node1" title=" " alt="" coords="5,144,219,171"/>
-<area shape="rect" id="node2" href="$struct_collision_body.html#a87cfaf648e060c8394e0ea50edc1559d" title=" " alt="" coords="303,5,429,32"/>
-<area shape="rect" id="node3" href="$struct_collision_body.html#ab14bd14aebef7e2e59ee412ee88ab77a" title=" " alt="" coords="287,56,445,83"/>
-<area shape="rect" id="node4" href="$class_collision_world.html#a0c1cafc3f85e7ab2ce94958c8ab10ef2" title=" " alt="" coords="271,107,461,149"/>
-<area shape="rect" id="node5" href="$class_collision_world.html#a240631da475b62b5c21e31da56659702" title=" " alt="" coords="267,173,465,200"/>
-<area shape="rect" id="node6" href="$struct_collider.html#af305c50dfe7802d1bf89e174032e57f1" title=" " alt="" coords="293,224,439,251"/>
-<area shape="rect" id="node7" href="$struct_collision_body.html#a3c7fa400d6376214005acc6d43e86b36" title=" " alt="" coords="297,275,435,301"/>
+<area shape="rect" id="node1" title="Resolves all the collisions that happened in this world." alt="" coords="5,144,219,171"/>
+<area shape="rect" id="node2" href="$struct_collision_body.html#a87cfaf648e060c8394e0ea50edc1559d" title="Gets the collider of the body." alt="" coords="303,5,429,32"/>
+<area shape="rect" id="node3" href="$struct_collision_body.html#ab14bd14aebef7e2e59ee412ee88ab77a" title="A boolean saying if the collider is a trigger collider. This means that it will not have a collision ..." alt="" coords="287,56,445,83"/>
+<area shape="rect" id="node4" href="$class_collision_world.html#a0c1cafc3f85e7ab2ce94958c8ab10ef2" title="Calls the callbacks of all the bodies in each collisions." alt="" coords="271,107,461,149"/>
+<area shape="rect" id="node5" href="$class_collision_world.html#a240631da475b62b5c21e31da56659702" title="Solves the collisions with the provided solvers." alt="" coords="267,173,465,200"/>
+<area shape="rect" id="node6" href="$struct_collider.html#af305c50dfe7802d1bf89e174032e57f1" title="Tests the collision against a generic collider." alt="" coords="293,224,439,251"/>
+<area shape="rect" id="node7" href="$struct_collision_body.html#a3c7fa400d6376214005acc6d43e86b36" title="Gets the transform of the body." alt="" coords="297,275,435,301"/>
 </map>

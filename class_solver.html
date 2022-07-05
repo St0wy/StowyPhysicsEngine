@@ -89,24 +89,30 @@ $(document).ready(function(){initNavTree('class_solver.html',''); initResizable(
 </div><!--header-->
 <div class="contents">
 
+<p>Generic class for all solvers.  
+ <a href="class_solver.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_solver_8hpp_source.html">Solver.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Solver:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_solver__inherit__graph.png" border="0" usemap="#a_solver_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_solver_inherit__map" id="a_solver_inherit__map">
-<area shape="rect" title=" " alt="" coords="105,5,163,32"/>
-<area shape="rect" href="class_impulse_solver.html" title=" " alt="" coords="5,80,111,107"/>
-<area shape="rect" href="class_smooth_position_solver.html" title=" " alt="" coords="135,80,285,107"/>
+<area shape="rect" title="Generic class for all solvers." alt="" coords="105,5,163,32"/>
+<area shape="rect" href="class_impulse_solver.html" title="Solver with impulse and friction." alt="" coords="5,80,111,107"/>
+<area shape="rect" href="class_smooth_position_solver.html" title="A solver to smooth out collision with collider that are in a tower placement." alt="" coords="135,80,285,107"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac0f3792c7b16a64b9033cb902500a3ca"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_solver.html#ac0f3792c7b16a64b9033cb902500a3ca">Solve</a> (const std::vector&lt; <a class="el" href="struct_collision.html">Collision</a> &gt; &amp;collisions, float deltaTime)=0</td></tr>
+<tr class="memdesc:ac0f3792c7b16a64b9033cb902500a3ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves the provided collisions.  <a href="class_solver.html#ac0f3792c7b16a64b9033cb902500a3ca">More...</a><br /></td></tr>
 <tr class="separator:ac0f3792c7b16a64b9033cb902500a3ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Generic class for all solvers. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac0f3792c7b16a64b9033cb902500a3ca" name="ac0f3792c7b16a64b9033cb902500a3ca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac0f3792c7b16a64b9033cb902500a3ca">&#9670;&nbsp;</a></span>Solve()</h2>
 
@@ -140,6 +146,15 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Solves the provided collisions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">collisions</td><td>Collisions to solve. </td></tr>
+    <tr><td class="paramname">deltaTime</td><td>Time elapsed since the last frame. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="class_impulse_solver.html#a1ab7dd0437924b305ebd20e7c554e6f5">ImpulseSolver</a>, and <a class="el" href="class_smooth_position_solver.html#a4d4c8613738f9774df5387621822fc34">SmoothPositionSolver</a>.</p>
 

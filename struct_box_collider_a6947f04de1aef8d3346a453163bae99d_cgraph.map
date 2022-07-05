@@ -1,4 +1,4 @@
 <map id="BoxCollider::TestCollision" name="BoxCollider::TestCollision">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,173,32"/>
-<area shape="rect" id="node2" href="$struct_collider.html#af305c50dfe7802d1bf89e174032e57f1" title=" " alt="" coords="221,5,368,32"/>
+<area shape="rect" id="node1" title="Tests the collision against a generic collider." alt="" coords="5,5,173,32"/>
+<area shape="rect" id="node2" href="$struct_collider.html#af305c50dfe7802d1bf89e174032e57f1" title="Tests the collision against a generic collider." alt="" coords="221,5,368,32"/>
 </map>

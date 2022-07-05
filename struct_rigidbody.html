@@ -89,14 +89,17 @@ $(document).ready(function(){initNavTree('struct_rigidbody.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 
+<p>A <a class="el" href="struct_rigidbody.html" title="A Rigidbody that has dynamics.">Rigidbody</a> that has dynamics.  
+ <a href="struct_rigidbody.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_rigidbody_8hpp_source.html">Rigidbody.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Rigidbody:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_rigidbody__inherit__graph.png" border="0" usemap="#a_rigidbody_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_rigidbody_inherit__map" id="a_rigidbody_inherit__map">
-<area shape="rect" title=" " alt="" coords="16,80,95,107"/>
-<area shape="rect" href="struct_collision_body.html" title=" " alt="" coords="5,5,105,32"/>
+<area shape="rect" title="A Rigidbody that has dynamics." alt="" coords="16,80,95,107"/>
+<area shape="rect" href="struct_collision_body.html" title="A body that can receive collisions." alt="" coords="5,5,105,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -104,11 +107,11 @@ Collaboration diagram for Rigidbody:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_rigidbody__coll__graph.png" border="0" usemap="#a_rigidbody_coll__map" alt="Collaboration graph"/></div>
 <map name="a_rigidbody_coll__map" id="a_rigidbody_coll__map">
-<area shape="rect" title=" " alt="" coords="67,289,145,316"/>
-<area shape="rect" href="struct_collision_body.html" title=" " alt="" coords="56,213,156,240"/>
-<area shape="rect" href="struct_transform.html" title=" " alt="" coords="5,109,87,136"/>
-<area shape="rect" href="struct_vector2.html" title=" " alt="" coords="13,5,79,32"/>
-<area shape="rect" href="struct_collider.html" title=" " alt="" coords="135,109,200,136"/>
+<area shape="rect" title="A Rigidbody that has dynamics." alt="" coords="67,289,145,316"/>
+<area shape="rect" href="struct_collision_body.html" title="A body that can receive collisions." alt="" coords="56,213,156,240"/>
+<area shape="rect" href="struct_transform.html" title="A transform of an object. Contains position, scale and rotation." alt="" coords="5,109,87,136"/>
+<area shape="rect" href="struct_vector2.html" title="A struct representing a 2D Vector." alt="" coords="13,5,79,32"/>
+<area shape="rect" href="struct_collider.html" title="A pure virtual struct that represents colliders." alt="" coords="135,109,200,136"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -117,67 +120,98 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab8cee0caf46b950a921acdb6bee1cfe2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rigidbody.html#ab8cee0caf46b950a921acdb6bee1cfe2">Rigidbody</a> ()</td></tr>
 <tr class="separator:ab8cee0caf46b950a921acdb6bee1cfe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab05b1eb68253699b3e000a17cad00ce5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_vector2.html">Vector2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rigidbody.html#ab05b1eb68253699b3e000a17cad00ce5">GravityForce</a> () const</td></tr>
+<tr class="memdesc:ab05b1eb68253699b3e000a17cad00ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the force of the gravity on this body.  <a href="struct_rigidbody.html#ab05b1eb68253699b3e000a17cad00ce5">More...</a><br /></td></tr>
 <tr class="separator:ab05b1eb68253699b3e000a17cad00ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0db5be92109bd41124eb71ced0e93323"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rigidbody.html#a0db5be92109bd41124eb71ced0e93323">SetGravityForce</a> (const <a class="el" href="struct_vector2.html">Vector2</a> &amp;gravityForce)</td></tr>
+<tr class="memdesc:a0db5be92109bd41124eb71ced0e93323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the gravity force.  <a href="struct_rigidbody.html#a0db5be92109bd41124eb71ced0e93323">More...</a><br /></td></tr>
 <tr class="separator:a0db5be92109bd41124eb71ced0e93323"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa52d48cfa5f5845fb92f76c0ee84f4f1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_vector2.html">Vector2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rigidbody.html#aa52d48cfa5f5845fb92f76c0ee84f4f1">Force</a> () const</td></tr>
+<tr class="memdesc:aa52d48cfa5f5845fb92f76c0ee84f4f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the force on this body.  <a href="struct_rigidbody.html#aa52d48cfa5f5845fb92f76c0ee84f4f1">More...</a><br /></td></tr>
 <tr class="separator:aa52d48cfa5f5845fb92f76c0ee84f4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0027880c120bba10e14da3f2bfeb99c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rigidbody.html#a0027880c120bba10e14da3f2bfeb99c8">ApplyForce</a> (const <a class="el" href="struct_vector2.html">Vector2</a> &amp;addedForce)</td></tr>
+<tr class="memdesc:a0027880c120bba10e14da3f2bfeb99c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds force to this body.  <a href="struct_rigidbody.html#a0027880c120bba10e14da3f2bfeb99c8">More...</a><br /></td></tr>
 <tr class="separator:a0027880c120bba10e14da3f2bfeb99c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeec28116e1a4cfc3fcee99e46c7901cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rigidbody.html#aeec28116e1a4cfc3fcee99e46c7901cd">SetForce</a> (const <a class="el" href="struct_vector2.html">Vector2</a> &amp;force)</td></tr>
+<tr class="memdesc:aeec28116e1a4cfc3fcee99e46c7901cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the force of this body.  <a href="struct_rigidbody.html#aeec28116e1a4cfc3fcee99e46c7901cd">More...</a><br /></td></tr>
 <tr class="separator:aeec28116e1a4cfc3fcee99e46c7901cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa03d7e4d7604ea6993ac07c81e709f2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_vector2.html">Vector2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rigidbody.html#afa03d7e4d7604ea6993ac07c81e709f2">Velocity</a> () const</td></tr>
+<tr class="memdesc:afa03d7e4d7604ea6993ac07c81e709f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the velocity of this body.  <a href="struct_rigidbody.html#afa03d7e4d7604ea6993ac07c81e709f2">More...</a><br /></td></tr>
 <tr class="separator:afa03d7e4d7604ea6993ac07c81e709f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae281729cbab9a494023a9f036df91b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rigidbody.html#aae281729cbab9a494023a9f036df91b3">SetVelocity</a> (const <a class="el" href="struct_vector2.html">Vector2</a> &amp;velocity)</td></tr>
+<tr class="memdesc:aae281729cbab9a494023a9f036df91b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the velocity of this body.  <a href="struct_rigidbody.html#aae281729cbab9a494023a9f036df91b3">More...</a><br /></td></tr>
 <tr class="separator:aae281729cbab9a494023a9f036df91b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7befdecc454ad4a9b333ebb8a741469"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rigidbody.html#ae7befdecc454ad4a9b333ebb8a741469">Mass</a> () const</td></tr>
+<tr class="memdesc:ae7befdecc454ad4a9b333ebb8a741469"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the mass of this body. Only the inverted mass is stored, so it's computed as 1 / <a class="el" href="struct_rigidbody.html#aa6db22694c4ee65c4afc180932704fec" title="Returns 1 / Mass of this body.">InvMass()</a>;.  <a href="struct_rigidbody.html#ae7befdecc454ad4a9b333ebb8a741469">More...</a><br /></td></tr>
 <tr class="separator:ae7befdecc454ad4a9b333ebb8a741469"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6db22694c4ee65c4afc180932704fec"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rigidbody.html#aa6db22694c4ee65c4afc180932704fec">InvMass</a> () const</td></tr>
+<tr class="memdesc:aa6db22694c4ee65c4afc180932704fec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns 1 / Mass of this body.  <a href="struct_rigidbody.html#aa6db22694c4ee65c4afc180932704fec">More...</a><br /></td></tr>
 <tr class="separator:aa6db22694c4ee65c4afc180932704fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6af2ee21a3e0c6b97492823668f53bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rigidbody.html#ad6af2ee21a3e0c6b97492823668f53bd">SetMass</a> (float mass)</td></tr>
+<tr class="memdesc:ad6af2ee21a3e0c6b97492823668f53bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the mass of this body.  <a href="struct_rigidbody.html#ad6af2ee21a3e0c6b97492823668f53bd">More...</a><br /></td></tr>
 <tr class="separator:ad6af2ee21a3e0c6b97492823668f53bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b897b39be3e53af79e3a5ae8b17af8e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rigidbody.html#a6b897b39be3e53af79e3a5ae8b17af8e">TakesGravity</a> () const</td></tr>
+<tr class="memdesc:a6b897b39be3e53af79e3a5ae8b17af8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a boolean indicating whether this body takes gravity.  <a href="struct_rigidbody.html#a6b897b39be3e53af79e3a5ae8b17af8e">More...</a><br /></td></tr>
 <tr class="separator:a6b897b39be3e53af79e3a5ae8b17af8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17f2538acbc6fd04c22652dbee61cf8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rigidbody.html#a17f2538acbc6fd04c22652dbee61cf8f">SetTakesGravity</a> (bool takesGravity)</td></tr>
+<tr class="memdesc:a17f2538acbc6fd04c22652dbee61cf8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a boolean indicating whether this body takes gravity.  <a href="struct_rigidbody.html#a17f2538acbc6fd04c22652dbee61cf8f">More...</a><br /></td></tr>
 <tr class="separator:a17f2538acbc6fd04c22652dbee61cf8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a26cf6f2f0d0d35b60909ab2a061250"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rigidbody.html#a9a26cf6f2f0d0d35b60909ab2a061250">StaticFriction</a> () const</td></tr>
+<tr class="memdesc:a9a26cf6f2f0d0d35b60909ab2a061250"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the static friction of this body.  <a href="struct_rigidbody.html#a9a26cf6f2f0d0d35b60909ab2a061250">More...</a><br /></td></tr>
 <tr class="separator:a9a26cf6f2f0d0d35b60909ab2a061250"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c3170168be9ac707233b822f05b30fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rigidbody.html#a8c3170168be9ac707233b822f05b30fa">SetStaticFriction</a> (float staticFriction)</td></tr>
+<tr class="memdesc:a8c3170168be9ac707233b822f05b30fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the static friction of this body.  <a href="struct_rigidbody.html#a8c3170168be9ac707233b822f05b30fa">More...</a><br /></td></tr>
 <tr class="separator:a8c3170168be9ac707233b822f05b30fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd960b198ad33fd178679c06c65558a8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rigidbody.html#acd960b198ad33fd178679c06c65558a8">DynamicFriction</a> () const</td></tr>
+<tr class="memdesc:acd960b198ad33fd178679c06c65558a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the dynamic friction of this body.  <a href="struct_rigidbody.html#acd960b198ad33fd178679c06c65558a8">More...</a><br /></td></tr>
 <tr class="separator:acd960b198ad33fd178679c06c65558a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b0155a9fec77c76b48e4ac77a07ccd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rigidbody.html#a1b0155a9fec77c76b48e4ac77a07ccd1">SetDynamicFriciton</a> (float dynamicFriciton)</td></tr>
+<tr class="memdesc:a1b0155a9fec77c76b48e4ac77a07ccd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the dynamic friction of this body.  <a href="struct_rigidbody.html#a1b0155a9fec77c76b48e4ac77a07ccd1">More...</a><br /></td></tr>
 <tr class="separator:a1b0155a9fec77c76b48e4ac77a07ccd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72a5f0c41b10e447b045bb7d6229d067"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rigidbody.html#a72a5f0c41b10e447b045bb7d6229d067">Restitution</a> () const</td></tr>
+<tr class="memdesc:a72a5f0c41b10e447b045bb7d6229d067"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the restitution of this body. Can be seen as the "Bounciness".  <a href="struct_rigidbody.html#a72a5f0c41b10e447b045bb7d6229d067">More...</a><br /></td></tr>
 <tr class="separator:a72a5f0c41b10e447b045bb7d6229d067"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a326d338504932b129aba3522045e0c1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rigidbody.html#a326d338504932b129aba3522045e0c1f">SetRestitution</a> (float restitution)</td></tr>
+<tr class="memdesc:a326d338504932b129aba3522045e0c1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the restitution of this body. Can be seen as the "Bounciness".  <a href="struct_rigidbody.html#a326d338504932b129aba3522045e0c1f">More...</a><br /></td></tr>
 <tr class="separator:a326d338504932b129aba3522045e0c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_struct_collision_body"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_collision_body')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="struct_collision_body.html">CollisionBody</a></td></tr>
 <tr class="memitem:a3c7fa400d6376214005acc6d43e86b36 inherit pub_methods_struct_collision_body"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_transform.html">Transform</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#a3c7fa400d6376214005acc6d43e86b36">Trans</a> ()</td></tr>
+<tr class="memdesc:a3c7fa400d6376214005acc6d43e86b36 inherit pub_methods_struct_collision_body"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the transform of the body.  <a href="struct_collision_body.html#a3c7fa400d6376214005acc6d43e86b36">More...</a><br /></td></tr>
 <tr class="separator:a3c7fa400d6376214005acc6d43e86b36 inherit pub_methods_struct_collision_body"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d836f1668e9c49425b0ffa8f30b9557 inherit pub_methods_struct_collision_body"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#a4d836f1668e9c49425b0ffa8f30b9557">SetTransform</a> (const <a class="el" href="struct_transform.html">Transform</a> &amp;transform)</td></tr>
+<tr class="memdesc:a4d836f1668e9c49425b0ffa8f30b9557 inherit pub_methods_struct_collision_body"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the transform of the body.  <a href="struct_collision_body.html#a4d836f1668e9c49425b0ffa8f30b9557">More...</a><br /></td></tr>
 <tr class="separator:a4d836f1668e9c49425b0ffa8f30b9557 inherit pub_methods_struct_collision_body"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87cfaf648e060c8394e0ea50edc1559d inherit pub_methods_struct_collision_body"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_collider.html">Collider</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#a87cfaf648e060c8394e0ea50edc1559d">Col</a> () const</td></tr>
+<tr class="memdesc:a87cfaf648e060c8394e0ea50edc1559d inherit pub_methods_struct_collision_body"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the collider of the body.  <a href="struct_collision_body.html#a87cfaf648e060c8394e0ea50edc1559d">More...</a><br /></td></tr>
 <tr class="separator:a87cfaf648e060c8394e0ea50edc1559d inherit pub_methods_struct_collision_body"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61f830e3c0593447fe1301c0c0858be6 inherit pub_methods_struct_collision_body"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#a61f830e3c0593447fe1301c0c0858be6">SetCollider</a> (<a class="el" href="struct_collider.html">Collider</a> *collider)</td></tr>
+<tr class="memdesc:a61f830e3c0593447fe1301c0c0858be6 inherit pub_methods_struct_collision_body"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the collider of the body.  <a href="struct_collision_body.html#a61f830e3c0593447fe1301c0c0858be6">More...</a><br /></td></tr>
 <tr class="separator:a61f830e3c0593447fe1301c0c0858be6 inherit pub_methods_struct_collision_body"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab14bd14aebef7e2e59ee412ee88ab77a inherit pub_methods_struct_collision_body"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#ab14bd14aebef7e2e59ee412ee88ab77a">IsTrigger</a> () const</td></tr>
+<tr class="memdesc:ab14bd14aebef7e2e59ee412ee88ab77a inherit pub_methods_struct_collision_body"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean saying if the collider is a trigger collider. This means that it will not have a collision response and will only have a callback.  <a href="struct_collision_body.html#ab14bd14aebef7e2e59ee412ee88ab77a">More...</a><br /></td></tr>
 <tr class="separator:ab14bd14aebef7e2e59ee412ee88ab77a inherit pub_methods_struct_collision_body"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66f9385cbb4429f77b92365d293bc499 inherit pub_methods_struct_collision_body"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#a66f9385cbb4429f77b92365d293bc499">SetIsTrigger</a> (bool isTrigger)</td></tr>
+<tr class="memdesc:a66f9385cbb4429f77b92365d293bc499 inherit pub_methods_struct_collision_body"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets is trigger on the body. True means that it will not have a collision response and will only have a callback.  <a href="struct_collision_body.html#a66f9385cbb4429f77b92365d293bc499">More...</a><br /></td></tr>
 <tr class="separator:a66f9385cbb4429f77b92365d293bc499 inherit pub_methods_struct_collision_body"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4e347ec4e406124067401fc5ae3a5aa inherit pub_methods_struct_collision_body"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#ac4e347ec4e406124067401fc5ae3a5aa">SetCollisionCallback</a> (const std::function&lt; void(const <a class="el" href="struct_collision.html">Collision</a> &amp;, float)&gt; &amp;callback)</td></tr>
+<tr class="memdesc:ac4e347ec4e406124067401fc5ae3a5aa inherit pub_methods_struct_collision_body"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the collision callback function.  <a href="struct_collision_body.html#ac4e347ec4e406124067401fc5ae3a5aa">More...</a><br /></td></tr>
 <tr class="separator:ac4e347ec4e406124067401fc5ae3a5aa inherit pub_methods_struct_collision_body"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f588bb55e24c3b5a9a49860b1920404 inherit pub_methods_struct_collision_body"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#a6f588bb55e24c3b5a9a49860b1920404">OnCollision</a> (const <a class="el" href="struct_collision.html">Collision</a> &amp;collision, float deltaTime) const</td></tr>
+<tr class="memdesc:a6f588bb55e24c3b5a9a49860b1920404 inherit pub_methods_struct_collision_body"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggers the collision callback function.  <a href="struct_collision_body.html#a6f588bb55e24c3b5a9a49860b1920404">More...</a><br /></td></tr>
 <tr class="separator:a6f588bb55e24c3b5a9a49860b1920404 inherit pub_methods_struct_collision_body"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9d88dbea0ca0e556a5abf86cab2c371 inherit pub_methods_struct_collision_body"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_vector2.html">Vector2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#ae9d88dbea0ca0e556a5abf86cab2c371">Position</a> () const</td></tr>
+<tr class="memdesc:ae9d88dbea0ca0e556a5abf86cab2c371 inherit pub_methods_struct_collision_body"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the position of the body in the world.  <a href="struct_collision_body.html#ae9d88dbea0ca0e556a5abf86cab2c371">More...</a><br /></td></tr>
 <tr class="separator:ae9d88dbea0ca0e556a5abf86cab2c371 inherit pub_methods_struct_collision_body"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a360ba6867d42b9ba9f0d7287a80cea2a inherit pub_methods_struct_collision_body"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#a360ba6867d42b9ba9f0d7287a80cea2a">SetPosition</a> (const <a class="el" href="struct_vector2.html">Vector2</a> &amp;position)</td></tr>
+<tr class="memdesc:a360ba6867d42b9ba9f0d7287a80cea2a inherit pub_methods_struct_collision_body"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the position of the body in the world.  <a href="struct_collision_body.html#a360ba6867d42b9ba9f0d7287a80cea2a">More...</a><br /></td></tr>
 <tr class="separator:a360ba6867d42b9ba9f0d7287a80cea2a inherit pub_methods_struct_collision_body"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ff2d3e40a49f0999c1e7b245a93d337 inherit pub_methods_struct_collision_body"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#a9ff2d3e40a49f0999c1e7b245a93d337">IsKinematic</a> () const</td></tr>
+<tr class="memdesc:a9ff2d3e40a49f0999c1e7b245a93d337 inherit pub_methods_struct_collision_body"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a boolean that indicates if this body will receive a collision response.  <a href="struct_collision_body.html#a9ff2d3e40a49f0999c1e7b245a93d337">More...</a><br /></td></tr>
 <tr class="separator:a9ff2d3e40a49f0999c1e7b245a93d337 inherit pub_methods_struct_collision_body"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fa5a77f6edf9bcb66c1e8451a4ca5db inherit pub_methods_struct_collision_body"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#a9fa5a77f6edf9bcb66c1e8451a4ca5db">SetIsKinematic</a> (bool isKinematic)</td></tr>
+<tr class="memdesc:a9fa5a77f6edf9bcb66c1e8451a4ca5db inherit pub_methods_struct_collision_body"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a boolean that indicates if this body will receive a collision response.  <a href="struct_collision_body.html#a9fa5a77f6edf9bcb66c1e8451a4ca5db">More...</a><br /></td></tr>
 <tr class="separator:a9fa5a77f6edf9bcb66c1e8451a4ca5db inherit pub_methods_struct_collision_body"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a775ec3d3a47bd2dbfd534c3914d3ab0b inherit pub_methods_struct_collision_body"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#a775ec3d3a47bd2dbfd534c3914d3ab0b">IsDynamic</a> () const</td></tr>
+<tr class="memdesc:a775ec3d3a47bd2dbfd534c3914d3ab0b inherit pub_methods_struct_collision_body"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a boolean indicating if this body is dynamic. This means that this is a <a class="el" href="struct_rigidbody.html" title="A Rigidbody that has dynamics.">Rigidbody</a>.  <a href="struct_collision_body.html#a775ec3d3a47bd2dbfd534c3914d3ab0b">More...</a><br /></td></tr>
 <tr class="separator:a775ec3d3a47bd2dbfd534c3914d3ab0b inherit pub_methods_struct_collision_body"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
@@ -198,7 +232,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a354989ed5ab66e8983bbea9c4baf469c inherit pro_attribs_struct_collision_body"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <a class="el" href="struct_collision.html">Collision</a> &amp;, float)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#a354989ed5ab66e8983bbea9c4baf469c">_onCollisions</a></td></tr>
 <tr class="separator:a354989ed5ab66e8983bbea9c4baf469c inherit pro_attribs_struct_collision_body"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >A <a class="el" href="struct_rigidbody.html" title="A Rigidbody that has dynamics.">Rigidbody</a> that has dynamics. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab8cee0caf46b950a921acdb6bee1cfe2" name="ab8cee0caf46b950a921acdb6bee1cfe2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab8cee0caf46b950a921acdb6bee1cfe2">&#9670;&nbsp;</a></span>Rigidbody()</h2>
 
@@ -233,6 +269,14 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Adds force to this body. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">addedForce</td><td>The force to add to this body. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="acd960b198ad33fd178679c06c65558a8" name="acd960b198ad33fd178679c06c65558a8"></a>
@@ -249,6 +293,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Gets the dynamic friction of this body. </p>
+<dl class="section return"><dt>Returns</dt><dd>The dynamic friction. </dd></dl>
 
 </div>
 </div>
@@ -267,6 +314,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Gets the force on this body. </p>
+<dl class="section return"><dt>Returns</dt><dd>The force on this body. </dd></dl>
+
 </div>
 </div>
 <a id="ab05b1eb68253699b3e000a17cad00ce5" name="ab05b1eb68253699b3e000a17cad00ce5"></a>
@@ -283,6 +333,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Gets the force of the gravity on this body. </p>
+<dl class="section return"><dt>Returns</dt><dd>The force of the gravity. </dd></dl>
 
 </div>
 </div>
@@ -301,6 +354,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Returns 1 / Mass of this body. </p>
+<dl class="section return"><dt>Returns</dt><dd>The inverted mass of this body. </dd></dl>
+
 </div>
 </div>
 <a id="ae7befdecc454ad4a9b333ebb8a741469" name="ae7befdecc454ad4a9b333ebb8a741469"></a>
@@ -318,6 +374,10 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Computes the mass of this body. Only the inverted mass is stored, so it's computed as 1 / <a class="el" href="struct_rigidbody.html#aa6db22694c4ee65c4afc180932704fec" title="Returns 1 / Mass of this body.">InvMass()</a>;. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_rigidbody.html#aa6db22694c4ee65c4afc180932704fec" title="Returns 1 / Mass of this body.">InvMass()</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The mass of this body. </dd></dl>
+
 </div>
 </div>
 <a id="a72a5f0c41b10e447b045bb7d6229d067" name="a72a5f0c41b10e447b045bb7d6229d067"></a>
@@ -334,6 +394,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Gets the restitution of this body. Can be seen as the "Bounciness". </p>
+<dl class="section return"><dt>Returns</dt><dd>The restitution. </dd></dl>
 
 </div>
 </div>
@@ -353,6 +416,14 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Sets the dynamic friction of this body. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dynamicFriciton</td><td>The new dynamic friction. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="aeec28116e1a4cfc3fcee99e46c7901cd" name="aeec28116e1a4cfc3fcee99e46c7901cd"></a>
@@ -370,6 +441,14 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sets the force of this body. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">force</td><td>The new force. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -389,6 +468,14 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Sets the gravity force. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gravityForce</td><td>New gravity force. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ad6af2ee21a3e0c6b97492823668f53bd" name="ad6af2ee21a3e0c6b97492823668f53bd"></a>
@@ -406,6 +493,14 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sets the mass of this body. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mass</td><td>The new mass. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -425,6 +520,14 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Sets the restitution of this body. Can be seen as the "Bounciness". </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">restitution</td><td>The new restitution. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a8c3170168be9ac707233b822f05b30fa" name="a8c3170168be9ac707233b822f05b30fa"></a>
@@ -443,6 +546,14 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Sets the static friction of this body. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">staticFriction</td><td>The new static friction. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a17f2538acbc6fd04c22652dbee61cf8f" name="a17f2538acbc6fd04c22652dbee61cf8f"></a>
@@ -460,13 +571,21 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sets a boolean indicating whether this body takes gravity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">takesGravity</td><td>The new takesGravity. </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_rigidbody_a17f2538acbc6fd04c22652dbee61cf8f_cgraph.png" border="0" usemap="#astruct_rigidbody_a17f2538acbc6fd04c22652dbee61cf8f_cgraph" alt=""/></div>
 <map name="astruct_rigidbody_a17f2538acbc6fd04c22652dbee61cf8f_cgraph" id="astruct_rigidbody_a17f2538acbc6fd04c22652dbee61cf8f_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,187,32"/>
-<area shape="rect" href="struct_rigidbody.html#a0db5be92109bd41124eb71ced0e93323" title=" " alt="" coords="235,5,413,32"/>
+<area shape="rect" title="Sets a boolean indicating whether this body takes gravity." alt="" coords="5,5,187,32"/>
+<area shape="rect" href="struct_rigidbody.html#a0db5be92109bd41124eb71ced0e93323" title="Sets the gravity force." alt="" coords="235,5,413,32"/>
 </map>
 </div>
 
@@ -488,6 +607,14 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Sets the velocity of this body. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">velocity</td><td>The new velocity. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a9a26cf6f2f0d0d35b60909ab2a061250" name="a9a26cf6f2f0d0d35b60909ab2a061250"></a>
@@ -504,6 +631,9 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Gets the static friction of this body. </p>
+<dl class="section return"><dt>Returns</dt><dd>The static friction. </dd></dl>
 
 </div>
 </div>
@@ -522,6 +652,9 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Gets a boolean indicating whether this body takes gravity. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if this body takes gravity. </dd></dl>
+
 </div>
 </div>
 <a id="afa03d7e4d7604ea6993ac07c81e709f2" name="afa03d7e4d7604ea6993ac07c81e709f2"></a>
@@ -538,6 +671,9 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Gets the velocity of this body. </p>
+<dl class="section return"><dt>Returns</dt><dd>The velocity of this body. </dd></dl>
 
 </div>
 </div>

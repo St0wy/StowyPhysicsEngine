@@ -89,14 +89,17 @@ $(document).ready(function(){initNavTree('class_impulse_solver.html',''); initRe
 </div><!--header-->
 <div class="contents">
 
+<p><a class="el" href="class_solver.html" title="Generic class for all solvers.">Solver</a> with impulse and friction.  
+ <a href="class_impulse_solver.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_impulse_solver_8hpp_source.html">ImpulseSolver.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ImpulseSolver:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_impulse_solver__inherit__graph.png" border="0" usemap="#a_impulse_solver_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_impulse_solver_inherit__map" id="a_impulse_solver_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,80,111,107"/>
-<area shape="rect" href="class_solver.html" title=" " alt="" coords="29,5,87,32"/>
+<area shape="rect" title="Solver with impulse and friction." alt="" coords="5,80,111,107"/>
+<area shape="rect" href="class_solver.html" title="Generic class for all solvers." alt="" coords="29,5,87,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -104,19 +107,23 @@ Collaboration diagram for ImpulseSolver:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_impulse_solver__coll__graph.png" border="0" usemap="#a_impulse_solver_coll__map" alt="Collaboration graph"/></div>
 <map name="a_impulse_solver_coll__map" id="a_impulse_solver_coll__map">
-<area shape="rect" title=" " alt="" coords="5,80,111,107"/>
-<area shape="rect" href="class_solver.html" title=" " alt="" coords="29,5,87,32"/>
+<area shape="rect" title="Solver with impulse and friction." alt="" coords="5,80,111,107"/>
+<area shape="rect" href="class_solver.html" title="Generic class for all solvers." alt="" coords="29,5,87,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1ab7dd0437924b305ebd20e7c554e6f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_impulse_solver.html#a1ab7dd0437924b305ebd20e7c554e6f5">Solve</a> (const std::vector&lt; <a class="el" href="struct_collision.html">Collision</a> &gt; &amp;collisions, float deltaTime) override</td></tr>
+<tr class="memdesc:a1ab7dd0437924b305ebd20e7c554e6f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves the provided collisions.  <a href="class_impulse_solver.html#a1ab7dd0437924b305ebd20e7c554e6f5">More...</a><br /></td></tr>
 <tr class="separator:a1ab7dd0437924b305ebd20e7c554e6f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0f3792c7b16a64b9033cb902500a3ca"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_solver.html#ac0f3792c7b16a64b9033cb902500a3ca">Solve</a> (const std::vector&lt; <a class="el" href="struct_collision.html">Collision</a> &gt; &amp;collisions, float deltaTime)=0</td></tr>
+<tr class="memdesc:ac0f3792c7b16a64b9033cb902500a3ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves the provided collisions.  <a href="class_solver.html#ac0f3792c7b16a64b9033cb902500a3ca">More...</a><br /></td></tr>
 <tr class="separator:ac0f3792c7b16a64b9033cb902500a3ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p ><a class="el" href="class_solver.html" title="Generic class for all solvers.">Solver</a> with impulse and friction. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1ab7dd0437924b305ebd20e7c554e6f5" name="a1ab7dd0437924b305ebd20e7c554e6f5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1ab7dd0437924b305ebd20e7c554e6f5">&#9670;&nbsp;</a></span>Solve()</h2>
 
@@ -151,26 +158,35 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Solves the provided collisions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">collisions</td><td>Collisions to solve. </td></tr>
+    <tr><td class="paramname">deltaTime</td><td>Time elapsed since the last frame. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implements <a class="el" href="class_solver.html#ac0f3792c7b16a64b9033cb902500a3ca">Solver</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_impulse_solver_a1ab7dd0437924b305ebd20e7c554e6f5_cgraph.png" border="0" usemap="#aclass_impulse_solver_a1ab7dd0437924b305ebd20e7c554e6f5_cgraph" alt=""/></div>
 <map name="aclass_impulse_solver_a1ab7dd0437924b305ebd20e7c554e6f5_cgraph" id="aclass_impulse_solver_a1ab7dd0437924b305ebd20e7c554e6f5_cgraph">
-<area shape="rect" title=" " alt="" coords="5,259,149,285"/>
-<area shape="rect" href="struct_vector2.html#a23ceee12380716c9cb3458c6e0b86c90" title=" " alt="" coords="239,5,333,32"/>
-<area shape="rect" href="struct_rigidbody.html#acd960b198ad33fd178679c06c65558a8" title=" " alt="" coords="197,56,375,83"/>
-<area shape="rect" href="struct_rigidbody.html#aa6db22694c4ee65c4afc180932704fec" title=" " alt="" coords="219,107,353,133"/>
-<area shape="rect" href="struct_collision_body.html#a775ec3d3a47bd2dbfd534c3914d3ab0b" title=" " alt="" coords="203,157,369,184"/>
-<area shape="rect" href="struct_collision_body.html#a9ff2d3e40a49f0999c1e7b245a93d337" title=" " alt="" coords="199,208,373,235"/>
-<area shape="rect" href="struct_vector2.html#a16b13aa4859a54eaec1a76ae2ca4f94d" title=" " alt="" coords="609,284,743,311"/>
-<area shape="rect" href="struct_vector2.html#a271b8fa518725c70f57e935f09ece61d" title=" " alt="" coords="221,309,351,336"/>
-<area shape="rect" href="struct_rigidbody.html#a72a5f0c41b10e447b045bb7d6229d067" title=" " alt="" coords="213,360,359,387"/>
-<area shape="rect" href="struct_rigidbody.html#aae281729cbab9a494023a9f036df91b3" title=" " alt="" coords="211,411,361,437"/>
-<area shape="rect" href="struct_rigidbody.html#a9a26cf6f2f0d0d35b60909ab2a061250" title=" " alt="" coords="205,461,367,488"/>
-<area shape="rect" href="struct_rigidbody.html#afa03d7e4d7604ea6993ac07c81e709f2" title=" " alt="" coords="221,512,351,539"/>
-<area shape="rect" href="struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title=" " alt="" coords="791,284,944,311"/>
-<area shape="rect" href="struct_vector2.html#a34aead675305c3de65455935d3bfcf8d" title=" " alt="" coords="423,309,561,336"/>
+<area shape="rect" title="Solves the provided collisions." alt="" coords="5,259,149,285"/>
+<area shape="rect" href="struct_vector2.html#a23ceee12380716c9cb3458c6e0b86c90" title="Computes the dot product between this and other." alt="" coords="239,5,333,32"/>
+<area shape="rect" href="struct_rigidbody.html#acd960b198ad33fd178679c06c65558a8" title="Gets the dynamic friction of this body." alt="" coords="197,56,375,83"/>
+<area shape="rect" href="struct_rigidbody.html#aa6db22694c4ee65c4afc180932704fec" title="Returns 1 / Mass of this body." alt="" coords="219,107,353,133"/>
+<area shape="rect" href="struct_collision_body.html#a775ec3d3a47bd2dbfd534c3914d3ab0b" title="Gets a boolean indicating if this body is dynamic. This means that this is a Rigidbody." alt="" coords="203,157,369,184"/>
+<area shape="rect" href="struct_collision_body.html#a9ff2d3e40a49f0999c1e7b245a93d337" title="Gets a boolean that indicates if this body will receive a collision response." alt="" coords="199,208,373,235"/>
+<area shape="rect" href="struct_vector2.html#a16b13aa4859a54eaec1a76ae2ca4f94d" title="Gets the magnitude of this vector." alt="" coords="609,284,743,311"/>
+<area shape="rect" href="struct_vector2.html#a271b8fa518725c70f57e935f09ece61d" title="Normalizes the given vector." alt="" coords="221,309,351,336"/>
+<area shape="rect" href="struct_rigidbody.html#a72a5f0c41b10e447b045bb7d6229d067" title="Gets the restitution of this body. Can be seen as the &quot;Bounciness&quot;." alt="" coords="213,360,359,387"/>
+<area shape="rect" href="struct_rigidbody.html#aae281729cbab9a494023a9f036df91b3" title="Sets the velocity of this body." alt="" coords="211,411,361,437"/>
+<area shape="rect" href="struct_rigidbody.html#a9a26cf6f2f0d0d35b60909ab2a061250" title="Gets the static friction of this body." alt="" coords="205,461,367,488"/>
+<area shape="rect" href="struct_rigidbody.html#afa03d7e4d7604ea6993ac07c81e709f2" title="Gets the velocity of this body." alt="" coords="221,512,351,539"/>
+<area shape="rect" href="struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="791,284,944,311"/>
+<area shape="rect" href="struct_vector2.html#a34aead675305c3de65455935d3bfcf8d" title="Gets this vector normalized." alt="" coords="423,309,561,336"/>
 </map>
 </div>
 

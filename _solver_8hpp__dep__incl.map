@@ -1,9 +1,9 @@
 <map id="include/Solver.hpp" name="include/Solver.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="497,5,625,32"/>
-<area shape="rect" id="node2" href="$_collision_world_8hpp.html" title=" " alt="" coords="247,80,413,121"/>
-<area shape="rect" id="node6" href="$_impulse_solver_8hpp.html" title=" " alt="" coords="475,80,647,121"/>
-<area shape="rect" id="node8" href="$_smooth_position_solver_8hpp.html" title=" " alt="" coords="674,80,893,121"/>
-<area shape="rect" id="node3" href="$_dynamics_world_8hpp.html" title=" " alt="" coords="23,169,205,211"/>
+<area shape="rect" id="node1" title="Contains the Solver struct." alt="" coords="497,5,625,32"/>
+<area shape="rect" id="node2" href="$_collision_world_8hpp.html" title="Contains the CollisionWorld class." alt="" coords="247,80,413,121"/>
+<area shape="rect" id="node6" href="$_impulse_solver_8hpp.html" title="Contains the ImpulseSolver class." alt="" coords="475,80,647,121"/>
+<area shape="rect" id="node8" href="$_smooth_position_solver_8hpp.html" title="Contains the SmoothPositionSolver class." alt="" coords="674,80,893,121"/>
+<area shape="rect" id="node3" href="$_dynamics_world_8hpp.html" title="Contains the DynamicsWorld class." alt="" coords="23,169,205,211"/>
 <area shape="rect" id="node5" href="$_collision_world_8cpp.html" title=" " alt="" coords="229,177,431,203"/>
 <area shape="rect" id="node4" href="$_dynamics_world_8cpp.html" title=" " alt="" coords="5,259,223,285"/>
 <area shape="rect" id="node7" href="$_impulse_solver_8cpp.html" title=" " alt="" coords="455,177,666,203"/>

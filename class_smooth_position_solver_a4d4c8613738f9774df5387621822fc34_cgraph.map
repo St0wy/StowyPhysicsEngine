@@ -1,9 +1,9 @@
 <map id="SmoothPositionSolver::Solve" name="SmoothPositionSolver::Solve">
-<area shape="rect" id="node1" title=" " alt="" coords="5,99,156,141"/>
-<area shape="rect" id="node2" href="$struct_rigidbody.html#aa6db22694c4ee65c4afc180932704fec" title=" " alt="" coords="224,5,359,32"/>
-<area shape="rect" id="node3" href="$struct_collision_body.html#a775ec3d3a47bd2dbfd534c3914d3ab0b" title=" " alt="" coords="208,56,375,83"/>
-<area shape="rect" id="node4" href="$struct_collision_body.html#a9ff2d3e40a49f0999c1e7b245a93d337" title=" " alt="" coords="204,107,379,133"/>
-<area shape="rect" id="node5" href="$struct_vector2.html#a16b13aa4859a54eaec1a76ae2ca4f94d" title=" " alt="" coords="225,157,358,184"/>
-<area shape="rect" id="node7" href="$struct_collision_body.html#a3c7fa400d6376214005acc6d43e86b36" title=" " alt="" coords="222,208,361,235"/>
-<area shape="rect" id="node6" href="$struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title=" " alt="" coords="427,157,580,184"/>
+<area shape="rect" id="node1" title="Solves the provided collisions." alt="" coords="5,99,156,141"/>
+<area shape="rect" id="node2" href="$struct_rigidbody.html#aa6db22694c4ee65c4afc180932704fec" title="Returns 1 / Mass of this body." alt="" coords="224,5,359,32"/>
+<area shape="rect" id="node3" href="$struct_collision_body.html#a775ec3d3a47bd2dbfd534c3914d3ab0b" title="Gets a boolean indicating if this body is dynamic. This means that this is a Rigidbody." alt="" coords="208,56,375,83"/>
+<area shape="rect" id="node4" href="$struct_collision_body.html#a9ff2d3e40a49f0999c1e7b245a93d337" title="Gets a boolean that indicates if this body will receive a collision response." alt="" coords="204,107,379,133"/>
+<area shape="rect" id="node5" href="$struct_vector2.html#a16b13aa4859a54eaec1a76ae2ca4f94d" title="Gets the magnitude of this vector." alt="" coords="225,157,358,184"/>
+<area shape="rect" id="node7" href="$struct_collision_body.html#a3c7fa400d6376214005acc6d43e86b36" title="Gets the transform of the body." alt="" coords="222,208,361,235"/>
+<area shape="rect" id="node6" href="$struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="427,157,580,184"/>
 </map>
