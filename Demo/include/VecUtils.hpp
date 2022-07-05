@@ -79,7 +79,7 @@ sf::Vector2<T> RotateAround(const sf::Vector2<T>& v, const sf::Vector2<T>& cente
 	const sf::Vector2<T> relative = v - center;
 	const T ca = std::cos(angle);
 	const T sa = std::sin(angle);
-	const sf::Vector2<T> rotated = sf::Vector2<T>(ca * v.x - sa * v.y, sa * v.x + ca * v.y);
+	const auto rotated = sf::Vector2<T>(ca * relative.x - sa * relative.y, sa * relative.x + ca * relative.y);
 	return rotated + center;
 }
 

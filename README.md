@@ -1,14 +1,32 @@
-# Une template pour les projets CMake de la SAE
+#  GPR4400-PhysicsEngine
 
-Ce repo sert de template pour les projets CMake fait a la SAE institute.
-Ils incluent tous les fichiers nécéssaires afin de compiler un projet SFML et Box2D avec vcpkg.
+This project is a 2D physics engine written in C++.
+It uses SFML to display the demo scenes, but the physics engine in itself doesn't rely on any library.
 
-## Comment utiliser cette template ?
+## Getting started
 
-1. Créer un répo qui se base sur cette template
-2. Renomer le dossier "project-name" avec le nom de votre projet
-3. Chercher les "Todo" et renomer les "project-name" avec le nom de votre projet
-  (Dans `vcpkg.json`, `CMakeLists.txt`, et dans le dossier du projet / solution)
-4. Chercher les "Todo" et commenter/décommenter les lignes si vous ne voulez pas que la console s'affiche
-5. Ouvrir le dossier avec Visual Studio et choisir le bon target de build.
-6. Bosser !
+1. Install [Vcpkg](https://vcpkg.io/)
+2. Build with CMake :
+
+```bash
+cmake -S . -B .\build\
+cmake --build .\build\
+```
+
+## Folder structure
+
+There are two main folders in this project : 
+
+- StowyPhysicsEngine
+- Demo
+
+`StowyPhysicsEngine` is the physics engine in itself.
+It is setup as a CMake library.
+
+`Demo` is the SFML project to visualise the physics engine.
+
+They each have their own `CMakeList.txt` but there is
+also a main one that includes both to be able to build
+everything at once.
+
+For more informations about the physics engine, check out the [Wiki](https://github.com/St0wy/GPR4400-PhysicsEngine/wiki)

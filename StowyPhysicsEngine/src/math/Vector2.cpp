@@ -87,7 +87,7 @@ Vector2 Vector2::NegativePerpendicular() const
 
 void Vector2::SetMagnitude(const float newMagnitude)
 {
-	(*this) /= newMagnitude * Magnitude();
+	*this /= newMagnitude * Magnitude();
 }
 
 void Vector2::RotateAround(const Vector2& center, const float angle)
@@ -95,7 +95,7 @@ void Vector2::RotateAround(const Vector2& center, const float angle)
 	const Vector2 relative = (*this) - center;
 	const float ca = std::cos(angle);
 	const float sa = std::sin(angle);
-	const Vector2 rotated = Vector2(ca * x - sa * y, sa * x + ca * y);
+	const auto rotated = Vector2(ca * relative.x - sa * relative.y, sa * relative.x + ca * relative.y);
 	(*this) = rotated + center;
 }
 

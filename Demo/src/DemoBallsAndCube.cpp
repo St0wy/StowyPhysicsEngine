@@ -55,13 +55,21 @@ void DemoBallsAndCube::StartMainLoop()
 			}
 			else if (event.type == sf::Event::MouseButtonPressed)
 			{
-				if (!sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)) break;
 				auto posi = sf::Mouse::getPosition(_window);
 				auto posf = _window.mapPixelToCoords(posi);
 				auto physicsPos = SfmlPosToSpe(posf);
 				spdlog::debug("Spawn pos : {}", physicsPos);
-				_entities.push_back(
-					std::make_unique<Circle>(_world, 1.0f, physicsPos));
+
+				if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
+				{
+					_entities.push_back(
+						std::make_unique<Circle>(_world, 1.0f, physicsPos));
+				}
+				else if (sf::Mouse::isButtonPressed(sf::Mouse::Right))
+				{
+					_entities.push_back(
+						std::make_unique<Box>(_world, Vector2(1.0f, 1.0f), physicsPos, true));
+				}
 			}
 		}
 
