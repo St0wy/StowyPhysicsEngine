@@ -18,7 +18,7 @@ Manifold BoxCollider::TestCollision(const Transform* transform, const Collider* 
 Manifold BoxCollider::TestCollision(const Transform* transform, const BoxCollider* collider,
 	const Transform* boxTransform) const
 {
-	return algo::FindBoxBoxCollisionPoints(this, transform, collider, boxTransform);
+	return algo::FindBoxBoxManifold(this, transform, collider, boxTransform);
 }
 
 Manifold BoxCollider::TestCollision(
@@ -27,7 +27,7 @@ Manifold BoxCollider::TestCollision(
 	const Transform* circleTransform
 ) const
 {
-	return algo::FindBoxCircleCollisionPoints(this, transform, collider, circleTransform);
+	return algo::FindBoxCircleManifold(this, transform, collider, circleTransform);
 }
 
 Manifold BoxCollider::TestCollision(const Transform* transform, const AabbCollider* collider,
@@ -100,19 +100,19 @@ Manifold CircleCollider::TestCollision(const Transform* transform, const Collide
 Manifold CircleCollider::TestCollision(const Transform* transform, const BoxCollider* collider,
 	const Transform* boxTransform) const
 {
-	return algo::FindCircleBoxCollisionPoints(this, transform, collider, boxTransform);
+	return algo::FindCircleBoxManifold(this, transform, collider, boxTransform);
 }
 
 Manifold CircleCollider::TestCollision(const Transform* transform, const CircleCollider* collider,
 	const Transform* circleTransform) const
 {
-	return algo::FindCircleCirlceCollisionPoints(this, transform, collider, circleTransform);
+	return algo::FindCircleCircleManifold(this, transform, collider, circleTransform);
 }
 
 Manifold CircleCollider::TestCollision(const Transform* transform, const AabbCollider* collider,
 	const Transform* aabbTransform) const
 {
-	return algo::FindAabbCircleCollisionPoints(collider, aabbTransform, this, transform);
+	return algo::FindCircleAabbManifold(this, transform, collider, aabbTransform);
 }
 
 Vector2 CircleCollider::FindFurthestPoint(const Transform* transform, const Vector2& direction) const
@@ -136,13 +136,13 @@ Manifold AabbCollider::TestCollision(const Transform* transform, const BoxCollid
 Manifold AabbCollider::TestCollision(const Transform* transform, const CircleCollider* collider,
 	const Transform* circleTransform) const
 {
-	return algo::FindAabbCircleCollisionPoints(this, transform, collider, circleTransform);
+	return algo::FindAabbCircleManifold(this, transform, collider, circleTransform);
 }
 
 Manifold AabbCollider::TestCollision(const Transform* transform, const AabbCollider* collider,
 	const Transform* aabbTransform) const
 {
-	return algo::FindAabbAabbCollisionPoints(this, transform, collider, aabbTransform);
+	return algo::FindAabbAabbManifold(this, transform, collider, aabbTransform);
 }
 
 Vector2 AabbCollider::FindFurthestPoint(const Transform* transform, const Vector2& direction) const

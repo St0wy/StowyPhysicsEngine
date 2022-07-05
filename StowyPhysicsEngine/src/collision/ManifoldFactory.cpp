@@ -8,7 +8,7 @@
 #include "collision/Manifold.hpp"
 #include "collision/Simplex.hpp"
 
-Manifold algo::FindCircleCirlceCollisionPoints(
+Manifold algo::FindCircleCircleManifold(
 	const CircleCollider* a, const Transform* ta,
 	const CircleCollider* b, const Transform* tb)
 {
@@ -39,23 +39,23 @@ Manifold algo::FindCircleCirlceCollisionPoints(
 	};
 }
 
-Manifold algo::FindCircleBoxCollisionPoints(
+Manifold algo::FindCircleBoxManifold(
 	const CircleCollider* a,
 	const Transform* ta,
 	const BoxCollider* b,
 	const Transform* tb
 )
 {
-	return FindBoxCircleCollisionPoints(b, tb, a, ta);
+	return FindBoxCircleManifold(b, tb, a, ta);
 }
 
-Manifold algo::FindBoxCircleCollisionPoints(const BoxCollider* a, const Transform* ta, const CircleCollider* b,
+Manifold algo::FindBoxCircleManifold(const BoxCollider* a, const Transform* ta, const CircleCollider* b,
 	const Transform* tb)
 {
 	return Gjk(a, ta, b, tb);
 }
 
-Manifold algo::FindBoxBoxCollisionPoints(
+Manifold algo::FindBoxBoxManifold(
 	const BoxCollider* a,
 	const Transform* ta,
 	const BoxCollider* b,
@@ -65,7 +65,7 @@ Manifold algo::FindBoxBoxCollisionPoints(
 	return Gjk(a, ta, b, tb);
 }
 
-Manifold algo::FindAabbAabbCollisionPoints(
+Manifold algo::FindAabbAabbManifold(
 	const AabbCollider* a, const Transform* ta,
 	const AabbCollider* b, const Transform* tb)
 {
@@ -110,7 +110,7 @@ Manifold algo::FindAabbAabbCollisionPoints(
 	return { normal, yOverlap };
 }
 
-Manifold algo::FindAabbCircleCollisionPoints(
+Manifold algo::FindAabbCircleManifold(
 	const AabbCollider* a, const Transform* ta,
 	const CircleCollider* b, const Transform* tb)
 {
@@ -181,6 +181,12 @@ Manifold algo::FindAabbCircleCollisionPoints(
 	}
 
 	return { normal, scaledRadius - d };
+}
+
+Manifold algo::FindCircleAabbManifold(const CircleCollider* a, const Transform* ta, const AabbCollider* b,
+	const Transform* tb)
+{
+	return FindAabbCircleManifold(b, tb, a, ta);
 }
 
 Vector2 algo::Support(

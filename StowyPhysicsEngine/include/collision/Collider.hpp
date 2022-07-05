@@ -1,16 +1,28 @@
+/**
+ * @file Collider.hpp
+ * @author Fabian Huber (fabian.hbr@protonmail.ch)
+ * @brief Contains all the Colliders struct.
+ * @version 1.0
+ * @date 05.07.2022
+ *
+ * @copyright SAE (c) 2022
+ *
+ */
 #pragma once
 
 #include <array>
 
 #include "Manifold.hpp"
 #include "Transform.hpp"
-
 #include "math/Vector2.hpp"
 
 struct CircleCollider;
 struct BoxCollider;
 struct AabbCollider;
 
+/**
+ * \brief A pure virtual struct that represents colliders.
+ */
 struct Collider
 {
 public:
@@ -21,40 +33,86 @@ public:
 	Collider& operator=(const Collider& col) = default;
 	Collider(const Collider& col) = default;
 
+	/**
+	 * \brief Tests the collision against a generic collider.
+	 * \param transform The transform of this collider.
+	 * \param collider The collider to collide with.
+	 * \param colliderTransform The transform of the collider to collide with.
+	 * \return The manifold of that collision.
+	 */
 	virtual Manifold TestCollision(
 		const Transform* transform,
 		const Collider* collider,
 		const Transform* colliderTransform
 	) const = 0;
 
+	/**
+	 * \brief Tests the collision against a box collider.
+	 * \param transform The transform of this collider.
+	 * \param collider The box collider to collide with.
+	 * \param boxTransform The transform of the collider to collide with.
+	 * \return The manifold of that collision.
+	 */
 	virtual Manifold TestCollision(
 		const Transform* transform,
 		const BoxCollider* collider,
 		const Transform* boxTransform
 	) const = 0;
 
+	/**
+	 * \brief Tests the collision against a circle collider.
+	 * \param transform The transform of this collider.
+	 * \param collider The circle collider to collide with.
+	 * \param circleTransform The transform of the collider to collide with.
+	 * \return The manifold of that collision.
+	 */
 	virtual Manifold TestCollision(
 		const Transform* transform,
 		const CircleCollider* collider,
 		const Transform* circleTransform
 	) const = 0;
 
+	/**
+	 * \brief Tests the collision against a aabb collider.
+	 * \param transform The transform of this collider.
+	 * \param collider The circle collider to collide with.
+	 * \param aabbTransform The transform of the collider to collide with.
+	 * \return The manifold of that collision.
+	 */
 	virtual Manifold TestCollision(
 		const Transform* transform,
 		const AabbCollider* collider,
-		const Transform* circleTransform
+		const Transform* aabbTransform
 	) const = 0;
 
+	/**
+	 * \brief Find the furthest point in the specified direction.
+	 * \param transform The transform of this collider.
+	 * \param direction Direction in which to find the furthest point.
+	 * \return The furthest point.
+	 */
 	[[nodiscard]] virtual Vector2 FindFurthestPoint(
 		const Transform* transform,
 		const Vector2& direction
 	) const = 0;
 };
 
+/**
+ * \brief A rotatable box collider.
+ */
 struct BoxCollider final : Collider
 {
+	/**
+	 * \brief The center of the box.
+	 */
 	Vector2 center;
+	/**
+	 * \brief Half of the width of the box.
+	 */
 	float halfWidth;
+	/**
+	 * \brief Half of the height of the box.
+	 */
 	float halfHeight;
 
 	Manifold TestCollision(
@@ -83,15 +141,34 @@ struct BoxCollider final : Collider
 		const Vector2& direction
 	) const override;
 
+	/**
+	 * \brief Gets the transformed vertices of the box.
+	 * \param transform The transform to apply to the collider.
+	 * \return The transform vertices of the box.
+	 */
 	[[nodiscard]] std::array<Vector2, 4> GetTransformedVertices(const Transform& transform) const;
+
+	/**
+	 * \brief Gets the untransformed vertices of the box.
+	 * \return The vertices of the box.
+	 */
 	[[nodiscard]] std::array<Vector2, 4> GetVertices() const;
-	
+
 };
 
+/**
+ * \brief A circle collider.
+ */
 struct CircleCollider final : Collider
 {
 public:
+	/**
+	 * \brief Center of the circle.
+	 */
 	Vector2 center;
+	/**
+	 * \brief Radius of the circle.
+	 */
 	float radius;
 
 	Manifold TestCollision(
@@ -121,10 +198,22 @@ public:
 	) const override;
 };
 
+/**
+ * \brief An Axis Aligned Bounding Box collider.
+ */
 struct AabbCollider final : Collider
 {
+	/**
+	 * \brief Center of the box.
+	 */
 	Vector2 center;
+	/**
+	 * \brief Half of the width of the box.
+	 */
 	float halfWidth;
+	/**
+	 * \brief Half of the height of the box.
+	 */
 	float halfHeight;
 
 	Manifold TestCollision(const Transform* transform, const Collider* collider,
