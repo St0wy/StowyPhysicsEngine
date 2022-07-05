@@ -1,0 +1,5 @@
+<map id="AabbCollider" name="AabbCollider">
+<area shape="rect" id="node1" title=" " alt="" coords="36,95,131,121"/>
+<area shape="rect" id="node2" href="$struct_collider.html" title=" " alt="" coords="5,5,71,32"/>
+<area shape="rect" id="node3" href="$struct_vector2.html" title=" " alt="" coords="95,5,162,32"/>
+</map>

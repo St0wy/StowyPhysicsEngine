@@ -1,0 +1,6 @@
+<map id="CollisionBody" name="CollisionBody">
+<area shape="rect" id="node1" title=" " alt="" coords="56,213,156,240"/>
+<area shape="rect" id="node2" href="$struct_transform.html" title=" " alt="" coords="5,109,87,136"/>
+<area shape="rect" id="node3" href="$struct_vector2.html" title=" " alt="" coords="13,5,79,32"/>
+<area shape="rect" id="node4" href="$struct_collider.html" title=" " alt="" coords="135,109,200,136"/>
+</map>

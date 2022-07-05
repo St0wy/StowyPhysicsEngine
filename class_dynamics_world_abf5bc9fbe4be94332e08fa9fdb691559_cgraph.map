@@ -1,0 +1,6 @@
+<map id="DynamicsWorld::AddRigidbody" name="DynamicsWorld::AddRigidbody">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,203,83"/>
+<area shape="rect" id="node2" href="$class_collision_world.html#aece70c9058e004f0cf52bdfca739d551" title=" " alt="" coords="251,5,461,32"/>
+<area shape="rect" id="node3" href="$struct_rigidbody.html#a0db5be92109bd41124eb71ced0e93323" title=" " alt="" coords="267,56,445,83"/>
+<area shape="rect" id="node4" href="$struct_rigidbody.html#a6b897b39be3e53af79e3a5ae8b17af8e" title=" " alt="" coords="275,107,437,133"/>
+</map>

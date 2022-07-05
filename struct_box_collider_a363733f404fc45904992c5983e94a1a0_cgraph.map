@@ -1,0 +1,4 @@
+<map id="BoxCollider::TestCollision" name="BoxCollider::TestCollision">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,173,32"/>
+<area shape="rect" id="node2" href="$struct_manifold.html#a2d38cacdc21e00dcc762a7be3dac2c7d" title=" " alt="" coords="221,5,335,32"/>
+</map>
