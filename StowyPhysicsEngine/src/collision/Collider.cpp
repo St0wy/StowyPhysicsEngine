@@ -2,9 +2,12 @@
 #include "collision/Collider.hpp"
 
 #include <array>
+#include <spdlog/spdlog.h>
 
 #include "collision/Manifold.hpp"
 #include "collision/ManifoldFactory.hpp"
+#include "math/Vector2.hpp"
+
 
 Manifold BoxCollider::TestCollision(const Transform* transform, const Collider* collider,
 	const Transform* colliderTransform) const

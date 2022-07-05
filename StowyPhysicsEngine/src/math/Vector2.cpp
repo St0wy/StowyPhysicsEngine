@@ -1,5 +1,7 @@
 #include "math/Vector2.hpp"
 
+#include "spdlog/spdlog.h"
+
 #include <algorithm>
 #include <cmath>
 #include <sstream>
@@ -38,8 +40,14 @@ Vector2 Vector2::TripleProduct(const Vector2& a, const Vector2& b, const Vector2
 
 Vector2 Vector2::Normalized() const
 {
-	const float invMag = 1.0 / Magnitude();
-	return { x * invMag, y * invMag };
+	if(x == 0 && y == 0)
+	{
+		return {0, 0};
+	}
+
+	const float invMag = 1.0f / Magnitude();
+	const Vector2 newVec = { x * invMag, y * invMag };
+	return newVec;
 }
 
 float Vector2::Dot(const Vector2& other) const

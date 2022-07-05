@@ -1,5 +1,7 @@
 #include "dynamics/Rigidbody.hpp"
 
+#include "spdlog/spdlog.h"
+
 Rigidbody::Rigidbody()
 	:
 	_invMass(1),
@@ -40,6 +42,11 @@ const Vector2& Rigidbody::Velocity() const
 
 void Rigidbody::SetVelocity(const Vector2& velocity)
 {
+	if (std::isnan(velocity.x))
+	{
+		spdlog::error("Bad aVel: {}", velocity);
+		return;
+	}
 	_velocity = velocity;
 }
 

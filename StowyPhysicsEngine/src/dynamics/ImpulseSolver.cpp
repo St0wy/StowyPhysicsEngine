@@ -49,6 +49,7 @@ void ImpulseSolver::Solve(const std::vector<Collision>& collisions, float deltaT
 		velocityAlongNormal = relativeVelocity.Dot(manifold.normal);
 
 		Vector2 tangent = Vector2::Normalize(relativeVelocity - velocityAlongNormal * manifold.normal);
+		
 		const float fVel = relativeVelocity.Dot(tangent);
 
 		const float aSf = aBody ? aBody->StaticFriction() : 0.0f;
