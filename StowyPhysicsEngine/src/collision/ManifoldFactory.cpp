@@ -63,6 +63,7 @@ Manifold algo::FindBoxBoxManifold(
 )
 {
 	return Gjk(a, ta, b, tb);
+	//return Sat(a, ta, b, tb);
 }
 
 Manifold algo::FindAabbAabbManifold(
@@ -173,6 +174,11 @@ Manifold algo::FindAabbCircleManifold(
 
 	d = std::sqrt(d);
 
+	if(d != 0)
+	{
+		normal /= d;
+	}
+
 	// Collision normal needs to be flipped to point outside if circle was
 	// inside the AABB
 	if (isCircleInside)
@@ -180,7 +186,7 @@ Manifold algo::FindAabbCircleManifold(
 		return { -normal, scaledRadius - d };
 	}
 
-	return { normal, scaledRadius - d };
+	return { normal.Normalized(), scaledRadius - d };
 }
 
 Manifold algo::FindCircleAabbManifold(const CircleCollider* a, const Transform* ta, const AabbCollider* b,
@@ -361,4 +367,58 @@ Manifold algo::Epa(
 	}
 
 	return { minNormal, minDistance };
+}
+
+Manifold algo::Sat(
+	const BoxCollider* colliderA, const Transform* transformA,
+	const BoxCollider* colliderB, const Transform* transformB
+)
+{
+	float overlap = std::numeric_limits<float>::max();
+	Vector2 smallestAxis;
+
+	const auto verticesA = colliderA->GetTransformedVertices(*transformA);
+	const auto verticesB = colliderB->GetTransformedVertices(*transformB);
+
+	const auto axesA = BoxCollider::GetAxes(verticesA);
+	const auto axesB = BoxCollider::GetAxes(verticesB);
+
+	auto findCollision = [&](const Vector2 axis)
+	{
+		const Projection pA = BoxCollider::Project(axis, verticesA);
+		const Projection pB = BoxCollider::Project(axis, verticesB);
+
+		if (!pA.Overlaps(pB))
+		{
+			return false;
+		}
+
+		const float o = pA.GetOverlap(pB);
+
+		if (o < overlap)
+		{
+			overlap = o;
+			smallestAxis = axis;
+		}
+
+		return true;
+	};
+
+	for (const auto& axis : axesA)
+	{
+		if (!findCollision(axis))
+		{
+			return Manifold::Empty();
+		}
+	}
+
+	for (const auto& axis : axesB)
+	{
+		if (!findCollision(axis))
+		{
+			return Manifold::Empty();
+		}
+	}
+
+	return { smallestAxis, overlap };
 }

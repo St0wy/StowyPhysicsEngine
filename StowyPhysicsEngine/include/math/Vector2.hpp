@@ -89,7 +89,7 @@ public:
 	[[nodiscard]] float Distance(const Vector2& other) const;
 
 	/**
-	 * \brief Computes the vector between this and other.
+	 * \brief Computes the angle between this and other.
 	 * \param other The other vector.
 	 * \return The angle between this and other.
 	 */

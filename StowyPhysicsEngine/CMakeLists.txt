@@ -28,7 +28,7 @@ target_sources(${PROJECT_NAME}
     src/dynamics/Rigidbody.cpp
     src/dynamics/SmoothPositionSolver.cpp
     src/math/Vector2.cpp
- "src/collision/Manifold.cpp" )
+ "src/collision/Manifold.cpp"  "src/collision/Edge.cpp" "src/collision/Projection.cpp")
 
 target_include_directories(${PROJECT_NAME}
     PRIVATE
@@ -56,6 +56,8 @@ set(public_headers
     include/dynamics/Rigidbody.hpp
     include/dynamics/SmoothPositionSolver.hpp
     include/math/Vector2.hpp
+    include/collision/Edge.hpp
+    include/collision/Projection.hpp
 )
 
 # not for MSVC

@@ -8,7 +8,7 @@
 #include "collision/ManifoldFactory.hpp"
 #include "math/Vector2.hpp"
 
-
+#pragma region BoxCollider
 Manifold BoxCollider::TestCollision(const Transform* transform, const Collider* collider,
 	const Transform* colliderTransform) const
 {
@@ -66,6 +66,43 @@ std::array<Vector2, 4> BoxCollider::GetVertices() const
 	);
 }
 
+Projection BoxCollider::Project(const Vector2& axis, const std::array<Vector2, 4>& vertices)
+{
+	float min = axis.Dot(vertices[0]);
+	float max = min;
+
+	for (const auto& vertex : vertices)
+	{
+		const float p = axis.Dot(vertex);
+		if (p < min)
+		{
+			min = p;
+		}
+		else if (p > max)
+		{
+			max = p;
+		}
+	}
+
+	return { min, max };
+}
+
+std::array<Vector2, 4> BoxCollider::GetAxes(const std::array<Vector2, 4>& vertices)
+{
+	std::array<Vector2, 4> axes;
+
+	for (std::size_t i = 0; i < 4; ++i)
+	{
+		Vector2 p1 = vertices[i];
+		Vector2 p2 = vertices[(i + 1) % vertices.size()];
+		Vector2 edge = p1 - p2;
+		Vector2 normal = edge.PositivePerpendicular();
+		axes[i] = normal.Normalized();
+	}
+
+	return axes;
+}
+
 std::array<Vector2, 4> BoxCollider::GetTransformedVertices(const Transform& transform) const
 {
 	const float scaledHalfWidth = halfWidth * transform.scale.x;
@@ -90,6 +127,9 @@ std::array<Vector2, 4> BoxCollider::GetTransformedVertices(const Transform& tran
 		bottomLeft,
 	};
 }
+#pragma endregion
+
+#pragma region CircleCollider
 
 Manifold CircleCollider::TestCollision(const Transform* transform, const Collider* collider,
 	const Transform* colliderTransform) const
@@ -119,7 +159,9 @@ Vector2 CircleCollider::FindFurthestPoint(const Transform* transform, const Vect
 {
 	return center + transform->position + radius * direction.Normalized() * transform->scale.Major();
 }
+#pragma endregion
 
+#pragma region AabbCollider
 Manifold AabbCollider::TestCollision(const Transform* transform, const Collider* collider,
 	const Transform* colliderTransform) const
 {
@@ -149,3 +191,4 @@ Vector2 AabbCollider::FindFurthestPoint(const Transform* transform, const Vector
 {
 	return Vector2();
 }
+#pragma endregion

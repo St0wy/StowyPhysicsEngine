@@ -3,6 +3,14 @@
 This project is a 2D physics engine written in C++.
 It uses SFML to display the demo scenes, but the physics engine in itself doesn't rely on any library.
 
+It has :
+
+- Circle -> Circle collisions
+- Circle -> [AABB](https://en.wikipedia.org/wiki/Minimum_bounding_box#Axis-aligned_minimum_bounding_box) collisions
+- AABB -> AABB collisions
+- A failed attempt at [SAT](https://en.wikipedia.org/wiki/Hyperplane_separation_theorem)
+- A failed attempt at [GJK](https://en.wikipedia.org/wiki/Gilbert%E2%80%93Johnson%E2%80%93Keerthi_distance_algorithm)
+
 ## Getting started
 
 1. Install [Vcpkg](https://vcpkg.io/)

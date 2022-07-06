@@ -188,4 +188,11 @@ namespace algo
 		const Collider* colliderB,
 		const Transform* transformB
 	);
+
+	Manifold Sat(
+		const BoxCollider* colliderA,
+		const Transform* transformA,
+		const BoxCollider* colliderB,
+		const Transform* transformB
+	);
 }

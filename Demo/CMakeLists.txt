@@ -40,7 +40,16 @@ add_executable(${PROJECT_NAME})
 # add_executable(${PROJECT_NAME} win32)
 
 target_sources(${PROJECT_NAME}
-    PRIVATE "src/main.cpp" "src/DemoBalls.cpp" "src/Entity.cpp" "src/Circle.cpp" "src/AabbBox.cpp" "src/DemoBallsAndCube.cpp")
+    PRIVATE 
+    "src/main.cpp" 
+    "src/DemoBalls.cpp" 
+    "src/Entity.cpp" 
+    "src/Circle.cpp" 
+    "src/AabbBox.cpp" 
+    "src/DemoBallsAndCube.cpp" 
+    "src/Box.cpp"
+    "src/DemoGjk.cpp"
+)
 
 # Add data dependencies
 add_dependencies(${PROJECT_NAME} DataTarget-${PROJECT_NAME})

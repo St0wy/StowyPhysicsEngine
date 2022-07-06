@@ -13,8 +13,11 @@
 #include <array>
 
 #include "Manifold.hpp"
+#include "Projection.hpp"
 #include "Transform.hpp"
 #include "math/Vector2.hpp"
+
+#include <vector>
 
 struct CircleCollider;
 struct BoxCollider;
@@ -154,6 +157,10 @@ struct BoxCollider final : Collider
 	 */
 	[[nodiscard]] std::array<Vector2, 4> GetVertices() const;
 
+	[[nodiscard]] static Projection Project(
+		const Vector2& axis,
+		const std::array<Vector2, 4>& vertices);
+	[[nodiscard]] static std::array<Vector2, 4> GetAxes(const std::array<Vector2, 4>& vertices);
 };
 
 /**
