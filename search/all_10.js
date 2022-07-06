@@ -34,5 +34,6 @@ var searchData=
   ['sqrmagnitude_31',['SqrMagnitude',['../struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14',1,'Vector2']]],
   ['staticfriction_32',['StaticFriction',['../struct_rigidbody.html#a9a26cf6f2f0d0d35b60909ab2a061250',1,'Rigidbody']]],
   ['step_33',['Step',['../class_dynamics_world.html#af5d960f927eb4a9667529577999f734a',1,'DynamicsWorld']]],
-  ['support_34',['Support',['../namespacealgo.html#aa5f5b4dd52d8422a46bfcced1a559119',1,'algo']]]
+  ['support_34',['Support',['../namespacealgo.html#aa5f5b4dd52d8422a46bfcced1a559119',1,'algo']]],
+  ['swaped_35',['Swaped',['../struct_manifold.html#af84a4a8ab0c680b3a167cf942831f277',1,'Manifold']]]
 ];
