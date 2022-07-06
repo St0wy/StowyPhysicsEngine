@@ -11,8 +11,6 @@ It has :
 - A failed attempt at [SAT](https://en.wikipedia.org/wiki/Hyperplane_separation_theorem)
 - A failed attempt at [GJK](https://en.wikipedia.org/wiki/Gilbert%E2%80%93Johnson%E2%80%93Keerthi_distance_algorithm)
 
-$$test = 18$$
-
 ## Getting started
 
 1. Install [Vcpkg](https://vcpkg.io/)
