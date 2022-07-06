@@ -1,0 +1,4 @@
+sphinx==5.0.2
+readthedocs-sphinx-search==0.1.2
+furo==2022.6.21
+rstcheck==6.0.0

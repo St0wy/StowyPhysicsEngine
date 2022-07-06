@@ -65,7 +65,7 @@ void CollisionWorld::ResolveCollisions(const float deltaTime) const
 
 	// Vector for the collisions that have been caused by trigger colliders
 	std::vector<Collision> triggers;
-	;
+
 	for (std::size_t i = 0; i < _bodies.size(); ++i)
 	{
 		for (std::size_t j = 1; j < _bodies.size(); ++j)
