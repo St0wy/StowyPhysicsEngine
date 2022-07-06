@@ -12,6 +12,8 @@ Welcome to Stowy Physics Engine's documentation!
 
    intro
    quickstart
+   colRes
+   colliders
 
 Indices and tables
 ==================
