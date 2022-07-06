@@ -60,18 +60,18 @@ void CollisionWorld::SendCollisionCallbacks(std::vector<Collision>& collisions, 
 
 void CollisionWorld::ResolveCollisions(const float deltaTime) const
 {
+	// Vector for the collisions that have been detected
 	std::vector<Collision> collisions;
-	std::vector<Collision> triggers;
 
-	//for (CollisionBody* a : _bodies)
-	//{
-	//	for (CollisionBody* b : _bodies)
-	//	{
-	//		if (a == b) break;
+	// Vector for the collisions that have been caused by trigger colliders
+	std::vector<Collision> triggers;
+	;
 	for (std::size_t i = 0; i < _bodies.size(); ++i)
 	{
-		for (std::size_t j = i + 1; j < _bodies.size(); ++j)
+		for (std::size_t j = 1; j < _bodies.size(); ++j)
 		{
+			if (i == j) continue;
+
 			CollisionBody* a = _bodies[i];
 			CollisionBody* b = _bodies[j];
 
@@ -82,7 +82,6 @@ void CollisionWorld::ResolveCollisions(const float deltaTime) const
 
 
 			if (!manifold.hasCollision) continue;
-			//spdlog::debug(manifold);
 
 			if (a->IsTrigger() || b->IsTrigger())
 			{

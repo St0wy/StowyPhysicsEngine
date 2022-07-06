@@ -16,6 +16,15 @@ Manifold::Manifold()
 	hasCollision = false;
 }
 
+Manifold Manifold::Swaped() const
+{
+	Manifold copy = *this;
+	copy.a = b;
+	copy.b = a;
+	copy.normal = -normal;
+	return copy;
+}
+
 std::ostream& operator<<(std::ostream& os, const Manifold& manifold)
 {
 	os << "{a: " << manifold.a << ", b: " << manifold.b <<

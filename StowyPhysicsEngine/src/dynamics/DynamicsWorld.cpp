@@ -37,11 +37,6 @@ void DynamicsWorld::MoveBodies(const float deltaTime) const
 		const auto rigidbody = (Rigidbody*)body;
 
 		const Vector2 vel = rigidbody->Velocity() + rigidbody->Force() * rigidbody->InvMass() * deltaTime;
-		if(std::isnan(vel.x))
-		{
-			spdlog::error("Bad vel: {}", vel);
-			return;
-		}
 		rigidbody->SetVelocity(vel);
 
 		//rigidbody->UpdateLastTransform();

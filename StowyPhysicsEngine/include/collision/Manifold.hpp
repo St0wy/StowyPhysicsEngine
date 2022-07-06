@@ -50,6 +50,8 @@ public:
 	{
 		return {};
 	}
+
+	Manifold Swaped() const;
 };
 
 std::ostream& operator<<(std::ostream& os, const Manifold& manifold);

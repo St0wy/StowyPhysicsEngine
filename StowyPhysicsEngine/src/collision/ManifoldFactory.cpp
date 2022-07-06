@@ -70,7 +70,7 @@ Manifold algo::FindAabbAabbManifold(
 	const AabbCollider* a, const Transform* ta,
 	const AabbCollider* b, const Transform* tb)
 {
-	// Represent AABBs with top left (min) and bottom right (max) points
+	// Represent AABBs with bottom left (min) and top right (max) points
 	const Vector2 transformedCenterA = ta->position + a->center;
 	float scaledHWidth = a->halfWidth * ta->scale.x;
 	float scaledHHeight = a->halfHeight * ta->scale.y;
@@ -115,7 +115,7 @@ Manifold algo::FindAabbCircleManifold(
 	const AabbCollider* a, const Transform* ta,
 	const CircleCollider* b, const Transform* tb)
 {
-	// Represent AABBs with top left (min) and bottom right (max) points
+	// Represent AABBs with bottom left (min) and top right (max) points
 	const Vector2 transformedCenterA = ta->position + a->center;
 	const float scaledHWidth = a->halfWidth * ta->scale.x;
 	const float scaledHHeight = a->halfHeight * ta->scale.y;
@@ -170,29 +170,27 @@ Manifold algo::FindAabbCircleManifold(
 
 	Vector2 normal = aToB - closest;
 	float d = normal.SqrMagnitude();
-	if (d > scaledRadius * scaledRadius && !isCircleInside) return Manifold::Empty();
+	if (d > (scaledRadius * scaledRadius) && !isCircleInside) return Manifold::Empty();
 
 	d = std::sqrt(d);
 
-	if(d != 0)
-	{
-		normal /= d;
-	}
+	normal = normal.Normalized();
 
 	// Collision normal needs to be flipped to point outside if circle was
 	// inside the AABB
 	if (isCircleInside)
 	{
-		return { -normal, scaledRadius - d };
+		normal = -normal;
 	}
 
-	return { normal.Normalized(), scaledRadius - d };
+	return { normal, scaledRadius - d };
 }
 
 Manifold algo::FindCircleAabbManifold(const CircleCollider* a, const Transform* ta, const AabbCollider* b,
 	const Transform* tb)
 {
-	return FindAabbCircleManifold(b, tb, a, ta);
+	const Manifold manifold = FindAabbCircleManifold(b, tb, a, ta);
+	return manifold;
 }
 
 Vector2 algo::Support(

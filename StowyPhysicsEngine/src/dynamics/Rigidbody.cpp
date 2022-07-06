@@ -42,11 +42,6 @@ const Vector2& Rigidbody::Velocity() const
 
 void Rigidbody::SetVelocity(const Vector2& velocity)
 {
-	if (std::isnan(velocity.x))
-	{
-		spdlog::error("Bad aVel: {}", velocity);
-		return;
-	}
 	_velocity = velocity;
 }
 

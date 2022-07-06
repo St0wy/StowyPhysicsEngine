@@ -19,8 +19,8 @@ void SmoothPositionSolver::Solve(const std::vector<Collision>& collisions, float
 
 		Vector2 resolution = points.b - points.a;
 
+		constexpr float slop = 0.05f;
 		constexpr float percent = 0.8f;
-		constexpr float slop = 0.01f;
 
 		const Vector2 correction = points.normal * percent
 			* std::max(resolution.Magnitude() - slop, 0.0f)
@@ -28,8 +28,8 @@ void SmoothPositionSolver::Solve(const std::vector<Collision>& collisions, float
 
 		if (aBody ? aBody->IsKinematic() : false)
 		{
-			const Vector2 deltaA = -aInvMass * correction;
-			aBody->Trans()->position += deltaA;
+			const Vector2 deltaA = aInvMass * correction;
+			aBody->Trans()->position -= deltaA;
 		}
 
 		if (bBody ? bBody->IsKinematic() : false)

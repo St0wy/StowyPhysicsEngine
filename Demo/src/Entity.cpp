@@ -16,7 +16,7 @@ Entity::Entity(DynamicsWorld& dynWorld, const Vector2 pos)
 	_rb->SetTransform({ pos, Vector2(1, 1), 0 });
 	_rb->SetTakesGravity(true);
 	_rb->SetIsKinematic(true);
-	_rb->SetRestitution(1.0f);
+	_rb->SetRestitution(0.5f);
 }
 
 Rigidbody* Entity::RigidBody() const
