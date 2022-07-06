@@ -3,6 +3,10 @@
 This project is a 2D physics engine written in C++.
 It uses SFML to display the demo scenes, but the physics engine in itself doesn't rely on any library.
 
+The wiki is hosted on [Read The Docs](https://stowy-physics-engine.readthedocs.io/en/latest/)
+and the API Documentation on [GitHub Pages](https://st0wy.github.io/GPR4400-PhysicsEngine/).
+
+
 It has :
 
 - Circle -> Circle collisions
