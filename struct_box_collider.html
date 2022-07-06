@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('struct_box_collider.html',''); initRes
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_box_collider-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">BoxCollider Struct Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
@@ -166,6 +167,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a74bb6d5110ff84b664bc3101ebf86d23 inherit pub_methods_struct_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the furthest point in the specified direction.  <a href="struct_collider.html#a74bb6d5110ff84b664bc3101ebf86d23">More...</a><br /></td></tr>
 <tr class="separator:a74bb6d5110ff84b664bc3101ebf86d23 inherit pub_methods_struct_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a8ff3caeed3d0900608c8b3cf657e7900"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_projection.html">Projection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_box_collider.html#a8ff3caeed3d0900608c8b3cf657e7900">Project</a> (const <a class="el" href="struct_vector2.html">Vector2</a> &amp;axis, const std::array&lt; <a class="el" href="struct_vector2.html">Vector2</a>, 4 &gt; &amp;vertices)</td></tr>
+<tr class="separator:a8ff3caeed3d0900608c8b3cf657e7900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a590f86186d0f35adfa2832ec1c753b23"><td class="memItemLeft" align="right" valign="top">static std::array&lt; <a class="el" href="struct_vector2.html">Vector2</a>, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_box_collider.html#a590f86186d0f35adfa2832ec1c753b23">GetAxes</a> (const std::array&lt; <a class="el" href="struct_vector2.html">Vector2</a>, 4 &gt; &amp;vertices)</td></tr>
+<tr class="separator:a590f86186d0f35adfa2832ec1c753b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a45e14ce519af74a2d3c65fc9b5c0dd34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_box_collider.html#a45e14ce519af74a2d3c65fc9b5c0dd34">center</a></td></tr>
@@ -240,6 +248,44 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a590f86186d0f35adfa2832ec1c753b23" name="a590f86186d0f35adfa2832ec1c753b23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a590f86186d0f35adfa2832ec1c753b23">&#9670;&nbsp;</a></span>GetAxes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt; <a class="el" href="struct_vector2.html">Vector2</a>, 4 &gt; BoxCollider::GetAxes </td>
+          <td>(</td>
+          <td class="paramtype">const std::array&lt; <a class="el" href="struct_vector2.html">Vector2</a>, 4 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vertices</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_box_collider_a590f86186d0f35adfa2832ec1c753b23_cgraph.png" border="0" usemap="#astruct_box_collider_a590f86186d0f35adfa2832ec1c753b23_cgraph" alt=""/></div>
+<map name="astruct_box_collider_a590f86186d0f35adfa2832ec1c753b23_cgraph" id="astruct_box_collider_a590f86186d0f35adfa2832ec1c753b23_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,148,57"/>
+<area shape="rect" href="struct_vector2.html#a34aead675305c3de65455935d3bfcf8d" title="Gets this vector normalized." alt="" coords="226,5,365,32"/>
+<area shape="rect" href="struct_vector2.html#a520a801e368bec42889c511e6dbd7593" title="Computes the perpendicular vector in +90 degrees." alt="" coords="196,56,395,83"/>
+<area shape="rect" href="struct_vector2.html#a16b13aa4859a54eaec1a76ae2ca4f94d" title="Gets the magnitude of this vector." alt="" coords="443,5,576,32"/>
+<area shape="rect" href="struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="624,5,777,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a4de8dc78104f9528f621f7e2db3521e4" name="a4de8dc78104f9528f621f7e2db3521e4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4de8dc78104f9528f621f7e2db3521e4">&#9670;&nbsp;</a></span>GetTransformedVertices()</h2>
 
@@ -303,6 +349,51 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="struct_box_collider.html#a4de8dc78104f9528f621f7e2db3521e4" title="Gets the transformed vertices of the box." alt="" coords="216,5,403,47"/>
 <area shape="rect" href="struct_vector2.html#a745c1b2d41e9f92fab739c3e24a684ce" title="Rotates this vector around the provided axis." alt="" coords="451,13,603,39"/>
 <area shape="rect" href="struct_vector2.html#a22104d1809be26a419ef1f959e3761bf" title=" " alt="" coords="651,13,769,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8ff3caeed3d0900608c8b3cf657e7900" name="a8ff3caeed3d0900608c8b3cf657e7900"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ff3caeed3d0900608c8b3cf657e7900">&#9670;&nbsp;</a></span>Project()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_projection.html">Projection</a> BoxCollider::Project </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_vector2.html">Vector2</a> &amp;&#160;</td>
+          <td class="paramname"><em>axis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::array&lt; <a class="el" href="struct_vector2.html">Vector2</a>, 4 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vertices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_box_collider_a8ff3caeed3d0900608c8b3cf657e7900_cgraph.png" border="0" usemap="#astruct_box_collider_a8ff3caeed3d0900608c8b3cf657e7900_cgraph" alt=""/></div>
+<map name="astruct_box_collider_a8ff3caeed3d0900608c8b3cf657e7900_cgraph" id="astruct_box_collider_a8ff3caeed3d0900608c8b3cf657e7900_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,140,32"/>
+<area shape="rect" href="struct_vector2.html#a23ceee12380716c9cb3458c6e0b86c90" title="Computes the dot product between this and other." alt="" coords="188,5,281,32"/>
 </map>
 </div>
 

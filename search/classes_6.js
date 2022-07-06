@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rigidbody_0',['Rigidbody',['../struct_rigidbody.html',1,'']]]
+  ['manifold_0',['Manifold',['../struct_manifold.html',1,'']]]
 ];

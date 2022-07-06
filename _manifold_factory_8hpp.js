@@ -12,6 +12,7 @@ var _manifold_factory_8hpp =
     [ "Line", "_manifold_factory_8hpp.html#ac64c65624e582944a34ecb6d25abbb92", null ],
     [ "NextSimplex", "_manifold_factory_8hpp.html#a297a7ed0d068e9700f2119013dc79a04", null ],
     [ "SameDirection", "_manifold_factory_8hpp.html#afbfae8c60be2a027e0da89dab8fc0d1b", null ],
+    [ "Sat", "_manifold_factory_8hpp.html#aa6957745cac06f58103040fbcd3be486", null ],
     [ "Support", "_manifold_factory_8hpp.html#aa5f5b4dd52d8422a46bfcced1a559119", null ],
     [ "Triangle", "_manifold_factory_8hpp.html#ac9b5b437fcf3aa886b7336335215b557", null ]
 ];

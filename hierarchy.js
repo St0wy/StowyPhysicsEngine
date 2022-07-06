@@ -12,7 +12,9 @@ var hierarchy =
     [ "CollisionWorld", "class_collision_world.html", [
       [ "DynamicsWorld", "class_dynamics_world.html", null ]
     ] ],
+    [ "Edge", "struct_edge.html", null ],
     [ "Manifold", "struct_manifold.html", null ],
+    [ "Projection", "struct_projection.html", null ],
     [ "Simplex", "struct_simplex.html", null ],
     [ "Solver", "class_solver.html", [
       [ "ImpulseSolver", "class_impulse_solver.html", null ],

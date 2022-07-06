@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['impulsesolver_0',['ImpulseSolver',['../class_impulse_solver.html',1,'']]]
+  ['edge_0',['Edge',['../struct_edge.html',1,'']]]
 ];

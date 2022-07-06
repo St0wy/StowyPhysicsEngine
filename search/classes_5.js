@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['manifold_0',['Manifold',['../struct_manifold.html',1,'']]]
+  ['impulsesolver_0',['ImpulseSolver',['../class_impulse_solver.html',1,'']]]
 ];

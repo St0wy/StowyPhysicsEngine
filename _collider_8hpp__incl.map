@@ -1,9 +1,11 @@
 <map id="include/collision/Collider.hpp" name="include/collision/Collider.hpp">
-<area shape="rect" id="node1" title="Contains all the Colliders struct." alt="" coords="46,5,231,32"/>
+<area shape="rect" id="node1" title="Contains all the Colliders struct." alt="" coords="175,5,361,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,80,56,107"/>
-<area shape="rect" id="node3" href="$_manifold_8hpp.html" title="Contains the Manifold class." alt="" coords="261,80,355,107"/>
-<area shape="rect" id="node4" href="$_vector2_8hpp.html" title="Contains the Vector2 struct." alt="" coords="129,155,253,181"/>
-<area shape="rect" id="node7" href="$_transform_8hpp.html" title="Contains the Transform struct." alt="" coords="131,80,237,107"/>
-<area shape="rect" id="node6" title=" " alt="" coords="245,229,363,256"/>
-<area shape="rect" id="node5" title=" " alt="" coords="163,229,218,256"/>
+<area shape="rect" id="node3" href="$_manifold_8hpp.html" title="Contains the Manifold class." alt="" coords="390,80,485,107"/>
+<area shape="rect" id="node4" href="$_vector2_8hpp.html" title="Contains the Vector2 struct." alt="" coords="187,155,311,181"/>
+<area shape="rect" id="node7" href="$_projection_8hpp.html" title=" " alt="" coords="261,80,365,107"/>
+<area shape="rect" id="node8" href="$_transform_8hpp.html" title="Contains the Transform struct." alt="" coords="81,80,186,107"/>
+<area shape="rect" id="node9" title=" " alt="" coords="509,80,568,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="351,229,470,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="222,229,277,256"/>
 </map>

@@ -135,6 +135,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a9fbd6001615a41dd1d22d8a0c2549091"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_manifold.html">Manifold</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealgo.html#a9fbd6001615a41dd1d22d8a0c2549091">Epa</a> (const <a class="el" href="struct_simplex.html">Simplex</a> &amp;simplex, const <a class="el" href="struct_collider.html">Collider</a> *colliderA, const <a class="el" href="struct_transform.html">Transform</a> *transformA, const <a class="el" href="struct_collider.html">Collider</a> *colliderB, const <a class="el" href="struct_transform.html">Transform</a> *transformB)</td></tr>
 <tr class="memdesc:a9fbd6001615a41dd1d22d8a0c2549091"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the manifold from the last simplex of the GJK algorithm.  <a href="namespacealgo.html#a9fbd6001615a41dd1d22d8a0c2549091">More...</a><br /></td></tr>
 <tr class="separator:a9fbd6001615a41dd1d22d8a0c2549091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6957745cac06f58103040fbcd3be486"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_manifold.html">Manifold</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealgo.html#aa6957745cac06f58103040fbcd3be486">Sat</a> (const <a class="el" href="struct_box_collider.html">BoxCollider</a> *colliderA, const <a class="el" href="struct_transform.html">Transform</a> *transformA, const <a class="el" href="struct_box_collider.html">BoxCollider</a> *colliderB, const <a class="el" href="struct_transform.html">Transform</a> *transformB)</td></tr>
+<tr class="separator:aa6957745cac06f58103040fbcd3be486"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Namespace containing all the methods to get manifolds from collisions. This is here to separate the logic from the <a class="el" href="struct_collider.html" title="A pure virtual struct that represents colliders.">Collider</a> class. Avoids the problem where we don't know if the circle-box collision resolution should be in the <a class="el" href="struct_circle_collider.html" title="A circle collider.">CircleCollider</a> class or the box ColliderClass. </p>
@@ -331,10 +333,12 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespacealgo_a6af93f14e8018b1b0e9c82577ded7e7c_cgraph.png" border="0" usemap="#anamespacealgo_a6af93f14e8018b1b0e9c82577ded7e7c_cgraph" alt=""/></div>
 <map name="anamespacealgo_a6af93f14e8018b1b0e9c82577ded7e7c_cgraph" id="anamespacealgo_a6af93f14e8018b1b0e9c82577ded7e7c_cgraph">
-<area shape="rect" title="Finds the collision manifold between A and B." alt="" coords="5,56,195,83"/>
-<area shape="rect" href="struct_manifold.html#a2d38cacdc21e00dcc762a7be3dac2c7d" title="Gets an empty manifold with no collisions." alt="" coords="263,5,376,32"/>
-<area shape="rect" href="struct_vector2.html#a034384ad890b6ceeaa7da3d88d566b5d" title="Gets the biggest component of this vector." alt="" coords="267,56,372,83"/>
-<area shape="rect" href="struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="243,107,396,133"/>
+<area shape="rect" title="Finds the collision manifold between A and B." alt="" coords="5,81,195,108"/>
+<area shape="rect" href="struct_manifold.html#a2d38cacdc21e00dcc762a7be3dac2c7d" title="Gets an empty manifold with no collisions." alt="" coords="255,5,369,32"/>
+<area shape="rect" href="struct_vector2.html#a034384ad890b6ceeaa7da3d88d566b5d" title="Gets the biggest component of this vector." alt="" coords="259,56,365,83"/>
+<area shape="rect" href="struct_vector2.html#a34aead675305c3de65455935d3bfcf8d" title="Gets this vector normalized." alt="" coords="243,107,381,133"/>
+<area shape="rect" href="struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="611,132,764,159"/>
+<area shape="rect" href="struct_vector2.html#a16b13aa4859a54eaec1a76ae2ca4f94d" title="Gets the magnitude of this vector." alt="" coords="429,107,563,133"/>
 </map>
 </div>
 
@@ -556,11 +560,13 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespacealgo_a3df71dde4c91134184c19a467d299c1e_cgraph.png" border="0" usemap="#anamespacealgo_a3df71dde4c91134184c19a467d299c1e_cgraph" alt=""/></div>
 <map name="anamespacealgo_a3df71dde4c91134184c19a467d299c1e_cgraph" id="anamespacealgo_a3df71dde4c91134184c19a467d299c1e_cgraph">
-<area shape="rect" title="Finds the collision manifold between A and B." alt="" coords="5,56,195,83"/>
-<area shape="rect" href="namespacealgo.html#a6af93f14e8018b1b0e9c82577ded7e7c" title="Finds the collision manifold between A and B." alt="" coords="243,56,432,83"/>
-<area shape="rect" href="struct_manifold.html#a2d38cacdc21e00dcc762a7be3dac2c7d" title="Gets an empty manifold with no collisions." alt="" coords="500,5,613,32"/>
-<area shape="rect" href="struct_vector2.html#a034384ad890b6ceeaa7da3d88d566b5d" title="Gets the biggest component of this vector." alt="" coords="504,56,609,83"/>
-<area shape="rect" href="struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="480,107,633,133"/>
+<area shape="rect" title="Finds the collision manifold between A and B." alt="" coords="5,81,195,108"/>
+<area shape="rect" href="namespacealgo.html#a6af93f14e8018b1b0e9c82577ded7e7c" title="Finds the collision manifold between A and B." alt="" coords="243,81,432,108"/>
+<area shape="rect" href="struct_manifold.html#a2d38cacdc21e00dcc762a7be3dac2c7d" title="Gets an empty manifold with no collisions." alt="" coords="493,5,606,32"/>
+<area shape="rect" href="struct_vector2.html#a034384ad890b6ceeaa7da3d88d566b5d" title="Gets the biggest component of this vector." alt="" coords="497,56,602,83"/>
+<area shape="rect" href="struct_vector2.html#a34aead675305c3de65455935d3bfcf8d" title="Gets this vector normalized." alt="" coords="480,107,619,133"/>
+<area shape="rect" href="struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="848,132,1001,159"/>
+<area shape="rect" href="struct_vector2.html#a16b13aa4859a54eaec1a76ae2ca4f94d" title="Gets the magnitude of this vector." alt="" coords="667,107,800,133"/>
 </map>
 </div>
 
@@ -942,6 +948,67 @@ Here is the call graph for this function:</div>
 <map name="anamespacealgo_afbfae8c60be2a027e0da89dab8fc0d1b_cgraph" id="anamespacealgo_afbfae8c60be2a027e0da89dab8fc0d1b_cgraph">
 <area shape="rect" title="Finds if both vectors are going in the same direction." alt="" coords="5,5,143,32"/>
 <area shape="rect" href="struct_vector2.html#a23ceee12380716c9cb3458c6e0b86c90" title="Computes the dot product between this and other." alt="" coords="191,5,284,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa6957745cac06f58103040fbcd3be486" name="aa6957745cac06f58103040fbcd3be486"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6957745cac06f58103040fbcd3be486">&#9670;&nbsp;</a></span>Sat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_manifold.html">Manifold</a> algo::Sat </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_box_collider.html">BoxCollider</a> *&#160;</td>
+          <td class="paramname"><em>colliderA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_transform.html">Transform</a> *&#160;</td>
+          <td class="paramname"><em>transformA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_box_collider.html">BoxCollider</a> *&#160;</td>
+          <td class="paramname"><em>colliderB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_transform.html">Transform</a> *&#160;</td>
+          <td class="paramname"><em>transformB</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacealgo_aa6957745cac06f58103040fbcd3be486_cgraph.png" border="0" usemap="#anamespacealgo_aa6957745cac06f58103040fbcd3be486_cgraph" alt=""/></div>
+<map name="anamespacealgo_aa6957745cac06f58103040fbcd3be486_cgraph" id="anamespacealgo_aa6957745cac06f58103040fbcd3be486_cgraph">
+<area shape="rect" title=" " alt="" coords="5,136,77,163"/>
+<area shape="rect" href="struct_manifold.html#a2d38cacdc21e00dcc762a7be3dac2c7d" title="Gets an empty manifold with no collisions." alt="" coords="162,5,275,32"/>
+<area shape="rect" href="struct_box_collider.html#a590f86186d0f35adfa2832ec1c753b23" title=" " alt="" coords="147,56,290,83"/>
+<area shape="rect" href="struct_projection.html#a5f0365d620670e86105e6a22aa5d1973" title=" " alt="" coords="143,107,295,133"/>
+<area shape="rect" href="struct_box_collider.html#a4de8dc78104f9528f621f7e2db3521e4" title="Gets the transformed vertices of the box." alt="" coords="125,158,312,199"/>
+<area shape="rect" href="struct_projection.html#a0d9a427d4b856ff9336f27950a5d69c4" title=" " alt="" coords="149,224,288,251"/>
+<area shape="rect" href="struct_box_collider.html#a8ff3caeed3d0900608c8b3cf657e7900" title=" " alt="" coords="151,275,286,301"/>
+<area shape="rect" href="struct_vector2.html#a34aead675305c3de65455935d3bfcf8d" title="Gets this vector normalized." alt="" coords="390,31,529,57"/>
+<area shape="rect" href="struct_vector2.html#a520a801e368bec42889c511e6dbd7593" title="Computes the perpendicular vector in +90 degrees." alt="" coords="360,81,559,108"/>
+<area shape="rect" href="struct_vector2.html#a16b13aa4859a54eaec1a76ae2ca4f94d" title="Gets the magnitude of this vector." alt="" coords="607,31,740,57"/>
+<area shape="rect" href="struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="788,31,941,57"/>
+<area shape="rect" href="struct_vector2.html#a745c1b2d41e9f92fab739c3e24a684ce" title="Rotates this vector around the provided axis." alt="" coords="383,165,535,192"/>
+<area shape="rect" href="struct_vector2.html#a22104d1809be26a419ef1f959e3761bf" title=" " alt="" coords="614,165,733,192"/>
+<area shape="rect" href="struct_vector2.html#a23ceee12380716c9cb3458c6e0b86c90" title="Computes the dot product between this and other." alt="" coords="413,275,506,301"/>
 </map>
 </div>
 
