@@ -62,6 +62,10 @@ float Rigidbody::InvMass() const
 
 void Rigidbody::SetMass(const float mass)
 {
+	if (mass == 0)
+	{
+		_invMass = 0;
+	}
 	_invMass = 1.0f / mass;
 }
 
