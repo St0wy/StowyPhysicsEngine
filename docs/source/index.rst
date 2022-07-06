@@ -11,6 +11,7 @@ Welcome to Stowy Physics Engine's documentation!
    :caption: Contents:
 
    intro
+   quickstart
 
 Indices and tables
 ==================
