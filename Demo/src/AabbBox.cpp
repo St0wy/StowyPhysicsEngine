@@ -1,10 +1,10 @@
-#include "Box.hpp"
+#include "AabbBox.hpp"
 
 #include "MathUtils.hpp"
 
 #include <spdlog/spdlog.h>
 
-Box::Box(DynamicsWorld& dynWorld, const Vector2 size, const Vector2 pos, const bool takesGravity)
+AabbBox::AabbBox(DynamicsWorld& dynWorld, const Vector2 size, const Vector2 pos, const bool takesGravity)
 	: Entity(dynWorld, pos),
 	_shape(SpeVecToSfml(size)),
 	_collider(std::make_unique<AabbCollider>())
@@ -18,22 +18,28 @@ Box::Box(DynamicsWorld& dynWorld, const Vector2 size, const Vector2 pos, const b
 	_dynWorld.AddRigidbody(RigidBody());
 }
 
-Box::~Box()
+AabbBox::~AabbBox()
 {
 	_dynWorld.RemoveCollisionBody(RigidBody());
 }
 
-sf::RectangleShape& Box::Shape()
+sf::RectangleShape& AabbBox::Shape()
 {
 	return _shape;
 }
 
-void Box::SetColor(const sf::Color& color)
+void AabbBox::SetColor(const sf::Color& color)
 {
 	_shape.setFillColor(color);
 }
 
-void Box::draw(sf::RenderTarget& target, sf::RenderStates states) const
+void AabbBox::Update(sf::Time deltaTime)
+{
+	setPosition(SpePosToSfml(_rb->Trans()->position));
+	setScale(SpeVecToSfml(_rb->Trans()->scale));
+}
+
+void AabbBox::draw(sf::RenderTarget& target, sf::RenderStates states) const
 {
 	states.transform *= getTransform();
 	target.draw(_shape, states);

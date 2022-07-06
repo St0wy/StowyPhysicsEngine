@@ -4,7 +4,7 @@
 
 #include "Consts.hpp"
 #include "Circle.hpp"
-#include "Box.hpp"
+#include "AabbBox.hpp"
 #include "MathUtils.hpp"
 
 DemoBallsAndCube::DemoBallsAndCube()
@@ -29,9 +29,9 @@ DemoBallsAndCube::DemoBallsAndCube()
 
 void DemoBallsAndCube::StartMainLoop()
 {
-	auto ground = std::make_unique<Box>(
+	auto ground = std::make_unique<AabbBox>(
 		_world,
-		Vector2(CAM_WIDTH/2.0f, 1.0f),
+		Vector2(CAM_WIDTH / 2.0f, 1.0f),
 		Vector2(0.0f, -5.0f),
 		false
 		);
@@ -67,13 +67,7 @@ void DemoBallsAndCube::StartMainLoop()
 				}
 				else if (sf::Mouse::isButtonPressed(sf::Mouse::Right))
 				{
-					_entities.push_back(std::make_unique<Box>(_world, Vector2(1.0f, 1.0f), physicsPos, true));
-					auto boxptr = (Box*)_entities[_entities.size() - 1].get();
-					boxptr->RigidBody()->SetCollisionCallback([&](const Collision& col, float _)
-						{
-							auto rb = (Rigidbody*) col.bodyA;
-							boxptr->SetColor(sf::Color::Red);
-						});
+					_entities.push_back(std::make_unique<AabbBox>(_world, Vector2(1.0f, 1.0f), physicsPos, true));
 				}
 			}
 		}
