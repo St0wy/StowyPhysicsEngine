@@ -91,7 +91,7 @@ Manifold algo::FindAabbAabbManifold(
 	if (xOverlap <= 0.0f) return Manifold::Empty();
 
 	const float aExtentY = (aMax.y - aMin.y) / 2.0f;
-	const float bExtentY = (bMax.y - aMin.y) / 2.0f;
+	const float bExtentY = (bMax.y - bMin.y) / 2.0f;
 	const float yOverlap = aExtentY + bExtentY - std::abs(aToB.y);
 
 	// Overlap test on y axis
@@ -101,13 +101,13 @@ Manifold algo::FindAabbAabbManifold(
 	if (xOverlap > yOverlap)
 	{
 		// Point towards B knowing that aToB points from A to B
-		const Vector2 normal = aToB.x < 0.0f ? Vector2(-1.0f, 0.0f) : Vector2(1.0f, 0);
-		return { normal, xOverlap };
+		const Vector2 normal = aToB.y < 0.0f ? Vector2(0.0f, 1.0f) : Vector2(0.0f, -1.0f);
+		return { normal, yOverlap };
 	}
 
 	// Point towards B knowing that aToB points from A to B
-	const Vector2 normal = aToB.y < 0.0f ? Vector2(0.0f, -1.0f) : Vector2(0, 1.0f);
-	return { normal, yOverlap };
+	const Vector2 normal = aToB.x < 0.0f ? Vector2(1.0f, 0.0f) : Vector2(-1.0f, 0.0f);
+	return { normal, xOverlap };
 }
 
 Manifold algo::FindAabbCircleManifold(

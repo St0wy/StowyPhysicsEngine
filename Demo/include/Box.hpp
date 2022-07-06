@@ -12,6 +12,7 @@ public:
 	~Box() override;
 
 	sf::RectangleShape& Shape();
+	void SetColor(const sf::Color& color);
 
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 private:
