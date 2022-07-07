@@ -4,6 +4,8 @@
 
 #include "spdlog/spdlog.h"
 
+#include <ranges>
+
 void DynamicsWorld::AddRigidbody(Rigidbody* rigidbody)
 {
 	if (rigidbody->TakesGravity())
@@ -16,7 +18,7 @@ void DynamicsWorld::AddRigidbody(Rigidbody* rigidbody)
 
 void DynamicsWorld::ApplyGravity() const
 {
-	for (CollisionBody* body : _bodies)
+	for (const auto body : _bodies | std::views::values)
 	{
 		if (!body->IsDynamic()) continue;
 
@@ -29,7 +31,7 @@ void DynamicsWorld::ApplyGravity() const
 
 void DynamicsWorld::MoveBodies(const float deltaTime) const
 {
-	for (CollisionBody* body : _bodies)
+	for (const auto body : _bodies | std::views::values)
 	{
 		if (!body->IsDynamic()) continue;
 
@@ -48,7 +50,7 @@ void DynamicsWorld::MoveBodies(const float deltaTime) const
 	}
 }
 
-void DynamicsWorld::Step(const float deltaTime) const
+void DynamicsWorld::Step(const float deltaTime)
 {
 	ApplyGravity();
 	ResolveCollisions(deltaTime);

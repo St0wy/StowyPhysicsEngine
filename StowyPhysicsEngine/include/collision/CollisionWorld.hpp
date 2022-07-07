@@ -14,6 +14,7 @@
 
 #include "CollisionBody.hpp"
 #include "Solver.hpp"
+#include "BroadPhaseGrid.hpp"
 
  /**
   * \brief Represents a world where collisions can happen.
@@ -23,22 +24,27 @@
 class CollisionWorld
 {
 public:
+	CollisionWorld();
+	CollisionWorld(std::unordered_map<std::uint64_t, CollisionBody*> bodies, std::vector<Solver*> solvers);
+
 	/**
 	 * \brief Adds a collision body to the world.
 	 * \param body Body to add.
 	 */
 	void AddCollisionBody(CollisionBody* body);
+
 	/**
 	 * \brief Removes a collision body to the world.
 	 * \param body Body to remove.
 	 */
-	void RemoveCollisionBody(CollisionBody* body);
+	void RemoveCollisionBody(const CollisionBody* body);
 
 	/**
 	 * \brief Adds a solver to the world.
 	 * \param solver Solver to add.
 	 */
 	void AddSolver(Solver* solver);
+
 	/**
 	 * \brief Removes the solver from the world.
 	 * \param solver Solver to remove.
@@ -69,11 +75,12 @@ public:
 	 * \brief Resolves all the collisions that happened in this world.
 	 * \param deltaTime Time elapsed since the last frame.
 	 */
-	void ResolveCollisions(float deltaTime) const;
+	void ResolveCollisions(float deltaTime);
 
 protected:
-	std::vector<CollisionBody*> _bodies;
+	std::unordered_map<std::uint64_t, CollisionBody*> _bodies;
 	std::vector<Solver*> _solvers;
+	BroadPhaseGrid _grid;
 
 	std::function<void(Collision&, float)> _onCollision;
 };

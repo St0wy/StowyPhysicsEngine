@@ -1,20 +1,33 @@
 #include "collision/CollisionWorld.hpp"
 #include <spdlog/spdlog.h>
 
-void CollisionWorld::AddCollisionBody(CollisionBody* body)
+CollisionWorld::CollisionWorld()
+	: CollisionWorld({}, {})
 {
-	_bodies.push_back(body);
 }
 
-void CollisionWorld::RemoveCollisionBody(CollisionBody* body)
+CollisionWorld::CollisionWorld(
+	std::unordered_map<std::uint64_t, CollisionBody*> bodies,
+	std::vector<Solver*> solvers
+)
+	: _bodies(std::move(bodies)),
+	_solvers(std::move(solvers)),
+	_grid(-100, 100, -100, 100, 10)
+{
+}
+
+void CollisionWorld::AddCollisionBody(CollisionBody* body)
 {
 	if (!body) return;
 
-	const auto itr = std::ranges::find(_bodies, body);
+	_bodies.insert({ body->id, body });
+}
 
-	if (itr == _bodies.end()) return;
+void CollisionWorld::RemoveCollisionBody(const CollisionBody* body)
+{
+	if (!body) return;
 
-	_bodies.erase(itr);
+	_bodies.erase(body->id);
 }
 
 void CollisionWorld::AddSolver(Solver* solver)
@@ -58,7 +71,7 @@ void CollisionWorld::SendCollisionCallbacks(std::vector<Collision>& collisions, 
 	}
 }
 
-void CollisionWorld::ResolveCollisions(const float deltaTime) const
+void CollisionWorld::ResolveCollisions(const float deltaTime)
 {
 	// Vector for the collisions that have been detected
 	std::vector<Collision> collisions;
@@ -66,31 +79,29 @@ void CollisionWorld::ResolveCollisions(const float deltaTime) const
 	// Vector for the collisions that have been caused by trigger colliders
 	std::vector<Collision> triggers;
 
-	for (std::size_t i = 0; i < _bodies.size(); ++i)
+	// Update the grid and find the object that can collide together
+	_grid.Update(_bodies);
+	const auto collisionPairs = _grid.GetCollisionPairs();
+
+	for (auto& [firstId, secondId] : collisionPairs)
 	{
-		for (std::size_t j = i + 1; j < _bodies.size(); ++j)
+		CollisionBody* a = _bodies[firstId];
+		CollisionBody* b = _bodies[secondId];
+
+		if (!a->Col() || !b->Col()) continue;
+
+		const Manifold manifold = a->Col()->TestCollision(
+			a->Trans(), b->Col(), b->Trans());
+
+		if (!manifold.hasCollision) continue;
+
+		if (a->IsTrigger() || b->IsTrigger())
 		{
-			//if (i == j) continue;
-
-			CollisionBody* a = _bodies[i];
-			CollisionBody* b = _bodies[j];
-
-			if (!a->Col() || !b->Col()) continue;
-
-			const Manifold manifold = a->Col()->TestCollision(
-				a->Trans(), b->Col(), b->Trans());
-
-
-			if (!manifold.hasCollision) continue;
-
-			if (a->IsTrigger() || b->IsTrigger())
-			{
-				triggers.emplace_back(a, b, manifold);
-			}
-			else
-			{
-				collisions.emplace_back(a, b, manifold);
-			}
+			triggers.emplace_back(a, b, manifold);
+		}
+		else
+		{
+			collisions.emplace_back(a, b, manifold);
 		}
 	}
 

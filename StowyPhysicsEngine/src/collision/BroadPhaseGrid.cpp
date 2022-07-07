@@ -1,24 +1,31 @@
 #include "collision/BroadPhaseGrid.hpp"
 
+#include "spdlog/spdlog.h"
+
+#include <ranges>
+
 BroadPhaseGrid::BroadPhaseGrid(
 	const float minX, const float maxX,
 	const float minY, const float maxY,
 	const float cellSize
 )
-	: _min(minX, minY), _max(maxX, maxY), _cellSize(cellSize)
+	: _min(minX, minY),
+	_max(maxX, maxY),
+	_cellSize(cellSize),
+	_gridWidth(static_cast<std::size_t>(
+		std::floor((_max.x - _min.x) / _cellSize))),
+	_gridHeight(static_cast<std::size_t>(
+		std::floor((_max.y - _min.y) / _cellSize)))
 {
+
 }
 
-void BroadPhaseGrid::Update(const std::vector<CollisionBody*>& bodies)
+void BroadPhaseGrid::Update(const std::unordered_map<std::uint64_t, CollisionBody*>& bodies)
 {
-	const auto gridWidth = static_cast<std::size_t>(
-		std::floor((_max.x - _min.x) / _cellSize));
-	const auto gridHeight = static_cast<std::size_t>(
-		std::floor((_max.y - _min.y) / _cellSize));
+	_grid.clear();
+	_grid.resize(_gridWidth);
 
-	_grid.resize(gridWidth);
-
-	for (auto body : bodies)
+	for (auto body : bodies | std::views::values)
 	{
 		const auto transform = body->Trans();
 		const auto collider = body->Col();
@@ -34,14 +41,18 @@ void BroadPhaseGrid::Update(const std::vector<CollisionBody*>& bodies)
 
 		const Vector2 boundingBoxSize = collider->GetBoundingBoxSize();
 
-		const int xBodyMin = static_cast<int>(std::floor((offsetCenter.x - _min.x) / _cellSize));
-		const int yBodyMin = static_cast<int>(std::floor((offsetCenter.y - _min.y) / _cellSize));
-		const int xBodyMax = static_cast<int>(std::floor((offsetCenter.x + boundingBoxSize.x - _min.x) / _cellSize));
-		const int yBodyMax = static_cast<int>(std::floor((offsetCenter.y + boundingBoxSize.y - _min.y) / _cellSize));
+		int xBodyMin = static_cast<int>(std::floor((offsetCenter.x - boundingBoxSize.x - _min.x) / _cellSize));
+		xBodyMin = std::clamp(xBodyMin, 0, static_cast<int>(_gridWidth));
+		int yBodyMin = static_cast<int>(std::floor((offsetCenter.y - boundingBoxSize.y - _min.y) / _cellSize));
+		yBodyMin = std::clamp(yBodyMin, 0, static_cast<int>(_gridHeight));
+		int xBodyMax = static_cast<int>(std::floor((offsetCenter.x + boundingBoxSize.x - _min.x) / _cellSize));
+		xBodyMax = std::clamp(xBodyMax, 0, static_cast<int>(_gridWidth));
+		int yBodyMax = static_cast<int>(std::floor((offsetCenter.y + boundingBoxSize.y - _min.y) / _cellSize));
+		yBodyMax = std::clamp(yBodyMax, 0, static_cast<int>(_gridHeight));
 
 		for (int x = xBodyMin; x <= xBodyMax; x++)
 		{
-			if (_grid[x].empty()) _grid[x].resize(gridHeight);
+			if (_grid[x].empty()) _grid[x].resize(_gridHeight);
 
 			std::vector<std::vector<CollisionBody*>>& gridCol = _grid[x];
 
@@ -70,9 +81,11 @@ std::vector<std::pair<std::uint64_t, std::uint64_t>> BroadPhaseGrid::GetCollisio
 				for (std::size_t j = i + 1; j < gridCell.size(); ++j)
 				{
 					CollisionBody* bodyB = gridCell[j];
+
 					std::pair<CollisionBody*, CollisionBody*> bodyPair = bodyA < bodyB ?
 						std::make_pair(bodyA, bodyB) :
 						std::make_pair(bodyB, bodyA);
+
 					if (!HasBeenChecked(checkedCollisions, bodyPair))
 					{
 						collisions.emplace_back(bodyPair.first->id, bodyPair.second->id);
@@ -92,7 +105,7 @@ bool BroadPhaseGrid::HasBeenChecked(const std::unordered_multimap<CollisionBody*
 	auto [first, second] =
 		checkedCollisions.equal_range(bodyPair.first);
 	bool isContained = false;
-	for (auto i = first; i != second; ++i)
+	for (auto& i = first; i != second; ++i)
 	{
 		if (i->second == bodyPair.second)
 		{

@@ -31,7 +31,7 @@ void DemoBallsAndCube::StartMainLoop()
 {
 	auto ground = std::make_unique<AabbBox>(
 		_world,
-		Vector2(CAM_WIDTH / 2.0f, 1.0f),
+		Vector2(CAM_WIDTH * 0.8f, 1.0f),
 		Vector2(0.0f, -5.0f),
 		false
 		);
@@ -46,7 +46,6 @@ void DemoBallsAndCube::StartMainLoop()
 	{
 		sf::Time deltaTime = clock.restart();
 		sf::Event event{};
-
 		while (_window.pollEvent(event))
 		{
 			if (event.type == sf::Event::Closed)

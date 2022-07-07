@@ -40,7 +40,7 @@ public:
 	 * \brief Steps the world.
 	 * \param deltaTime Time elapsed since the last frame.
 	 */
-	void Step(float deltaTime) const;
+	void Step(float deltaTime);
 
 	/**
 	 * \brief Sets the gravity in the world.
@@ -50,4 +50,5 @@ public:
 
 private:
 	Vector2 _gravity = { 0, -9.81f };
+	
 };
