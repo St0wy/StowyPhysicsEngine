@@ -99,8 +99,10 @@ std::vector<std::pair<std::uint64_t, std::uint64_t>> BroadPhaseGrid::GetCollisio
 	return collisions;
 }
 
-bool BroadPhaseGrid::HasBeenChecked(const std::unordered_multimap<CollisionBody*, CollisionBody*>& checkedCollisions,
-	const std::pair<CollisionBody*, CollisionBody*>& bodyPair)
+bool BroadPhaseGrid::HasBeenChecked(
+	const std::unordered_multimap<CollisionBody*, CollisionBody*>& checkedCollisions,
+	const std::pair<CollisionBody*, CollisionBody*>& bodyPair
+)
 {
 	auto [first, second] =
 		checkedCollisions.equal_range(bodyPair.first);

@@ -6,6 +6,7 @@
 #include "Circle.hpp"
 #include "AabbBox.hpp"
 #include "MathUtils.hpp"
+#include "FpsCounter.hpp"
 
 DemoBallsAndCube::DemoBallsAndCube()
 	: _window(
@@ -15,16 +16,23 @@ DemoBallsAndCube::DemoBallsAndCube()
 		sf::ContextSettings(0, 0, 8)
 	)
 {
-	//_window.setVerticalSyncEnabled(true);
-	//_window.setFramerateLimit(FRAMERATE);
-
 	_window.setView(DEFAULT_VIEW);
 
 	_impulseSolver = std::make_unique<ImpulseSolver>();
 	_smoothPositionSolver = std::make_unique<SmoothPositionSolver>();
 	_world.AddSolver(_impulseSolver.get());
 	_world.AddSolver(_smoothPositionSolver.get());
-	//_world.SetWorldGravity({ 0,0 });
+
+	if (!_lModern.loadFromFile("data/lmodern.otf"))
+	{
+		spdlog::error("Could not load font");
+	}
+
+	_fpsText.setFont(_lModern);
+	_fpsText.setCharacterSize(256);
+	_fpsText.setFillColor(sf::Color::White);
+	_fpsText.setPosition(-CAM_WIDTH/2.0f, -CAM_HEIGHT/2.0f);
+	_fpsText.setScale(0.01f, 0.01f);
 }
 
 void DemoBallsAndCube::StartMainLoop()
@@ -80,6 +88,9 @@ void DemoBallsAndCube::StartMainLoop()
 			entity->Update(deltaTime);
 		}
 
+		_fpsCounter.Update(deltaTime.asSeconds());
+		_fpsText.setString(_fpsCounter.GetFpsString());
+
 		// Clear the window
 		_window.clear(sf::Color::Black);
 
@@ -88,6 +99,8 @@ void DemoBallsAndCube::StartMainLoop()
 		{
 			_window.draw(*entity);
 		}
+
+		_window.draw(_fpsText);
 
 		_window.display();
 	}
