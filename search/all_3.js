@@ -11,7 +11,7 @@ var searchData=
   ['collisionbody_8',['CollisionBody',['../struct_collision_body.html',1,'CollisionBody'],['../struct_collision_body.html#a5fa4a5cba324c98afd091ad76422ecca',1,'CollisionBody::CollisionBody()']]],
   ['collisionbody_2ecpp_9',['CollisionBody.cpp',['../_collision_body_8cpp.html',1,'']]],
   ['collisionbody_2ehpp_10',['CollisionBody.hpp',['../_collision_body_8hpp.html',1,'']]],
-  ['collisionworld_11',['CollisionWorld',['../class_collision_world.html',1,'']]],
+  ['collisionworld_11',['CollisionWorld',['../class_collision_world.html',1,'CollisionWorld'],['../class_collision_world.html#a98bf0a31ff2f5ddbbde5882830738858',1,'CollisionWorld::CollisionWorld()'],['../class_collision_world.html#a99971fb5c234e59f1dad6aba7403e242',1,'CollisionWorld::CollisionWorld(std::unordered_map&lt; std::uint64_t, CollisionBody * &gt; bodies, std::vector&lt; Solver * &gt; solvers)']]],
   ['collisionworld_2ecpp_12',['CollisionWorld.cpp',['../_collision_world_8cpp.html',1,'']]],
   ['collisionworld_2ehpp_13',['CollisionWorld.hpp',['../_collision_world_8hpp.html',1,'']]]
 ];

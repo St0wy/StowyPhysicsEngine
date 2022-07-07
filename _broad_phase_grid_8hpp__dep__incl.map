@@ -1,4 +1,8 @@
 <map id="include/collision/BroadPhaseGrid.hpp" name="include/collision/BroadPhaseGrid.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,195,47"/>
-<area shape="rect" id="node2" href="$_broad_phase_grid_8cpp.html" title=" " alt="" coords="17,95,183,136"/>
+<area shape="rect" id="node1" title="Contains the BroadPhaseGrid class." alt="" coords="222,5,411,47"/>
+<area shape="rect" id="node2" href="$_collision_world_8hpp.html" title="Contains the CollisionWorld class." alt="" coords="139,95,305,136"/>
+<area shape="rect" id="node6" href="$_broad_phase_grid_8cpp.html" title=" " alt="" coords="329,95,496,136"/>
+<area shape="rect" id="node3" href="$_dynamics_world_8hpp.html" title="Contains the DynamicsWorld class." alt="" coords="23,184,205,225"/>
+<area shape="rect" id="node5" href="$_collision_world_8cpp.html" title=" " alt="" coords="229,191,431,218"/>
+<area shape="rect" id="node4" href="$_dynamics_world_8cpp.html" title=" " alt="" coords="5,273,223,300"/>
 </map>

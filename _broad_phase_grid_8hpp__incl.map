@@ -1,5 +1,5 @@
 <map id="include/collision/BroadPhaseGrid.hpp" name="include/collision/BroadPhaseGrid.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="305,5,494,47"/>
+<area shape="rect" id="node1" title="Contains the BroadPhaseGrid class." alt="" coords="305,5,494,47"/>
 <area shape="rect" id="node2" href="$_collision_body_8hpp.html" title="Contains the CollisionBody struct." alt="" coords="204,95,328,121"/>
 <area shape="rect" id="node12" title=" " alt="" coords="559,319,618,345"/>
 <area shape="rect" id="node3" title=" " alt="" coords="149,169,228,196"/>

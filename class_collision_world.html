@@ -103,15 +103,28 @@ Inheritance diagram for CollisionWorld:</div>
 <area shape="rect" href="class_dynamics_world.html" title="A world with dynamics in it." alt="" coords="5,80,117,107"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for CollisionWorld:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_world__coll__graph.png" border="0" usemap="#a_collision_world_coll__map" alt="Collaboration graph"/></div>
+<map name="a_collision_world_coll__map" id="a_collision_world_coll__map">
+<area shape="rect" title="Represents a world where collisions can happen. It does not have dynamics, for this you will need the..." alt="" coords="12,95,116,121"/>
+<area shape="rect" href="class_broad_phase_grid.html" title="A grid in which the physical object are placed in. This is used to optimize performance by only check..." alt="" coords="5,5,123,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a98bf0a31ff2f5ddbbde5882830738858"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_world.html#a98bf0a31ff2f5ddbbde5882830738858">CollisionWorld</a> ()</td></tr>
+<tr class="separator:a98bf0a31ff2f5ddbbde5882830738858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99971fb5c234e59f1dad6aba7403e242"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_world.html#a99971fb5c234e59f1dad6aba7403e242">CollisionWorld</a> (std::unordered_map&lt; std::uint64_t, <a class="el" href="struct_collision_body.html">CollisionBody</a> * &gt; bodies, std::vector&lt; <a class="el" href="class_solver.html">Solver</a> * &gt; solvers)</td></tr>
+<tr class="separator:a99971fb5c234e59f1dad6aba7403e242"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aece70c9058e004f0cf52bdfca739d551"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_world.html#aece70c9058e004f0cf52bdfca739d551">AddCollisionBody</a> (<a class="el" href="struct_collision_body.html">CollisionBody</a> *body)</td></tr>
 <tr class="memdesc:aece70c9058e004f0cf52bdfca739d551"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a collision body to the world.  <a href="class_collision_world.html#aece70c9058e004f0cf52bdfca739d551">More...</a><br /></td></tr>
 <tr class="separator:aece70c9058e004f0cf52bdfca739d551"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdb6781db6fe00f16a21b8c72fc4f596"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_world.html#acdb6781db6fe00f16a21b8c72fc4f596">RemoveCollisionBody</a> (<a class="el" href="struct_collision_body.html">CollisionBody</a> *body)</td></tr>
-<tr class="memdesc:acdb6781db6fe00f16a21b8c72fc4f596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a collision body to the world.  <a href="class_collision_world.html#acdb6781db6fe00f16a21b8c72fc4f596">More...</a><br /></td></tr>
-<tr class="separator:acdb6781db6fe00f16a21b8c72fc4f596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a415e293d094ddb76d5cfb49921bd112c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_world.html#a415e293d094ddb76d5cfb49921bd112c">RemoveCollisionBody</a> (const <a class="el" href="struct_collision_body.html">CollisionBody</a> *body)</td></tr>
+<tr class="memdesc:a415e293d094ddb76d5cfb49921bd112c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a collision body to the world.  <a href="class_collision_world.html#a415e293d094ddb76d5cfb49921bd112c">More...</a><br /></td></tr>
+<tr class="separator:a415e293d094ddb76d5cfb49921bd112c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5e98b7b7d034564418807cfe564a497"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_world.html#ac5e98b7b7d034564418807cfe564a497">AddSolver</a> (<a class="el" href="class_solver.html">Solver</a> *solver)</td></tr>
 <tr class="memdesc:ac5e98b7b7d034564418807cfe564a497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a solver to the world.  <a href="class_collision_world.html#ac5e98b7b7d034564418807cfe564a497">More...</a><br /></td></tr>
 <tr class="separator:ac5e98b7b7d034564418807cfe564a497"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,23 +140,71 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0c1cafc3f85e7ab2ce94958c8ab10ef2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_world.html#a0c1cafc3f85e7ab2ce94958c8ab10ef2">SendCollisionCallbacks</a> (std::vector&lt; <a class="el" href="struct_collision.html">Collision</a> &gt; &amp;collisions, float deltaTime) const</td></tr>
 <tr class="memdesc:a0c1cafc3f85e7ab2ce94958c8ab10ef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls the callbacks of all the bodies in each collisions.  <a href="class_collision_world.html#a0c1cafc3f85e7ab2ce94958c8ab10ef2">More...</a><br /></td></tr>
 <tr class="separator:a0c1cafc3f85e7ab2ce94958c8ab10ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6813dd73cd0dd33cce8e281dede99591"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_world.html#a6813dd73cd0dd33cce8e281dede99591">ResolveCollisions</a> (float deltaTime) const</td></tr>
-<tr class="memdesc:a6813dd73cd0dd33cce8e281dede99591"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves all the collisions that happened in this world.  <a href="class_collision_world.html#a6813dd73cd0dd33cce8e281dede99591">More...</a><br /></td></tr>
-<tr class="separator:a6813dd73cd0dd33cce8e281dede99591"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0b1b81b92abf8f165d7da0067b5be20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_world.html#ae0b1b81b92abf8f165d7da0067b5be20">ResolveCollisions</a> (float deltaTime)</td></tr>
+<tr class="memdesc:ae0b1b81b92abf8f165d7da0067b5be20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves all the collisions that happened in this world.  <a href="class_collision_world.html#ae0b1b81b92abf8f165d7da0067b5be20">More...</a><br /></td></tr>
+<tr class="separator:ae0b1b81b92abf8f165d7da0067b5be20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a4913ced0ba207b3b3e6443f1c6942741"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_collision_body.html">CollisionBody</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_world.html#a4913ced0ba207b3b3e6443f1c6942741">_bodies</a></td></tr>
-<tr class="separator:a4913ced0ba207b3b3e6443f1c6942741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c1c0257a98b5f47d2d2df22872b812b"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::uint64_t, <a class="el" href="struct_collision_body.html">CollisionBody</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_world.html#a7c1c0257a98b5f47d2d2df22872b812b">_bodies</a></td></tr>
+<tr class="separator:a7c1c0257a98b5f47d2d2df22872b812b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf51dd3fcb6bef0413f9c6a97eafe0a9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_solver.html">Solver</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_world.html#acf51dd3fcb6bef0413f9c6a97eafe0a9">_solvers</a></td></tr>
 <tr class="separator:acf51dd3fcb6bef0413f9c6a97eafe0a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af747ad387826229166ecf4a5b9910a2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_broad_phase_grid.html">BroadPhaseGrid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_world.html#af747ad387826229166ecf4a5b9910a2c">_grid</a></td></tr>
+<tr class="separator:af747ad387826229166ecf4a5b9910a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cec4dcb10188c6c8dbf08ba41ebe2d6"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(<a class="el" href="struct_collision.html">Collision</a> &amp;, float)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_world.html#a0cec4dcb10188c6c8dbf08ba41ebe2d6">_onCollision</a></td></tr>
 <tr class="separator:a0cec4dcb10188c6c8dbf08ba41ebe2d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Represents a world where collisions can happen. It does not have dynamics, for this you will need the <a class="el" href="class_dynamics_world.html" title="A world with dynamics in it.">DynamicsWorld</a>. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_dynamics_world.html" title="A world with dynamics in it.">DynamicsWorld</a> </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a98bf0a31ff2f5ddbbde5882830738858" name="a98bf0a31ff2f5ddbbde5882830738858"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98bf0a31ff2f5ddbbde5882830738858">&#9670;&nbsp;</a></span>CollisionWorld() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CollisionWorld::CollisionWorld </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99971fb5c234e59f1dad6aba7403e242" name="a99971fb5c234e59f1dad6aba7403e242"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99971fb5c234e59f1dad6aba7403e242">&#9670;&nbsp;</a></span>CollisionWorld() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CollisionWorld::CollisionWorld </td>
+          <td>(</td>
+          <td class="paramtype">std::unordered_map&lt; std::uint64_t, <a class="el" href="struct_collision_body.html">CollisionBody</a> * &gt;&#160;</td>
+          <td class="paramname"><em>bodies</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_solver.html">Solver</a> * &gt;&#160;</td>
+          <td class="paramname"><em>solvers</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="aece70c9058e004f0cf52bdfca739d551" name="aece70c9058e004f0cf52bdfca739d551"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aece70c9058e004f0cf52bdfca739d551">&#9670;&nbsp;</a></span>AddCollisionBody()</h2>
 
@@ -196,8 +257,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="acdb6781db6fe00f16a21b8c72fc4f596" name="acdb6781db6fe00f16a21b8c72fc4f596"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdb6781db6fe00f16a21b8c72fc4f596">&#9670;&nbsp;</a></span>RemoveCollisionBody()</h2>
+<a id="a415e293d094ddb76d5cfb49921bd112c" name="a415e293d094ddb76d5cfb49921bd112c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a415e293d094ddb76d5cfb49921bd112c">&#9670;&nbsp;</a></span>RemoveCollisionBody()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -205,7 +266,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">void CollisionWorld::RemoveCollisionBody </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_collision_body.html">CollisionBody</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_collision_body.html">CollisionBody</a> *&#160;</td>
           <td class="paramname"><em>body</em></td><td>)</td>
           <td></td>
         </tr>
@@ -248,8 +309,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a6813dd73cd0dd33cce8e281dede99591" name="a6813dd73cd0dd33cce8e281dede99591"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6813dd73cd0dd33cce8e281dede99591">&#9670;&nbsp;</a></span>ResolveCollisions()</h2>
+<a id="ae0b1b81b92abf8f165d7da0067b5be20" name="ae0b1b81b92abf8f165d7da0067b5be20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0b1b81b92abf8f165d7da0067b5be20">&#9670;&nbsp;</a></span>ResolveCollisions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -259,7 +320,7 @@ Protected Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>deltaTime</em></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -274,15 +335,17 @@ Protected Attributes</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_collision_world_a6813dd73cd0dd33cce8e281dede99591_cgraph.png" border="0" usemap="#aclass_collision_world_a6813dd73cd0dd33cce8e281dede99591_cgraph" alt=""/></div>
-<map name="aclass_collision_world_a6813dd73cd0dd33cce8e281dede99591_cgraph" id="aclass_collision_world_a6813dd73cd0dd33cce8e281dede99591_cgraph">
-<area shape="rect" title="Resolves all the collisions that happened in this world." alt="" coords="5,144,219,171"/>
+<div class="center"><img src="class_collision_world_ae0b1b81b92abf8f165d7da0067b5be20_cgraph.png" border="0" usemap="#aclass_collision_world_ae0b1b81b92abf8f165d7da0067b5be20_cgraph" alt=""/></div>
+<map name="aclass_collision_world_ae0b1b81b92abf8f165d7da0067b5be20_cgraph" id="aclass_collision_world_ae0b1b81b92abf8f165d7da0067b5be20_cgraph">
+<area shape="rect" title="Resolves all the collisions that happened in this world." alt="" coords="5,211,219,237"/>
 <area shape="rect" href="struct_collision_body.html#a87cfaf648e060c8394e0ea50edc1559d" title="Gets the collider of the body." alt="" coords="303,5,429,32"/>
-<area shape="rect" href="struct_collision_body.html#ab14bd14aebef7e2e59ee412ee88ab77a" title="A boolean saying if the collider is a trigger collider. This means that it will not have a collision ..." alt="" coords="287,56,445,83"/>
-<area shape="rect" href="class_collision_world.html#a0c1cafc3f85e7ab2ce94958c8ab10ef2" title="Calls the callbacks of all the bodies in each collisions." alt="" coords="271,107,461,149"/>
-<area shape="rect" href="class_collision_world.html#a240631da475b62b5c21e31da56659702" title="Solves the collisions with the provided solvers." alt="" coords="267,173,465,200"/>
-<area shape="rect" href="struct_collider.html#af305c50dfe7802d1bf89e174032e57f1" title="Tests the collision against a generic collider." alt="" coords="293,224,439,251"/>
-<area shape="rect" href="struct_collision_body.html#a3c7fa400d6376214005acc6d43e86b36" title="Gets the transform of the body." alt="" coords="297,275,435,301"/>
+<area shape="rect" href="class_broad_phase_grid.html#a5a417cefb09b10b7bd7e12081fb8e062" title="Find all the pair of objects that are in the same cell. Doesn&#39;t contain any duplicates." alt="" coords="269,57,463,98"/>
+<area shape="rect" href="struct_collision_body.html#ab14bd14aebef7e2e59ee412ee88ab77a" title="A boolean saying if the collider is a trigger collider. This means that it will not have a collision ..." alt="" coords="287,123,445,149"/>
+<area shape="rect" href="class_collision_world.html#a0c1cafc3f85e7ab2ce94958c8ab10ef2" title="Calls the callbacks of all the bodies in each collisions." alt="" coords="271,174,461,215"/>
+<area shape="rect" href="class_collision_world.html#a240631da475b62b5c21e31da56659702" title="Solves the collisions with the provided solvers." alt="" coords="267,240,465,267"/>
+<area shape="rect" href="struct_collider.html#af305c50dfe7802d1bf89e174032e57f1" title="Tests the collision against a generic collider." alt="" coords="293,291,439,317"/>
+<area shape="rect" href="struct_collision_body.html#a3c7fa400d6376214005acc6d43e86b36" title="Gets the transform of the body." alt="" coords="297,341,435,368"/>
+<area shape="rect" href="class_broad_phase_grid.html#a8df8bdf017344506d19509eb5ccd87a2" title="Updates the layout of the grid." alt="" coords="283,392,449,419"/>
 </map>
 </div>
 
@@ -389,8 +452,8 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a4913ced0ba207b3b3e6443f1c6942741" name="a4913ced0ba207b3b3e6443f1c6942741"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4913ced0ba207b3b3e6443f1c6942741">&#9670;&nbsp;</a></span>_bodies</h2>
+<a id="a7c1c0257a98b5f47d2d2df22872b812b" name="a7c1c0257a98b5f47d2d2df22872b812b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c1c0257a98b5f47d2d2df22872b812b">&#9670;&nbsp;</a></span>_bodies</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -399,7 +462,29 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="struct_collision_body.html">CollisionBody</a>*&gt; CollisionWorld::_bodies</td>
+          <td class="memname">std::unordered_map&lt;std::uint64_t, <a class="el" href="struct_collision_body.html">CollisionBody</a>*&gt; CollisionWorld::_bodies</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af747ad387826229166ecf4a5b9910a2c" name="af747ad387826229166ecf4a5b9910a2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af747ad387826229166ecf4a5b9910a2c">&#9670;&nbsp;</a></span>_grid</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_broad_phase_grid.html">BroadPhaseGrid</a> CollisionWorld::_grid</td>
         </tr>
       </table>
   </td>

@@ -89,18 +89,27 @@ $(document).ready(function(){initNavTree('class_broad_phase_grid.html',''); init
 </div><!--header-->
 <div class="contents">
 
+<p>A grid in which the physical object are placed in. This is used to optimize performance by only checking collision with colliders that are in the same cell.  
+ <a href="class_broad_phase_grid.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_broad_phase_grid_8hpp_source.html">BroadPhaseGrid.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9f6fbc8b39fcbfdf9d4100c094d4f09b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broad_phase_grid.html#a9f6fbc8b39fcbfdf9d4100c094d4f09b">BroadPhaseGrid</a> (float minX, float maxX, float minY, float maxY, float cellSize)</td></tr>
+<tr class="memdesc:a9f6fbc8b39fcbfdf9d4100c094d4f09b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new grid.  <a href="class_broad_phase_grid.html#a9f6fbc8b39fcbfdf9d4100c094d4f09b">More...</a><br /></td></tr>
 <tr class="separator:a9f6fbc8b39fcbfdf9d4100c094d4f09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3761dc70c8d5fe27fe52e3be5b5d343e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broad_phase_grid.html#a3761dc70c8d5fe27fe52e3be5b5d343e">Update</a> (const std::vector&lt; <a class="el" href="struct_collision_body.html">CollisionBody</a> * &gt; &amp;bodies)</td></tr>
-<tr class="separator:a3761dc70c8d5fe27fe52e3be5b5d343e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8df8bdf017344506d19509eb5ccd87a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broad_phase_grid.html#a8df8bdf017344506d19509eb5ccd87a2">Update</a> (const std::unordered_map&lt; std::uint64_t, <a class="el" href="struct_collision_body.html">CollisionBody</a> * &gt; &amp;bodies)</td></tr>
+<tr class="memdesc:a8df8bdf017344506d19509eb5ccd87a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the layout of the grid.  <a href="class_broad_phase_grid.html#a8df8bdf017344506d19509eb5ccd87a2">More...</a><br /></td></tr>
+<tr class="separator:a8df8bdf017344506d19509eb5ccd87a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a417cefb09b10b7bd7e12081fb8e062"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; std::uint64_t, std::uint64_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broad_phase_grid.html#a5a417cefb09b10b7bd7e12081fb8e062">GetCollisionPairs</a> () const</td></tr>
+<tr class="memdesc:a5a417cefb09b10b7bd7e12081fb8e062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find all the pair of objects that are in the same cell. Doesn't contain any duplicates.  <a href="class_broad_phase_grid.html#a5a417cefb09b10b7bd7e12081fb8e062">More...</a><br /></td></tr>
 <tr class="separator:a5a417cefb09b10b7bd7e12081fb8e062"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >A grid in which the physical object are placed in. This is used to optimize performance by only checking collision with colliders that are in the same cell. </p>
+<p >A collider that spans on multiple cells will have a pointer on every cell. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9f6fbc8b39fcbfdf9d4100c094d4f09b" name="a9f6fbc8b39fcbfdf9d4100c094d4f09b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9f6fbc8b39fcbfdf9d4100c094d4f09b">&#9670;&nbsp;</a></span>BroadPhaseGrid()</h2>
 
@@ -145,6 +154,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructs a new grid. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">minX</td><td>X coordinate on the bottom left point of the grid. </td></tr>
+    <tr><td class="paramname">maxX</td><td>X coordinate on the top right point of the grid. </td></tr>
+    <tr><td class="paramname">minY</td><td>Y coordinate on the bottom left point of the grid. </td></tr>
+    <tr><td class="paramname">maxY</td><td>Y coordinate on the top right point of the grid. </td></tr>
+    <tr><td class="paramname">cellSize</td><td>Size (in meter) of a cell. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -163,10 +184,13 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Find all the pair of objects that are in the same cell. Doesn't contain any duplicates. </p>
+<dl class="section return"><dt>Returns</dt><dd>The pair of objects that will collide. </dd></dl>
+
 </div>
 </div>
-<a id="a3761dc70c8d5fe27fe52e3be5b5d343e" name="a3761dc70c8d5fe27fe52e3be5b5d343e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3761dc70c8d5fe27fe52e3be5b5d343e">&#9670;&nbsp;</a></span>Update()</h2>
+<a id="a8df8bdf017344506d19509eb5ccd87a2" name="a8df8bdf017344506d19509eb5ccd87a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8df8bdf017344506d19509eb5ccd87a2">&#9670;&nbsp;</a></span>Update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,12 +198,20 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void BroadPhaseGrid::Update </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="struct_collision_body.html">CollisionBody</a> * &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::unordered_map&lt; std::uint64_t, <a class="el" href="struct_collision_body.html">CollisionBody</a> * &gt; &amp;&#160;</td>
           <td class="paramname"><em>bodies</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Updates the layout of the grid. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bodies</td><td>Bodies in the physical world. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

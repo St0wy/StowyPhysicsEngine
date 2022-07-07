@@ -85,34 +85,39 @@ $(document).ready(function(){initNavTree('_broad_phase_grid_8hpp_source.html',''
   <div class="headertitle"><div class="title">BroadPhaseGrid.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_broad_phase_grid_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_collision_body_8hpp.html">CollisionBody.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_broad_phase_grid.html">    7</a></span><span class="keyword">class </span><a class="code hl_class" href="class_broad_phase_grid.html">BroadPhaseGrid</a></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <a class="code hl_function" href="class_broad_phase_grid.html#a9f6fbc8b39fcbfdf9d4100c094d4f09b">BroadPhaseGrid</a>(<span class="keywordtype">float</span> minX, <span class="keywordtype">float</span> maxX, <span class="keywordtype">float</span> minY, <span class="keywordtype">float</span> maxY, <span class="keywordtype">float</span> cellSize);</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_broad_phase_grid.html#a3761dc70c8d5fe27fe52e3be5b5d343e">Update</a>(<span class="keyword">const</span> std::vector&lt;CollisionBody*&gt;&amp; bodies);</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    std::vector&lt;std::pair&lt;std::uint64_t, std::uint64_t&gt;&gt; <a class="code hl_function" href="class_broad_phase_grid.html#a5a417cefb09b10b7bd7e12081fb8e062">GetCollisionPairs</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    std::vector&lt;std::vector&lt;std::vector&lt;CollisionBody*&gt;&gt;&gt; _grid;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_struct" href="struct_vector2.html">Vector2</a> _min;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_struct" href="struct_vector2.html">Vector2</a> _max;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">float</span> _cellSize;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> HasBeenChecked(</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keyword">const</span> std::unordered_multimap&lt;CollisionBody*, CollisionBody*&gt;&amp; checkedCollisions,</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keyword">const</span> std::pair&lt;CollisionBody*, CollisionBody*&gt;&amp; bodyPair);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
+<a href="_broad_phase_grid_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_collision_body_8hpp.html">CollisionBody.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_broad_phase_grid.html">   24</a></span><span class="keyword">class </span><a class="code hl_class" href="class_broad_phase_grid.html">BroadPhaseGrid</a></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_function" href="class_broad_phase_grid.html#a9f6fbc8b39fcbfdf9d4100c094d4f09b">BroadPhaseGrid</a>(<span class="keywordtype">float</span> minX, <span class="keywordtype">float</span> maxX, <span class="keywordtype">float</span> minY, <span class="keywordtype">float</span> maxY, <span class="keywordtype">float</span> cellSize);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_broad_phase_grid.html#a8df8bdf017344506d19509eb5ccd87a2">Update</a>(<span class="keyword">const</span> std::unordered_map&lt;std::uint64_t, CollisionBody*&gt;&amp; bodies);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    [[nodiscard]] std::vector&lt;std::pair&lt;std::uint64_t, std::uint64_t&gt;&gt; <a class="code hl_function" href="class_broad_phase_grid.html#a5a417cefb09b10b7bd7e12081fb8e062">GetCollisionPairs</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    std::vector&lt;std::vector&lt;std::vector&lt;CollisionBody*&gt;&gt;&gt; _grid;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_struct" href="struct_vector2.html">Vector2</a> _min;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_struct" href="struct_vector2.html">Vector2</a> _max;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">float</span> _cellSize;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    std::size_t _gridWidth;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    std::size_t _gridHeight;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> HasBeenChecked(</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keyword">const</span> std::unordered_multimap&lt;CollisionBody*, CollisionBody*&gt;&amp; checkedCollisions,</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keyword">const</span> std::pair&lt;CollisionBody*, CollisionBody*&gt;&amp; bodyPair);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>};</div>
 <div class="ttc" id="a_collision_body_8hpp_html"><div class="ttname"><a href="_collision_body_8hpp.html">CollisionBody.hpp</a></div><div class="ttdoc">Contains the CollisionBody struct.</div></div>
-<div class="ttc" id="aclass_broad_phase_grid_html"><div class="ttname"><a href="class_broad_phase_grid.html">BroadPhaseGrid</a></div><div class="ttdef"><b>Definition:</b> BroadPhaseGrid.hpp:8</div></div>
-<div class="ttc" id="aclass_broad_phase_grid_html_a3761dc70c8d5fe27fe52e3be5b5d343e"><div class="ttname"><a href="class_broad_phase_grid.html#a3761dc70c8d5fe27fe52e3be5b5d343e">BroadPhaseGrid::Update</a></div><div class="ttdeci">void Update(const std::vector&lt; CollisionBody * &gt; &amp;bodies)</div><div class="ttdef"><b>Definition:</b> BroadPhaseGrid.cpp:12</div></div>
-<div class="ttc" id="aclass_broad_phase_grid_html_a5a417cefb09b10b7bd7e12081fb8e062"><div class="ttname"><a href="class_broad_phase_grid.html#a5a417cefb09b10b7bd7e12081fb8e062">BroadPhaseGrid::GetCollisionPairs</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; std::uint64_t, std::uint64_t &gt; &gt; GetCollisionPairs() const</div><div class="ttdef"><b>Definition:</b> BroadPhaseGrid.cpp:58</div></div>
-<div class="ttc" id="aclass_broad_phase_grid_html_a9f6fbc8b39fcbfdf9d4100c094d4f09b"><div class="ttname"><a href="class_broad_phase_grid.html#a9f6fbc8b39fcbfdf9d4100c094d4f09b">BroadPhaseGrid::BroadPhaseGrid</a></div><div class="ttdeci">BroadPhaseGrid(float minX, float maxX, float minY, float maxY, float cellSize)</div><div class="ttdef"><b>Definition:</b> BroadPhaseGrid.cpp:3</div></div>
+<div class="ttc" id="aclass_broad_phase_grid_html"><div class="ttname"><a href="class_broad_phase_grid.html">BroadPhaseGrid</a></div><div class="ttdoc">A grid in which the physical object are placed in. This is used to optimize performance by only check...</div><div class="ttdef"><b>Definition:</b> BroadPhaseGrid.hpp:25</div></div>
+<div class="ttc" id="aclass_broad_phase_grid_html_a5a417cefb09b10b7bd7e12081fb8e062"><div class="ttname"><a href="class_broad_phase_grid.html#a5a417cefb09b10b7bd7e12081fb8e062">BroadPhaseGrid::GetCollisionPairs</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; std::uint64_t, std::uint64_t &gt; &gt; GetCollisionPairs() const</div><div class="ttdoc">Find all the pair of objects that are in the same cell. Doesn't contain any duplicates.</div><div class="ttdef"><b>Definition:</b> BroadPhaseGrid.cpp:69</div></div>
+<div class="ttc" id="aclass_broad_phase_grid_html_a8df8bdf017344506d19509eb5ccd87a2"><div class="ttname"><a href="class_broad_phase_grid.html#a8df8bdf017344506d19509eb5ccd87a2">BroadPhaseGrid::Update</a></div><div class="ttdeci">void Update(const std::unordered_map&lt; std::uint64_t, CollisionBody * &gt; &amp;bodies)</div><div class="ttdoc">Updates the layout of the grid.</div><div class="ttdef"><b>Definition:</b> BroadPhaseGrid.cpp:23</div></div>
+<div class="ttc" id="aclass_broad_phase_grid_html_a9f6fbc8b39fcbfdf9d4100c094d4f09b"><div class="ttname"><a href="class_broad_phase_grid.html#a9f6fbc8b39fcbfdf9d4100c094d4f09b">BroadPhaseGrid::BroadPhaseGrid</a></div><div class="ttdeci">BroadPhaseGrid(float minX, float maxX, float minY, float maxY, float cellSize)</div><div class="ttdoc">Constructs a new grid.</div><div class="ttdef"><b>Definition:</b> BroadPhaseGrid.cpp:7</div></div>
 <div class="ttc" id="astruct_vector2_html"><div class="ttname"><a href="struct_vector2.html">Vector2</a></div><div class="ttdoc">A struct representing a 2D Vector.</div><div class="ttdef"><b>Definition:</b> Vector2.hpp:19</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
