@@ -23,7 +23,7 @@ DemoBallsAndCube::DemoBallsAndCube()
 	_impulseSolver = std::make_unique<ImpulseSolver>();
 	_smoothPositionSolver = std::make_unique<SmoothPositionSolver>();
 	_world.AddSolver(_impulseSolver.get());
-	_world.AddSolver(_smoothPositionSolver.get());
+	//_world.AddSolver(_smoothPositionSolver.get());
 	//_world.SetWorldGravity({ 0,0 });
 }
 

@@ -11,7 +11,6 @@ class DemoBallsAndCube
 {
 public:
 	DemoBallsAndCube();
-
 	void StartMainLoop();
 
 private:

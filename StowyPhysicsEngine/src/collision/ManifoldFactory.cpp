@@ -70,30 +70,21 @@ Manifold algo::FindAabbAabbManifold(
 	const AabbCollider* a, const Transform* ta,
 	const AabbCollider* b, const Transform* tb)
 {
-	// Represent AABBs with bottom left (min) and top right (max) points
 	const Vector2 transformedCenterA = ta->position + a->center;
-	float scaledHWidth = a->halfWidth * ta->scale.x;
-	float scaledHHeight = a->halfHeight * ta->scale.y;
-	const Vector2 aMin = { transformedCenterA.x - scaledHWidth, transformedCenterA.y - scaledHHeight };
-	const Vector2 aMax = { transformedCenterA.x + scaledHWidth,transformedCenterA.y + scaledHHeight };
+	const float aScaledHWidth = a->halfWidth * ta->scale.x;
+	const float aScaledHHeight = a->halfHeight * ta->scale.y;
 
 	const Vector2 transformedCenterB = tb->position + b->center;
-	scaledHWidth = b->halfWidth * tb->scale.x;
-	scaledHHeight = b->halfHeight * tb->scale.y;
-	const Vector2 bMin = { transformedCenterB.x - scaledHWidth, transformedCenterB.y - scaledHHeight };
-	const Vector2 bMax = { transformedCenterB.x + scaledHWidth, transformedCenterB.y + scaledHHeight };
+	const float bScaledHWidth = b->halfWidth * tb->scale.x;
+	const float bScaledHHeight = b->halfHeight * tb->scale.y;
 
 	const Vector2 aToB = transformedCenterB - transformedCenterA;
-	const float aExtentX = (aMax.x - aMin.x) / 2.0f;
-	const float bExtentX = (bMax.x - bMin.x) / 2.0f;
-	const float xOverlap = aExtentX + bExtentX - std::abs(aToB.x);
+	const float xOverlap = aScaledHWidth + bScaledHWidth - std::abs(aToB.x);
 
 	// Overlap test on x axis
 	if (xOverlap <= 0.0f) return Manifold::Empty();
 
-	const float aExtentY = (aMax.y - aMin.y) / 2.0f;
-	const float bExtentY = (bMax.y - bMin.y) / 2.0f;
-	const float yOverlap = aExtentY + bExtentY - std::abs(aToB.y);
+	const float yOverlap = aScaledHHeight + bScaledHHeight - std::abs(aToB.y);
 
 	// Overlap test on y axis
 	if (yOverlap <= 0.0f) return Manifold::Empty();
@@ -115,82 +106,46 @@ Manifold algo::FindAabbCircleManifold(
 	const AabbCollider* a, const Transform* ta,
 	const CircleCollider* b, const Transform* tb)
 {
-	// Represent AABBs with bottom left (min) and top right (max) points
-	const Vector2 transformedCenterA = ta->position + a->center;
+	// Apply the transform to the AabbCollider
+	const Vector2 aabbCenter = ta->position + a->center;
 	const float scaledHWidth = a->halfWidth * ta->scale.x;
 	const float scaledHHeight = a->halfHeight * ta->scale.y;
-	const Vector2 aMin = { transformedCenterA.x - scaledHWidth, transformedCenterA.y - scaledHHeight };
-	const Vector2 aMax = { transformedCenterA.x + scaledHWidth,transformedCenterA.y + scaledHHeight };
 
-	const Vector2 transformedCenterB = tb->position + b->center;
+	// Apply the transform to the circle collider
+	const Vector2 circleCenter = tb->position + b->center;
 	const float scaledRadius = b->radius * tb->scale.Major();
 
-	const Vector2 aToB = transformedCenterB - transformedCenterA;
-	Vector2 closest = aToB;
+	const Vector2 aabbToCircle = circleCenter - aabbCenter;
 
-	const float xExtent = (aMax.x - aMin.x) / 2.0f;
-	const float yExtent = (aMax.y - aMin.y) / 2.0f;
+	// Copy aToB to be the initial value of the closest point
+	Vector2 clampedPoint;
 
 	// Clamp point to the edge of the AABB
-	closest.x = std::clamp(closest.x, -xExtent, xExtent);
-	closest.y = std::clamp(closest.y, -yExtent, yExtent);
+	clampedPoint.x = std::clamp(aabbToCircle.x, -scaledHWidth, scaledHWidth);
+	clampedPoint.y = std::clamp(aabbToCircle.y, -scaledHHeight, scaledHHeight);
 
-	bool isCircleInside = false;
+	// Put the point in "world space" because it was relative to the center
+	const Vector2 closestPointOnAabb = aabbCenter + clampedPoint;
 
-	// Circle is inside the AABB, so we need to clamp the circle's center to the edge
-	if (aToB == closest)
+	Vector2 difference = closestPointOnAabb - circleCenter;
+	float distance = difference.SqrMagnitude();
+	if (distance > scaledRadius * scaledRadius) return Manifold::Empty();
+
+	distance = std::sqrt(distance);
+
+	if (distance != 0)
 	{
-		isCircleInside = true;
-
-		// Find closest axis
-		if (std::abs(aToB.x) > std::abs(aToB.y))
-		{
-			// Clamp to the closest extent
-			if (closest.x > 0)
-			{
-				closest.x = xExtent;
-			}
-			else
-			{
-				closest.x = -xExtent;
-			}
-		}
-		else
-		{
-			if (closest.y > 0)
-			{
-				closest.y = yExtent;
-			}
-			else
-			{
-				closest.y = -yExtent;
-			}
-		}
+		difference /= distance;
 	}
 
-	Vector2 normal = aToB - closest;
-	float d = normal.SqrMagnitude();
-	if (d > (scaledRadius * scaledRadius) && !isCircleInside) return Manifold::Empty();
-
-	d = std::sqrt(d);
-
-	normal = normal.Normalized();
-
-	// Collision normal needs to be flipped to point outside if circle was
-	// inside the AABB
-	if (isCircleInside)
-	{
-		normal = -normal;
-	}
-
-	return { normal, scaledRadius - d };
+	float depth = scaledRadius - distance;
+	return { difference, depth };
 }
 
 Manifold algo::FindCircleAabbManifold(const CircleCollider* a, const Transform* ta, const AabbCollider* b,
 	const Transform* tb)
 {
-	const Manifold manifold = FindAabbCircleManifold(b, tb, a, ta);
-	return manifold;
+	return FindAabbCircleManifold(b, tb, a, ta).Swaped();
 }
 
 Vector2 algo::Support(
