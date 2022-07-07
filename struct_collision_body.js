@@ -1,5 +1,6 @@
 var struct_collision_body =
 [
+    [ "CollisionBody", "struct_collision_body.html#a5fa4a5cba324c98afd091ad76422ecca", null ],
     [ "Col", "struct_collision_body.html#a87cfaf648e060c8394e0ea50edc1559d", null ],
     [ "IsDynamic", "struct_collision_body.html#a775ec3d3a47bd2dbfd534c3914d3ab0b", null ],
     [ "IsKinematic", "struct_collision_body.html#a9ff2d3e40a49f0999c1e7b245a93d337", null ],
@@ -19,5 +20,6 @@ var struct_collision_body =
     [ "_isTrigger", "struct_collision_body.html#a69430a4c3e81e3ba35555402e4d8b6b9", null ],
     [ "_lastTransform", "struct_collision_body.html#a32e8ef19c764ac7acb5a8b6ae32b904c", null ],
     [ "_onCollisions", "struct_collision_body.html#a354989ed5ab66e8983bbea9c4baf469c", null ],
-    [ "_transform", "struct_collision_body.html#aa7a96cbb48bb20ece098b83ca8f4b9ec", null ]
+    [ "_transform", "struct_collision_body.html#aa7a96cbb48bb20ece098b83ca8f4b9ec", null ],
+    [ "id", "struct_collision_body.html#aba222cca483e1253d125d442ad81a90a", null ]
 ];

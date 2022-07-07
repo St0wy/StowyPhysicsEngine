@@ -1,5 +1,5 @@
 <map id="BoxCollider" name="BoxCollider">
-<area shape="rect" id="node1" title="A rotatable box collider." alt="" coords="40,95,127,121"/>
-<area shape="rect" id="node2" href="$struct_collider.html" title="A pure virtual struct that represents colliders." alt="" coords="5,5,71,32"/>
-<area shape="rect" id="node3" href="$struct_vector2.html" title="A struct representing a 2D Vector." alt="" coords="95,5,162,32"/>
+<area shape="rect" id="node1" title="A rotatable box collider." alt="" coords="5,171,92,197"/>
+<area shape="rect" id="node2" href="$struct_collider.html" title="A pure virtual struct that represents colliders." alt="" coords="16,95,81,121"/>
+<area shape="rect" id="node3" href="$struct_vector2.html" title="A struct representing a 2D Vector." alt="" coords="15,5,82,32"/>
 </map>

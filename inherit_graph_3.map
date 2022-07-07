@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_collision_world.html" title="Represents a world where collisions can happen. It does not have dynamics, for this you will need the..." alt="" coords="5,5,109,32"/>
-<area shape="rect" id="node2" href="$class_dynamics_world.html" title="A world with dynamics in it." alt="" coords="157,5,269,32"/>
+<area shape="rect" id="node1" href="$struct_collision_body.html" title="A body that can receive collisions." alt="" coords="5,5,105,32"/>
+<area shape="rect" id="node2" href="$struct_rigidbody.html" title="A Rigidbody that has dynamics." alt="" coords="153,5,232,32"/>
 </map>

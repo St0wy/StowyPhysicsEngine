@@ -1,0 +1,4 @@
+<map id="Collider" name="Collider">
+<area shape="rect" id="node1" title="A pure virtual struct that represents colliders." alt="" coords="6,95,71,121"/>
+<area shape="rect" id="node2" href="$struct_vector2.html" title="A struct representing a 2D Vector." alt="" coords="5,5,72,32"/>
+</map>

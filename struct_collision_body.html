@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('struct_collision_body.html',''); initR
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="struct_collision_body-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">CollisionBody Struct Reference</div></div>
@@ -108,15 +109,17 @@ Collaboration diagram for CollisionBody:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_collision_body__coll__graph.png" border="0" usemap="#a_collision_body_coll__map" alt="Collaboration graph"/></div>
 <map name="a_collision_body_coll__map" id="a_collision_body_coll__map">
-<area shape="rect" title="A body that can receive collisions." alt="" coords="56,213,156,240"/>
+<area shape="rect" title="A body that can receive collisions." alt="" coords="44,213,144,240"/>
 <area shape="rect" href="struct_transform.html" title="A transform of an object. Contains position, scale and rotation." alt="" coords="5,109,87,136"/>
-<area shape="rect" href="struct_vector2.html" title="A struct representing a 2D Vector." alt="" coords="13,5,79,32"/>
-<area shape="rect" href="struct_collider.html" title="A pure virtual struct that represents colliders." alt="" coords="135,109,200,136"/>
+<area shape="rect" href="struct_vector2.html" title="A struct representing a 2D Vector." alt="" coords="61,5,127,32"/>
+<area shape="rect" href="struct_collider.html" title="A pure virtual struct that represents colliders." alt="" coords="116,109,181,136"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a5fa4a5cba324c98afd091ad76422ecca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#a5fa4a5cba324c98afd091ad76422ecca">CollisionBody</a> ()</td></tr>
+<tr class="separator:a5fa4a5cba324c98afd091ad76422ecca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c7fa400d6376214005acc6d43e86b36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_transform.html">Transform</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#a3c7fa400d6376214005acc6d43e86b36">Trans</a> ()</td></tr>
 <tr class="memdesc:a3c7fa400d6376214005acc6d43e86b36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the transform of the body.  <a href="struct_collision_body.html#a3c7fa400d6376214005acc6d43e86b36">More...</a><br /></td></tr>
 <tr class="separator:a3c7fa400d6376214005acc6d43e86b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,6 +160,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a775ec3d3a47bd2dbfd534c3914d3ab0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a boolean indicating if this body is dynamic. This means that this is a <a class="el" href="struct_rigidbody.html" title="A Rigidbody that has dynamics.">Rigidbody</a>.  <a href="struct_collision_body.html#a775ec3d3a47bd2dbfd534c3914d3ab0b">More...</a><br /></td></tr>
 <tr class="separator:a775ec3d3a47bd2dbfd534c3914d3ab0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:aba222cca483e1253d125d442ad81a90a"><td class="memItemLeft" align="right" valign="top">std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#aba222cca483e1253d125d442ad81a90a">id</a></td></tr>
+<tr class="separator:aba222cca483e1253d125d442ad81a90a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:aa7a96cbb48bb20ece098b83ca8f4b9ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collision_body.html#aa7a96cbb48bb20ece098b83ca8f4b9ec">_transform</a> {}</td></tr>
@@ -176,7 +184,25 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A body that can receive collisions. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a5fa4a5cba324c98afd091ad76422ecca" name="a5fa4a5cba324c98afd091ad76422ecca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fa4a5cba324c98afd091ad76422ecca">&#9670;&nbsp;</a></span>CollisionBody()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CollisionBody::CollisionBody </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a87cfaf648e060c8394e0ea50edc1559d" name="a87cfaf648e060c8394e0ea50edc1559d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a87cfaf648e060c8394e0ea50edc1559d">&#9670;&nbsp;</a></span>Col()</h2>
 
@@ -642,6 +668,20 @@ Protected Attributes</h2></td></tr>
 <span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba222cca483e1253d125d442ad81a90a" name="aba222cca483e1253d125d442ad81a90a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba222cca483e1253d125d442ad81a90a">&#9670;&nbsp;</a></span>id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint64_t CollisionBody::id</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>

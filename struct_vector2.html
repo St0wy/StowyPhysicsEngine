@@ -130,9 +130,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad3d1aec20b1ba958b60dc86e8df9cc6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vector2.html#ad3d1aec20b1ba958b60dc86e8df9cc6c">NegativePerpendicular</a> () const</td></tr>
 <tr class="memdesc:ad3d1aec20b1ba958b60dc86e8df9cc6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the perpendicular vector in -90 degrees.  <a href="struct_vector2.html#ad3d1aec20b1ba958b60dc86e8df9cc6c">More...</a><br /></td></tr>
 <tr class="separator:ad3d1aec20b1ba958b60dc86e8df9cc6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9efc9a927e6a26034a471ff58b91c987"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vector2.html#a9efc9a927e6a26034a471ff58b91c987">SetMagnitude</a> (float newMagnitude)</td></tr>
-<tr class="memdesc:a9efc9a927e6a26034a471ff58b91c987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the magnitude of this vector.  <a href="struct_vector2.html#a9efc9a927e6a26034a471ff58b91c987">More...</a><br /></td></tr>
-<tr class="separator:a9efc9a927e6a26034a471ff58b91c987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7218a0d0d5254ff420895ba81171319d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vector2.html#a7218a0d0d5254ff420895ba81171319d">NewMagnitude</a> (float newMagnitude) const</td></tr>
+<tr class="memdesc:a7218a0d0d5254ff420895ba81171319d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the magnitude of this vector.  <a href="struct_vector2.html#a7218a0d0d5254ff420895ba81171319d">More...</a><br /></td></tr>
+<tr class="separator:a7218a0d0d5254ff420895ba81171319d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a745c1b2d41e9f92fab739c3e24a684ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vector2.html#a745c1b2d41e9f92fab739c3e24a684ce">RotateAround</a> (const <a class="el" href="struct_vector2.html">Vector2</a> &amp;center, float angle)</td></tr>
 <tr class="memdesc:a745c1b2d41e9f92fab739c3e24a684ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates this vector around the provided axis.  <a href="struct_vector2.html#a745c1b2d41e9f92fab739c3e24a684ce">More...</a><br /></td></tr>
 <tr class="separator:a745c1b2d41e9f92fab739c3e24a684ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -473,6 +473,42 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a7218a0d0d5254ff420895ba81171319d" name="a7218a0d0d5254ff420895ba81171319d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7218a0d0d5254ff420895ba81171319d">&#9670;&nbsp;</a></span>NewMagnitude()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector2.html">Vector2</a> Vector2::NewMagnitude </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>newMagnitude</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the magnitude of this vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newMagnitude</td><td>The new magnitude. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_vector2_a7218a0d0d5254ff420895ba81171319d_cgraph.png" border="0" usemap="#astruct_vector2_a7218a0d0d5254ff420895ba81171319d_cgraph" alt=""/></div>
+<map name="astruct_vector2_a7218a0d0d5254ff420895ba81171319d_cgraph" id="astruct_vector2_a7218a0d0d5254ff420895ba81171319d_cgraph">
+<area shape="rect" title="Sets the magnitude of this vector." alt="" coords="5,5,165,32"/>
+<area shape="rect" href="struct_vector2.html#a16b13aa4859a54eaec1a76ae2ca4f94d" title="Gets the magnitude of this vector." alt="" coords="213,5,347,32"/>
+<area shape="rect" href="struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="395,5,548,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a271b8fa518725c70f57e935f09ece61d" name="a271b8fa518725c70f57e935f09ece61d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a271b8fa518725c70f57e935f09ece61d">&#9670;&nbsp;</a></span>Normalize()</h2>
 
@@ -789,42 +825,6 @@ Here is the call graph for this function:</div>
 <map name="astruct_vector2_a745c1b2d41e9f92fab739c3e24a684ce_cgraph" id="astruct_vector2_a745c1b2d41e9f92fab739c3e24a684ce_cgraph">
 <area shape="rect" title="Rotates this vector around the provided axis." alt="" coords="5,5,157,32"/>
 <area shape="rect" href="struct_vector2.html#a22104d1809be26a419ef1f959e3761bf" title=" " alt="" coords="205,5,324,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a9efc9a927e6a26034a471ff58b91c987" name="a9efc9a927e6a26034a471ff58b91c987"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9efc9a927e6a26034a471ff58b91c987">&#9670;&nbsp;</a></span>SetMagnitude()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Vector2::SetMagnitude </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>newMagnitude</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets the magnitude of this vector. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">newMagnitude</td><td>The new magnitude. </td></tr>
-  </table>
-  </dd>
-</dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="struct_vector2_a9efc9a927e6a26034a471ff58b91c987_cgraph.png" border="0" usemap="#astruct_vector2_a9efc9a927e6a26034a471ff58b91c987_cgraph" alt=""/></div>
-<map name="astruct_vector2_a9efc9a927e6a26034a471ff58b91c987_cgraph" id="astruct_vector2_a9efc9a927e6a26034a471ff58b91c987_cgraph">
-<area shape="rect" title="Sets the magnitude of this vector." alt="" coords="5,5,159,32"/>
-<area shape="rect" href="struct_vector2.html#a16b13aa4859a54eaec1a76ae2ca4f94d" title="Gets the magnitude of this vector." alt="" coords="207,5,340,32"/>
-<area shape="rect" href="struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="388,5,541,32"/>
 </map>
 </div>
 

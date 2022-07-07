@@ -108,9 +108,9 @@ Collaboration diagram for AabbCollider:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_aabb_collider__coll__graph.png" border="0" usemap="#a_aabb_collider_coll__map" alt="Collaboration graph"/></div>
 <map name="a_aabb_collider_coll__map" id="a_aabb_collider_coll__map">
-<area shape="rect" title="An Axis Aligned Bounding Box collider." alt="" coords="36,95,131,121"/>
-<area shape="rect" href="struct_collider.html" title="A pure virtual struct that represents colliders." alt="" coords="5,5,71,32"/>
-<area shape="rect" href="struct_vector2.html" title="A struct representing a 2D Vector." alt="" coords="95,5,162,32"/>
+<area shape="rect" title="An Axis Aligned Bounding Box collider." alt="" coords="5,171,100,197"/>
+<area shape="rect" href="struct_collider.html" title="A pure virtual struct that represents colliders." alt="" coords="20,95,85,121"/>
+<area shape="rect" href="struct_vector2.html" title="A struct representing a 2D Vector." alt="" coords="19,5,86,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -131,6 +131,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2c5cebac684b0e986635a40411de8d00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_aabb_collider.html#a2c5cebac684b0e986635a40411de8d00">FindFurthestPoint</a> (const <a class="el" href="struct_transform.html">Transform</a> *transform, const <a class="el" href="struct_vector2.html">Vector2</a> &amp;direction) const override</td></tr>
 <tr class="memdesc:a2c5cebac684b0e986635a40411de8d00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the furthest point in the specified direction.  <a href="struct_aabb_collider.html#a2c5cebac684b0e986635a40411de8d00">More...</a><br /></td></tr>
 <tr class="separator:a2c5cebac684b0e986635a40411de8d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab14e0592abb42ac142215596a85ce565"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_aabb_collider.html#ab14e0592abb42ac142215596a85ce565">GetBoundingBoxSize</a> () const override</td></tr>
+<tr class="memdesc:ab14e0592abb42ac142215596a85ce565"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the size of the box that surrounds the collider.  <a href="struct_aabb_collider.html#ab14e0592abb42ac142215596a85ce565">More...</a><br /></td></tr>
+<tr class="separator:ab14e0592abb42ac142215596a85ce565"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_struct_collider"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_collider')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="struct_collider.html">Collider</a></td></tr>
 <tr class="memitem:ab55111a0e01b0a1f809aeb8ef776412d inherit pub_methods_struct_collider"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collider.html#ab55111a0e01b0a1f809aeb8ef776412d">Collider</a> ()=default</td></tr>
 <tr class="separator:ab55111a0e01b0a1f809aeb8ef776412d inherit pub_methods_struct_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,18 +162,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a74bb6d5110ff84b664bc3101ebf86d23 inherit pub_methods_struct_collider"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collider.html#a74bb6d5110ff84b664bc3101ebf86d23">FindFurthestPoint</a> (const <a class="el" href="struct_transform.html">Transform</a> *transform, const <a class="el" href="struct_vector2.html">Vector2</a> &amp;direction) const =0</td></tr>
 <tr class="memdesc:a74bb6d5110ff84b664bc3101ebf86d23 inherit pub_methods_struct_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the furthest point in the specified direction.  <a href="struct_collider.html#a74bb6d5110ff84b664bc3101ebf86d23">More...</a><br /></td></tr>
 <tr class="separator:a74bb6d5110ff84b664bc3101ebf86d23 inherit pub_methods_struct_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01fb70a60e736ab8730242b14a93414d inherit pub_methods_struct_collider"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collider.html#a01fb70a60e736ab8730242b14a93414d">GetBoundingBoxSize</a> () const =0</td></tr>
+<tr class="memdesc:a01fb70a60e736ab8730242b14a93414d inherit pub_methods_struct_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the size of the box that surrounds the collider.  <a href="struct_collider.html#a01fb70a60e736ab8730242b14a93414d">More...</a><br /></td></tr>
+<tr class="separator:a01fb70a60e736ab8730242b14a93414d inherit pub_methods_struct_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a8c2516e1e2dc0aa64ef125c7d17a3955"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_aabb_collider.html#a8c2516e1e2dc0aa64ef125c7d17a3955">center</a></td></tr>
-<tr class="memdesc:a8c2516e1e2dc0aa64ef125c7d17a3955"><td class="mdescLeft">&#160;</td><td class="mdescRight">Center of the box.  <a href="struct_aabb_collider.html#a8c2516e1e2dc0aa64ef125c7d17a3955">More...</a><br /></td></tr>
-<tr class="separator:a8c2516e1e2dc0aa64ef125c7d17a3955"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9539bf2300ff299325e96a42104f4c1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_aabb_collider.html#ab9539bf2300ff299325e96a42104f4c1">halfWidth</a></td></tr>
 <tr class="memdesc:ab9539bf2300ff299325e96a42104f4c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Half of the width of the box.  <a href="struct_aabb_collider.html#ab9539bf2300ff299325e96a42104f4c1">More...</a><br /></td></tr>
 <tr class="separator:ab9539bf2300ff299325e96a42104f4c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46ee43b5d0f006a8cfbdeaa4a0b0b3c9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_aabb_collider.html#a46ee43b5d0f006a8cfbdeaa4a0b0b3c9">halfHeight</a></td></tr>
 <tr class="memdesc:a46ee43b5d0f006a8cfbdeaa4a0b0b3c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Half of the height of the box.  <a href="struct_aabb_collider.html#a46ee43b5d0f006a8cfbdeaa4a0b0b3c9">More...</a><br /></td></tr>
 <tr class="separator:a46ee43b5d0f006a8cfbdeaa4a0b0b3c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_struct_collider"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_collider')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="struct_collider.html">Collider</a></td></tr>
+<tr class="memitem:a6c6dd4f9362c672b8fbf29b69257eb6c inherit pub_attribs_struct_collider"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collider.html#a6c6dd4f9362c672b8fbf29b69257eb6c">center</a></td></tr>
+<tr class="memdesc:a6c6dd4f9362c672b8fbf29b69257eb6c inherit pub_attribs_struct_collider"><td class="mdescLeft">&#160;</td><td class="mdescRight">The center of the collider.  <a href="struct_collider.html#a6c6dd4f9362c672b8fbf29b69257eb6c">More...</a><br /></td></tr>
+<tr class="separator:a6c6dd4f9362c672b8fbf29b69257eb6c inherit pub_attribs_struct_collider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >An Axis Aligned Bounding Box collider. </p>
@@ -220,6 +227,36 @@ Public Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The furthest point. </dd></dl>
 
 <p>Implements <a class="el" href="struct_collider.html#a74bb6d5110ff84b664bc3101ebf86d23">Collider</a>.</p>
+
+</div>
+</div>
+<a id="ab14e0592abb42ac142215596a85ce565" name="ab14e0592abb42ac142215596a85ce565"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab14e0592abb42ac142215596a85ce565">&#9670;&nbsp;</a></span>GetBoundingBoxSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector2.html">Vector2</a> AabbCollider::GetBoundingBoxSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the size of the box that surrounds the collider. </p>
+<dl class="section return"><dt>Returns</dt><dd>The bounding box of the collider. </dd></dl>
+
+<p>Implements <a class="el" href="struct_collider.html#a01fb70a60e736ab8730242b14a93414d">Collider</a>.</p>
 
 </div>
 </div>
@@ -409,11 +446,13 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_aabb_collider_a70c028b959147da0a29f0349f20d9220_cgraph.png" border="0" usemap="#astruct_aabb_collider_a70c028b959147da0a29f0349f20d9220_cgraph" alt=""/></div>
 <map name="astruct_aabb_collider_a70c028b959147da0a29f0349f20d9220_cgraph" id="astruct_aabb_collider_a70c028b959147da0a29f0349f20d9220_cgraph">
-<area shape="rect" title="Tests the collision against a circle collider." alt="" coords="5,56,181,83"/>
-<area shape="rect" href="namespacealgo.html#a6af93f14e8018b1b0e9c82577ded7e7c" title="Finds the collision manifold between A and B." alt="" coords="229,56,419,83"/>
-<area shape="rect" href="struct_manifold.html#a2d38cacdc21e00dcc762a7be3dac2c7d" title="Gets an empty manifold with no collisions." alt="" coords="487,5,600,32"/>
-<area shape="rect" href="struct_vector2.html#a034384ad890b6ceeaa7da3d88d566b5d" title="Gets the biggest component of this vector." alt="" coords="491,56,596,83"/>
-<area shape="rect" href="struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="467,107,620,133"/>
+<area shape="rect" title="Tests the collision against a circle collider." alt="" coords="5,81,181,108"/>
+<area shape="rect" href="namespacealgo.html#a6af93f14e8018b1b0e9c82577ded7e7c" title="Finds the collision manifold between A and B." alt="" coords="229,81,419,108"/>
+<area shape="rect" href="struct_manifold.html#a2d38cacdc21e00dcc762a7be3dac2c7d" title="Gets an empty manifold with no collisions." alt="" coords="490,5,603,32"/>
+<area shape="rect" href="struct_vector2.html#a034384ad890b6ceeaa7da3d88d566b5d" title="Gets the biggest component of this vector." alt="" coords="494,56,599,83"/>
+<area shape="rect" href="struct_vector2.html#a7218a0d0d5254ff420895ba81171319d" title="Sets the magnitude of this vector." alt="" coords="467,107,627,133"/>
+<area shape="rect" href="struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="856,132,1009,159"/>
+<area shape="rect" href="struct_vector2.html#a16b13aa4859a54eaec1a76ae2ca4f94d" title="Gets the magnitude of this vector." alt="" coords="675,107,808,133"/>
 </map>
 </div>
 
@@ -484,22 +523,6 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a8c2516e1e2dc0aa64ef125c7d17a3955" name="a8c2516e1e2dc0aa64ef125c7d17a3955"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c2516e1e2dc0aa64ef125c7d17a3955">&#9670;&nbsp;</a></span>center</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_vector2.html">Vector2</a> AabbCollider::center</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Center of the box. </p>
-
-</div>
-</div>
 <a id="a46ee43b5d0f006a8cfbdeaa4a0b0b3c9" name="a46ee43b5d0f006a8cfbdeaa4a0b0b3c9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a46ee43b5d0f006a8cfbdeaa4a0b0b3c9">&#9670;&nbsp;</a></span>halfHeight</h2>
 
