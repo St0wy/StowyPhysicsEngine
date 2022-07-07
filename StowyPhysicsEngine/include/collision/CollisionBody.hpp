@@ -24,6 +24,10 @@ struct Collision;
 struct CollisionBody
 {
 public:
+	CollisionBody();
+
+	std::uint64_t id;
+
 	/**
 	 * \brief Gets the transform of the body.
 	 * \return The transform of the body.

@@ -103,6 +103,11 @@ std::array<Vector2, 4> BoxCollider::GetAxes(const std::array<Vector2, 4>& vertic
 	return axes;
 }
 
+Vector2 BoxCollider::GetBoundingBoxSize() const
+{
+	return { halfWidth * 2.0f, halfHeight * 2.0f };
+}
+
 std::array<Vector2, 4> BoxCollider::GetTransformedVertices(const Transform& transform) const
 {
 	const float scaledHalfWidth = halfWidth * transform.scale.x;
@@ -159,6 +164,11 @@ Vector2 CircleCollider::FindFurthestPoint(const Transform* transform, const Vect
 {
 	return center + transform->position + radius * direction.Normalized() * transform->scale.Major();
 }
+
+Vector2 CircleCollider::GetBoundingBoxSize() const
+{
+	return { radius * 2, radius * 2 };
+}
 #pragma endregion
 
 #pragma region AabbCollider
@@ -190,5 +200,10 @@ Manifold AabbCollider::TestCollision(const Transform* transform, const AabbColli
 Vector2 AabbCollider::FindFurthestPoint(const Transform* transform, const Vector2& direction) const
 {
 	return Vector2();
+}
+
+Vector2 AabbCollider::GetBoundingBoxSize() const
+{
+	return { halfWidth * 2.0f, halfHeight * 2.0f };
 }
 #pragma endregion

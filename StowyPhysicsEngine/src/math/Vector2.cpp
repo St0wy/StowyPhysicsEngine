@@ -40,9 +40,9 @@ Vector2 Vector2::TripleProduct(const Vector2& a, const Vector2& b, const Vector2
 
 Vector2 Vector2::Normalized() const
 {
-	if(x == 0 && y == 0)
+	if (x == 0 && y == 0)
 	{
-		return {0, 0};
+		return { 0, 0 };
 	}
 
 	const float invMag = 1.0f / Magnitude();
@@ -85,9 +85,9 @@ Vector2 Vector2::NegativePerpendicular() const
 	return { y, -x };
 }
 
-void Vector2::SetMagnitude(const float newMagnitude)
+Vector2 Vector2::NewMagnitude(const float newMagnitude) const
 {
-	*this /= newMagnitude * Magnitude();
+	return *this / newMagnitude * Magnitude();
 }
 
 void Vector2::RotateAround(const Vector2& center, const float angle)

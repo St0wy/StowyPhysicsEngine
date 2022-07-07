@@ -37,6 +37,11 @@ public:
 	Collider(const Collider& col) = default;
 
 	/**
+	* \brief The center of the collider.
+	*/
+	Vector2 center;
+
+	/**
 	 * \brief Tests the collision against a generic collider.
 	 * \param transform The transform of this collider.
 	 * \param collider The collider to collide with.
@@ -98,6 +103,12 @@ public:
 		const Transform* transform,
 		const Vector2& direction
 	) const = 0;
+
+	/**
+	 * \brief Gets the size of the box that surrounds the collider.
+	 * \return The bounding box of the collider.
+	 */
+	[[nodiscard]] virtual Vector2 GetBoundingBoxSize() const = 0;
 };
 
 /**
@@ -105,10 +116,6 @@ public:
  */
 struct BoxCollider final : Collider
 {
-	/**
-	 * \brief The center of the box.
-	 */
-	Vector2 center;
 	/**
 	 * \brief Half of the width of the box.
 	 */
@@ -161,6 +168,8 @@ struct BoxCollider final : Collider
 		const Vector2& axis,
 		const std::array<Vector2, 4>& vertices);
 	[[nodiscard]] static std::array<Vector2, 4> GetAxes(const std::array<Vector2, 4>& vertices);
+
+	[[nodiscard]] Vector2 GetBoundingBoxSize() const override;
 };
 
 /**
@@ -169,10 +178,6 @@ struct BoxCollider final : Collider
 struct CircleCollider final : Collider
 {
 public:
-	/**
-	 * \brief Center of the circle.
-	 */
-	Vector2 center;
 	/**
 	 * \brief Radius of the circle.
 	 */
@@ -203,6 +208,7 @@ public:
 		const Transform* transform,
 		const Vector2& direction
 	) const override;
+	[[nodiscard]] Vector2 GetBoundingBoxSize() const override;
 };
 
 /**
@@ -210,10 +216,6 @@ public:
  */
 struct AabbCollider final : Collider
 {
-	/**
-	 * \brief Center of the box.
-	 */
-	Vector2 center;
 	/**
 	 * \brief Half of the width of the box.
 	 */
@@ -232,4 +234,5 @@ struct AabbCollider final : Collider
 	Manifold TestCollision(const Transform* transform, const AabbCollider* collider,
 		const Transform* aabbTransform) const override;
 	[[nodiscard]] Vector2 FindFurthestPoint(const Transform* transform, const Vector2& direction) const override;
+	[[nodiscard]] Vector2 GetBoundingBoxSize() const override;
 };

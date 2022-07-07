@@ -116,6 +116,7 @@ Manifold algo::FindAabbCircleManifold(
 	const float scaledRadius = b->radius * tb->scale.Major();
 
 	const Vector2 aabbToCircle = circleCenter - aabbCenter;
+	
 
 	// Copy aToB to be the initial value of the closest point
 	Vector2 clampedPoint;
@@ -124,22 +125,25 @@ Manifold algo::FindAabbCircleManifold(
 	clampedPoint.x = std::clamp(aabbToCircle.x, -scaledHWidth, scaledHWidth);
 	clampedPoint.y = std::clamp(aabbToCircle.y, -scaledHHeight, scaledHHeight);
 
+
 	// Put the point in "world space" because it was relative to the center
 	const Vector2 closestPointOnAabb = aabbCenter + clampedPoint;
 
-	Vector2 difference = closestPointOnAabb - circleCenter;
-	float distance = difference.SqrMagnitude();
+	Vector2 circleToClosestPoint = closestPointOnAabb - circleCenter;
+	float distance = circleToClosestPoint.SqrMagnitude();
 	if (distance > scaledRadius * scaledRadius) return Manifold::Empty();
 
 	distance = std::sqrt(distance);
 
+	Vector2 worldCircleToClosestPoint = circleToClosestPoint.NewMagnitude(scaledRadius) + circleCenter;
+
 	if (distance != 0)
 	{
-		difference /= distance;
+		circleToClosestPoint /= distance;
 	}
 
 	float depth = scaledRadius - distance;
-	return { difference, depth };
+	return { worldCircleToClosestPoint, closestPointOnAabb , circleToClosestPoint, depth };
 }
 
 Manifold algo::FindCircleAabbManifold(const CircleCollider* a, const Transform* ta, const AabbCollider* b,

@@ -117,7 +117,7 @@ public:
 	 * \brief Sets the magnitude of this vector.
 	 * \param newMagnitude The new magnitude.
 	 */
-	void SetMagnitude(float newMagnitude);
+	Vector2 NewMagnitude(float newMagnitude) const;
 
 	/**
 	 * \brief Rotates this vector around the provided axis.

@@ -1,5 +1,11 @@
 #include "collision/CollisionBody.hpp"
 
+CollisionBody::CollisionBody()
+{
+	static std::uint64_t staticId = 0;
+	id = staticId++;
+}
+
 Transform* CollisionBody::Trans()
 {
 	return &_transform;
