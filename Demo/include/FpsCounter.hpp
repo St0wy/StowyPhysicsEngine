@@ -1,6 +1,5 @@
 #pragma once
 
-#include <iomanip>
 #include <sstream>
 #include <string>
 
@@ -24,7 +23,7 @@ inline void FpsCounter::Update(const float deltaTime)
 	_frameCount++;
 	_accumulator += deltaTime;
 
-	if(_accumulator >= timeToUpdate)
+	if (_accumulator >= timeToUpdate)
 	{
 		_accumulator -= timeToUpdate;
 		_fps = static_cast<float>(_frameCount) / timeToUpdate;
@@ -40,6 +39,6 @@ inline float FpsCounter::GetFps() const
 inline std::string FpsCounter::GetFpsString() const
 {
 	std::ostringstream oss{};
-	oss/* << std::setprecision(1)*/ << GetFps();
+	oss << GetFps();
 	return oss.str();
 }
