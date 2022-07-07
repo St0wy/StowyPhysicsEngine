@@ -9,7 +9,6 @@ class AabbBox final : public Entity
 {
 public:
 	AabbBox(DynamicsWorld& dynWorld, Vector2 size, Vector2 pos, bool takesGravity);
-	~AabbBox() override;
 
 	sf::RectangleShape& Shape();
 	void SetColor(const sf::Color& color);

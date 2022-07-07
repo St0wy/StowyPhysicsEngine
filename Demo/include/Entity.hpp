@@ -12,6 +12,7 @@ class Entity
 public:
 	explicit Entity(DynamicsWorld& dynWorld);
 	Entity(DynamicsWorld& dynWorld, Vector2 pos);
+	~Entity() override;
 
 	Rigidbody* RigidBody() const;
 
@@ -22,7 +23,6 @@ public:
 	 * \param deltaTime Time elapsed since the last frame.
 	 */
 	virtual void Update(sf::Time deltaTime);
-
 protected:
 	DynamicsWorld& _dynWorld;
 	std::unique_ptr<Rigidbody> _rb;

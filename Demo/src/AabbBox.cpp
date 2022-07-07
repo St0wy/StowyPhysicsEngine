@@ -18,11 +18,6 @@ AabbBox::AabbBox(DynamicsWorld& dynWorld, const Vector2 size, const Vector2 pos,
 	_dynWorld.AddRigidbody(RigidBody());
 }
 
-AabbBox::~AabbBox()
-{
-	_dynWorld.RemoveCollisionBody(RigidBody());
-}
-
 sf::RectangleShape& AabbBox::Shape()
 {
 	return _shape;

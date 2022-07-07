@@ -68,7 +68,7 @@ void CollisionWorld::ResolveCollisions(const float deltaTime) const
 
 	for (std::size_t i = 0; i < _bodies.size(); ++i)
 	{
-		for (std::size_t j = 1; j < _bodies.size(); ++j)
+		for (std::size_t j = i + 1; j < _bodies.size(); ++j)
 		{
 			if (i == j) continue;
 

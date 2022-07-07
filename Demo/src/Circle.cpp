@@ -11,11 +11,6 @@ Circle::Circle(DynamicsWorld& dynWorld, const float radius, const Vector2 pos)
 	_shape.setOrigin(radius, radius);
 }
 
-Circle::~Circle()
-{
-	_dynWorld.RemoveCollisionBody(RigidBody());
-}
-
 void Circle::draw(sf::RenderTarget& target, sf::RenderStates states) const
 {
 	states.transform *= getTransform();

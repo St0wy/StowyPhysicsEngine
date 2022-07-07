@@ -10,14 +10,6 @@ It also has a method to find the furthest point in a direction. This can be used
 
 Here are the available colliders : 
 
-Box Collider
-^^^^^^^^^^^^
-
-A box that can be rotated.
-It is defined by its center, half width and half height.
-The collision of this collider must be done by an algorithm like SAT or GJK.
-Unfortunatly they both don't work in the current version of this project, which makes it unusable.
-
 Circle collider
 ^^^^^^^^^^^^^^^
 
@@ -30,6 +22,14 @@ AABB Collider
 
 This is an Axis Aligned Bounding Box.
 This means it cannot rotate and can only be aligned with the X and Y axes.
+
+Box Collider (WIP)
+^^^^^^^^^^^^^^^^^^
+
+A box that can be rotated.
+It is defined by its center, half width and half height.
+The collision of this collider must be done by an algorithm like SAT or GJK.
+Unfortunatly they both don't work in the current version of this project, which makes it unusable.
 
 Transform
 ---------

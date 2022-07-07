@@ -9,7 +9,6 @@ class Box final : public Entity
 {
 public:
 	Box(DynamicsWorld& dynWorld, Vector2 size, Vector2 pos, bool takesGravity);
-	~Box() override;
 
 	sf::RectangleShape& Shape();
 	void SetColor(const sf::Color& color);

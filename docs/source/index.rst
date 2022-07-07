@@ -14,6 +14,7 @@ Welcome to Stowy Physics Engine's documentation!
    quickstart
    colRes
    colliders
+   sfml
 
 Indices and tables
 ==================

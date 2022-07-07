@@ -18,11 +18,6 @@ Box::Box(DynamicsWorld& dynWorld, const Vector2 size, const Vector2 pos, const b
 	_dynWorld.AddRigidbody(RigidBody());
 }
 
-Box::~Box()
-{
-	_dynWorld.RemoveCollisionBody(RigidBody());
-}
-
 sf::RectangleShape& Box::Shape()
 {
 	return _shape;
