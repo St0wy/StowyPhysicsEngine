@@ -4,18 +4,18 @@
 <area shape="rect" id="node5" href="$_collision_8hpp.html" title="Contains the Collision struct." alt="" coords="158,229,305,256"/>
 <area shape="rect" id="node18" href="$_rigidbody_8hpp.html" title="Contains the Rigidbody struct." alt="" coords="269,155,431,181"/>
 <area shape="rect" id="node19" title=" " alt="" coords="319,80,431,107"/>
-<area shape="rect" id="node3" href="$_solver_8hpp.html" title="Contains the Solver struct." alt="" coords="69,155,151,181"/>
-<area shape="rect" id="node4" title=" " alt="" coords="81,528,139,555"/>
-<area shape="rect" id="node6" href="$_collision_body_8hpp.html" title="Contains the CollisionBody struct." alt="" coords="247,304,371,331"/>
-<area shape="rect" id="node7" title=" " alt="" coords="151,379,229,405"/>
-<area shape="rect" id="node8" href="$_transform_8hpp.html" title="Contains the Transform struct." alt="" coords="463,528,568,555"/>
-<area shape="rect" id="node12" href="$_collider_8hpp.html" title="Contains all the Colliders struct." alt="" coords="305,453,395,480"/>
-<area shape="rect" id="node16" href="$_manifold_factory_8hpp.html" title="Contains the algo namespace which contains the functions to detect a collision." alt="" coords="305,379,494,405"/>
-<area shape="rect" id="node9" href="$_vector2_8hpp.html" title="Contains the Vector2 struct." alt="" coords="363,603,487,629"/>
-<area shape="rect" id="node10" title=" " alt="" coords="397,677,452,704"/>
-<area shape="rect" id="node11" title=" " alt="" coords="229,677,348,704"/>
-<area shape="rect" id="node13" title=" " alt="" coords="593,528,643,555"/>
-<area shape="rect" id="node14" href="$_manifold_8hpp.html" title="Contains the Manifold class." alt="" coords="164,528,259,555"/>
-<area shape="rect" id="node15" href="$_projection_8hpp.html" title=" " alt="" coords="283,528,387,555"/>
-<area shape="rect" id="node17" href="$_simplex_8hpp.html" title="Contains the Simplex struct." alt="" coords="572,453,664,480"/>
+<area shape="rect" id="node3" href="$_solver_8hpp.html" title="Contains the Solver struct." alt="" coords="61,155,143,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="73,229,131,256"/>
+<area shape="rect" id="node6" href="$_collision_body_8hpp.html" title="Contains the CollisionBody struct." alt="" coords="228,304,352,331"/>
+<area shape="rect" id="node7" title=" " alt="" coords="148,379,227,405"/>
+<area shape="rect" id="node8" href="$_transform_8hpp.html" title="Contains the Transform struct." alt="" coords="196,528,301,555"/>
+<area shape="rect" id="node12" href="$_collider_8hpp.html" title="Contains all the Colliders struct." alt="" coords="377,453,467,480"/>
+<area shape="rect" id="node16" href="$_manifold_factory_8hpp.html" title="Contains the algo namespace which contains the functions to detect a collision." alt="" coords="353,379,542,405"/>
+<area shape="rect" id="node9" href="$_vector2_8hpp.html" title="Contains the Vector2 struct." alt="" coords="511,603,635,629"/>
+<area shape="rect" id="node10" title=" " alt="" coords="540,677,595,704"/>
+<area shape="rect" id="node11" title=" " alt="" coords="619,677,737,704"/>
+<area shape="rect" id="node13" title=" " alt="" coords="505,528,555,555"/>
+<area shape="rect" id="node14" href="$_manifold_8hpp.html" title="Contains the Manifold class." alt="" coords="631,528,725,555"/>
+<area shape="rect" id="node15" href="$_projection_8hpp.html" title=" " alt="" coords="377,528,481,555"/>
+<area shape="rect" id="node17" href="$_simplex_8hpp.html" title="Contains the Simplex struct." alt="" coords="491,453,583,480"/>
 </map>
