@@ -4,7 +4,6 @@
 
 #include "Consts.hpp"
 #include "Circle.hpp"
-#include "AabbBox.hpp"
 #include "Box.hpp"
 #include "MathUtils.hpp"
 

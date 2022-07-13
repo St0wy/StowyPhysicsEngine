@@ -17,8 +17,6 @@
 #include "Transform.hpp"
 #include "math/Vector2.hpp"
 
-#include <vector>
-
 struct CircleCollider;
 struct BoxCollider;
 struct AabbCollider;

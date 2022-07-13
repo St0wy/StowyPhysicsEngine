@@ -2,8 +2,6 @@
 
 #include "collision/CollisionBody.hpp"
 
-#include "spdlog/spdlog.h"
-
 #include <ranges>
 
 void DynamicsWorld::AddRigidbody(Rigidbody* rigidbody)

@@ -1,7 +1,5 @@
 #include "dynamics/Rigidbody.hpp"
 
-#include "spdlog/spdlog.h"
-
 Rigidbody::Rigidbody()
 	:
 	_invMass(1),
