@@ -31,7 +31,7 @@ DemoBallsAndCube::DemoBallsAndCube()
 	_fpsText.setFont(_lModern);
 	_fpsText.setCharacterSize(256);
 	_fpsText.setFillColor(sf::Color::White);
-	_fpsText.setPosition(-CAM_WIDTH/2.0f, -CAM_HEIGHT/2.0f);
+	_fpsText.setPosition(-CAM_WIDTH / 2.0f, -CAM_HEIGHT / 2.0f);
 	_fpsText.setScale(0.01f, 0.01f);
 }
 
@@ -39,8 +39,8 @@ void DemoBallsAndCube::StartMainLoop()
 {
 	auto ground = std::make_unique<AabbBox>(
 		_world,
-		Vector2(CAM_WIDTH * 0.8f, 1.0f),
-		Vector2(0.0f, -5.0f),
+		Vector2(CAM_WIDTH * 0.8f, CAM_HEIGHT * 0.05f),
+		Vector2(0.0f, CAM_HEIGHT * -0.3f),
 		false
 		);
 	ground->RigidBody()->SetIsKinematic(false);
@@ -50,6 +50,7 @@ void DemoBallsAndCube::StartMainLoop()
 	spdlog::debug("Starting main loop");
 
 	sf::Clock clock;
+	bool isMousePressed = false;
 	while (_window.isOpen())
 	{
 		sf::Time deltaTime = clock.restart();
@@ -62,20 +63,33 @@ void DemoBallsAndCube::StartMainLoop()
 			}
 			else if (event.type == sf::Event::MouseButtonPressed)
 			{
+				isMousePressed = true;
+			}
+			else if (event.type == sf::Event::MouseButtonReleased)
+			{
+				isMousePressed = false;
+			}
+		}
+
+		if (isMousePressed)
+		{
+			if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
+			{
 				auto posi = sf::Mouse::getPosition(_window);
 				auto posf = _window.mapPixelToCoords(posi);
 				auto physicsPos = SfmlPosToSpe(posf);
 				spdlog::debug("Spawn pos : {}", physicsPos);
-
-				if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
-				{
-					_entities.push_back(
-						std::make_unique<Circle>(_world, 1.0f, physicsPos));
-				}
-				else if (sf::Mouse::isButtonPressed(sf::Mouse::Right))
-				{
-					_entities.push_back(std::make_unique<AabbBox>(_world, Vector2(1.0f, 1.0f), physicsPos, true));
-				}
+				_entities.push_back(
+					std::make_unique<Circle>(_world, 1.0f, physicsPos));
+			}
+			else if (sf::Mouse::isButtonPressed(sf::Mouse::Right))
+			{
+				auto posi = sf::Mouse::getPosition(_window);
+				auto posf = _window.mapPixelToCoords(posi);
+				auto physicsPos = SfmlPosToSpe(posf);
+				spdlog::debug("Spawn pos : {}", physicsPos);
+				_entities.push_back(
+					std::make_unique<AabbBox>(_world, Vector2(1.f, 1.f), physicsPos, true));
 			}
 		}
 

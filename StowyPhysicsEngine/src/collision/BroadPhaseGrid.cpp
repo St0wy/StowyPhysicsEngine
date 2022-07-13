@@ -46,9 +46,9 @@ void BroadPhaseGrid::Update(const std::unordered_map<std::uint64_t, CollisionBod
 		int yBodyMin = static_cast<int>(std::floor((offsetCenter.y - boundingBoxSize.y - _min.y) / _cellSize));
 		yBodyMin = std::clamp(yBodyMin, 0, static_cast<int>(_gridHeight));
 		int xBodyMax = static_cast<int>(std::floor((offsetCenter.x + boundingBoxSize.x - _min.x) / _cellSize));
-		xBodyMax = std::clamp(xBodyMax, 0, static_cast<int>(_gridWidth));
+		xBodyMax = std::clamp(xBodyMax, 0, static_cast<int>(_gridWidth) - 1);
 		int yBodyMax = static_cast<int>(std::floor((offsetCenter.y + boundingBoxSize.y - _min.y) / _cellSize));
-		yBodyMax = std::clamp(yBodyMax, 0, static_cast<int>(_gridHeight));
+		yBodyMax = std::clamp(yBodyMax, 0, static_cast<int>(_gridHeight) - 1);
 
 		for (int x = xBodyMin; x <= xBodyMax; x++)
 		{
