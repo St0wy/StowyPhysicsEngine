@@ -36,8 +36,8 @@ find_package(spdlog REQUIRED)
 
 include_directories(include/)
 
-add_executable(${PROJECT_NAME})
-# add_executable(${PROJECT_NAME} win32)
+#add_executable(${PROJECT_NAME})
+add_executable(${PROJECT_NAME} WIN32)
 
 target_sources(${PROJECT_NAME}
     PRIVATE 
