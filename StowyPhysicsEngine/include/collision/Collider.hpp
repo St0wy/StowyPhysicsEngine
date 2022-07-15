@@ -117,11 +117,11 @@ struct BoxCollider final : Collider
 	/**
 	 * \brief Half of the width of the box.
 	 */
-	float halfWidth;
+	float halfWidth = 0;
 	/**
 	 * \brief Half of the height of the box.
 	 */
-	float halfHeight;
+	float halfHeight = 0;
 
 	Manifold TestCollision(
 		const Transform* transform,
@@ -179,7 +179,7 @@ public:
 	/**
 	 * \brief Radius of the circle.
 	 */
-	float radius;
+	float radius = 0;
 
 	Manifold TestCollision(
 		const Transform* transform,
@@ -217,11 +217,11 @@ struct AabbCollider final : Collider
 	/**
 	 * \brief Half of the width of the box.
 	 */
-	float halfWidth;
+	float halfWidth = 0;
 	/**
 	 * \brief Half of the height of the box.
 	 */
-	float halfHeight;
+	float halfHeight = 0;
 
 	Manifold TestCollision(const Transform* transform, const Collider* collider,
 		const Transform* colliderTransform) const override;
