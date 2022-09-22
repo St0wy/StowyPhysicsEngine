@@ -10,10 +10,11 @@
  */
 #pragma once
 
-#include "collision/CollisionWorld.hpp"
 #include "Rigidbody.hpp"
 
- /**
+#include "collision/CollisionWorld.hpp"
+
+/**
   * \brief A world with dynamics in it.
   */
 class DynamicsWorld : public CollisionWorld

@@ -10,11 +10,11 @@
  */
 #pragma once
 
-#include "math/Vector2.hpp"
-
 #include <array>
 
- /**
+#include "math/Vector2.hpp"
+
+/**
   * \brief Struct representing the simplest form that can "select" an area in any dimension.
   */
 struct Simplex

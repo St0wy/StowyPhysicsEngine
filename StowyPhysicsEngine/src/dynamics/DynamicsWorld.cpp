@@ -1,8 +1,8 @@
 #include "dynamics/DynamicsWorld.hpp"
 
-#include "collision/CollisionBody.hpp"
-
 #include <ranges>
+
+#include "collision/CollisionBody.hpp"
 
 void DynamicsWorld::AddRigidbody(Rigidbody* rigidbody)
 {

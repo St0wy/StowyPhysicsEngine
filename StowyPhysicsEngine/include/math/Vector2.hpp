@@ -9,10 +9,10 @@
  *
  */
 #pragma once
-#include <string>
-#include "spdlog/fmt/ostr.h"
 
- /**
+#include <string>
+
+/**
   * \brief A struct representing a 2D Vector.
   */
 struct Vector2
@@ -117,7 +117,7 @@ public:
 	 * \brief Sets the magnitude of this vector.
 	 * \param newMagnitude The new magnitude.
 	 */
-	Vector2 NewMagnitude(float newMagnitude) const;
+	[[nodiscard]] Vector2 NewMagnitude(float newMagnitude) const;
 
 	/**
 	 * \brief Rotates this vector around the provided axis.

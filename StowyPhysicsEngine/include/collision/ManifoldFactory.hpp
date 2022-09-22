@@ -11,8 +11,8 @@
  */
 #pragma once
 
-#include "Manifold.hpp"
 #include "Collider.hpp"
+#include "Manifold.hpp"
 #include "Simplex.hpp"
 #include "Transform.hpp"
 

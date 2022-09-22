@@ -1,7 +1,6 @@
 #include "collision/BroadPhaseGrid.hpp"
 
-#include "spdlog/spdlog.h"
-
+#include <algorithm>
 #include <ranges>
 
 BroadPhaseGrid::BroadPhaseGrid(

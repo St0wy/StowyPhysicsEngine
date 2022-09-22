@@ -1,8 +1,6 @@
 // ReSharper disable CppClangTidyClangDiagnosticFloatEqual
 #include "math/Vector2.hpp"
 
-#include "spdlog/spdlog.h"
-
 #include <algorithm>
 #include <cmath>
 #include <sstream>

@@ -1,5 +1,7 @@
 ﻿cmake_minimum_required (VERSION 3.15)
 
+include(FetchContent)
+
 project("Demo" VERSION 0.1.0)
 
 set (CMAKE_CXX_STANDARD 20)
@@ -26,42 +28,54 @@ foreach(DATA ${DATA_FILES})
 endforeach()
 
 add_custom_target(
-        DataTarget-${PROJECT_NAME}
-        DEPENDS ${DATA_BINARY_FILES} ${DATA_FILES})
+    DataTarget-${PROJECT_NAME}
+    DEPENDS ${DATA_BINARY_FILES} ${DATA_FILES})
 
-# Get SFML and box2d libraries
-find_package(OpenGL REQUIRED)
-find_package(SFML COMPONENTS system window graphics main CONFIG REQUIRED)
-find_package(spdlog REQUIRED)
+# Get SFML and spdlog libraries
+set(SFML_VERSION "2.6.x")
+
+FetchContent_Declare(
+    sfml
+    GIT_REPOSITORY "https://github.com/SFML/SFML.git"
+    GIT_TAG        "${SFML_VERSION}"
+)
+
+#FetchContent_GetProperties(sfml)
+#if(NOT sfml_POPULATED)
+#    FetchContent_Populate(sfml)
+#    add_subdirectory(${sfml_SOURCE_DIR} ${sfml_BINARY_DIR})
+#endif()
+FetchContent_MakeAvailable(sfml)
 
 include_directories(include/)
 
-#add_executable(${PROJECT_NAME})
-add_executable(${PROJECT_NAME} WIN32)
-
-target_sources(${PROJECT_NAME}
-    PRIVATE 
+set(SOURCE
     "src/main.cpp" 
-    "src/DemoBalls.cpp" 
     "src/Entity.cpp" 
     "src/Circle.cpp" 
     "src/AabbBox.cpp" 
     "src/DemoBallsAndCube.cpp" 
     "src/Box.cpp"
-    "src/DemoGjk.cpp"
 )
+
+#add_executable(${PROJECT_NAME} ${SOURCE})
+add_executable(${PROJECT_NAME} WIN32 ${SOURCE})
 
 # Add data dependencies
 add_dependencies(${PROJECT_NAME} DataTarget-${PROJECT_NAME})
 
 # Link libraries
 target_link_libraries(${PROJECT_NAME} PRIVATE StowyPhysicsEngine)
-target_link_libraries(${PROJECT_NAME} PRIVATE spdlog::spdlog)
 
-target_link_libraries(${PROJECT_NAME} PRIVATE sfml-main sfml-graphics sfml-audio sfml-window sfml-system)
+target_link_libraries(${PROJECT_NAME} PRIVATE sfml-graphics sfml-window sfml-system)
 
-if(MSVC)
-    target_link_libraries(${PROJECT_NAME} PRIVATE sfml-main FLAC OpenAL OpenGL Vorbis)
-else()
-    target_link_libraries(${PROJECT_NAME} PRIVATE X11 FLAC UDev OpenAL  ${OPENGL_LIBRARIES} )
+if(WIN32)
+    target_link_libraries(${PROJECT_NAME} PRIVATE sfml-main)
 endif()
+
+if (WIN32 AND BUILD_SHARED_LIBS)
+    add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_RUNTIME_DLLS:${PROJECT_NAME}> $<TARGET_FILE_DIR:${PROJECT_NAME}> COMMAND_EXPAND_LISTS)
+endif()
+
+install(TARGETS ${PROJECT_NAME})

@@ -1,8 +1,9 @@
 #include "collision/ManifoldFactory.hpp"
 
+#include <algorithm>
+#include <cmath>
 #include <limits>
 #include <vector>
-#include <spdlog/spdlog.h>
 
 #include "collision/Collider.hpp"
 #include "collision/Manifold.hpp"
@@ -137,7 +138,7 @@ Manifold algo::FindAabbCircleManifold(
 
 	Vector2 worldCircleToClosestPoint = circleToClosestPoint.NewMagnitude(scaledRadius) + circleCenter;
 
-	if (distance != 0)
+	if (std::abs(distance) >= 0.0001f)
 	{
 		circleToClosestPoint /= distance;
 	}
@@ -277,7 +278,6 @@ Manifold algo::Epa(
 	{
 		if (iterations++ > maxIter)
 		{
-			spdlog::info("Too many iterations. Breaking.");
 			break;
 		}
 

@@ -10,11 +10,11 @@
  */
 #pragma once
 
-#include "CollisionBody.hpp"
-
 #include <vector>
 
- /**
+#include "CollisionBody.hpp"
+
+/**
   * \brief A grid in which the physical object are placed in.
   * This is used to optimize performance by only checking collision with colliders
   * that are in the same cell.

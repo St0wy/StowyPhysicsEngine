@@ -12,9 +12,8 @@
 
 #include <functional>
 
-#include "Transform.hpp"
 #include "Collider.hpp"
-#include "collision/ManifoldFactory.hpp"
+#include "Transform.hpp"
 
 struct Collision;
 

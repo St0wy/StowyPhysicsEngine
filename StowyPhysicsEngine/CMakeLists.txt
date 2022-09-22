@@ -5,6 +5,8 @@ project("StowyPhysicsEngine"
     DESCRIPTION "A basic physics engine in c++"
 )
 
+include(FetchContent)
+
 if (NOT CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
     message(STATUS "This project has a top-level one called [${CMAKE_PROJECT_NAME}]")
 else()
@@ -18,20 +20,21 @@ add_library(${PROJECT_NAME} STATIC)
 
 target_sources(${PROJECT_NAME} 
     PRIVATE
-    src/collision/Collider.cpp
-    src/collision/CollisionBody.cpp
-    src/collision/CollisionWorld.cpp
+    "src/collision/Collider.cpp"
+    "src/collision/CollisionBody.cpp"
+    "src/collision/CollisionWorld.cpp"
     "src/collision/ManifoldFactory.cpp"
-    src/collision/Simplex.cpp
-    src/dynamics/DynamicsWorld.cpp
-    src/dynamics/ImpulseSolver.cpp
-    src/dynamics/Rigidbody.cpp
-    src/dynamics/SmoothPositionSolver.cpp
-    src/math/Vector2.cpp
- "src/collision/Manifold.cpp"  
- "src/collision/Edge.cpp"
- "src/collision/Projection.cpp" 
- "src/collision/BroadPhaseGrid.cpp")
+    "src/collision/Simplex.cpp"
+    "src/dynamics/DynamicsWorld.cpp"
+    "src/dynamics/ImpulseSolver.cpp"
+    "src/dynamics/Rigidbody.cpp"
+    "src/dynamics/SmoothPositionSolver.cpp"
+    "src/math/Vector2.cpp"
+    "src/collision/Manifold.cpp"  
+    "src/collision/Edge.cpp"
+    "src/collision/Projection.cpp" 
+    "src/collision/BroadPhaseGrid.cpp"
+)
 
 target_include_directories(${PROJECT_NAME}
     PRIVATE
@@ -74,10 +77,5 @@ endif()
 # where to find our CMake modules
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 message(STATUS "CMake module path: ${CMAKE_MODULE_PATH}")
+
 include(Installing)
-
-# Get spdlog
-find_package(spdlog REQUIRED)
-
-# Link libraries
-target_link_libraries(${PROJECT_NAME} PRIVATE spdlog::spdlog)

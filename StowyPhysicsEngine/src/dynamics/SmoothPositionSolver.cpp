@@ -2,8 +2,9 @@
 
 #include <vector>
 
-#include "dynamics/Rigidbody.hpp"
 #include "collision/Collision.hpp"
+
+#include "dynamics/Rigidbody.hpp"
 
 void SmoothPositionSolver::Solve(const std::vector<Collision>& collisions, float deltaTime)
 {

@@ -1,19 +1,22 @@
 #include "DemoBallsAndCube.hpp"
 
-#include <spdlog/spdlog.h>
+#include <format>
+#include <iostream>
 
-#include "Consts.hpp"
-#include "Circle.hpp"
 #include "AabbBox.hpp"
-#include "MathUtils.hpp"
+#include "Circle.hpp"
+#include "Consts.hpp"
 #include "FpsCounter.hpp"
+#include "MathUtils.hpp"
+
+#include "math/Vector2.hpp"
 
 DemoBallsAndCube::DemoBallsAndCube()
 	: _window(
-		sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT),
-		WINDOW_NAME,
-		sf::Style::Close,
-		sf::ContextSettings(0, 0, 8)
+	sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT),
+	WINDOW_NAME,
+	sf::Style::Close,
+	sf::ContextSettings(0, 0, 8)
 	)
 {
 	_window.setView(DEFAULT_VIEW);
@@ -25,7 +28,7 @@ DemoBallsAndCube::DemoBallsAndCube()
 
 	if (!_lModern.loadFromFile("data/lmodern.otf"))
 	{
-		spdlog::error("Could not load font");
+		std::cerr << "Could not load font\n";
 	}
 
 	_fpsText.setFont(_lModern);
@@ -35,7 +38,7 @@ DemoBallsAndCube::DemoBallsAndCube()
 	_fpsText.setScale(0.01f, 0.01f);
 }
 
-void DemoBallsAndCube::StartMainLoop()
+void DemoBallsAndCube::Run()
 {
 	auto ground = std::make_unique<AabbBox>(
 		_world,
@@ -47,7 +50,7 @@ void DemoBallsAndCube::StartMainLoop()
 	ground->RigidBody()->SetTakesGravity(false);
 	_entities.push_back(std::move(ground));
 
-	spdlog::debug("Starting main loop");
+	std::cout << "Starting main loop\n";
 
 	sf::Clock clock;
 	bool isMousePressed = false;
@@ -78,7 +81,7 @@ void DemoBallsAndCube::StartMainLoop()
 				auto posi = sf::Mouse::getPosition(_window);
 				auto posf = _window.mapPixelToCoords(posi);
 				auto physicsPos = SfmlPosToSpe(posf);
-				spdlog::debug("Spawn pos : {}", physicsPos);
+				std::cout << "Spawn pos : " << physicsPos << "\n";
 				_entities.push_back(
 					std::make_unique<Circle>(_world, 1.0f, physicsPos));
 			}
@@ -87,7 +90,7 @@ void DemoBallsAndCube::StartMainLoop()
 				auto posi = sf::Mouse::getPosition(_window);
 				auto posf = _window.mapPixelToCoords(posi);
 				auto physicsPos = SfmlPosToSpe(posf);
-				spdlog::debug("Spawn pos : {}", physicsPos);
+				std::cout << "Spawn pos : " << physicsPos << "\n";
 				_entities.push_back(
 					std::make_unique<AabbBox>(_world, Vector2(1.f, 1.f), physicsPos, true));
 			}

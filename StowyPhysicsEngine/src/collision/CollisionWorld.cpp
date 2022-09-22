@@ -1,5 +1,8 @@
 #include "collision/CollisionWorld.hpp"
-#include <spdlog/spdlog.h>
+
+#include <algorithm>
+
+#include "collision/Collision.hpp"
 
 CollisionWorld::CollisionWorld()
 	: CollisionWorld({}, {})

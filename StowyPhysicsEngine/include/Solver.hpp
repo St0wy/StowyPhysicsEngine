@@ -11,9 +11,10 @@
 #pragma once
 
 #include <vector>
+
 #include "collision/Collision.hpp"
 
- /**
+/**
   * \brief Generic class for all solvers.
   */
 class Solver

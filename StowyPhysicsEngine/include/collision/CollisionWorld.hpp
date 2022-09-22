@@ -12,11 +12,11 @@
 
 #include <vector>
 
+#include "BroadPhaseGrid.hpp"
 #include "CollisionBody.hpp"
 #include "Solver.hpp"
-#include "BroadPhaseGrid.hpp"
 
- /**
+/**
   * \brief Represents a world where collisions can happen.
   * It does not have dynamics, for this you will need the DynamicsWorld.
   * \see DynamicsWorld

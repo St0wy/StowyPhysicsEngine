@@ -1,5 +1,7 @@
 #include "collision/Manifold.hpp"
 
+#include <ostream>
+
 Manifold::Manifold(const Vector2& a, const Vector2& b, const Vector2& normal, const float depth)
 	: a(a), b(b), normal(normal), depth(depth), hasCollision(true)
 {

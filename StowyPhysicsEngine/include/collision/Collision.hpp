@@ -31,4 +31,8 @@ struct Collision
 	 * \brief Manifold of the collision.
 	 */
 	Manifold manifold;
+
+	//Collision() = default;
+
+	//Collision(CollisionBody* a, CollisionBody* b, const Manifold& manif);
 };

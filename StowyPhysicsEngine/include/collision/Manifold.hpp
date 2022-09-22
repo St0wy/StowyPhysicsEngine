@@ -10,8 +10,9 @@
  */
 #pragma once
 
+#include <format>
+
 #include "math/Vector2.hpp"
-#include "spdlog/fmt/ostr.h"
 
 struct Manifold
 {
@@ -51,7 +52,7 @@ public:
 		return {};
 	}
 
-	Manifold Swaped() const;
+    [[nodiscard]] Manifold Swaped() const;
 };
 
 std::ostream& operator<<(std::ostream& os, const Manifold& manifold);

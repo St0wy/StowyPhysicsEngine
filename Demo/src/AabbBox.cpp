@@ -2,8 +2,6 @@
 
 #include "MathUtils.hpp"
 
-#include <spdlog/spdlog.h>
-
 AabbBox::AabbBox(DynamicsWorld& dynWorld, const Vector2 size, const Vector2 pos, const bool takesGravity)
 	: Entity(dynWorld, pos),
 	_shape(SpeVecToSfml(size)),

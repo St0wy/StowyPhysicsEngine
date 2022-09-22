@@ -2,10 +2,10 @@
 #include "collision/Collider.hpp"
 
 #include <array>
-#include <spdlog/spdlog.h>
 
 #include "collision/Manifold.hpp"
 #include "collision/ManifoldFactory.hpp"
+
 #include "math/Vector2.hpp"
 
 #pragma region BoxCollider

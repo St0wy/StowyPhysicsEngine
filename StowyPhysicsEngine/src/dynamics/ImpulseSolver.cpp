@@ -1,9 +1,8 @@
 #include "dynamics/ImpulseSolver.hpp"
 
-#include "dynamics/Rigidbody.hpp"
 #include "collision/Collision.hpp"
 
-#include <spdlog/spdlog.h>
+#include "dynamics/Rigidbody.hpp"
 
 void ImpulseSolver::Solve(const std::vector<Collision>& collisions, float deltaTime)
 {
@@ -14,8 +13,8 @@ void ImpulseSolver::Solve(const std::vector<Collision>& collisions, float deltaT
 		Rigidbody* bBody = bodyB->IsDynamic() ? (Rigidbody*)bodyB : nullptr;
 		// ReSharper restore CppCStyleCast
 
-		Vector2 aVel = aBody ? aBody->Velocity() : Vector2(0, 0);
-		Vector2 bVel = bBody ? bBody->Velocity() : Vector2(0, 0);
+		Vector2 aVel = aBody->Velocity();
+		Vector2 bVel = bBody->Velocity();
 		Vector2 relativeVelocity = bVel - aVel;
 
 		// Calculate relative velocity in terms of the normal direction
