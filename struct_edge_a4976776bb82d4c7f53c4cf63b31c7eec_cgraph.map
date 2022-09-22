@@ -1,5 +1,5 @@
 <map id="Edge::VecDot" name="Edge::VecDot">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,105,57"/>
-<area shape="rect" id="node2" href="$struct_vector2.html#a23ceee12380716c9cb3458c6e0b86c90" title="Computes the dot product between this and other." alt="" coords="169,5,262,32"/>
-<area shape="rect" id="node3" href="$struct_edge.html#a70f6790a384c3fe464359416857fd7f0" title=" " alt="" coords="153,56,277,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,105,56"/>
+<area shape="rect" id="node2" href="$struct_vector2.html#a23ceee12380716c9cb3458c6e0b86c90" title="Computes the dot product between this and other." alt="" coords="169,5,262,31"/>
+<area shape="rect" id="node3" href="$struct_edge.html#a70f6790a384c3fe464359416857fd7f0" title=" " alt="" coords="153,55,277,80"/>
 </map>

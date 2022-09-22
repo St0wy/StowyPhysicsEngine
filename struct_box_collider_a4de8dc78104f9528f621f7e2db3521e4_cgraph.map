@@ -1,5 +1,5 @@
 <map id="BoxCollider::GetTransformedVertices" name="BoxCollider::GetTransformedVertices">
-<area shape="rect" id="node1" title="Gets the transformed vertices of the box." alt="" coords="5,5,192,47"/>
-<area shape="rect" id="node2" href="$struct_vector2.html#a745c1b2d41e9f92fab739c3e24a684ce" title="Rotates this vector around the provided axis." alt="" coords="240,13,392,39"/>
-<area shape="rect" id="node3" href="$struct_vector2.html#a22104d1809be26a419ef1f959e3761bf" title=" " alt="" coords="440,13,559,39"/>
+<area shape="rect" id="node1" title="Gets the transformed vertices of the box." alt="" coords="5,5,192,45"/>
+<area shape="rect" id="node2" href="$struct_vector2.html#a745c1b2d41e9f92fab739c3e24a684ce" title="Rotates this vector around the provided axis." alt="" coords="240,13,392,38"/>
+<area shape="rect" id="node3" href="$struct_vector2.html#a22104d1809be26a419ef1f959e3761bf" title=" " alt="" coords="440,13,559,38"/>
 </map>

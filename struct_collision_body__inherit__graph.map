@@ -1,4 +1,4 @@
 <map id="CollisionBody" name="CollisionBody">
-<area shape="rect" id="node1" title="A body that can receive collisions." alt="" coords="5,5,105,32"/>
-<area shape="rect" id="node2" href="$struct_rigidbody.html" title="A Rigidbody that has dynamics." alt="" coords="16,80,95,107"/>
+<area shape="rect" id="node1" title="A body that can receive collisions." alt="" coords="5,5,105,31"/>
+<area shape="rect" id="node2" href="$struct_rigidbody.html" title="A Rigidbody that has dynamics." alt="" coords="16,79,95,104"/>
 </map>

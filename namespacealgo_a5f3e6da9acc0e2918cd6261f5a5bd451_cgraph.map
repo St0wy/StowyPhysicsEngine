@@ -1,24 +1,24 @@
 <map id="algo::FindBoxCircleManifold" name="algo::FindBoxCircleManifold">
-<area shape="rect" id="node1" title="Finds the collision manifold between A and B." alt="" coords="5,189,187,216"/>
-<area shape="rect" id="node2" href="$namespacealgo.html#a34a3296784a267eddf53938cddee43b8" title="Finds the manifold between A and B using GJK." alt="" coords="235,189,307,216"/>
-<area shape="rect" id="node3" href="$struct_vector2.html#a23ceee12380716c9cb3458c6e0b86c90" title="Computes the dot product between this and other." alt="" coords="1035,138,1128,165"/>
-<area shape="rect" id="node4" href="$struct_manifold.html#a2d38cacdc21e00dcc762a7be3dac2c7d" title="Gets an empty manifold with no collisions." alt="" coords="583,37,696,64"/>
-<area shape="rect" id="node5" href="$namespacealgo.html#a9fbd6001615a41dd1d22d8a0c2549091" title="Find the manifold from the last simplex of the GJK algorithm." alt="" coords="385,189,459,216"/>
-<area shape="rect" id="node12" href="$namespacealgo.html#aa5f5b4dd52d8422a46bfcced1a559119" title="Support function of the GJK algorithm." alt="" coords="591,88,688,114"/>
-<area shape="rect" id="node14" href="$namespacealgo.html#a297a7ed0d068e9700f2119013dc79a04" title="Finds the next simplex for the GJK algorithm." alt="" coords="359,417,485,444"/>
-<area shape="rect" id="node16" href="$struct_vector2.html#a271b8fa518725c70f57e935f09ece61d" title="Normalizes the given vector." alt="" coords="811,493,942,520"/>
-<area shape="rect" id="node21" href="$struct_simplex.html#a26cd4b8398e352057618be4027ad724f" title="Adds a point in the simplex." alt="" coords="355,594,489,621"/>
-<area shape="rect" id="node6" href="$struct_simplex.html#a1ce9fda6844f2311bd0c9a754de18d77" title=" " alt="" coords="586,189,693,216"/>
-<area shape="rect" id="node7" href="$struct_simplex.html#a4e23e764496f67f1320e24744b335de3" title=" " alt="" coords="591,240,687,266"/>
-<area shape="rect" id="node8" href="$struct_vector2.html#ad3d1aec20b1ba958b60dc86e8df9cc6c" title="Computes the perpendicular vector in &#45;90 degrees." alt="" coords="537,290,741,317"/>
-<area shape="rect" id="node9" href="$struct_vector2.html#a34aead675305c3de65455935d3bfcf8d" title="Gets this vector normalized." alt="" coords="1012,417,1151,444"/>
-<area shape="rect" id="node10" href="$struct_vector2.html#a16b13aa4859a54eaec1a76ae2ca4f94d" title="Gets the magnitude of this vector." alt="" coords="1199,417,1332,444"/>
-<area shape="rect" id="node11" href="$struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="1380,417,1533,444"/>
-<area shape="rect" id="node13" href="$struct_collider.html#a74bb6d5110ff84b664bc3101ebf86d23" title="Find the furthest point in the specified direction." alt="" coords="789,88,964,114"/>
-<area shape="rect" id="node15" href="$namespacealgo.html#ac64c65624e582944a34ecb6d25abbb92" title="Line case for the NextSimplex function." alt="" coords="601,493,678,520"/>
-<area shape="rect" id="node18" href="$struct_simplex.html#a2993b307bf05c7dc1da4279251f3eade" title="Gets the size of the array." alt="" coords="590,442,689,469"/>
-<area shape="rect" id="node19" href="$namespacealgo.html#ac9b5b437fcf3aa886b7336335215b557" title="Triangle case for the NextSimplex function." alt="" coords="590,392,689,418"/>
-<area shape="rect" id="node17" href="$struct_vector2.html#ae6caeccc3443fcd92c2d01aa2467d531" title="Compute the triple product with all of these vectors as 3d vectors with z = 0. p = a x (b x c)" alt="" coords="801,442,952,469"/>
-<area shape="rect" id="node20" href="$namespacealgo.html#afbfae8c60be2a027e0da89dab8fc0d1b" title="Finds if both vectors are going in the same direction." alt="" coords="808,392,945,418"/>
-<area shape="rect" id="node22" href="$struct_simplex.html#aae293bae2b5cf2f4a273062ef0179f80" title="Increments the size of the simplex with a max at MAX_SIZE." alt="" coords="561,594,718,621"/>
+<area shape="rect" id="node1" title="Finds the collision manifold between A and B." alt="" coords="5,188,187,214"/>
+<area shape="rect" id="node2" href="$namespacealgo.html#a34a3296784a267eddf53938cddee43b8" title="Finds the manifold between A and B using GJK." alt="" coords="235,188,307,214"/>
+<area shape="rect" id="node3" href="$struct_vector2.html#a23ceee12380716c9cb3458c6e0b86c90" title="Computes the dot product between this and other." alt="" coords="1035,138,1128,163"/>
+<area shape="rect" id="node4" href="$struct_manifold.html#a2d38cacdc21e00dcc762a7be3dac2c7d" title="Gets an empty manifold with no collisions." alt="" coords="583,38,696,63"/>
+<area shape="rect" id="node5" href="$namespacealgo.html#a9fbd6001615a41dd1d22d8a0c2549091" title="Find the manifold from the last simplex of the GJK algorithm." alt="" coords="385,188,459,214"/>
+<area shape="rect" id="node12" href="$namespacealgo.html#aa5f5b4dd52d8422a46bfcced1a559119" title="Support function of the GJK algorithm." alt="" coords="591,87,688,112"/>
+<area shape="rect" id="node14" href="$namespacealgo.html#a297a7ed0d068e9700f2119013dc79a04" title="Finds the next simplex for the GJK algorithm." alt="" coords="359,414,485,439"/>
+<area shape="rect" id="node16" href="$struct_vector2.html#a271b8fa518725c70f57e935f09ece61d" title="Normalizes the given vector." alt="" coords="811,487,942,512"/>
+<area shape="rect" id="node21" href="$struct_simplex.html#a26cd4b8398e352057618be4027ad724f" title="Adds a point in the simplex." alt="" coords="355,588,489,614"/>
+<area shape="rect" id="node6" href="$struct_simplex.html#a1ce9fda6844f2311bd0c9a754de18d77" title=" " alt="" coords="586,188,693,214"/>
+<area shape="rect" id="node7" href="$struct_simplex.html#a4e23e764496f67f1320e24744b335de3" title=" " alt="" coords="591,238,687,263"/>
+<area shape="rect" id="node8" href="$struct_vector2.html#ad3d1aec20b1ba958b60dc86e8df9cc6c" title="Computes the perpendicular vector in &#45;90 degrees." alt="" coords="537,287,741,312"/>
+<area shape="rect" id="node9" href="$struct_vector2.html#a34aead675305c3de65455935d3bfcf8d" title="Gets this vector normalized." alt="" coords="1012,412,1151,438"/>
+<area shape="rect" id="node10" href="$struct_vector2.html#a16b13aa4859a54eaec1a76ae2ca4f94d" title="Gets the magnitude of this vector." alt="" coords="1199,412,1332,438"/>
+<area shape="rect" id="node11" href="$struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="1380,412,1533,438"/>
+<area shape="rect" id="node13" href="$struct_collider.html#a74bb6d5110ff84b664bc3101ebf86d23" title="Find the furthest point in the specified direction." alt="" coords="789,87,964,112"/>
+<area shape="rect" id="node15" href="$namespacealgo.html#ac64c65624e582944a34ecb6d25abbb92" title="Line case for the NextSimplex function." alt="" coords="601,487,678,512"/>
+<area shape="rect" id="node18" href="$struct_simplex.html#a2993b307bf05c7dc1da4279251f3eade" title="Gets the size of the array." alt="" coords="590,438,689,463"/>
+<area shape="rect" id="node19" href="$namespacealgo.html#ac9b5b437fcf3aa886b7336335215b557" title="Triangle case for the NextSimplex function." alt="" coords="590,388,689,414"/>
+<area shape="rect" id="node17" href="$struct_vector2.html#ae6caeccc3443fcd92c2d01aa2467d531" title="Compute the triple product with all of these vectors as 3d vectors with z = 0. p = a x (b x c)" alt="" coords="801,438,952,463"/>
+<area shape="rect" id="node20" href="$namespacealgo.html#afbfae8c60be2a027e0da89dab8fc0d1b" title="Finds if both vectors are going in the same direction." alt="" coords="808,388,945,414"/>
+<area shape="rect" id="node22" href="$struct_simplex.html#aae293bae2b5cf2f4a273062ef0179f80" title="Increments the size of the simplex with a max at MAX_SIZE." alt="" coords="561,588,718,614"/>
 </map>

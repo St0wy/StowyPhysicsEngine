@@ -1,4 +1,4 @@
 <map id="AabbCollider::TestCollision" name="AabbCollider::TestCollision">
-<area shape="rect" id="node1" title="Tests the collision against a box collider." alt="" coords="5,5,181,32"/>
-<area shape="rect" id="node2" href="$struct_manifold.html#a2d38cacdc21e00dcc762a7be3dac2c7d" title="Gets an empty manifold with no collisions." alt="" coords="229,5,343,32"/>
+<area shape="rect" id="node1" title="Tests the collision against a box collider." alt="" coords="5,5,181,31"/>
+<area shape="rect" id="node2" href="$struct_manifold.html#a2d38cacdc21e00dcc762a7be3dac2c7d" title="Gets an empty manifold with no collisions." alt="" coords="229,5,343,31"/>
 </map>

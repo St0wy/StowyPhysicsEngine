@@ -1,6 +1,6 @@
 <map id="BoxCollider::FindFurthestPoint" name="BoxCollider::FindFurthestPoint">
-<area shape="rect" id="node1" title="Find the furthest point in the specified direction." alt="" coords="5,5,172,47"/>
-<area shape="rect" id="node2" href="$struct_box_collider.html#a4de8dc78104f9528f621f7e2db3521e4" title="Gets the transformed vertices of the box." alt="" coords="220,5,407,47"/>
-<area shape="rect" id="node3" href="$struct_vector2.html#a745c1b2d41e9f92fab739c3e24a684ce" title="Rotates this vector around the provided axis." alt="" coords="455,13,607,39"/>
-<area shape="rect" id="node4" href="$struct_vector2.html#a22104d1809be26a419ef1f959e3761bf" title=" " alt="" coords="655,13,773,39"/>
+<area shape="rect" id="node1" title="Find the furthest point in the specified direction." alt="" coords="5,5,172,45"/>
+<area shape="rect" id="node2" href="$struct_box_collider.html#a4de8dc78104f9528f621f7e2db3521e4" title="Gets the transformed vertices of the box." alt="" coords="220,5,407,45"/>
+<area shape="rect" id="node3" href="$struct_vector2.html#a745c1b2d41e9f92fab739c3e24a684ce" title="Rotates this vector around the provided axis." alt="" coords="455,13,607,38"/>
+<area shape="rect" id="node4" href="$struct_vector2.html#a22104d1809be26a419ef1f959e3761bf" title=" " alt="" coords="655,13,773,38"/>
 </map>

@@ -1,18 +1,18 @@
 <map id="include/collision/CollisionBody.hpp" name="include/collision/CollisionBody.hpp">
-<area shape="rect" id="node1" title="Contains the CollisionBody struct." alt="" coords="404,5,570,47"/>
-<area shape="rect" id="node2" href="$_broad_phase_grid_8hpp.html" title="Contains the BroadPhaseGrid class." alt="" coords="327,95,516,136"/>
-<area shape="rect" id="node3" href="$_collision_world_8hpp.html" title="Contains the CollisionWorld class." alt="" coords="228,273,394,315"/>
-<area shape="rect" id="node5" href="$_dynamics_world_8cpp.html" title=" " alt="" coords="76,452,293,479"/>
-<area shape="rect" id="node8" href="$_collision_8hpp.html" title="Contains the Collision struct." alt="" coords="592,102,782,129"/>
-<area shape="rect" id="node14" href="$_rigidbody_8hpp.html" title="Contains the Rigidbody struct." alt="" coords="430,281,637,307"/>
-<area shape="rect" id="node16" href="$_collision_body_8cpp.html" title=" " alt="" coords="807,102,1004,129"/>
-<area shape="rect" id="node7" href="$_broad_phase_grid_8cpp.html" title=" " alt="" coords="349,184,516,225"/>
-<area shape="rect" id="node4" href="$_dynamics_world_8hpp.html" title="Contains the DynamicsWorld class." alt="" coords="270,363,453,404"/>
-<area shape="rect" id="node6" href="$_collision_world_8cpp.html" title=" " alt="" coords="45,370,246,397"/>
-<area shape="rect" id="node9" href="$_solver_8hpp.html" title="Contains the Solver struct." alt="" coords="735,191,863,218"/>
-<area shape="rect" id="node11" href="$_impulse_solver_8cpp.html" title=" " alt="" coords="936,370,1147,397"/>
-<area shape="rect" id="node13" href="$_smooth_position_solver_8cpp.html" title=" " alt="" coords="684,363,879,404"/>
-<area shape="rect" id="node10" href="$_impulse_solver_8hpp.html" title="Contains the ImpulseSolver class." alt="" coords="956,273,1128,315"/>
-<area shape="rect" id="node12" href="$_smooth_position_solver_8hpp.html" title="Contains the SmoothPositionSolver class." alt="" coords="712,273,931,315"/>
-<area shape="rect" id="node15" href="$_rigidbody_8cpp.html" title=" " alt="" coords="477,370,660,397"/>
+<area shape="rect" id="node1" title="Contains the CollisionBody struct." alt="" coords="278,5,445,45"/>
+<area shape="rect" id="node2" href="$_broad_phase_grid_8hpp.html" title="Contains the BroadPhaseGrid class." alt="" coords="84,93,274,133"/>
+<area shape="rect" id="node3" href="$_collision_world_8hpp.html" title="Contains the CollisionWorld class." alt="" coords="228,269,394,309"/>
+<area shape="rect" id="node5" href="$_dynamics_world_8cpp.html" title=" " alt="" coords="76,445,293,471"/>
+<area shape="rect" id="node8" href="$_collision_8hpp.html" title="Contains the Collision struct." alt="" coords="592,101,782,126"/>
+<area shape="rect" id="node14" href="$_rigidbody_8hpp.html" title="Contains the Rigidbody struct." alt="" coords="418,277,625,302"/>
+<area shape="rect" id="node16" href="$_collision_body_8cpp.html" title=" " alt="" coords="807,101,1004,126"/>
+<area shape="rect" id="node7" href="$_broad_phase_grid_8cpp.html" title=" " alt="" coords="106,181,273,221"/>
+<area shape="rect" id="node4" href="$_dynamics_world_8hpp.html" title="Contains the DynamicsWorld class." alt="" coords="270,357,453,397"/>
+<area shape="rect" id="node6" href="$_collision_world_8cpp.html" title=" " alt="" coords="45,365,246,390"/>
+<area shape="rect" id="node9" href="$_solver_8hpp.html" title="Contains the Solver struct." alt="" coords="647,189,775,214"/>
+<area shape="rect" id="node11" href="$_impulse_solver_8cpp.html" title=" " alt="" coords="684,365,895,390"/>
+<area shape="rect" id="node13" href="$_smooth_position_solver_8cpp.html" title=" " alt="" coords="919,357,1114,397"/>
+<area shape="rect" id="node10" href="$_impulse_solver_8hpp.html" title="Contains the ImpulseSolver class." alt="" coords="649,269,821,309"/>
+<area shape="rect" id="node12" href="$_smooth_position_solver_8hpp.html" title="Contains the SmoothPositionSolver class." alt="" coords="896,269,1115,309"/>
+<area shape="rect" id="node15" href="$_rigidbody_8cpp.html" title=" " alt="" coords="477,365,660,390"/>
 </map>

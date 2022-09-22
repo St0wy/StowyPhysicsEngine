@@ -1,19 +1,17 @@
 <map id="include/collision/CollisionWorld.hpp" name="include/collision/CollisionWorld.hpp">
-<area shape="rect" id="node1" title="Contains the CollisionWorld class." alt="" coords="139,5,306,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="109,169,168,196"/>
-<area shape="rect" id="node3" href="$_collision_body_8hpp.html" title="Contains the CollisionBody struct." alt="" coords="203,244,327,271"/>
-<area shape="rect" id="node15" href="$_solver_8hpp.html" title="Contains the Solver struct." alt="" coords="221,95,304,121"/>
-<area shape="rect" id="node17" href="$_broad_phase_grid_8hpp.html" title="Contains the BroadPhaseGrid class." alt="" coords="5,95,147,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="123,319,202,345"/>
-<area shape="rect" id="node5" href="$_transform_8hpp.html" title="Contains the Transform struct." alt="" coords="171,468,277,495"/>
-<area shape="rect" id="node9" href="$_collider_8hpp.html" title="Contains all the Colliders struct." alt="" coords="353,393,442,420"/>
-<area shape="rect" id="node13" href="$_manifold_factory_8hpp.html" title="Contains the algo namespace which contains the functions to detect a collision." alt="" coords="328,319,517,345"/>
-<area shape="rect" id="node6" href="$_vector2_8hpp.html" title="Contains the Vector2 struct." alt="" coords="486,543,610,569"/>
-<area shape="rect" id="node7" title=" " alt="" coords="515,617,570,644"/>
-<area shape="rect" id="node8" title=" " alt="" coords="594,617,713,644"/>
-<area shape="rect" id="node10" title=" " alt="" coords="480,468,531,495"/>
-<area shape="rect" id="node11" href="$_manifold_8hpp.html" title="Contains the Manifold class." alt="" coords="606,468,701,495"/>
-<area shape="rect" id="node12" href="$_projection_8hpp.html" title=" " alt="" coords="352,468,456,495"/>
-<area shape="rect" id="node14" href="$_simplex_8hpp.html" title="Contains the Simplex struct." alt="" coords="466,393,558,420"/>
-<area shape="rect" id="node16" href="$_collision_8hpp.html" title="Contains the Collision struct." alt="" coords="192,169,339,196"/>
+<area shape="rect" id="node1" title="Contains the CollisionWorld class." alt="" coords="130,5,297,45"/>
+<area shape="rect" id="node2" title=" " alt="" coords="176,167,235,192"/>
+<area shape="rect" id="node3" href="$_broad_phase_grid_8hpp.html" title="Contains the BroadPhaseGrid class." alt="" coords="197,93,339,119"/>
+<area shape="rect" id="node4" href="$_collision_body_8hpp.html" title="Contains the CollisionBody struct." alt="" coords="210,240,334,265"/>
+<area shape="rect" id="node14" href="$_solver_8hpp.html" title="Contains the Solver struct." alt="" coords="40,93,123,119"/>
+<area shape="rect" id="node5" title=" " alt="" coords="155,313,234,339"/>
+<area shape="rect" id="node6" href="$_collider_8hpp.html" title="Contains all the Colliders struct." alt="" coords="385,313,474,339"/>
+<area shape="rect" id="node13" href="$_transform_8hpp.html" title="Contains the Transform struct." alt="" coords="197,387,302,412"/>
+<area shape="rect" id="node7" title=" " alt="" coords="455,387,505,412"/>
+<area shape="rect" id="node8" href="$_manifold_8hpp.html" title="Contains the Manifold class." alt="" coords="581,387,675,412"/>
+<area shape="rect" id="node10" href="$_vector2_8hpp.html" title="Contains the Vector2 struct." alt="" coords="466,460,590,485"/>
+<area shape="rect" id="node12" href="$_projection_8hpp.html" title=" " alt="" coords="327,387,431,412"/>
+<area shape="rect" id="node9" title=" " alt="" coords="613,460,672,485"/>
+<area shape="rect" id="node11" title=" " alt="" coords="501,533,555,559"/>
+<area shape="rect" id="node15" href="$_collision_8hpp.html" title="Contains the Collision struct." alt="" coords="5,167,152,192"/>
 </map>

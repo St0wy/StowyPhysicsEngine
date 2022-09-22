@@ -1,4 +1,4 @@
 <map id="algo::Support" name="algo::Support">
-<area shape="rect" id="node1" title="Support function of the GJK algorithm." alt="" coords="5,5,103,32"/>
-<area shape="rect" id="node2" href="$struct_collider.html#a74bb6d5110ff84b664bc3101ebf86d23" title="Find the furthest point in the specified direction." alt="" coords="151,5,325,32"/>
+<area shape="rect" id="node1" title="Support function of the GJK algorithm." alt="" coords="5,5,103,31"/>
+<area shape="rect" id="node2" href="$struct_collider.html#a74bb6d5110ff84b664bc3101ebf86d23" title="Find the furthest point in the specified direction." alt="" coords="151,5,325,31"/>
 </map>

@@ -1,6 +1,6 @@
 <map id="DynamicsWorld::AddRigidbody" name="DynamicsWorld::AddRigidbody">
-<area shape="rect" id="node1" title="Adds a rigidbody in the world." alt="" coords="5,56,203,83"/>
-<area shape="rect" id="node2" href="$class_collision_world.html#aece70c9058e004f0cf52bdfca739d551" title="Adds a collision body to the world." alt="" coords="251,5,461,32"/>
-<area shape="rect" id="node3" href="$struct_rigidbody.html#a0db5be92109bd41124eb71ced0e93323" title="Sets the gravity force." alt="" coords="267,56,445,83"/>
-<area shape="rect" id="node4" href="$struct_rigidbody.html#a6b897b39be3e53af79e3a5ae8b17af8e" title="Gets a boolean indicating whether this body takes gravity." alt="" coords="275,107,437,133"/>
+<area shape="rect" id="node1" title="Adds a rigidbody in the world." alt="" coords="5,55,203,80"/>
+<area shape="rect" id="node2" href="$class_collision_world.html#aece70c9058e004f0cf52bdfca739d551" title="Adds a collision body to the world." alt="" coords="251,5,461,31"/>
+<area shape="rect" id="node3" href="$struct_rigidbody.html#a0db5be92109bd41124eb71ced0e93323" title="Sets the gravity force." alt="" coords="267,55,445,80"/>
+<area shape="rect" id="node4" href="$struct_rigidbody.html#a6b897b39be3e53af79e3a5ae8b17af8e" title="Gets a boolean indicating whether this body takes gravity." alt="" coords="275,104,437,129"/>
 </map>
