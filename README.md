@@ -1,7 +1,6 @@
 # GPR4400-PhysicsEngine
 
 This project is a 2D physics engine written in C++.
-It uses SFML to display the demo scenes, but the physics engine in itself doesn't rely on any library.
 
 The wiki is hosted on [Read The Docs](https://stowy-physics-engine.readthedocs.io/en/latest/)
 and the API Documentation on [GitHub Pages](https://st0wy.github.io/GPR4400-PhysicsEngine/).
@@ -13,17 +12,24 @@ It has :
 - AABB -> AABB collisions
 - A failed attempt at [SAT](https://en.wikipedia.org/wiki/Hyperplane_separation_theorem)
 - A failed attempt at [GJK](https://en.wikipedia.org/wiki/Gilbert%E2%80%93Johnson%E2%80%93Keerthi_distance_algorithm)
+- Broad phase collision detection with a grid
 
 ## Getting started
 
-1. Install [Vcpkg](https://vcpkg.io/)
-2. Get a C++20 compiler
-3. Build with CMake :
+1. Get a C++20 compiler
+2. Build with CMake :
 
 ```bash
 cmake -S . -B .\build\
 cmake --build .\build\
 ```
+
+## Dependencies
+
+The physics engine doesn't have any dependencies, and can be built alone as a library.
+
+The demo scene has a dependency on [SFML](https://www.sfml-dev.org/) but it is retrieved using CMake's [FetchContent](https://cmake.org/cmake/help/latest/module/FetchContent.html)
+so you don't have to use something like vcpkg.
 
 ## Folder structure
 

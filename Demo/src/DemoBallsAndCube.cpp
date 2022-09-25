@@ -92,7 +92,7 @@ void DemoBallsAndCube::Run()
 				auto physicsPos = SfmlPosToSpe(posf);
 				std::cout << "Spawn pos : " << physicsPos << "\n";
 				_entities.push_back(
-					std::make_unique<AabbBox>(_world, Vector2(1.f, 1.f), physicsPos, true));
+					std::make_unique<AabbBox>(_world, Vector2(2.f, 2.f), physicsPos, true));
 			}
 		}
 

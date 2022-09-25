@@ -39,12 +39,6 @@ FetchContent_Declare(
     GIT_REPOSITORY "https://github.com/SFML/SFML.git"
     GIT_TAG        "${SFML_VERSION}"
 )
-
-#FetchContent_GetProperties(sfml)
-#if(NOT sfml_POPULATED)
-#    FetchContent_Populate(sfml)
-#    add_subdirectory(${sfml_SOURCE_DIR} ${sfml_BINARY_DIR})
-#endif()
 FetchContent_MakeAvailable(sfml)
 
 include_directories(include/)
