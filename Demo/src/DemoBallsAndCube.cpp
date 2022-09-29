@@ -21,8 +21,8 @@ DemoBallsAndCube::DemoBallsAndCube()
 {
 	_window.setView(DEFAULT_VIEW);
 
-	_impulseSolver = std::make_unique<ImpulseSolver>();
-	_smoothPositionSolver = std::make_unique<SmoothPositionSolver>();
+	_impulseSolver = std::make_unique<stw::ImpulseSolver>();
+	_smoothPositionSolver = std::make_unique<stw::SmoothPositionSolver>();
 	_world.AddSolver(_impulseSolver.get());
 	_world.AddSolver(_smoothPositionSolver.get());
 
@@ -42,8 +42,8 @@ void DemoBallsAndCube::Run()
 {
 	auto ground = std::make_unique<AabbBox>(
 		_world,
-		Vector2(CAM_WIDTH * 0.8f, CAM_HEIGHT * 0.05f),
-		Vector2(0.0f, CAM_HEIGHT * -0.3f),
+        stw::Vector2(CAM_WIDTH * 0.8f, CAM_HEIGHT * 0.05f),
+        stw::Vector2(0.0f, CAM_HEIGHT * -0.3f),
 		false
 		);
 	ground->RigidBody()->SetIsKinematic(false);
@@ -92,7 +92,7 @@ void DemoBallsAndCube::Run()
 				auto physicsPos = SfmlPosToSpe(posf);
 				std::cout << "Spawn pos : " << physicsPos << "\n";
 				_entities.push_back(
-					std::make_unique<AabbBox>(_world, Vector2(2.f, 2.f), physicsPos, true));
+					std::make_unique<AabbBox>(_world, stw::Vector2(2.f, 2.f), physicsPos, true));
 			}
 		}
 

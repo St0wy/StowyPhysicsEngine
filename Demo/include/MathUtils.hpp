@@ -1,6 +1,7 @@
 #pragma once
 
 #include <SFML/System/Vector2.hpp>
+
 #include "math/Vector2.hpp"
 
 /**
@@ -9,9 +10,9 @@
  * \param pos Position to convert.
  * \return The converted position.
  */
-inline sf::Vector2f SpePosToSfml(const Vector2& pos)
+inline sf::Vector2f SpePosToSfml(const stw::Vector2& pos)
 {
-	return { pos.x, -pos.y };
+    return {pos.x, -pos.y};
 }
 
 /**
@@ -20,9 +21,9 @@ inline sf::Vector2f SpePosToSfml(const Vector2& pos)
  * \param pos Position to convert.
  * \return The converted position.
  */
-inline Vector2 SfmlPosToSpe(const sf::Vector2f& pos)
+inline stw::Vector2 SfmlPosToSpe(const sf::Vector2f& pos)
 {
-	return { pos.x, -pos.y };
+    return {pos.x, -pos.y};
 }
 
 /**
@@ -31,9 +32,9 @@ inline Vector2 SfmlPosToSpe(const sf::Vector2f& pos)
  * \param v Vector to convert.
  * \return Converted vector.
  */
-inline sf::Vector2f SpeVecToSfml(const Vector2& v)
+inline sf::Vector2f SpeVecToSfml(const stw::Vector2& v)
 {
-	return { v.x, v.y };
+    return {v.x, v.y};
 }
 
 /**
@@ -42,7 +43,7 @@ inline sf::Vector2f SpeVecToSfml(const Vector2& v)
  * \param v Vector to convert.
  * \return Converted vector.
  */
-inline Vector2 SfmlVecToSpe(const sf::Vector2f& v)
+inline stw::Vector2 SfmlVecToSpe(const sf::Vector2f& v)
 {
-	return { v.x, v.y };
+    return {v.x, v.y};
 }

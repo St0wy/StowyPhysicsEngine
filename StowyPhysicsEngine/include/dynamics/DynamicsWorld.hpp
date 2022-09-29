@@ -14,42 +14,44 @@
 
 #include "collision/CollisionWorld.hpp"
 
+namespace stw
+{
 /**
-  * \brief A world with dynamics in it.
-  */
+* \brief A world with dynamics in it.
+*/
 class DynamicsWorld : public CollisionWorld
 {
 public:
-	/**
-	 * \brief Adds a rigidbody in the world.
-	 * \param rigidbody Rigidbody to add.
-	 */
-	void AddRigidbody(Rigidbody* rigidbody);
+    /**
+     * \brief Adds a rigidbody in the world.
+     * \param rigidbody Rigidbody to add.
+     */
+    void AddRigidbody(Rigidbody* rigidbody);
 
-	/**
-	 * \brief Applies the gravity to all the rigidbody.
-	 */
-	void ApplyGravity() const;
+    /**
+     * \brief Applies the gravity to all the rigidbody.
+     */
+    void ApplyGravity() const;
 
-	/**
-	 * \brief Moves all the rigidbodies.
-	 * \param deltaTime Time elapsed since the last frame.
-	 */
-	void MoveBodies(float deltaTime) const;
+    /**
+     * \brief Moves all the rigidbodies.
+     * \param deltaTime Time elapsed since the last frame.
+     */
+    void MoveBodies(float deltaTime) const;
 
-	/**
-	 * \brief Steps the world.
-	 * \param deltaTime Time elapsed since the last frame.
-	 */
-	void Step(float deltaTime);
+    /**
+     * \brief Steps the world.
+     * \param deltaTime Time elapsed since the last frame.
+     */
+    void Step(float deltaTime);
 
-	/**
-	 * \brief Sets the gravity in the world.
-	 * \param gravity Gravity to set.
-	 */
-	void SetWorldGravity(Vector2 gravity);
+    /**
+     * \brief Sets the gravity in the world.
+     * \param gravity Gravity to set.
+     */
+    void SetWorldGravity(Vector2 gravity);
 
 private:
-	Vector2 _gravity = { 0, -9.81f };
-	
+    Vector2 _gravity = {0, -9.81f};
 };
+}

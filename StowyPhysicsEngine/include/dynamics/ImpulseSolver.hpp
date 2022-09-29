@@ -12,11 +12,14 @@
 
 #include "Solver.hpp"
 
- /**
-  * \brief Solver with impulse and friction.
-  */
+namespace stw
+{
+/**
+* \brief Solver with impulse and friction.
+*/
 class ImpulseSolver final : public Solver
 {
 public:
 	void Solve(const std::vector<Collision>& collisions, float deltaTime) override;
 };
+}

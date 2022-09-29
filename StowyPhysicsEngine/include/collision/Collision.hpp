@@ -12,27 +12,26 @@
 
 #include "CollisionBody.hpp"
 
- /**
-  * \brief Struct representing a collision.
-  */
+namespace stw
+{
+/**
+* \brief Struct representing a collision.
+*/
 struct Collision
 {
-	/**
-	 * \brief Body A of the collision.
-	 */
-	CollisionBody* bodyA{};
+    /**
+     * \brief Body A of the collision.
+     */
+    CollisionBody* bodyA{};
 
-	/**
-	 * \brief Body B of the collision.
-	 */
-	CollisionBody* bodyB{};
+    /**
+     * \brief Body B of the collision.
+     */
+    CollisionBody* bodyB{};
 
-	/**
-	 * \brief Manifold of the collision.
-	 */
-	Manifold manifold;
-
-	//Collision() = default;
-
-	//Collision(CollisionBody* a, CollisionBody* b, const Manifold& manif);
+    /**
+     * \brief Manifold of the collision.
+     */
+    Manifold manifold;
 };
+}

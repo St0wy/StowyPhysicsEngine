@@ -1,29 +1,30 @@
 #pragma once
 
-#include <SFML/Graphics.hpp>
 #include <memory>
+
+#include <SFML/Graphics.hpp>
 
 #include "dynamics/DynamicsWorld.hpp"
 #include "dynamics/Rigidbody.hpp"
 
 class Entity
-	: public sf::Drawable, public sf::Transformable
+    : public sf::Drawable, public sf::Transformable
 {
 public:
-	explicit Entity(DynamicsWorld& dynWorld);
-	Entity(DynamicsWorld& dynWorld, Vector2 pos);
-	~Entity() override;
+    explicit Entity(stw::DynamicsWorld& dynWorld);
+    Entity(stw::DynamicsWorld& dynWorld, stw::Vector2 pos);
+    ~Entity() override;
 
-	Rigidbody* RigidBody() const;
+    stw::Rigidbody* RigidBody() const;
 
-	void Push(Vector2 force) const;
+    void Push(stw::Vector2 force) const;
 
-	/**
-	 * \brief The update function that is called at each frame.
-	 * \param deltaTime Time elapsed since the last frame.
-	 */
-	virtual void Update(sf::Time deltaTime);
+    /**
+     * \brief The update function that is called at each frame.
+     * \param deltaTime Time elapsed since the last frame.
+     */
+    virtual void Update(sf::Time deltaTime);
 protected:
-	DynamicsWorld& _dynWorld;
-	std::unique_ptr<Rigidbody> _rb;
+    stw::DynamicsWorld& _dynWorld;
+    std::unique_ptr<stw::Rigidbody> _rb;
 };

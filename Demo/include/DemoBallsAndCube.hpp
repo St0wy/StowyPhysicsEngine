@@ -17,10 +17,10 @@ public:
 
 private:
     sf::RenderWindow _window;
-    DynamicsWorld _world;
+    stw::DynamicsWorld _world;
     std::vector<std::unique_ptr<Entity>> _entities;
-    std::unique_ptr<ImpulseSolver> _impulseSolver;
-    std::unique_ptr<SmoothPositionSolver> _smoothPositionSolver;
+    std::unique_ptr<stw::ImpulseSolver> _impulseSolver;
+    std::unique_ptr<stw::SmoothPositionSolver> _smoothPositionSolver;
     FpsCounter _fpsCounter;
     sf::Font _lModern;
     sf::Text _fpsText;

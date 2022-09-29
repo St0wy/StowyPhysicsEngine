@@ -11,11 +11,14 @@
 #pragma once
 #include "Solver.hpp"
 
- /**
-  * \brief A solver to smooth out collision with collider that are in a tower placement.
-  */
+namespace stw
+{
+/**
+* \brief A solver to smooth out collision with collider that are in a tower placement.
+*/
 class SmoothPositionSolver : public Solver
 {
 public:
-	void Solve(const std::vector<Collision>& collisions, float deltaTime) override;
+    void Solve(const std::vector<Collision>& collisions, float deltaTime) override;
 };
+}
