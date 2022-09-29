@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['halfheight_0',['halfHeight',['../struct_box_collider.html#a4a6eadbbd5ba325b7f0ca3414cd9b3f6',1,'BoxCollider::halfHeight()'],['../struct_aabb_collider.html#a46ee43b5d0f006a8cfbdeaa4a0b0b3c9',1,'AabbCollider::halfHeight()']]],
-  ['halfwidth_1',['halfWidth',['../struct_box_collider.html#a4563696a66eca56544e5d4c38bcd0c75',1,'BoxCollider::halfWidth()'],['../struct_aabb_collider.html#ab9539bf2300ff299325e96a42104f4c1',1,'AabbCollider::halfWidth()']]],
-  ['hascollision_2',['hasCollision',['../struct_manifold.html#a4a0f1e8ad3debf9047b60879b6852307',1,'Manifold']]]
+  ['halfheight_0',['halfHeight',['../structstw_1_1_box_collider.html#a50207bfb91223b3b8c55f01c434f53fe',1,'stw::BoxCollider::halfHeight()'],['../structstw_1_1_aabb_collider.html#a6e3245d206bc4386e97add8655e9cc89',1,'stw::AabbCollider::halfHeight()']]],
+  ['halfwidth_1',['halfWidth',['../structstw_1_1_box_collider.html#a954dc18d02a851de4d3c233331a5054e',1,'stw::BoxCollider::halfWidth()'],['../structstw_1_1_aabb_collider.html#aedbd6dc3f208c4d641d95013f8d2b920',1,'stw::AabbCollider::halfWidth()']]],
+  ['hascollision_2',['hasCollision',['../structstw_1_1_manifold.html#ad38f066cd7616de5d56bd9ac7378643c',1,'stw::Manifold']]]
 ];

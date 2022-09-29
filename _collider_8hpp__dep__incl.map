@@ -13,7 +13,7 @@
 <area shape="rect" id="node8" href="$_broad_phase_grid_8cpp.html" title=" " alt="" coords="914,255,1081,295"/>
 <area shape="rect" id="node5" href="$_dynamics_world_8hpp.html" title="Contains the DynamicsWorld class." alt="" coords="762,431,945,471"/>
 <area shape="rect" id="node7" href="$_collision_world_8cpp.html" title=" " alt="" coords="969,438,1170,463"/>
-<area shape="rect" id="node10" href="$_solver_8hpp.html" title="Contains the Solver struct." alt="" coords="369,262,497,287"/>
+<area shape="rect" id="node10" href="$_solver_8hpp.html" title="Contains the Solver struct." alt="" coords="323,262,509,287"/>
 <area shape="rect" id="node12" href="$_impulse_solver_8cpp.html" title=" " alt="" coords="320,438,531,463"/>
 <area shape="rect" id="node14" href="$_smooth_position_solver_8cpp.html" title=" " alt="" coords="101,431,296,471"/>
 <area shape="rect" id="node11" href="$_impulse_solver_8hpp.html" title="Contains the ImpulseSolver class." alt="" coords="337,343,509,383"/>

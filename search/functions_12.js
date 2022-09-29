@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7ecollider_0',['~Collider',['../struct_collider.html#a7b43c72a6424d8c11dec965d166953d3',1,'Collider']]]
+  ['_7ecollider_0',['~Collider',['../structstw_1_1_collider.html#a6943e23298bdd491c71d8fb6c0609ecc',1,'stw::Collider']]]
 ];

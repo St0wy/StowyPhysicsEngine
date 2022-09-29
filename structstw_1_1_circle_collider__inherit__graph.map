@@ -1,0 +1,4 @@
+<map id="stw::CircleCollider" name="stw::CircleCollider">
+<area shape="rect" id="node1" title="A circle collider." alt="" coords="5,79,131,104"/>
+<area shape="rect" id="node2" href="$structstw_1_1_collider.html" title="A pure virtual struct that represents colliders." alt="" coords="22,5,114,31"/>
+</map>

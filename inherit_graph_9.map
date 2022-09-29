@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_solver.html" title="Generic class for all solvers." alt="" coords="5,31,64,56"/>
-<area shape="rect" id="node2" href="$class_impulse_solver.html" title="Solver with impulse and friction." alt="" coords="135,5,240,31"/>
-<area shape="rect" id="node3" href="$class_smooth_position_solver.html" title="A solver to smooth out collision with collider that are in a tower placement." alt="" coords="112,55,263,80"/>
+<area shape="rect" id="node1" href="$classstw_1_1_solver.html" title="Generic class for all solvers." alt="" coords="5,31,92,56"/>
+<area shape="rect" id="node2" href="$classstw_1_1_impulse_solver.html" title="Solver with impulse and friction." alt="" coords="163,5,295,31"/>
+<area shape="rect" id="node3" href="$classstw_1_1_smooth_position_solver.html" title="A solver to smooth out collision with collider that are in a tower placement." alt="" coords="140,55,319,80"/>
 </map>

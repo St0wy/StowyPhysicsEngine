@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['col_0',['Col',['../struct_collision_body.html#a87cfaf648e060c8394e0ea50edc1559d',1,'CollisionBody']]],
-  ['collider_1',['Collider',['../struct_collider.html#ab55111a0e01b0a1f809aeb8ef776412d',1,'Collider::Collider()=default'],['../struct_collider.html#a13d56cc4e4b6fd93b94da84e6ea1c1ab',1,'Collider::Collider(Collider &amp;&amp;col) noexcept=default'],['../struct_collider.html#a6b1928fd14b27a65926cb06fa73475f9',1,'Collider::Collider(const Collider &amp;col)=default']]],
-  ['collisionbody_2',['CollisionBody',['../struct_collision_body.html#a5fa4a5cba324c98afd091ad76422ecca',1,'CollisionBody']]],
-  ['collisionworld_3',['CollisionWorld',['../class_collision_world.html#a98bf0a31ff2f5ddbbde5882830738858',1,'CollisionWorld::CollisionWorld()'],['../class_collision_world.html#a99971fb5c234e59f1dad6aba7403e242',1,'CollisionWorld::CollisionWorld(std::unordered_map&lt; std::uint64_t, CollisionBody * &gt; bodies, std::vector&lt; Solver * &gt; solvers)']]]
+  ['col_0',['Col',['../structstw_1_1_collision_body.html#a160a77fa3277c75494b05655497e95f4',1,'stw::CollisionBody']]],
+  ['collider_1',['Collider',['../structstw_1_1_collider.html#ac8b5a96b124c980d73dc3848bedf63a8',1,'stw::Collider::Collider()=default'],['../structstw_1_1_collider.html#a31432698a7c11974c90921b64bbb6c69',1,'stw::Collider::Collider(Collider &amp;&amp;col) noexcept=default'],['../structstw_1_1_collider.html#a4a935632f21e0abf342ba9e5587d949d',1,'stw::Collider::Collider(const Collider &amp;col)=default']]],
+  ['collisionbody_2',['CollisionBody',['../structstw_1_1_collision_body.html#a778b080675d20f676cd7ce91c64737dd',1,'stw::CollisionBody']]],
+  ['collisionworld_3',['CollisionWorld',['../classstw_1_1_collision_world.html#a9b1e3ed3a459d7372c83a06bc7074a85',1,'stw::CollisionWorld::CollisionWorld()'],['../classstw_1_1_collision_world.html#ac3c923dad60da2615b44d9726c8115b9',1,'stw::CollisionWorld::CollisionWorld(std::unordered_map&lt; std::uint64_t, CollisionBody * &gt; bodies, std::vector&lt; Solver * &gt; solvers)']]]
 ];

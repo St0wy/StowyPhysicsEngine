@@ -1,0 +1,4 @@
+<map id="stw::algo::FindAabbAabbManifold" name="stw::algo::FindAabbAabbManifold">
+<area shape="rect" id="node1" title="Finds the collision manifold between A and B." alt="" coords="5,5,219,31"/>
+<area shape="rect" id="node2" href="$structstw_1_1_manifold.html#aa25b3e0ded86b9102e1d65d7764ae98c" title="Gets an empty manifold with no collisions." alt="" coords="267,5,407,31"/>
+</map>

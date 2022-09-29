@@ -1,9 +1,0 @@
-<map id="AabbCollider::TestCollision" name="AabbCollider::TestCollision">
-<area shape="rect" id="node1" title="Tests the collision against a circle collider." alt="" coords="5,80,181,105"/>
-<area shape="rect" id="node2" href="$namespacealgo.html#a6af93f14e8018b1b0e9c82577ded7e7c" title="Finds the collision manifold between A and B." alt="" coords="229,80,419,105"/>
-<area shape="rect" id="node3" href="$struct_manifold.html#a2d38cacdc21e00dcc762a7be3dac2c7d" title="Gets an empty manifold with no collisions." alt="" coords="490,5,603,31"/>
-<area shape="rect" id="node4" href="$struct_vector2.html#a034384ad890b6ceeaa7da3d88d566b5d" title="Gets the biggest component of this vector." alt="" coords="494,55,599,80"/>
-<area shape="rect" id="node5" href="$struct_vector2.html#a7218a0d0d5254ff420895ba81171319d" title="Sets the magnitude of this vector." alt="" coords="467,104,627,129"/>
-<area shape="rect" id="node7" href="$struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="856,129,1009,155"/>
-<area shape="rect" id="node6" href="$struct_vector2.html#a16b13aa4859a54eaec1a76ae2ca4f94d" title="Gets the magnitude of this vector." alt="" coords="675,104,808,129"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="Rigidbody" name="Rigidbody">
-<area shape="rect" id="node1" title="A Rigidbody that has dynamics." alt="" coords="55,285,133,311"/>
-<area shape="rect" id="node2" href="$struct_collision_body.html" title="A body that can receive collisions." alt="" coords="44,211,144,236"/>
-<area shape="rect" id="node3" href="$struct_transform.html" title="A transform of an object. Contains position, scale and rotation." alt="" coords="5,108,87,133"/>
-<area shape="rect" id="node4" href="$struct_vector2.html" title="A struct representing a 2D Vector." alt="" coords="61,5,127,31"/>
-<area shape="rect" id="node5" href="$struct_collider.html" title="A pure virtual struct that represents colliders." alt="" coords="116,108,181,133"/>
-</map>

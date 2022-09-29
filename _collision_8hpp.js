@@ -1,4 +1,4 @@
 var _collision_8hpp =
 [
-    [ "Collision", "struct_collision.html", "struct_collision" ]
+    [ "stw::Collision", "structstw_1_1_collision.html", "structstw_1_1_collision" ]
 ];

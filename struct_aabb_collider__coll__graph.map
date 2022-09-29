@@ -1,5 +1,0 @@
-<map id="AabbCollider" name="AabbCollider">
-<area shape="rect" id="node1" title="An Axis Aligned Bounding Box collider." alt="" coords="5,168,100,193"/>
-<area shape="rect" id="node2" href="$struct_collider.html" title="A pure virtual struct that represents colliders." alt="" coords="20,93,85,119"/>
-<area shape="rect" id="node3" href="$struct_vector2.html" title="A struct representing a 2D Vector." alt="" coords="19,5,86,31"/>
-</map>

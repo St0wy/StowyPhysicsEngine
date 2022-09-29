@@ -1,7 +1,7 @@
 var _collider_8hpp =
 [
-    [ "Collider", "struct_collider.html", "struct_collider" ],
-    [ "BoxCollider", "struct_box_collider.html", "struct_box_collider" ],
-    [ "CircleCollider", "struct_circle_collider.html", "struct_circle_collider" ],
-    [ "AabbCollider", "struct_aabb_collider.html", "struct_aabb_collider" ]
+    [ "stw::Collider", "structstw_1_1_collider.html", "structstw_1_1_collider" ],
+    [ "stw::BoxCollider", "structstw_1_1_box_collider.html", "structstw_1_1_box_collider" ],
+    [ "stw::CircleCollider", "structstw_1_1_circle_collider.html", "structstw_1_1_circle_collider" ],
+    [ "stw::AabbCollider", "structstw_1_1_aabb_collider.html", "structstw_1_1_aabb_collider" ]
 ];

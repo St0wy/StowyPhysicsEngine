@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['y_0',['y',['../struct_vector2.html#a0e07bad05f01ed811b909a2eef97f9e2',1,'Vector2']]]
+  ['y_0',['y',['../structstw_1_1_vector2.html#a8fb5a01e16faa3de0714b427af97b04a',1,'stw::Vector2']]]
 ];

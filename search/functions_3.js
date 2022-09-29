@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['distance_0',['Distance',['../struct_vector2.html#ac18df2fbdf4c1e297c43e06ce7ba5736',1,'Vector2']]],
-  ['dot_1',['Dot',['../struct_vector2.html#a23ceee12380716c9cb3458c6e0b86c90',1,'Vector2']]],
-  ['dynamicfriction_2',['DynamicFriction',['../struct_rigidbody.html#acd960b198ad33fd178679c06c65558a8',1,'Rigidbody']]]
+  ['distance_0',['Distance',['../structstw_1_1_vector2.html#a51a8c44b28f91a51a2b500fbf7a290aa',1,'stw::Vector2']]],
+  ['dot_1',['Dot',['../structstw_1_1_vector2.html#a87dfc954795a3f9e2507b013f22bc77b',1,'stw::Vector2']]],
+  ['dynamicfriction_2',['DynamicFriction',['../structstw_1_1_rigidbody.html#a8843c3a915a92054057ab971a42fcf54',1,'stw::Rigidbody']]]
 ];

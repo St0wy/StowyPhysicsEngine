@@ -1,4 +1,4 @@
 var _solver_8hpp =
 [
-    [ "Solver", "class_solver.html", "class_solver" ]
+    [ "stw::Solver", "classstw_1_1_solver.html", "classstw_1_1_solver" ]
 ];

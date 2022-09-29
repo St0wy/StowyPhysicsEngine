@@ -1,4 +1,4 @@
 var _simplex_8hpp =
 [
-    [ "Simplex", "struct_simplex.html", "struct_simplex" ]
+    [ "stw::Simplex", "structstw_1_1_simplex.html", "structstw_1_1_simplex" ]
 ];

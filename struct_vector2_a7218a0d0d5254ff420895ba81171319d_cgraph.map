@@ -1,5 +1,0 @@
-<map id="Vector2::NewMagnitude" name="Vector2::NewMagnitude">
-<area shape="rect" id="node1" title="Sets the magnitude of this vector." alt="" coords="5,5,165,31"/>
-<area shape="rect" id="node2" href="$struct_vector2.html#a16b13aa4859a54eaec1a76ae2ca4f94d" title="Gets the magnitude of this vector." alt="" coords="213,5,347,31"/>
-<area shape="rect" id="node3" href="$struct_vector2.html#af96e796e20fe3af56c495bedb8f4fc14" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="395,5,548,31"/>
-</map>

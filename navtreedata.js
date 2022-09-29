@@ -44,11 +44,7 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ],
-      [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ]
-      ] ]
+      [ "File List", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
@@ -56,7 +52,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_broad_phase_grid_8cpp.html",
-"struct_rigidbody.html#aeec28116e1a4cfc3fcee99e46c7901cd"
+"structstw_1_1_collider.html#ac8b5a96b124c980d73dc3848bedf63a8"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

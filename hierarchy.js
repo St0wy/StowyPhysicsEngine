@@ -1,26 +1,26 @@
 var hierarchy =
 [
-    [ "BroadPhaseGrid", "class_broad_phase_grid.html", null ],
-    [ "Collider", "struct_collider.html", [
-      [ "AabbCollider", "struct_aabb_collider.html", null ],
-      [ "BoxCollider", "struct_box_collider.html", null ],
-      [ "CircleCollider", "struct_circle_collider.html", null ]
+    [ "stw::BroadPhaseGrid", "classstw_1_1_broad_phase_grid.html", null ],
+    [ "stw::Collider", "structstw_1_1_collider.html", [
+      [ "stw::AabbCollider", "structstw_1_1_aabb_collider.html", null ],
+      [ "stw::BoxCollider", "structstw_1_1_box_collider.html", null ],
+      [ "stw::CircleCollider", "structstw_1_1_circle_collider.html", null ]
     ] ],
-    [ "Collision", "struct_collision.html", null ],
-    [ "CollisionBody", "struct_collision_body.html", [
-      [ "Rigidbody", "struct_rigidbody.html", null ]
+    [ "stw::Collision", "structstw_1_1_collision.html", null ],
+    [ "stw::CollisionBody", "structstw_1_1_collision_body.html", [
+      [ "stw::Rigidbody", "structstw_1_1_rigidbody.html", null ]
     ] ],
-    [ "CollisionWorld", "class_collision_world.html", [
-      [ "DynamicsWorld", "class_dynamics_world.html", null ]
+    [ "stw::CollisionWorld", "classstw_1_1_collision_world.html", [
+      [ "stw::DynamicsWorld", "classstw_1_1_dynamics_world.html", null ]
     ] ],
-    [ "Edge", "struct_edge.html", null ],
-    [ "Manifold", "struct_manifold.html", null ],
-    [ "Projection", "struct_projection.html", null ],
-    [ "Simplex", "struct_simplex.html", null ],
-    [ "Solver", "class_solver.html", [
-      [ "ImpulseSolver", "class_impulse_solver.html", null ],
-      [ "SmoothPositionSolver", "class_smooth_position_solver.html", null ]
+    [ "stw::Edge", "structstw_1_1_edge.html", null ],
+    [ "stw::Manifold", "structstw_1_1_manifold.html", null ],
+    [ "stw::Projection", "structstw_1_1_projection.html", null ],
+    [ "stw::Simplex", "structstw_1_1_simplex.html", null ],
+    [ "stw::Solver", "classstw_1_1_solver.html", [
+      [ "stw::ImpulseSolver", "classstw_1_1_impulse_solver.html", null ],
+      [ "stw::SmoothPositionSolver", "classstw_1_1_smooth_position_solver.html", null ]
     ] ],
-    [ "Transform", "struct_transform.html", null ],
-    [ "Vector2", "struct_vector2.html", null ]
+    [ "stw::Transform", "structstw_1_1_transform.html", null ],
+    [ "stw::Vector2", "structstw_1_1_vector2.html", null ]
 ];

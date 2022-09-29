@@ -1,5 +1,0 @@
-<map id="DynamicsWorld" name="DynamicsWorld">
-<area shape="rect" id="node1" title="A world with dynamics in it." alt="" coords="8,168,120,193"/>
-<area shape="rect" id="node2" href="$class_collision_world.html" title="Represents a world where collisions can happen. It does not have dynamics, for this you will need the..." alt="" coords="12,93,116,119"/>
-<area shape="rect" id="node3" href="$class_broad_phase_grid.html" title="A grid in which the physical object are placed in. This is used to optimize performance by only check..." alt="" coords="5,5,123,31"/>
-</map>

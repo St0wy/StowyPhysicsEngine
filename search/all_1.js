@@ -1,12 +1,11 @@
 var searchData=
 [
-  ['a_0',['a',['../struct_manifold.html#ac3357070860fc2802d431863a77fbce3',1,'Manifold']]],
-  ['aabbcollider_1',['AabbCollider',['../struct_aabb_collider.html',1,'']]],
-  ['addcollisionbody_2',['AddCollisionBody',['../class_collision_world.html#aece70c9058e004f0cf52bdfca739d551',1,'CollisionWorld']]],
-  ['addrigidbody_3',['AddRigidbody',['../class_dynamics_world.html#abf5bc9fbe4be94332e08fa9fdb691559',1,'DynamicsWorld']]],
-  ['addsolver_4',['AddSolver',['../class_collision_world.html#ac5e98b7b7d034564418807cfe564a497',1,'CollisionWorld']]],
-  ['algo_5',['algo',['../namespacealgo.html',1,'']]],
-  ['angle_6',['Angle',['../struct_vector2.html#a99d12dfbc69edfbf0cc310ca806b1281',1,'Vector2']]],
-  ['applyforce_7',['ApplyForce',['../struct_rigidbody.html#a0027880c120bba10e14da3f2bfeb99c8',1,'Rigidbody']]],
-  ['applygravity_8',['ApplyGravity',['../class_dynamics_world.html#a5f79713bf05015294493ba35a5294d9d',1,'DynamicsWorld']]]
+  ['a_0',['a',['../structstw_1_1_manifold.html#a958b7190986e0ab9647226d755014f00',1,'stw::Manifold']]],
+  ['aabbcollider_1',['AabbCollider',['../structstw_1_1_aabb_collider.html',1,'stw']]],
+  ['addcollisionbody_2',['AddCollisionBody',['../classstw_1_1_collision_world.html#ad437b2a6774d4641995b1d96c8218228',1,'stw::CollisionWorld']]],
+  ['addrigidbody_3',['AddRigidbody',['../classstw_1_1_dynamics_world.html#a56bf557e86080bcbd9ef07ef3c6ed35a',1,'stw::DynamicsWorld']]],
+  ['addsolver_4',['AddSolver',['../classstw_1_1_collision_world.html#a22b096ebc8769555cb0f9220f92275a9',1,'stw::CollisionWorld']]],
+  ['angle_5',['Angle',['../structstw_1_1_vector2.html#a8dcbdc550226dff11e0a1d91939f3062',1,'stw::Vector2']]],
+  ['applyforce_6',['ApplyForce',['../structstw_1_1_rigidbody.html#acf3bfc3471b046cc50c7446b2986c28a',1,'stw::Rigidbody']]],
+  ['applygravity_7',['ApplyGravity',['../classstw_1_1_dynamics_world.html#a576f8389fd291d1035cc5c5226bc38bb',1,'stw::DynamicsWorld']]]
 ];

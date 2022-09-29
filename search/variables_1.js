@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['a_0',['a',['../struct_manifold.html#ac3357070860fc2802d431863a77fbce3',1,'Manifold']]]
+  ['a_0',['a',['../structstw_1_1_manifold.html#a958b7190986e0ab9647226d755014f00',1,'stw::Manifold']]]
 ];

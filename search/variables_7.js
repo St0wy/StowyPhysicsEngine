@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['manifold_0',['manifold',['../struct_collision.html#a274e4a4de252423306f217e043e8b6ea',1,'Collision']]],
-  ['max_1',['max',['../struct_edge.html#a3c87b3c49a55448c1f989006a23299ac',1,'Edge::max()'],['../struct_projection.html#a5d34b765889ac9e80afc4df6d82b7680',1,'Projection::max()']]],
-  ['max_5fsize_2',['MAX_SIZE',['../struct_simplex.html#aedd179af754c3ec9d96615481daab860',1,'Simplex']]],
-  ['min_3',['min',['../struct_projection.html#ae02a4aa027aca0ff6e4e3a34820434a6',1,'Projection']]]
+  ['manifold_0',['manifold',['../structstw_1_1_collision.html#ad0b92497c6712d9ff7eb8e9f3487d306',1,'stw::Collision']]],
+  ['max_1',['max',['../structstw_1_1_edge.html#a8cf253c62eea385a0d5dac0180bdd4c2',1,'stw::Edge::max()'],['../structstw_1_1_projection.html#ac5c8b4fcc53d68b6381bf086b1d72f8a',1,'stw::Projection::max()']]],
+  ['max_5fsize_2',['MAX_SIZE',['../structstw_1_1_simplex.html#a949677fdf13dfa857024d4fcb9d5a208',1,'stw::Simplex']]],
+  ['min_3',['min',['../structstw_1_1_projection.html#aa203d5ce4f8ceec4e97739889b579274',1,'stw::Projection']]]
 ];

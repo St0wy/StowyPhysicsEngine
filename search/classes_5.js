@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['impulsesolver_0',['ImpulseSolver',['../class_impulse_solver.html',1,'']]]
+  ['impulsesolver_0',['ImpulseSolver',['../classstw_1_1_impulse_solver.html',1,'stw']]]
 ];

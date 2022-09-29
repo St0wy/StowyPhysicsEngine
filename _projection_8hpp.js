@@ -1,4 +1,4 @@
 var _projection_8hpp =
 [
-    [ "Projection", "struct_projection.html", "struct_projection" ]
+    [ "stw::Projection", "structstw_1_1_projection.html", "structstw_1_1_projection" ]
 ];

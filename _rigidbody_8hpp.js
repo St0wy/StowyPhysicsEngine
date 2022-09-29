@@ -1,4 +1,4 @@
 var _rigidbody_8hpp =
 [
-    [ "Rigidbody", "struct_rigidbody.html", "struct_rigidbody" ]
+    [ "stw::Rigidbody", "structstw_1_1_rigidbody.html", "structstw_1_1_rigidbody" ]
 ];

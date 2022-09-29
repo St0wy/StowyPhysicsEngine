@@ -1,17 +1,17 @@
 var searchData=
 [
-  ['oncollision_0',['OnCollision',['../struct_collision_body.html#a6f588bb55e24c3b5a9a49860b1920404',1,'CollisionBody']]],
-  ['operator_2a_1',['operator*',['../_vector2_8cpp.html#adcdff93adc22a9103b1c14e253b7cf3e',1,'operator*(const float scalar, const Vector2 vec):&#160;Vector2.cpp'],['../_vector2_8cpp.html#a65dff02c3fc9e2023d5501fae9404fb0',1,'operator*(Vector2 vec, const float scalar):&#160;Vector2.cpp']]],
-  ['operator_2a_3d_2',['operator*=',['../struct_vector2.html#a7b7689746185f4642bd0cadf0cc2bba3',1,'Vector2']]],
-  ['operator_2b_3',['operator+',['../_vector2_8cpp.html#a9f09b28c96a2b24256cfa53e7a5548ef',1,'operator+():&#160;Vector2.cpp'],['../struct_vector2.html#a53bdaa4ea8e1504f8a78ac78e6f151bf',1,'Vector2::operator+(const Vector2 &amp;other) const']]],
-  ['operator_2b_3d_4',['operator+=',['../struct_vector2.html#abf65cbeccacdac7c8428fb1aec4f8631',1,'Vector2::operator+=(float scalar)'],['../struct_vector2.html#a838b25e337a7152b253a3d8c20e55ee2',1,'Vector2::operator+=(const Vector2 &amp;other)']]],
-  ['operator_2d_5',['operator-',['../struct_vector2.html#a9f6650ee1529209532c14fc0e4e97a6a',1,'Vector2::operator-(const Vector2 &amp;other) const'],['../struct_vector2.html#a66c2a54ca378d0d665bbb1115b2576f7',1,'Vector2::operator-() const'],['../_vector2_8cpp.html#aefa65551ba4dd91f516af03b67bb4ef5',1,'operator-():&#160;Vector2.cpp']]],
-  ['operator_2d_3d_6',['operator-=',['../struct_vector2.html#aabc12aeb4c45fcac3d5f319c502a3beb',1,'Vector2::operator-=(const Vector2 &amp;other)'],['../struct_vector2.html#a3c91fcabc0a1e1134f0d1591123d9de0',1,'Vector2::operator-=(float scalar)']]],
-  ['operator_2f_7',['operator/',['../_vector2_8cpp.html#a325895d13e9e79b4285c9cf5f3a23e38',1,'Vector2.cpp']]],
-  ['operator_2f_3d_8',['operator/=',['../struct_vector2.html#a8d726d242c8ebba24be6525528675785',1,'Vector2']]],
-  ['operator_3c_3c_9',['operator&lt;&lt;',['../_manifold_8cpp.html#a6f84664f0afd7565ab069b8daafedec4',1,'operator&lt;&lt;(std::ostream &amp;os, const Manifold &amp;manifold):&#160;Manifold.cpp'],['../_vector2_8hpp.html#a5f128b8643b2c66b84cd6228391bbee2',1,'operator&lt;&lt;(std::ostream &amp;os, const Vector2 &amp;vec):&#160;Vector2.cpp'],['../_manifold_8hpp.html#a6f84664f0afd7565ab069b8daafedec4',1,'operator&lt;&lt;(std::ostream &amp;os, const Manifold &amp;manifold):&#160;Manifold.cpp'],['../_vector2_8cpp.html#a5f128b8643b2c66b84cd6228391bbee2',1,'operator&lt;&lt;(std::ostream &amp;os, const Vector2 &amp;vec):&#160;Vector2.cpp']]],
-  ['operator_3d_10',['operator=',['../struct_simplex.html#abf4720e433d1b6ac1d5072ad07a59b15',1,'Simplex::operator=()'],['../struct_collider.html#ad9aaf9885fd6e2fccfc4afd212c03726',1,'Collider::operator=(const Collider &amp;col)=default'],['../struct_collider.html#adb2a5510e10bd560d2678b9784eeb08d',1,'Collider::operator=(Collider &amp;&amp;col)=default']]],
-  ['operator_3d_3d_11',['operator==',['../struct_vector2.html#a6348c4bbf3585c0f9720f36923881882',1,'Vector2']]],
-  ['operator_5b_5d_12',['operator[]',['../struct_simplex.html#a3dffebee1841d19bf3a7621a9f3aeb75',1,'Simplex']]],
-  ['overlaps_13',['Overlaps',['../struct_projection.html#a0d9a427d4b856ff9336f27950a5d69c4',1,'Projection']]]
+  ['oncollision_0',['OnCollision',['../structstw_1_1_collision_body.html#ab83a36812afdceaf6f53f6246d3dcf73',1,'stw::CollisionBody']]],
+  ['operator_2a_1',['operator*',['../namespacestw.html#a1d6969c81a1fbb850c73974ca887473e',1,'stw::operator*(Vector2 vec, const float scalar)'],['../namespacestw.html#a118f6acf393240a09c65348fd57cdd47',1,'stw::operator*(const float scalar, const Vector2 vec)']]],
+  ['operator_2a_3d_2',['operator*=',['../structstw_1_1_vector2.html#a076f1053ea2f85574d9ced05bc3fccd8',1,'stw::Vector2']]],
+  ['operator_2b_3',['operator+',['../namespacestw.html#ad9ddc2e34da9b6f09dc9ce0895f2de01',1,'stw::operator+()'],['../structstw_1_1_vector2.html#a2ffce030ad874a3065f0d4e65f857ff4',1,'stw::Vector2::operator+(const Vector2 &amp;other) const']]],
+  ['operator_2b_3d_4',['operator+=',['../structstw_1_1_vector2.html#a768f71c70aa8d2fe94e5e0d5702e7429',1,'stw::Vector2::operator+=(float scalar)'],['../structstw_1_1_vector2.html#af1cfd00b38e95a2604f4a09bf03e2fdc',1,'stw::Vector2::operator+=(const Vector2 &amp;other)']]],
+  ['operator_2d_5',['operator-',['../structstw_1_1_vector2.html#aff4a4b69968675fb4e96603d598325cb',1,'stw::Vector2::operator-(const Vector2 &amp;other) const'],['../structstw_1_1_vector2.html#a591ae8a5f30281c89226417ded86aab2',1,'stw::Vector2::operator-() const'],['../namespacestw.html#a8817e4c2c86f7cb6826587bc389e49fa',1,'stw::operator-()']]],
+  ['operator_2d_3d_6',['operator-=',['../structstw_1_1_vector2.html#a0b0227923c7b9bf7aaa372a420dbd9be',1,'stw::Vector2::operator-=(const Vector2 &amp;other)'],['../structstw_1_1_vector2.html#a06e8f0e3cd0bdd7db87ebe595c5556f4',1,'stw::Vector2::operator-=(float scalar)']]],
+  ['operator_2f_7',['operator/',['../namespacestw.html#aa8e42865ed24748ce517de782690a2e5',1,'stw']]],
+  ['operator_2f_3d_8',['operator/=',['../structstw_1_1_vector2.html#a57169bb18813799414a869a9f7747331',1,'stw::Vector2']]],
+  ['operator_3c_3c_9',['operator&lt;&lt;',['../namespacestw.html#a73ea3fcbf25a8be5413dda556abc9336',1,'stw::operator&lt;&lt;(std::ostream &amp;os, const Manifold &amp;manifold)'],['../namespacestw.html#a1fbba90ce90733085e523cfef1cfee59',1,'stw::operator&lt;&lt;(std::ostream &amp;os, const Vector2 &amp;vec)']]],
+  ['operator_3d_10',['operator=',['../structstw_1_1_simplex.html#ac3feaaead5bc0e97d29816637f3cab40',1,'stw::Simplex::operator=()'],['../structstw_1_1_collider.html#a3bc1cdceb91b3979106b37da5952231f',1,'stw::Collider::operator=(const Collider &amp;col)=default'],['../structstw_1_1_collider.html#aeec5957f28865c93e20bdd67d492df5e',1,'stw::Collider::operator=(Collider &amp;&amp;col)=default']]],
+  ['operator_3d_3d_11',['operator==',['../structstw_1_1_vector2.html#a4563137e02af9d01d8fc43600c22aff7',1,'stw::Vector2']]],
+  ['operator_5b_5d_12',['operator[]',['../structstw_1_1_simplex.html#a6b6375e599084a81cd8774ea4db2bf2b',1,'stw::Simplex']]],
+  ['overlaps_13',['Overlaps',['../structstw_1_1_projection.html#a513307e219827646a0a312cc36ce0b44',1,'stw::Projection']]]
 ];

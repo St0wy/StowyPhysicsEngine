@@ -1,4 +1,0 @@
-<map id="CircleCollider" name="CircleCollider">
-<area shape="rect" id="node1" title="A circle collider." alt="" coords="5,79,104,104"/>
-<area shape="rect" id="node2" href="$struct_collider.html" title="A pure virtual struct that represents colliders." alt="" coords="22,5,87,31"/>
-</map>

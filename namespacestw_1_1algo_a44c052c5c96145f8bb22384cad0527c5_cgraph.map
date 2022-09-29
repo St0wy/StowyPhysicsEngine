@@ -1,0 +1,16 @@
+<map id="stw::algo::Sat" name="stw::algo::Sat">
+<area shape="rect" id="node1" title=" " alt="" coords="5,133,104,159"/>
+<area shape="rect" id="node2" href="$structstw_1_1_manifold.html#aa25b3e0ded86b9102e1d65d7764ae98c" title="Gets an empty manifold with no collisions." alt="" coords="189,5,329,31"/>
+<area shape="rect" id="node3" href="$structstw_1_1_box_collider.html#aac08703edfbccb871c6939033546090a" title=" " alt="" coords="174,55,345,80"/>
+<area shape="rect" id="node8" href="$structstw_1_1_projection.html#a8c655c13499231200c04063ac2c78dae" title=" " alt="" coords="170,104,349,129"/>
+<area shape="rect" id="node9" href="$structstw_1_1_box_collider.html#aa3cbcad5c3f7fa165612fcbd10f6a4fc" title="Gets the transformed vertices of the box." alt="" coords="152,154,367,194"/>
+<area shape="rect" id="node12" href="$structstw_1_1_projection.html#a513307e219827646a0a312cc36ce0b44" title=" " alt="" coords="177,219,342,244"/>
+<area shape="rect" id="node13" href="$structstw_1_1_box_collider.html#aed57cb708b2cfdba63957e2753768f07" title=" " alt="" coords="179,268,340,293"/>
+<area shape="rect" id="node4" href="$structstw_1_1_vector2.html#a6ae889efd824a466dc42b698cf20c057" title="Gets this vector normalized." alt="" coords="445,31,611,56"/>
+<area shape="rect" id="node7" href="$structstw_1_1_vector2.html#a3ae489315b2b9630639877141293de97" title="Computes the perpendicular vector in +90 degrees." alt="" coords="415,80,641,105"/>
+<area shape="rect" id="node5" href="$structstw_1_1_vector2.html#a1666bb4fd644da42acaed89accb2d7dd" title="Gets the magnitude of this vector." alt="" coords="689,31,849,56"/>
+<area shape="rect" id="node6" href="$structstw_1_1_vector2.html#a28bc8b748231d2be6e56ac3a869af1d3" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="897,31,1077,56"/>
+<area shape="rect" id="node10" href="$structstw_1_1_vector2.html#a4159cd5c107accb4a35790387de1d419" title="Rotates this vector around the provided axis." alt="" coords="439,161,617,187"/>
+<area shape="rect" id="node11" href="$structstw_1_1_vector2.html#a09ddff810d26983711ee1879c5881a54" title=" " alt="" coords="697,161,842,187"/>
+<area shape="rect" id="node14" href="$structstw_1_1_vector2.html#a87dfc954795a3f9e2507b013f22bc77b" title="Computes the dot product between this and other." alt="" coords="468,268,588,293"/>
+</map>

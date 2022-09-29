@@ -1,4 +1,0 @@
-<map id="algo::FindAabbAabbManifold" name="algo::FindAabbAabbManifold">
-<area shape="rect" id="node1" title="Finds the collision manifold between A and B." alt="" coords="5,5,192,31"/>
-<area shape="rect" id="node2" href="$struct_manifold.html#a2d38cacdc21e00dcc762a7be3dac2c7d" title="Gets an empty manifold with no collisions." alt="" coords="240,5,353,31"/>
-</map>

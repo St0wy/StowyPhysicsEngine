@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['b_0',['b',['../struct_manifold.html#aa88e5c77b415afc3b64560f094c00f40',1,'Manifold']]],
-  ['bodya_1',['bodyA',['../struct_collision.html#a954d15a80d8d58276e2260942274ade6',1,'Collision']]],
-  ['bodyb_2',['bodyB',['../struct_collision.html#a396154b373bceb7bfae282947a21abbf',1,'Collision']]]
+  ['b_0',['b',['../structstw_1_1_manifold.html#a987ac630a61f9ade26e4574d3461880b',1,'stw::Manifold']]],
+  ['bodya_1',['bodyA',['../structstw_1_1_collision.html#a6e10be3b2908830840c23fcf4087b58f',1,'stw::Collision']]],
+  ['bodyb_2',['bodyB',['../structstw_1_1_collision.html#aef324358f3352968e6af74d2dd940eb3',1,'stw::Collision']]]
 ];

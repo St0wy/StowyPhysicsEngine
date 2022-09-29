@@ -1,4 +1,0 @@
-<map id="ImpulseSolver" name="ImpulseSolver">
-<area shape="rect" id="node1" title="Solver with impulse and friction." alt="" coords="5,79,111,104"/>
-<area shape="rect" id="node2" href="$class_solver.html" title="Generic class for all solvers." alt="" coords="29,5,87,31"/>
-</map>

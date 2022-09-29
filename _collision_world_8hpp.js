@@ -1,4 +1,4 @@
 var _collision_world_8hpp =
 [
-    [ "CollisionWorld", "class_collision_world.html", "class_collision_world" ]
+    [ "stw::CollisionWorld", "classstw_1_1_collision_world.html", "classstw_1_1_collision_world" ]
 ];

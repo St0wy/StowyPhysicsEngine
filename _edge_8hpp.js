@@ -1,4 +1,4 @@
 var _edge_8hpp =
 [
-    [ "Edge", "struct_edge.html", "struct_edge" ]
+    [ "stw::Edge", "structstw_1_1_edge.html", "structstw_1_1_edge" ]
 ];

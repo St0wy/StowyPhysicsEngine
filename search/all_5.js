@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['edge_0',['Edge',['../struct_edge.html',1,'']]],
+  ['edge_0',['Edge',['../structstw_1_1_edge.html',1,'stw']]],
   ['edge_2ecpp_1',['Edge.cpp',['../_edge_8cpp.html',1,'']]],
   ['edge_2ehpp_2',['Edge.hpp',['../_edge_8hpp.html',1,'']]],
-  ['edgevector_3',['EdgeVector',['../struct_edge.html#a70f6790a384c3fe464359416857fd7f0',1,'Edge']]],
-  ['empty_4',['Empty',['../struct_manifold.html#a2d38cacdc21e00dcc762a7be3dac2c7d',1,'Manifold']]],
-  ['end_5',['End',['../struct_simplex.html#a4e23e764496f67f1320e24744b335de3',1,'Simplex']]],
-  ['epa_6',['Epa',['../namespacealgo.html#a9fbd6001615a41dd1d22d8a0c2549091',1,'algo']]]
+  ['edgevector_3',['EdgeVector',['../structstw_1_1_edge.html#abd1d3bc398a53ce192b977738b116647',1,'stw::Edge']]],
+  ['empty_4',['Empty',['../structstw_1_1_manifold.html#aa25b3e0ded86b9102e1d65d7764ae98c',1,'stw::Manifold']]],
+  ['end_5',['End',['../structstw_1_1_simplex.html#afd6a09bea27afceb1a617b4c7ea2f219',1,'stw::Simplex']]],
+  ['epa_6',['Epa',['../namespacestw_1_1algo.html#a4d44542fedffc786fb08e0a7d7d3e521',1,'stw::algo']]]
 ];

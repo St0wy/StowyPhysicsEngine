@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['normal_0',['normal',['../struct_manifold.html#abbefec300fd7ebd7fb82234009a2e627',1,'Manifold']]]
+  ['normal_0',['normal',['../structstw_1_1_manifold.html#ae4a5fcdefb3d9ea5362e9dbc081c79a1',1,'stw::Manifold']]]
 ];

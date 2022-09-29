@@ -1,4 +1,4 @@
 var _impulse_solver_8hpp =
 [
-    [ "ImpulseSolver", "class_impulse_solver.html", "class_impulse_solver" ]
+    [ "stw::ImpulseSolver", "classstw_1_1_impulse_solver.html", "classstw_1_1_impulse_solver" ]
 ];

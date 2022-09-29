@@ -1,0 +1,6 @@
+<map id="stw::DynamicsWorld::AddRigidbody" name="stw::DynamicsWorld::AddRigidbody">
+<area shape="rect" id="node1" title="Adds a rigidbody in the world." alt="" coords="5,69,144,109"/>
+<area shape="rect" id="node2" href="$classstw_1_1_collision_world.html#ad437b2a6774d4641995b1d96c8218228" title="Adds a collision body to the world." alt="" coords="221,5,351,45"/>
+<area shape="rect" id="node3" href="$structstw_1_1_rigidbody.html#a6cd869a95abd2d0dfee06e5adfe8145c" title="Sets the gravity force." alt="" coords="200,69,372,109"/>
+<area shape="rect" id="node4" href="$structstw_1_1_rigidbody.html#a02984fcce62e110606f5b818a79ed216" title="Gets a boolean indicating whether this body takes gravity." alt="" coords="192,134,380,159"/>
+</map>

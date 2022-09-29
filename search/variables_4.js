@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['depth_0',['depth',['../struct_manifold.html#a8647d3f91af1f138d47df40f618943ec',1,'Manifold']]]
+  ['depth_0',['depth',['../structstw_1_1_manifold.html#ab6df62b9943c0b080dcaf75ca8cb2b69',1,'stw::Manifold']]]
 ];
