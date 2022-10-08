@@ -31,7 +31,7 @@ add_custom_target(
     DataTarget-${PROJECT_NAME}
     DEPENDS ${DATA_BINARY_FILES} ${DATA_FILES})
 
-# Get SFML and spdlog libraries
+# Get SFML 
 set(SFML_VERSION "2.6.x")
 
 FetchContent_Declare(
@@ -70,6 +70,12 @@ endif()
 if (WIN32 AND BUILD_SHARED_LIBS)
     add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_RUNTIME_DLLS:${PROJECT_NAME}> $<TARGET_FILE_DIR:${PROJECT_NAME}> COMMAND_EXPAND_LISTS)
+
+    if ( CMAKE_BUILD_TYPE MATCHES "Debug" )
+        #message(STATUS "$<TARGET_FILE_DIR:${PROJECT_NAME}>/freetyped.dll")
+        add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+           COMMAND ${CMAKE_COMMAND} -E rename $<TARGET_FILE_DIR:${PROJECT_NAME}>/freetyped.dll $<TARGET_FILE_DIR:${PROJECT_NAME}>/freetype.dll COMMAND_EXPAND_LISTS)
+    endif()
 endif()
 
 install(TARGETS ${PROJECT_NAME})
