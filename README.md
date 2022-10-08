@@ -24,6 +24,9 @@ cmake -S . -B .\build\
 cmake --build .\build\
 ```
 
+When building in Debug mode, you need to rename `freetyped.dll` to `freetype.dll` in the folder where `Demo.exe` is located.
+I don't know why this is necessary, but I guess it's a problem with my CMake setup with SFML.
+
 ## Dependencies
 
 The physics engine doesn't have any dependencies, and can be built alone as a library.
