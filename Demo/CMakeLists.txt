@@ -39,6 +39,11 @@ FetchContent_Declare(
     GIT_REPOSITORY "https://github.com/SFML/SFML.git"
     GIT_TAG        "${SFML_VERSION}"
 )
+#set(BUILD_SHARED_LIBS OFF)
+set(SFML_BUILD_EXAMPLES OFF)
+set(SFML_BUILD_DOC OFF)
+option(SFML_BUILD_AUDIO "Build audio" OFF)
+option(SFML_BUILD_NETWORK "Build network" OFF)
 FetchContent_MakeAvailable(sfml)
 
 include_directories(include/)
@@ -70,12 +75,6 @@ endif()
 if (WIN32 AND BUILD_SHARED_LIBS)
     add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_RUNTIME_DLLS:${PROJECT_NAME}> $<TARGET_FILE_DIR:${PROJECT_NAME}> COMMAND_EXPAND_LISTS)
-
-    if ( CMAKE_BUILD_TYPE MATCHES "Debug" )
-        #message(STATUS "$<TARGET_FILE_DIR:${PROJECT_NAME}>/freetyped.dll")
-        add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
-           COMMAND ${CMAKE_COMMAND} -E rename $<TARGET_FILE_DIR:${PROJECT_NAME}>/freetyped.dll $<TARGET_FILE_DIR:${PROJECT_NAME}>/freetype.dll COMMAND_EXPAND_LISTS)
-    endif()
 endif()
 
 install(TARGETS ${PROJECT_NAME})
