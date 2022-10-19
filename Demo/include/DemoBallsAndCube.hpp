@@ -24,4 +24,5 @@ private:
     FpsCounter _fpsCounter;
     sf::Font _lModern;
     sf::Text _fpsText;
+    sf::Vector2f _windowSize;
 };

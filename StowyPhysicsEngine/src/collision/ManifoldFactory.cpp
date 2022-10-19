@@ -53,7 +53,7 @@ Manifold algo::FindCircleBoxManifold(
 }
 
 Manifold algo::FindBoxCircleManifold(const BoxCollider* a, const Transform* ta, const CircleCollider* b,
-	const Transform* tb)
+                                     const Transform* tb)
 {
 	return Gjk(a, ta, b, tb);
 }
@@ -98,12 +98,12 @@ Manifold algo::FindAabbAabbManifold(
 		// Point towards B knowing that aToB points from A to B
 		const Vector2 normal = aToB.y < 0.0f ? Vector2(0.0f, 1.0f) : Vector2(0.0f, -1.0f);
 
-		return { normal, yOverlap };
+		return {normal, yOverlap};
 	}
 
 	// Point towards B knowing that aToB points from A to B
 	const Vector2 normal = aToB.x < 0.0f ? Vector2(1.0f, 0.0f) : Vector2(-1.0f, 0.0f);
-	return { normal, xOverlap };
+	return {normal, xOverlap};
 }
 
 Manifold algo::FindAabbCircleManifold(
@@ -140,21 +140,21 @@ Manifold algo::FindAabbCircleManifold(
 		const float distToPosHeight = std::abs(scaledHHeight - clampedPoint.y);
 		const float distToNegHeight = std::abs(-scaledHHeight - clampedPoint.y);
 
-		const float smallest = std::min({ distToPosWidth, distToNegWidth, distToPosHeight, distToNegHeight });
+		const float smallest = std::min({distToPosWidth, distToNegWidth, distToPosHeight, distToNegHeight});
 
-		if (smallest == distToPosWidth)  // NOLINT(clang-diagnostic-float-equal)
+		if (smallest == distToPosWidth) // NOLINT(clang-diagnostic-float-equal)
 		{
 			clampedPoint.x = scaledHWidth;
 		}
-		else if (smallest == distToNegWidth)  // NOLINT(clang-diagnostic-float-equal)
+		else if (smallest == distToNegWidth) // NOLINT(clang-diagnostic-float-equal)
 		{
-			clampedPoint.x = -scaledHWidth;  // NOLINT(clang-diagnostic-float-equal)
+			clampedPoint.x = -scaledHWidth;
 		}
-		else if (smallest == distToPosHeight)  // NOLINT(clang-diagnostic-float-equal)
+		else if (smallest == distToPosHeight) // NOLINT(clang-diagnostic-float-equal)
 		{
-			clampedPoint.y = scaledHHeight;  // NOLINT(clang-diagnostic-float-equal)
+			clampedPoint.y = scaledHHeight;
 		}
-		else if (smallest == distToNegHeight)  // NOLINT(clang-diagnostic-float-equal)
+		else if (smallest == distToNegHeight) // NOLINT(clang-diagnostic-float-equal)
 		{
 			clampedPoint.y = -scaledHHeight;
 		}
@@ -188,11 +188,11 @@ Manifold algo::FindAabbCircleManifold(
 	}
 
 	float depth = scaledRadius - distance;
-	return { worldAroundCirclePoint, closestPointOnAabb, circleToClosestPoint, depth };
+	return {worldAroundCirclePoint, closestPointOnAabb, circleToClosestPoint, depth};
 }
 
 Manifold algo::FindCircleAabbManifold(const CircleCollider* a, const Transform* ta, const AabbCollider* b,
-	const Transform* tb)
+                                      const Transform* tb)
 {
 	return FindAabbCircleManifold(b, tb, a, ta).Swaped();
 }
@@ -372,7 +372,7 @@ Manifold algo::Epa(
 		return Manifold::Empty();
 	}
 
-	return { minNormal, minDistance };
+	return {minNormal, minDistance};
 }
 
 Manifold algo::Sat(
@@ -426,6 +426,6 @@ Manifold algo::Sat(
 		}
 	}
 
-	return { smallestAxis, overlap };
+	return {smallestAxis, overlap};
 }
 }

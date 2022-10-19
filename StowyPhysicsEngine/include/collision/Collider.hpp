@@ -29,8 +29,7 @@ struct AabbCollider;
  */
 struct Collider
 {
-public:
-    Collider() = default;
+	Collider() = default;
     Collider(Collider&& col) noexcept = default;
     virtual ~Collider() = default;
     Collider& operator=(Collider&& col) = default;
@@ -178,8 +177,7 @@ struct BoxCollider final : Collider
  */
 struct CircleCollider final : Collider
 {
-public:
-    /**
+	/**
      * \brief Radius of the circle.
      */
     float radius = 0;

@@ -15,10 +15,11 @@ DemoBallsAndCube::DemoBallsAndCube()
 	: _window(
 	sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT),
 	WINDOW_NAME,
-	sf::Style::Close,
+	sf::Style::Default,
 	sf::ContextSettings(0, 0, 8)
 	)
 {
+	_windowSize = CAM_SIZE;
 	_window.setView(DEFAULT_VIEW);
 
 	_impulseSolver = std::make_unique<stw::ImpulseSolver>();
@@ -43,14 +44,13 @@ void DemoBallsAndCube::Run()
 	constexpr bool everyFrame = false;
 	auto ground = std::make_unique<AabbBox>(
 		_world,
-		stw::Vector2(CAM_WIDTH * 0.8f, CAM_HEIGHT * 0.05f),
-		stw::Vector2(0.0f, CAM_HEIGHT * -0.3f),
+		stw::Vector2(_windowSize.x * 0.8f, _windowSize.y * 0.1f),
+		stw::Vector2(0.0f, _windowSize.y * -0.3f),
 		false
 		);
 	ground->RigidBody()->SetIsKinematic(false);
 	ground->RigidBody()->SetTakesGravity(false);
 	ground->RigidBody()->SetMass(std::numeric_limits<float>::max());
-	//ground->RigidBody()->SetMass(300000000000000000000000000000000000000.0f);
 	_entities.push_back(std::move(ground));
 
 	std::cout << "Starting main loop\n";
@@ -74,6 +74,15 @@ void DemoBallsAndCube::Run()
 			else if (event.type == sf::Event::MouseButtonReleased)
 			{
 				isMousePressed = false;
+			}
+			else if (event.type == sf::Event::Resized)
+			{
+				_windowSize = {
+					static_cast<float>(event.size.width) * VIEW_RATIO,
+					static_cast<float>(event.size.height) * VIEW_RATIO
+				};
+				//sf::Vector2f center = _windowSize / 2.0f;
+				_window.setView(sf::View({ 0,0 }, _windowSize));
 			}
 		}
 

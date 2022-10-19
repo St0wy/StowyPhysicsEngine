@@ -11,4 +11,7 @@ constexpr float CAM_SCALE = 4.0f;
 constexpr float CAM_WIDTH = 16.0f * CAM_SCALE;
 constexpr float CAM_HEIGHT = 9.0f * CAM_SCALE;
 
-const sf::View DEFAULT_VIEW(sf::Vector2f(0, 0), sf::Vector2f(CAM_WIDTH, CAM_HEIGHT));
+constexpr float VIEW_RATIO = CAM_SCALE / WINDOW_SCALE;
+
+const sf::Vector2f CAM_SIZE{ CAM_WIDTH, CAM_HEIGHT };
+const sf::View DEFAULT_VIEW(sf::Vector2f(0, 0), CAM_SIZE);
