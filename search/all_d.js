@@ -11,7 +11,7 @@ var searchData=
   ['operator_2f_3d_8',['operator/=',['../structstw_1_1_vector2.html#a57169bb18813799414a869a9f7747331',1,'stw::Vector2']]],
   ['operator_3c_3c_9',['operator&lt;&lt;',['../namespacestw.html#a73ea3fcbf25a8be5413dda556abc9336',1,'stw::operator&lt;&lt;(std::ostream &amp;os, const Manifold &amp;manifold)'],['../namespacestw.html#a1fbba90ce90733085e523cfef1cfee59',1,'stw::operator&lt;&lt;(std::ostream &amp;os, const Vector2 &amp;vec)']]],
   ['operator_3d_10',['operator=',['../structstw_1_1_simplex.html#ac3feaaead5bc0e97d29816637f3cab40',1,'stw::Simplex::operator=()'],['../structstw_1_1_collider.html#a3bc1cdceb91b3979106b37da5952231f',1,'stw::Collider::operator=(const Collider &amp;col)=default'],['../structstw_1_1_collider.html#aeec5957f28865c93e20bdd67d492df5e',1,'stw::Collider::operator=(Collider &amp;&amp;col)=default']]],
-  ['operator_3d_3d_11',['operator==',['../structstw_1_1_vector2.html#a4563137e02af9d01d8fc43600c22aff7',1,'stw::Vector2']]],
+  ['operator_3d_3d_11',['operator==',['../structstw_1_1_vector2.html#a53aa118f5ce579d79bd5b3000a490655',1,'stw::Vector2']]],
   ['operator_5b_5d_12',['operator[]',['../structstw_1_1_simplex.html#a6b6375e599084a81cd8774ea4db2bf2b',1,'stw::Simplex']]],
   ['overlaps_13',['Overlaps',['../structstw_1_1_projection.html#a513307e219827646a0a312cc36ce0b44',1,'stw::Projection']]]
 ];

@@ -19,7 +19,7 @@ var structstw_1_1_vector2 =
     [ "operator-=", "structstw_1_1_vector2.html#a0b0227923c7b9bf7aaa372a420dbd9be", null ],
     [ "operator-=", "structstw_1_1_vector2.html#a06e8f0e3cd0bdd7db87ebe595c5556f4", null ],
     [ "operator/=", "structstw_1_1_vector2.html#a57169bb18813799414a869a9f7747331", null ],
-    [ "operator==", "structstw_1_1_vector2.html#a4563137e02af9d01d8fc43600c22aff7", null ],
+    [ "operator==", "structstw_1_1_vector2.html#a53aa118f5ce579d79bd5b3000a490655", null ],
     [ "PositivePerpendicular", "structstw_1_1_vector2.html#a3ae489315b2b9630639877141293de97", null ],
     [ "RotateAround", "structstw_1_1_vector2.html#a4159cd5c107accb4a35790387de1d419", null ],
     [ "SqrMagnitude", "structstw_1_1_vector2.html#a28bc8b748231d2be6e56ac3a869af1d3", null ],
