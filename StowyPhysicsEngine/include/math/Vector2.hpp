@@ -144,7 +144,7 @@ public:
     Vector2 operator-=(float scalar);
     Vector2 operator*=(float scalar);
     Vector2 operator/=(float scalar);
-    bool operator==(const Vector2& scalar) const;
+    bool operator==(const Vector2& other) const;
     Vector2 operator-() const;
 
     friend Vector2 operator+(Vector2 vec, float scalar);

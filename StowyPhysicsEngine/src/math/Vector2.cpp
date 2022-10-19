@@ -88,7 +88,7 @@ Vector2 Vector2::NegativePerpendicular() const
 
 Vector2 Vector2::NewMagnitude(const float newMagnitude) const
 {
-    return *this / newMagnitude * Magnitude();
+    return (*this * newMagnitude) / Magnitude();
 }
 
 void Vector2::RotateAround(const Vector2& center, const float angle)
@@ -159,9 +159,9 @@ Vector2 Vector2::operator/=(const float scalar)
     return *this;
 }
 
-bool Vector2::operator==(const Vector2& scalar) const
+bool Vector2::operator==(const Vector2& other) const
 {
-    return (x == scalar.x && y == scalar.y);
+    return (x == other.x && y == other.y);
 }
 
 Vector2 Vector2::operator-() const

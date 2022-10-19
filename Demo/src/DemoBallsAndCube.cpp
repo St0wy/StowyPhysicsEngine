@@ -40,14 +40,17 @@ DemoBallsAndCube::DemoBallsAndCube()
 
 void DemoBallsAndCube::Run()
 {
+	constexpr bool everyFrame = false;
 	auto ground = std::make_unique<AabbBox>(
 		_world,
-        stw::Vector2(CAM_WIDTH * 0.8f, CAM_HEIGHT * 0.05f),
-        stw::Vector2(0.0f, CAM_HEIGHT * -0.3f),
+		stw::Vector2(CAM_WIDTH * 0.8f, CAM_HEIGHT * 0.05f),
+		stw::Vector2(0.0f, CAM_HEIGHT * -0.3f),
 		false
 		);
 	ground->RigidBody()->SetIsKinematic(false);
 	ground->RigidBody()->SetTakesGravity(false);
+	ground->RigidBody()->SetMass(std::numeric_limits<float>::max());
+	//ground->RigidBody()->SetMass(300000000000000000000000000000000000000.0f);
 	_entities.push_back(std::move(ground));
 
 	std::cout << "Starting main loop\n";
@@ -94,6 +97,9 @@ void DemoBallsAndCube::Run()
 				_entities.push_back(
 					std::make_unique<AabbBox>(_world, stw::Vector2(2.f, 2.f), physicsPos, true));
 			}
+
+			if constexpr (!everyFrame)
+				isMousePressed = false;
 		}
 
 		// Step the physics

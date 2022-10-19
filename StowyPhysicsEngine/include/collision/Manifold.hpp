@@ -18,8 +18,7 @@ namespace stw
 {
 struct Manifold
 {
-public:
-    Manifold(const Vector2& a, const Vector2& b, const Vector2& normal, float depth);
+	Manifold(const Vector2& a, const Vector2& b, const Vector2& normal, float depth);
     Manifold(const Vector2& normal, float depth);
     Manifold();
 
