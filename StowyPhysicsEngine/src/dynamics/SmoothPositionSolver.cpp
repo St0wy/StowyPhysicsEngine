@@ -22,7 +22,7 @@ void SmoothPositionSolver::Solve(const std::vector<Collision>& collisions, float
 
         Vector2 resolution = points.b - points.a;
 
-        constexpr float slop = 0.05f;
+        constexpr float slop = 0.01f;
         constexpr float percent = 0.8f;
 
         const Vector2 correction = points.normal * percent

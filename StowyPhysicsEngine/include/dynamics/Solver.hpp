@@ -23,6 +23,12 @@ namespace stw
 class Solver
 {
 public:
+    virtual ~Solver() = default;
+	Solver(const Solver& other) = default;
+	Solver(Solver&& other) = default;
+	Solver& operator=(const Solver& other) = delete;
+	Solver& operator=(Solver&& other) = delete;
+
     /**
      * \brief Solves the provided collisions.
      * \param collisions Collisions to solve.

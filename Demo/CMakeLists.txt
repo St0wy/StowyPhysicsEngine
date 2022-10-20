@@ -57,8 +57,8 @@ set(SOURCE
     "src/Box.cpp"
 )
 
-#add_executable(${PROJECT_NAME} ${SOURCE})
-add_executable(${PROJECT_NAME} WIN32 ${SOURCE})
+add_executable(${PROJECT_NAME} ${SOURCE})
+#add_executable(${PROJECT_NAME} WIN32 ${SOURCE})
 
 # Add data dependencies
 add_dependencies(${PROJECT_NAME} DataTarget-${PROJECT_NAME})

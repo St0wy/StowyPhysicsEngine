@@ -26,19 +26,23 @@ struct Manifold
      * \brief Point a of the manifold.
      */
     Vector2 a;
+
     /**
      * \brief Point b of the manifold.
      */
     Vector2 b;
+
     /**
      * \brief The normal of the manifold.
      * Represents the direction in which the collision should be solved.
      */
     Vector2 normal;
+
     /**
      * \brief The depth of the collision. Can be seen as the magnitude of the normal.
      */
     float depth{};
+
     /**
      * \brief Boolean indicating whether a collision happened.
      */

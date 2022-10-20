@@ -18,6 +18,26 @@ set (CMAKE_CXX_STANDARD_REQUIRED True)
 
 add_library(${PROJECT_NAME} STATIC)
 
+set(public_headers
+    include/Transform.hpp
+    include/collision/Collider.hpp
+    include/collision/Collision.hpp
+    include/collision/CollisionBody.hpp
+    include/collision/CollisionWorld.hpp
+    include/collision/ManifoldFactory.hpp
+    include/collision/Manifold.hpp
+    include/collision/Simplex.hpp
+    include/dynamics/Solver.hpp
+    include/dynamics/ImpulseSolver.hpp
+    include/dynamics/SmoothPositionSolver.hpp
+    include/dynamics/DynamicsWorld.hpp
+    include/dynamics/Rigidbody.hpp
+    include/math/Vector2.hpp
+    include/collision/Edge.hpp
+    include/collision/Projection.hpp
+    include/collision/BroadPhaseGrid.hpp
+)
+
 target_sources(${PROJECT_NAME} 
     PRIVATE
     "src/collision/Collider.cpp"
@@ -34,6 +54,7 @@ target_sources(${PROJECT_NAME}
     "src/collision/Edge.cpp"
     "src/collision/Projection.cpp" 
     "src/collision/BroadPhaseGrid.cpp"
+    ${public_headers}
 )
 
 target_include_directories(${PROJECT_NAME}
@@ -47,25 +68,7 @@ target_include_directories(${PROJECT_NAME}
         $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
 )
 
-set(public_headers
-    include/Solver.hpp
-    include/Transform.hpp
-    include/collision/Collider.hpp
-    include/collision/Collision.hpp
-    include/collision/CollisionBody.hpp
-    include/collision/CollisionWorld.hpp
-    include/collision/ManifoldFactory.hpp
-    include/collision/Manifold.hpp
-    include/collision/Simplex.hpp
-    include/dynamics/DynamicsWorld.hpp
-    include/dynamics/ImpulseSolver.hpp
-    include/dynamics/Rigidbody.hpp
-    include/dynamics/SmoothPositionSolver.hpp
-    include/math/Vector2.hpp
-    include/collision/Edge.hpp
-    include/collision/Projection.hpp
-    include/collision/BroadPhaseGrid.hpp
-)
+
 
 # not for MSVC
 if(CMAKE_COMPILER_IS_GNUCXX)

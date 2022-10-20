@@ -24,13 +24,10 @@ Manifold algo::FindCircleCircleManifold(
 	const Vector2 aToB = bPos - aPos;
 	const Vector2 bToA = aPos - bPos;
 
-	if (aToB.Magnitude() > aRadius + bRadius)
-	{
-		return Manifold::Empty();
-	}
+	if (aToB.Magnitude() > aRadius + bRadius) return Manifold::Empty();
 
-	aPos += aToB.Normalized() * aRadius;
-	bPos += bToA.Normalized() * bRadius;
+	aPos += aToB.NewMagnitude(aRadius);
+	bPos += bToA.NewMagnitude(bRadius);
 
 	const Vector2 collisionPointsDistance = bPos - aPos;
 
@@ -129,16 +126,13 @@ Manifold algo::FindAabbAabbManifold(
 	// Point towards B knowing that aToB points from A to B
 	Vector2 normal;
 
-
 	float y;
 	if (aToB.y > 0.0f)
 	{
-
 		y = transformedCenterA.x + aScaledHWidth - xOverlap / 2.0f;
 	}
 	else
 	{
-
 		y = transformedCenterA.x - aScaledHWidth + xOverlap / 2.0f;
 	}
 
@@ -216,14 +210,12 @@ Manifold algo::FindAabbCircleManifold(
 	// Put the point in "world space" because it was relative to the center
 	const Vector2 closestPointOnAabb = aabbCenter + clampedPoint;
 
-	Vector2 circleToClosestPoint = closestPointOnAabb - circleCenter;
+	const Vector2 circleToClosestPoint = closestPointOnAabb - circleCenter;
 
 	// Distance between the circle center and the clamped point
 	const float squaredDistance = circleToClosestPoint.SqrMagnitude();
 
 	if (!isCircleCenterInside && squaredDistance >= scaledRadius * scaledRadius) return Manifold::Empty();
-
-	const float distance = std::sqrt(squaredDistance);
 
 	// This is the collision point around the circle
 	Vector2 aroundCirclePoint = circleToClosestPoint.NewMagnitude(scaledRadius);
@@ -234,14 +226,10 @@ Manifold algo::FindAabbCircleManifold(
 
 	Vector2 worldAroundCirclePoint = aroundCirclePoint + circleCenter;
 
-	// If distance is not zero, we normalize the vector circleToClosestPoint
-	if (std::abs(distance) >= 0.0001f)
-	{
-		circleToClosestPoint /= distance;
-	}
+	const Vector2 diff = worldAroundCirclePoint - closestPointOnAabb;
 
-	float depth = scaledRadius - distance;
-	return { worldAroundCirclePoint, closestPointOnAabb, circleToClosestPoint, depth };
+	//return { closestPointOnAabb, worldAroundCirclePoint, circleToClosestPoint, depth };
+	return { closestPointOnAabb, worldAroundCirclePoint, diff.Normalized(), diff.Magnitude() };
 }
 
 Manifold algo::FindCircleAabbManifold(const CircleCollider* a, const Transform* ta, const AabbCollider* b,

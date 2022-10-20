@@ -21,6 +21,7 @@ DemoBallsAndCube::DemoBallsAndCube()
 {
 	_windowSize = CAM_SIZE;
 	_window.setView(DEFAULT_VIEW);
+	_window.setFramerateLimit(50);
 
 	_impulseSolver = std::make_unique<stw::ImpulseSolver>();
 	_smoothPositionSolver = std::make_unique<stw::SmoothPositionSolver>();
@@ -51,6 +52,9 @@ void DemoBallsAndCube::Run()
 	ground->RigidBody()->SetIsKinematic(false);
 	ground->RigidBody()->SetTakesGravity(false);
 	ground->RigidBody()->SetMass(std::numeric_limits<float>::max());
+	ground->Shape().setFillColor(sf::Color::Transparent);
+	ground->Shape().setOutlineColor(sf::Color::Cyan);
+	ground->Shape().setOutlineThickness(0.5f);
 	_entities.push_back(std::move(ground));
 
 	std::cout << "Starting main loop\n";
