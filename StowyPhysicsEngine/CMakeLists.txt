@@ -20,40 +20,37 @@ add_library(${PROJECT_NAME} STATIC)
 
 set(public_headers
     include/Transform.hpp
+    include/collision/BroadPhaseGrid.hpp
     include/collision/Collider.hpp
     include/collision/Collision.hpp
     include/collision/CollisionBody.hpp
     include/collision/CollisionWorld.hpp
-    include/collision/ManifoldFactory.hpp
+    include/collision/Edge.hpp
     include/collision/Manifold.hpp
+    include/collision/ManifoldFactory.hpp
+    include/collision/Projection.hpp
     include/collision/Simplex.hpp
     include/dynamics/Solver.hpp
-    include/dynamics/ImpulseSolver.hpp
-    include/dynamics/SmoothPositionSolver.hpp
     include/dynamics/DynamicsWorld.hpp
     include/dynamics/Rigidbody.hpp
     include/math/Vector2.hpp
-    include/collision/Edge.hpp
-    include/collision/Projection.hpp
-    include/collision/BroadPhaseGrid.hpp
 )
 
 target_sources(${PROJECT_NAME} 
     PRIVATE
+    "src/collision/BroadPhaseGrid.cpp"
     "src/collision/Collider.cpp"
     "src/collision/CollisionBody.cpp"
     "src/collision/CollisionWorld.cpp"
+    "src/collision/Edge.cpp"
+    "src/collision/Manifold.cpp"  
     "src/collision/ManifoldFactory.cpp"
+    "src/collision/Projection.cpp" 
     "src/collision/Simplex.cpp"
     "src/dynamics/DynamicsWorld.cpp"
-    "src/dynamics/ImpulseSolver.cpp"
     "src/dynamics/Rigidbody.cpp"
-    "src/dynamics/SmoothPositionSolver.cpp"
+    "src/dynamics/Solver.cpp"
     "src/math/Vector2.cpp"
-    "src/collision/Manifold.cpp"  
-    "src/collision/Edge.cpp"
-    "src/collision/Projection.cpp" 
-    "src/collision/BroadPhaseGrid.cpp"
     ${public_headers}
 )
 

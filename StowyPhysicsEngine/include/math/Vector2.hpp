@@ -19,8 +19,7 @@ namespace stw
   */
 struct Vector2
 {
-public:
-    Vector2()
+	Vector2()
         : Vector2(0, 0) { }
 
     Vector2(const float x, const float y)
@@ -136,6 +135,8 @@ public:
      */
     [[nodiscard]] std::string ToString() const;
 
+    constexpr static Vector2 Zero();
+
     Vector2 operator+(const Vector2& other) const;
     Vector2 operator-(const Vector2& other) const;
     Vector2 operator+=(const Vector2& other);
@@ -153,6 +154,11 @@ public:
     friend Vector2 operator*(float scalar, Vector2 vec);
     friend Vector2 operator/(Vector2 vec, float scalar);
 };
+
+constexpr Vector2 Vector2::Zero()
+{
+    return {0.0f, 0.0f};
+}
 
 std::ostream& operator<<(std::ostream& os, const Vector2& vec);
 }

@@ -21,8 +21,7 @@ namespace stw
 */
 struct Simplex
 {
-public:
-    /**
+	/**
      * \brief The max size of this simplex.
      */
     static constexpr unsigned long long MAX_SIZE = 3ull;

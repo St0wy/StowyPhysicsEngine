@@ -19,8 +19,7 @@ namespace stw
 */
 struct Rigidbody : CollisionBody
 {
-public:
-    Rigidbody();
+	Rigidbody();
 
     /**
      * \brief Gets the force of the gravity on this body.

@@ -18,7 +18,7 @@
 
 namespace stw
 {
-struct CollisionBody;
+class CollisionBody;
 
 /**
  * \brief Namespace containing all the methods to get manifolds from collisions.
@@ -37,8 +37,8 @@ namespace algo
  * \return The manifold of the collisions between A and B.
  */
 Manifold FindCircleCircleManifold(
-    const CircleCollider* a, const Transform* ta,
-    const CircleCollider* b, const Transform* tb);
+	const CircleCollider* a, const Transform* ta,
+	const CircleCollider* b, const Transform* tb);
 
 /**
  * \brief Finds the collision manifold between A and B.
@@ -49,8 +49,8 @@ Manifold FindCircleCircleManifold(
  * \return The manifold of the collisions between A and B.
  */
 Manifold FindCircleBoxManifold(
-    const CircleCollider* a, const Transform* ta,
-    const BoxCollider* b, const Transform* tb);
+	const CircleCollider* a, const Transform* ta,
+	const BoxCollider* b, const Transform* tb);
 
 /**
  * \brief Finds the collision manifold between A and B.
@@ -61,8 +61,8 @@ Manifold FindCircleBoxManifold(
  * \return The manifold of the collisions between A and B.
  */
 Manifold FindBoxCircleManifold(
-    const BoxCollider* a, const Transform* ta,
-    const CircleCollider* b, const Transform* tb);
+	const BoxCollider* a, const Transform* ta,
+	const CircleCollider* b, const Transform* tb);
 
 /**
  * \brief Finds the collision manifold between A and B.
@@ -73,8 +73,8 @@ Manifold FindBoxCircleManifold(
  * \return The manifold of the collisions between A and B.
  */
 Manifold FindBoxBoxManifold(
-    const BoxCollider* a, const Transform* ta,
-    const BoxCollider* b, const Transform* tb);
+	const BoxCollider* a, const Transform* ta,
+	const BoxCollider* b, const Transform* tb);
 
 /**
  * \brief Finds the collision manifold between A and B.
@@ -85,8 +85,8 @@ Manifold FindBoxBoxManifold(
  * \return The manifold of the collisions between A and B.
  */
 Manifold FindAabbAabbManifold(
-    const AabbCollider* a, const Transform* ta,
-    const AabbCollider* b, const Transform* tb);
+	const AabbCollider* a, const Transform* ta,
+	const AabbCollider* b, const Transform* tb);
 
 /**
  * \brief Finds the collision manifold between A and B.
@@ -97,8 +97,8 @@ Manifold FindAabbAabbManifold(
  * \return The manifold of the collisions between A and B.
  */
 Manifold FindAabbCircleManifold(
-    const AabbCollider* a, const Transform* ta,
-    const CircleCollider* b, const Transform* tb);
+	const AabbCollider* a, const Transform* ta,
+	const CircleCollider* b, const Transform* tb);
 
 /**
  * \brief Finds the collision manifold between A and B.
@@ -109,8 +109,8 @@ Manifold FindAabbCircleManifold(
  * \return The manifold of the collisions between A and B.
  */
 Manifold FindCircleAabbManifold(
-    const CircleCollider* a, const Transform* ta,
-    const AabbCollider* b, const Transform* tb);
+	const CircleCollider* a, const Transform* ta,
+	const AabbCollider* b, const Transform* tb);
 
 /**
  * \brief Support function of the GJK algorithm.
@@ -122,11 +122,11 @@ Manifold FindCircleAabbManifold(
  * \return The vertex found by the support function.
  */
 Vector2 Support(
-    const Collider* colliderA,
-    const Transform* transformA,
-    const Collider* colliderB,
-    const Transform* transformB,
-    const Vector2& direction
+	const Collider* colliderA,
+	const Transform* transformA,
+	const Collider* colliderB,
+	const Transform* transformB,
+	const Vector2& direction
 );
 
 /**
@@ -138,10 +138,10 @@ Vector2 Support(
  * \return Returns the manifold of the objects using the GJK algorithm.
  */
 Manifold Gjk(
-    const Collider* colliderA,
-    const Transform* transformA,
-    const Collider* colliderB,
-    const Transform* transformB
+	const Collider* colliderA,
+	const Transform* transformA,
+	const Collider* colliderB,
+	const Transform* transformB
 );
 
 /**
@@ -184,18 +184,18 @@ bool Triangle(const Simplex& points, Vector2& direction);
  * \return The manifold found.
  */
 Manifold Epa(
-    const Simplex& simplex,
-    const Collider* colliderA,
-    const Transform* transformA,
-    const Collider* colliderB,
-    const Transform* transformB
+	const Simplex& simplex,
+	const Collider* colliderA,
+	const Transform* transformA,
+	const Collider* colliderB,
+	const Transform* transformB
 );
 
 Manifold Sat(
-    const BoxCollider* colliderA,
-    const Transform* transformA,
-    const BoxCollider* colliderB,
-    const Transform* transformB
+	const BoxCollider* colliderA,
+	const Transform* transformA,
+	const BoxCollider* colliderB,
+	const Transform* transformB
 );
 }
 }

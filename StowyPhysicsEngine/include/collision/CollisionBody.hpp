@@ -22,7 +22,7 @@ struct Collision;
 /**
  * \brief A body that can receive collisions.
  */
-struct CollisionBody
+class CollisionBody
 {
 public:
     CollisionBody();
