@@ -29,7 +29,7 @@ var searchData=
   ['smoothpositionsolver_2ehpp_26',['SmoothPositionSolver.hpp',['../_smooth_position_solver_8hpp.html',1,'']]],
   ['solve_27',['Solve',['../classstw_1_1_impulse_solver.html#ab1742c9e2a58622102f79591bd68a323',1,'stw::ImpulseSolver::Solve()'],['../classstw_1_1_smooth_position_solver.html#a5e6b5640b141dda7226dad047e0b9da4',1,'stw::SmoothPositionSolver::Solve()'],['../classstw_1_1_solver.html#a52821a72b1b85e38feb09d41b7b8a2f7',1,'stw::Solver::Solve()']]],
   ['solvecollisions_28',['SolveCollisions',['../classstw_1_1_collision_world.html#ae287806c95edcea6ef1a80b5d7f27217',1,'stw::CollisionWorld']]],
-  ['solver_29',['Solver',['../classstw_1_1_solver.html',1,'stw']]],
+  ['solver_29',['Solver',['../classstw_1_1_solver.html#a2f3e6b3ede21bb9a5113b47e9ceef8d5',1,'stw::Solver::Solver(const Solver &amp;other)=default'],['../classstw_1_1_solver.html#a01c2614516de47f03b48363d19e94560',1,'stw::Solver::Solver(Solver &amp;&amp;other)=default'],['../classstw_1_1_solver.html',1,'stw::Solver']]],
   ['solver_2ehpp_30',['Solver.hpp',['../_solver_8hpp.html',1,'']]],
   ['sqrmagnitude_31',['SqrMagnitude',['../structstw_1_1_vector2.html#a28bc8b748231d2be6e56ac3a869af1d3',1,'stw::Vector2']]],
   ['staticfriction_32',['StaticFriction',['../structstw_1_1_rigidbody.html#a281ab388f9b800ce6b2a832be4f32810',1,'stw::Rigidbody']]],

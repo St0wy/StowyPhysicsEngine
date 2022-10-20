@@ -1,9 +1,10 @@
 <map id="stw::CircleCollider::TestCollision" name="stw::CircleCollider::TestCollision">
-<area shape="rect" id="node1" title="Tests the collision against a circle collider." alt="" coords="5,74,131,114"/>
-<area shape="rect" id="node2" href="$namespacestw_1_1algo.html#a8132887baa684c3b5481e0973b0beba2" title="Finds the collision manifold between A and B." alt="" coords="179,74,349,114"/>
-<area shape="rect" id="node3" href="$structstw_1_1_manifold.html#aa25b3e0ded86b9102e1d65d7764ae98c" title="Gets an empty manifold with no collisions." alt="" coords="410,5,550,31"/>
-<area shape="rect" id="node4" href="$structstw_1_1_vector2.html#a1666bb4fd644da42acaed89accb2d7dd" title="Gets the magnitude of this vector." alt="" coords="611,107,771,132"/>
-<area shape="rect" id="node6" href="$structstw_1_1_vector2.html#a16508fe9c7290034a1bc1d0c3848cfbb" title="Gets the biggest component of this vector." alt="" coords="414,107,546,132"/>
-<area shape="rect" id="node7" href="$structstw_1_1_vector2.html#a6ae889efd824a466dc42b698cf20c057" title="Gets this vector normalized." alt="" coords="397,156,563,181"/>
-<area shape="rect" id="node5" href="$structstw_1_1_vector2.html#a28bc8b748231d2be6e56ac3a869af1d3" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="819,107,999,132"/>
+<area shape="rect" id="node1" title="Tests the collision against a circle collider." alt="" coords="5,99,131,139"/>
+<area shape="rect" id="node2" href="$namespacestw_1_1algo.html#a8132887baa684c3b5481e0973b0beba2" title="Finds the collision manifold between A and B." alt="" coords="179,99,349,139"/>
+<area shape="rect" id="node3" href="$structstw_1_1_manifold.html#aa25b3e0ded86b9102e1d65d7764ae98c" title="Gets an empty manifold with no collisions." alt="" coords="421,5,561,31"/>
+<area shape="rect" id="node4" href="$structstw_1_1_vector2.html#a1666bb4fd644da42acaed89accb2d7dd" title="Gets the magnitude of this vector." alt="" coords="632,156,792,181"/>
+<area shape="rect" id="node6" href="$structstw_1_1_vector2.html#a16508fe9c7290034a1bc1d0c3848cfbb" title="Gets the biggest component of this vector." alt="" coords="425,107,557,132"/>
+<area shape="rect" id="node7" href="$structstw_1_1_vector2.html#aedf4bca8d27b146ea26914945ea746d0" title="Sets the magnitude of this vector." alt="" coords="397,156,584,181"/>
+<area shape="rect" id="node8" href="$structstw_1_1_vector2.html#a6ae889efd824a466dc42b698cf20c057" title="Gets this vector normalized." alt="" coords="408,205,573,231"/>
+<area shape="rect" id="node5" href="$structstw_1_1_vector2.html#a28bc8b748231d2be6e56ac3a869af1d3" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="840,156,1020,181"/>
 </map>

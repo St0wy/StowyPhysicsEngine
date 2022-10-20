@@ -22,9 +22,10 @@ var searchData=
   ['size_19',['Size',['../structstw_1_1_simplex.html#a07da8e8e08501b9ddc2babbbfcdbbc03',1,'stw::Simplex']]],
   ['solve_20',['Solve',['../classstw_1_1_impulse_solver.html#ab1742c9e2a58622102f79591bd68a323',1,'stw::ImpulseSolver::Solve()'],['../classstw_1_1_smooth_position_solver.html#a5e6b5640b141dda7226dad047e0b9da4',1,'stw::SmoothPositionSolver::Solve()'],['../classstw_1_1_solver.html#a52821a72b1b85e38feb09d41b7b8a2f7',1,'stw::Solver::Solve()']]],
   ['solvecollisions_21',['SolveCollisions',['../classstw_1_1_collision_world.html#ae287806c95edcea6ef1a80b5d7f27217',1,'stw::CollisionWorld']]],
-  ['sqrmagnitude_22',['SqrMagnitude',['../structstw_1_1_vector2.html#a28bc8b748231d2be6e56ac3a869af1d3',1,'stw::Vector2']]],
-  ['staticfriction_23',['StaticFriction',['../structstw_1_1_rigidbody.html#a281ab388f9b800ce6b2a832be4f32810',1,'stw::Rigidbody']]],
-  ['step_24',['Step',['../classstw_1_1_dynamics_world.html#a291618fd7cfaabcd1ecb31d6b844a9c7',1,'stw::DynamicsWorld']]],
-  ['support_25',['Support',['../namespacestw_1_1algo.html#aa6a4bceafedfce73058ff83c2e81c4cb',1,'stw::algo']]],
-  ['swaped_26',['Swaped',['../structstw_1_1_manifold.html#a32dac8c0a771fa35b60abeb2b8275842',1,'stw::Manifold']]]
+  ['solver_22',['Solver',['../classstw_1_1_solver.html#a2f3e6b3ede21bb9a5113b47e9ceef8d5',1,'stw::Solver::Solver(const Solver &amp;other)=default'],['../classstw_1_1_solver.html#a01c2614516de47f03b48363d19e94560',1,'stw::Solver::Solver(Solver &amp;&amp;other)=default']]],
+  ['sqrmagnitude_23',['SqrMagnitude',['../structstw_1_1_vector2.html#a28bc8b748231d2be6e56ac3a869af1d3',1,'stw::Vector2']]],
+  ['staticfriction_24',['StaticFriction',['../structstw_1_1_rigidbody.html#a281ab388f9b800ce6b2a832be4f32810',1,'stw::Rigidbody']]],
+  ['step_25',['Step',['../classstw_1_1_dynamics_world.html#a291618fd7cfaabcd1ecb31d6b844a9c7',1,'stw::DynamicsWorld']]],
+  ['support_26',['Support',['../namespacestw_1_1algo.html#aa6a4bceafedfce73058ff83c2e81c4cb',1,'stw::algo']]],
+  ['swaped_27',['Swaped',['../structstw_1_1_manifold.html#a32dac8c0a771fa35b60abeb2b8275842',1,'stw::Manifold']]]
 ];
