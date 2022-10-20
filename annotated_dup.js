@@ -1,13 +1,13 @@
 var annotated_dup =
 [
     [ "stw", "namespacestw.html", [
-      [ "AabbCollider", "structstw_1_1_aabb_collider.html", "structstw_1_1_aabb_collider" ],
-      [ "BoxCollider", "structstw_1_1_box_collider.html", "structstw_1_1_box_collider" ],
+      [ "AabbCollider", "classstw_1_1_aabb_collider.html", "classstw_1_1_aabb_collider" ],
+      [ "BoxCollider", "classstw_1_1_box_collider.html", "classstw_1_1_box_collider" ],
       [ "BroadPhaseGrid", "classstw_1_1_broad_phase_grid.html", "classstw_1_1_broad_phase_grid" ],
-      [ "CircleCollider", "structstw_1_1_circle_collider.html", "structstw_1_1_circle_collider" ],
-      [ "Collider", "structstw_1_1_collider.html", "structstw_1_1_collider" ],
+      [ "CircleCollider", "classstw_1_1_circle_collider.html", "classstw_1_1_circle_collider" ],
+      [ "Collider", "classstw_1_1_collider.html", "classstw_1_1_collider" ],
       [ "Collision", "structstw_1_1_collision.html", "structstw_1_1_collision" ],
-      [ "CollisionBody", "structstw_1_1_collision_body.html", "structstw_1_1_collision_body" ],
+      [ "CollisionBody", "classstw_1_1_collision_body.html", "classstw_1_1_collision_body" ],
       [ "CollisionWorld", "classstw_1_1_collision_world.html", "classstw_1_1_collision_world" ],
       [ "DynamicsWorld", "classstw_1_1_dynamics_world.html", "classstw_1_1_dynamics_world" ],
       [ "Edge", "structstw_1_1_edge.html", "structstw_1_1_edge" ],

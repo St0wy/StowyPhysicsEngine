@@ -1,6 +1,6 @@
 <map id="include/collision/ManifoldFactory.hpp" name="include/collision/ManifoldFactory.hpp">
 <area shape="rect" id="node1" title="Contains the algo namespace which contains the functions to detect a collision." alt="" coords="220,5,387,45"/>
-<area shape="rect" id="node2" href="$_collider_8hpp.html" title="Contains all the Colliders struct." alt="" coords="195,93,284,119"/>
+<area shape="rect" id="node2" href="$_collider_8hpp.html" title="Contains all the Colliders classes." alt="" coords="195,93,284,119"/>
 <area shape="rect" id="node4" href="$_manifold_8hpp.html" title="Contains the Manifold class." alt="" coords="5,167,100,192"/>
 <area shape="rect" id="node9" href="$_transform_8hpp.html" title="Contains the Transform struct." alt="" coords="304,167,409,192"/>
 <area shape="rect" id="node10" href="$_simplex_8hpp.html" title="Contains the Simplex struct." alt="" coords="413,93,505,119"/>

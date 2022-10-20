@@ -1,5 +1,6 @@
 var classstw_1_1_solver =
 [
+    [ "Solver", "classstw_1_1_solver.html#a4658fb088d3fe6f9c5c1fd7f373b8267", null ],
     [ "~Solver", "classstw_1_1_solver.html#a0ba60c9e10735d9bf40a6e6fddbf0077", null ],
     [ "Solver", "classstw_1_1_solver.html#a2f3e6b3ede21bb9a5113b47e9ceef8d5", null ],
     [ "Solver", "classstw_1_1_solver.html#a01c2614516de47f03b48363d19e94560", null ],

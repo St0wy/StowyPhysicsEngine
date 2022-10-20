@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['radius_0',['radius',['../structstw_1_1_circle_collider.html#acd937c33702c39268a87dcefaf73bc26',1,'stw::CircleCollider']]],
+  ['radius_0',['radius',['../classstw_1_1_circle_collider.html#acd937c33702c39268a87dcefaf73bc26',1,'stw::CircleCollider']]],
   ['removecollisionbody_1',['RemoveCollisionBody',['../classstw_1_1_collision_world.html#ac896a471c11f388734bfbbed33904e90',1,'stw::CollisionWorld']]],
   ['removesolver_2',['RemoveSolver',['../classstw_1_1_collision_world.html#a02ab3397daeb7de4ace6343db77be5df',1,'stw::CollisionWorld']]],
   ['resolvecollisions_3',['ResolveCollisions',['../classstw_1_1_collision_world.html#ad8550312e85291aeda9ca908900bb070',1,'stw::CollisionWorld']]],

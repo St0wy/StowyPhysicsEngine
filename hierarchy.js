@@ -1,13 +1,13 @@
 var hierarchy =
 [
     [ "stw::BroadPhaseGrid", "classstw_1_1_broad_phase_grid.html", null ],
-    [ "stw::Collider", "structstw_1_1_collider.html", [
-      [ "stw::AabbCollider", "structstw_1_1_aabb_collider.html", null ],
-      [ "stw::BoxCollider", "structstw_1_1_box_collider.html", null ],
-      [ "stw::CircleCollider", "structstw_1_1_circle_collider.html", null ]
+    [ "stw::Collider", "classstw_1_1_collider.html", [
+      [ "stw::AabbCollider", "classstw_1_1_aabb_collider.html", null ],
+      [ "stw::BoxCollider", "classstw_1_1_box_collider.html", null ],
+      [ "stw::CircleCollider", "classstw_1_1_circle_collider.html", null ]
     ] ],
     [ "stw::Collision", "structstw_1_1_collision.html", null ],
-    [ "stw::CollisionBody", "structstw_1_1_collision_body.html", [
+    [ "stw::CollisionBody", "classstw_1_1_collision_body.html", [
       [ "stw::Rigidbody", "structstw_1_1_rigidbody.html", null ]
     ] ],
     [ "stw::CollisionWorld", "classstw_1_1_collision_world.html", [

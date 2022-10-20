@@ -7,6 +7,6 @@ var searchData=
   ['findcircleaabbmanifold_4',['FindCircleAabbManifold',['../namespacestw_1_1algo.html#ac9dd96ea06ad27f91f72afdb79fc09a5',1,'stw::algo']]],
   ['findcircleboxmanifold_5',['FindCircleBoxManifold',['../namespacestw_1_1algo.html#a9f8f83c7e871deee77bf892df2b5c0e5',1,'stw::algo']]],
   ['findcirclecirclemanifold_6',['FindCircleCircleManifold',['../namespacestw_1_1algo.html#a8132887baa684c3b5481e0973b0beba2',1,'stw::algo']]],
-  ['findfurthestpoint_7',['FindFurthestPoint',['../structstw_1_1_collider.html#ab3edc363855ad87c4332622e39ae7703',1,'stw::Collider::FindFurthestPoint()'],['../structstw_1_1_box_collider.html#a4931944ee6b1807ee1cd57ad4e35fc01',1,'stw::BoxCollider::FindFurthestPoint()'],['../structstw_1_1_circle_collider.html#a1bb56084d61c3afc49a5918316bd7dad',1,'stw::CircleCollider::FindFurthestPoint()'],['../structstw_1_1_aabb_collider.html#a814a6af0bf1f10d04a693bafa29ea63a',1,'stw::AabbCollider::FindFurthestPoint()']]],
+  ['findfurthestpoint_7',['FindFurthestPoint',['../classstw_1_1_collider.html#ab3edc363855ad87c4332622e39ae7703',1,'stw::Collider::FindFurthestPoint()'],['../classstw_1_1_box_collider.html#a4931944ee6b1807ee1cd57ad4e35fc01',1,'stw::BoxCollider::FindFurthestPoint()'],['../classstw_1_1_circle_collider.html#a1bb56084d61c3afc49a5918316bd7dad',1,'stw::CircleCollider::FindFurthestPoint()'],['../classstw_1_1_aabb_collider.html#a814a6af0bf1f10d04a693bafa29ea63a',1,'stw::AabbCollider::FindFurthestPoint()']]],
   ['force_8',['Force',['../structstw_1_1_rigidbody.html#a7e52cd5fc55a45a3a43cc4c9b4850938',1,'stw::Rigidbody']]]
 ];

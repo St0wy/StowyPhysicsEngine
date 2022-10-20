@@ -3,7 +3,7 @@
 <area shape="rect" id="node2" href="$_rigidbody_8hpp.html" title="Contains the Rigidbody struct." alt="" coords="166,79,327,104"/>
 <area shape="rect" id="node3" href="$_collision_body_8hpp.html" title="Contains the CollisionBody struct." alt="" coords="159,152,334,177"/>
 <area shape="rect" id="node4" title=" " alt="" coords="99,225,178,251"/>
-<area shape="rect" id="node5" href="$_collider_8hpp.html" title="Contains all the Colliders struct." alt="" coords="202,225,291,251"/>
+<area shape="rect" id="node5" href="$_collider_8hpp.html" title="Contains all the Colliders classes." alt="" coords="202,225,291,251"/>
 <area shape="rect" id="node12" href="$_transform_8hpp.html" title="Contains the Transform struct." alt="" coords="379,299,485,324"/>
 <area shape="rect" id="node6" title=" " alt="" coords="5,299,56,324"/>
 <area shape="rect" id="node7" href="$_manifold_8hpp.html" title="Contains the Manifold class." alt="" coords="81,299,175,324"/>

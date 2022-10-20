@@ -14,7 +14,7 @@
 <area shape="rect" id="node9" href="$structstw_1_1_vector2.html#a6ae889efd824a466dc42b698cf20c057" title="Gets this vector normalized." alt="" coords="1072,416,1237,441"/>
 <area shape="rect" id="node10" href="$structstw_1_1_vector2.html#a1666bb4fd644da42acaed89accb2d7dd" title="Gets the magnitude of this vector." alt="" coords="1285,416,1445,441"/>
 <area shape="rect" id="node11" href="$structstw_1_1_vector2.html#a28bc8b748231d2be6e56ac3a869af1d3" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="1493,416,1673,441"/>
-<area shape="rect" id="node13" href="$structstw_1_1_collider.html#ab3edc363855ad87c4332622e39ae7703" title="Find the furthest point in the specified direction." alt="" coords="850,77,1021,117"/>
+<area shape="rect" id="node13" href="$classstw_1_1_collider.html#ab3edc363855ad87c4332622e39ae7703" title="Find the furthest point in the specified direction." alt="" coords="850,77,1021,117"/>
 <area shape="rect" id="node15" href="$namespacestw_1_1algo.html#a644f2a27fe45086686ce2a887e2f4a39" title="Line case for the NextSimplex function." alt="" coords="631,491,735,516"/>
 <area shape="rect" id="node18" href="$structstw_1_1_simplex.html#a07da8e8e08501b9ddc2babbbfcdbbc03" title="Gets the size of the array." alt="" coords="620,441,747,467"/>
 <area shape="rect" id="node19" href="$namespacestw_1_1algo.html#a1a3ec5804472e721b9aaa83cc5f827de" title="Triangle case for the NextSimplex function." alt="" coords="621,392,746,417"/>

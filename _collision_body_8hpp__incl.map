@@ -1,7 +1,7 @@
 <map id="include/collision/CollisionBody.hpp" name="include/collision/CollisionBody.hpp">
 <area shape="rect" id="node1" title="Contains the CollisionBody struct." alt="" coords="163,5,330,45"/>
 <area shape="rect" id="node2" title=" " alt="" coords="99,93,178,119"/>
-<area shape="rect" id="node3" href="$_collider_8hpp.html" title="Contains all the Colliders struct." alt="" coords="202,93,291,119"/>
+<area shape="rect" id="node3" href="$_collider_8hpp.html" title="Contains all the Colliders classes." alt="" coords="202,93,291,119"/>
 <area shape="rect" id="node10" href="$_transform_8hpp.html" title="Contains the Transform struct." alt="" coords="379,167,485,192"/>
 <area shape="rect" id="node4" title=" " alt="" coords="5,167,56,192"/>
 <area shape="rect" id="node5" href="$_manifold_8hpp.html" title="Contains the Manifold class." alt="" coords="81,167,175,192"/>

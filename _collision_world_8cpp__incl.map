@@ -8,7 +8,7 @@
 <area shape="rect" id="node5" href="$_collision_body_8hpp.html" title="Contains the CollisionBody struct." alt="" coords="230,299,354,324"/>
 <area shape="rect" id="node15" href="$_solver_8hpp.html" title="Contains the Solver struct." alt="" coords="222,152,365,177"/>
 <area shape="rect" id="node6" title=" " alt="" coords="145,372,223,397"/>
-<area shape="rect" id="node7" href="$_collider_8hpp.html" title="Contains all the Colliders struct." alt="" coords="247,372,337,397"/>
+<area shape="rect" id="node7" href="$_collider_8hpp.html" title="Contains all the Colliders classes." alt="" coords="247,372,337,397"/>
 <area shape="rect" id="node14" href="$_transform_8hpp.html" title="Contains the Transform struct." alt="" coords="393,445,498,471"/>
 <area shape="rect" id="node8" title=" " alt="" coords="147,445,197,471"/>
 <area shape="rect" id="node9" href="$_manifold_8hpp.html" title="Contains the Manifold class." alt="" coords="222,445,317,471"/>

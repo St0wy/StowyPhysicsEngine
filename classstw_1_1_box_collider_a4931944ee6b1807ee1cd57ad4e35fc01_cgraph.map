@@ -1,0 +1,6 @@
+<map id="stw::BoxCollider::FindFurthestPoint" name="stw::BoxCollider::FindFurthestPoint">
+<area shape="rect" id="node1" title="Find the furthest point in the specified direction." alt="" coords="5,5,199,45"/>
+<area shape="rect" id="node2" href="$classstw_1_1_box_collider.html#aa3cbcad5c3f7fa165612fcbd10f6a4fc" title="Gets the transformed vertices of the box." alt="" coords="247,5,461,45"/>
+<area shape="rect" id="node3" href="$structstw_1_1_vector2.html#a4159cd5c107accb4a35790387de1d419" title="Rotates this vector around the provided axis." alt="" coords="509,13,688,38"/>
+<area shape="rect" id="node4" href="$structstw_1_1_vector2.html#a09ddff810d26983711ee1879c5881a54" title=" " alt="" coords="736,13,881,38"/>
+</map>

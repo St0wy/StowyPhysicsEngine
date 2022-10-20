@@ -1,8 +1,8 @@
 <map id="stw::Collision" name="stw::Collision">
 <area shape="rect" id="node1" title="Struct representing a collision." alt="" coords="183,328,282,353"/>
-<area shape="rect" id="node2" href="$structstw_1_1_collision_body.html" title="A body that can receive collisions." alt="" coords="113,225,240,251"/>
+<area shape="rect" id="node2" href="$classstw_1_1_collision_body.html" title="A body that can receive collisions." alt="" coords="113,225,240,251"/>
 <area shape="rect" id="node3" href="$structstw_1_1_transform.html" title="A transform of an object. Contains position, scale and rotation." alt="" coords="5,123,113,148"/>
 <area shape="rect" id="node4" href="$structstw_1_1_vector2.html" title="A struct representing a 2D Vector." alt="" coords="136,5,231,31"/>
-<area shape="rect" id="node5" href="$structstw_1_1_collider.html" title="A pure virtual struct that represents colliders." alt="" coords="137,123,229,148"/>
+<area shape="rect" id="node5" href="$classstw_1_1_collider.html" title="A pure virtual struct that represents colliders." alt="" coords="137,123,229,148"/>
 <area shape="rect" id="node6" href="$structstw_1_1_manifold.html" title=" " alt="" coords="239,174,338,199"/>
 </map>

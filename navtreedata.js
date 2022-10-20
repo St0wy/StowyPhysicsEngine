@@ -52,7 +52,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_broad_phase_grid_8cpp.html",
-"structstw_1_1_collider.html#a3bc1cdceb91b3979106b37da5952231f"
+"classstw_1_1_impulse_solver.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
