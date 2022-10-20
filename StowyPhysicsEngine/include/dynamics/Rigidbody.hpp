@@ -106,9 +106,9 @@ struct Rigidbody : CollisionBody
     [[nodiscard]] float DynamicFriction() const;
     /**
      * \brief Sets the dynamic friction of this body.
-     * \param dynamicFriciton The new dynamic friction.
+     * \param dynamicFriction The new dynamic friction.
      */
-    void SetDynamicFriciton(float dynamicFriciton);
+    void SetDynamicFriction(float dynamicFriction);
 
     /**
      * \brief Gets the restitution of this body. Can be seen as the "Bounciness".

@@ -21,7 +21,7 @@ DemoBallsAndCube::DemoBallsAndCube()
 {
 	_windowSize = CAM_SIZE;
 	_window.setView(DEFAULT_VIEW);
-	_window.setFramerateLimit(50);
+	//_window.setFramerateLimit(50);
 
 	_impulseSolver = std::make_unique<stw::ImpulseSolver>();
 	_smoothPositionSolver = std::make_unique<stw::SmoothPositionSolver>();
@@ -52,9 +52,6 @@ void DemoBallsAndCube::Run()
 	ground->RigidBody()->SetIsKinematic(false);
 	ground->RigidBody()->SetTakesGravity(false);
 	ground->RigidBody()->SetMass(std::numeric_limits<float>::max());
-	ground->Shape().setFillColor(sf::Color::Transparent);
-	ground->Shape().setOutlineColor(sf::Color::Cyan);
-	ground->Shape().setOutlineThickness(0.5f);
 	_entities.push_back(std::move(ground));
 
 	std::cout << "Starting main loop\n";
@@ -94,19 +91,17 @@ void DemoBallsAndCube::Run()
 		{
 			if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
 			{
-				auto posi = sf::Mouse::getPosition(_window);
-				auto posf = _window.mapPixelToCoords(posi);
-				auto physicsPos = SfmlPosToSpe(posf);
-				std::cout << "Spawn pos : " << physicsPos << "\n";
+				auto positionInt = sf::Mouse::getPosition(_window);
+				auto positionFloat = _window.mapPixelToCoords(positionInt);
+				auto physicsPos = SfmlPosToSpe(positionFloat);
 				_entities.push_back(
 					std::make_unique<Circle>(_world, 1.0f, physicsPos));
 			}
 			else if (sf::Mouse::isButtonPressed(sf::Mouse::Right))
 			{
-				auto posi = sf::Mouse::getPosition(_window);
-				auto posf = _window.mapPixelToCoords(posi);
-				auto physicsPos = SfmlPosToSpe(posf);
-				std::cout << "Spawn pos : " << physicsPos << "\n";
+				auto positionInt = sf::Mouse::getPosition(_window);
+				auto positionFloat = _window.mapPixelToCoords(positionInt);
+				auto physicsPos = SfmlPosToSpe(positionFloat);
 				_entities.push_back(
 					std::make_unique<AabbBox>(_world, stw::Vector2(2.f, 2.f), physicsPos, true));
 			}
@@ -118,7 +113,7 @@ void DemoBallsAndCube::Run()
 		// Step the physics
 		_world.Step(deltaTime.asSeconds());
 
-		// Update the entites
+		// Update the entities
 		for (const auto& entity : _entities)
 		{
 			entity->Update(deltaTime);

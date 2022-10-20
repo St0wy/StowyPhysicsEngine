@@ -99,9 +99,9 @@ float Rigidbody::DynamicFriction() const
 	return _dynamicFriction;
 }
 
-void Rigidbody::SetDynamicFriciton(const float dynamicFriciton)
+void Rigidbody::SetDynamicFriction(const float dynamicFriction)
 {
-	_dynamicFriction = dynamicFriciton;
+	_dynamicFriction = dynamicFriction;
 }
 
 float Rigidbody::Restitution() const

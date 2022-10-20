@@ -115,7 +115,7 @@ public:
 /**
  * \brief A rotatable box collider.
  */
-class BoxCollider final : Collider
+class BoxCollider final : public Collider
 {
 public:
 	/**
@@ -177,7 +177,7 @@ public:
 /**
  * \brief A circle collider.
  */
-class CircleCollider final : Collider
+class CircleCollider final : public Collider
 {
 public:
 	/**
@@ -216,7 +216,7 @@ public:
 /**
  * \brief An Axis Aligned Bounding Box collider.
  */
-class AabbCollider final : Collider
+class AabbCollider final : public Collider
 {
 public:
 	/**
