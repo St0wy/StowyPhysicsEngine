@@ -8,7 +8,7 @@ var structstw_1_1_rigidbody =
     [ "InvMass", "structstw_1_1_rigidbody.html#a7a408e8f5f904a77bf1d90f9c8965e81", null ],
     [ "Mass", "structstw_1_1_rigidbody.html#a0792d346999e7eeba6b8051b367ea23a", null ],
     [ "Restitution", "structstw_1_1_rigidbody.html#a0c45fa92044ea1725aeda89bbf9b9568", null ],
-    [ "SetDynamicFriciton", "structstw_1_1_rigidbody.html#a0711b20b05977bba05aca33d9cdbdbc5", null ],
+    [ "SetDynamicFriction", "structstw_1_1_rigidbody.html#af62870dec4045c2f7c944adbbff95217", null ],
     [ "SetForce", "structstw_1_1_rigidbody.html#a4186403d66c10b08732300d1f8281d2b", null ],
     [ "SetGravityForce", "structstw_1_1_rigidbody.html#a6cd869a95abd2d0dfee06e5adfe8145c", null ],
     [ "SetMass", "structstw_1_1_rigidbody.html#abe29540422182b63f29e8fce02233788", null ],

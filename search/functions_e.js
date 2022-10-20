@@ -5,7 +5,7 @@ var searchData=
   ['sendcollisioncallbacks_2',['SendCollisionCallbacks',['../classstw_1_1_collision_world.html#a0c8143a417be43afdb6343511272d551',1,'stw::CollisionWorld']]],
   ['setcollider_3',['SetCollider',['../classstw_1_1_collision_body.html#a0760519edc9e32ef3e355fcc73792299',1,'stw::CollisionBody']]],
   ['setcollisioncallback_4',['SetCollisionCallback',['../classstw_1_1_collision_world.html#ae6c807237816c87a2ce43ef3926b37ac',1,'stw::CollisionWorld::SetCollisionCallback()'],['../classstw_1_1_collision_body.html#a501669110784f8e70114be445c9d6fb1',1,'stw::CollisionBody::SetCollisionCallback()']]],
-  ['setdynamicfriciton_5',['SetDynamicFriciton',['../structstw_1_1_rigidbody.html#a0711b20b05977bba05aca33d9cdbdbc5',1,'stw::Rigidbody']]],
+  ['setdynamicfriction_5',['SetDynamicFriction',['../structstw_1_1_rigidbody.html#af62870dec4045c2f7c944adbbff95217',1,'stw::Rigidbody']]],
   ['setforce_6',['SetForce',['../structstw_1_1_rigidbody.html#a4186403d66c10b08732300d1f8281d2b',1,'stw::Rigidbody']]],
   ['setgravityforce_7',['SetGravityForce',['../structstw_1_1_rigidbody.html#a6cd869a95abd2d0dfee06e5adfe8145c',1,'stw::Rigidbody']]],
   ['setiskinematic_8',['SetIsKinematic',['../classstw_1_1_collision_body.html#aa8746754175acf9ef8b8fe9dfe045e8f',1,'stw::CollisionBody']]],

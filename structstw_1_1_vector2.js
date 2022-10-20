@@ -1,7 +1,7 @@
 var structstw_1_1_vector2 =
 [
-    [ "Vector2", "structstw_1_1_vector2.html#a09ddff810d26983711ee1879c5881a54", null ],
-    [ "Vector2", "structstw_1_1_vector2.html#acafdffc1c5422531d9dc589df65f1a2c", null ],
+    [ "Vector2", "structstw_1_1_vector2.html#a8dc5ab9810a68be8a054a418cc34f408", null ],
+    [ "Vector2", "structstw_1_1_vector2.html#aaf4fd1b8f99fcada83e84ee5fed18d68", null ],
     [ "Angle", "structstw_1_1_vector2.html#a8dcbdc550226dff11e0a1d91939f3062", null ],
     [ "Distance", "structstw_1_1_vector2.html#a51a8c44b28f91a51a2b500fbf7a290aa", null ],
     [ "Dot", "structstw_1_1_vector2.html#a87dfc954795a3f9e2507b013f22bc77b", null ],
