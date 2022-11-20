@@ -30,6 +30,8 @@ public:
     CollisionWorld();
     CollisionWorld(std::unordered_map<std::uint64_t, CollisionBody*> bodies, std::vector<Solver*> solvers);
 
+    bool useSpacePartitioning = true;
+
     /**
      * \brief Adds a collision body to the world.
      * \param body Body to add.
@@ -79,6 +81,8 @@ public:
      * \param deltaTime Time elapsed since the last frame.
      */
     void ResolveCollisions(float deltaTime);
+
+    void FindCollisions(std::uint64_t firstId, std::uint64_t secondId, std::vector<Collision>& collisions, std::vector<Collision>& triggers);
 
 protected:
     std::unordered_map<std::uint64_t, CollisionBody*> _bodies;
