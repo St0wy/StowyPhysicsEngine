@@ -1,6 +1,6 @@
 <map id="include/collision/CollisionWorld.hpp" name="include/collision/CollisionWorld.hpp">
-<area shape="rect" id="node1" title="Contains the CollisionWorld class." alt="" coords="139,5,305,45"/>
-<area shape="rect" id="node2" href="$_dynamics_world_8hpp.html" title="Contains the DynamicsWorld class." alt="" coords="23,93,205,133"/>
-<area shape="rect" id="node4" href="$_collision_world_8cpp.html" title=" " alt="" coords="229,101,431,126"/>
-<area shape="rect" id="node3" href="$_dynamics_world_8cpp.html" title=" " alt="" coords="5,181,223,207"/>
+<area shape="rect" id="node1" title="Contains the CollisionWorld class." coords="139,5,305,45"/>
+<area shape="rect" id="node2" href="$_dynamics_world_8hpp.html" title="Contains the DynamicsWorld class." coords="23,93,205,133"/>
+<area shape="rect" id="node4" href="$_collision_world_8cpp.html" title=" " coords="229,101,431,126"/>
+<area shape="rect" id="node3" href="$_dynamics_world_8cpp.html" title=" " coords="5,181,223,207"/>
 </map>

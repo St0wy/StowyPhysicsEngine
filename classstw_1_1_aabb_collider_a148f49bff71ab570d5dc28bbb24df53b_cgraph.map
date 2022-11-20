@@ -1,4 +1,4 @@
 <map id="stw::AabbCollider::TestCollision" name="stw::AabbCollider::TestCollision">
-<area shape="rect" id="node1" title="Tests the collision against a generic collider." alt="" coords="5,5,133,45"/>
-<area shape="rect" id="node2" href="$classstw_1_1_collider.html#ae0b50314f782e269beee2795e847de18" title="Tests the collision against a generic collider." alt="" coords="181,13,355,38"/>
+<area shape="rect" id="node1" title="Tests the collision against a generic collider." coords="5,5,133,45"/>
+<area shape="rect" id="node2" href="$classstw_1_1_collider.html#ae0b50314f782e269beee2795e847de18" title="Tests the collision against a generic collider." coords="181,13,355,38"/>
 </map>

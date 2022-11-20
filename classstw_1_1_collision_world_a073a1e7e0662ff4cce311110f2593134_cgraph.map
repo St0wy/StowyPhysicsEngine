@@ -1,0 +1,7 @@
+<map id="stw::CollisionWorld::FindCollisions" name="stw::CollisionWorld::FindCollisions">
+<area shape="rect" id="node1" title=" " coords="5,85,136,125"/>
+<area shape="rect" id="node2" href="$classstw_1_1_collision_body.html#a160a77fa3277c75494b05655497e95f4" title="Gets the collider of the body." coords="195,5,347,31"/>
+<area shape="rect" id="node3" href="$classstw_1_1_collision_body.html#a1db1adeb5b419542ac981e0bd9109df4" title="A boolean saying if the collider is a trigger collider. This means that it will not have a collision ..." coords="207,55,334,95"/>
+<area shape="rect" id="node4" href="$classstw_1_1_collider.html#ae0b50314f782e269beee2795e847de18" title="Tests the collision against a generic collider." coords="184,120,357,145"/>
+<area shape="rect" id="node5" href="$classstw_1_1_collision_body.html#aa9187db8deaf257f511981cd2da27e64" title="Gets the transform of the body." coords="207,170,334,210"/>
+</map>

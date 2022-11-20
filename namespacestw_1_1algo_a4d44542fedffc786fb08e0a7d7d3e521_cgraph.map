@@ -1,13 +1,13 @@
 <map id="stw::algo::Epa" name="stw::algo::Epa">
-<area shape="rect" id="node1" title="Find the manifold from the last simplex of the GJK algorithm." alt="" coords="5,153,107,179"/>
-<area shape="rect" id="node2" href="$structstw_1_1_simplex.html#a546969e8fbffd2f754cfc82ebc54a637" title=" " alt="" coords="203,5,337,31"/>
-<area shape="rect" id="node3" href="$structstw_1_1_vector2.html#a87dfc954795a3f9e2507b013f22bc77b" title="Computes the dot product between this and other." alt="" coords="210,55,330,80"/>
-<area shape="rect" id="node4" href="$structstw_1_1_manifold.html#aa25b3e0ded86b9102e1d65d7764ae98c" title="Gets an empty manifold with no collisions." alt="" coords="200,104,340,129"/>
-<area shape="rect" id="node5" href="$structstw_1_1_simplex.html#afd6a09bea27afceb1a617b4c7ea2f219" title=" " alt="" coords="209,153,331,179"/>
-<area shape="rect" id="node6" href="$structstw_1_1_vector2.html#ad522c8d8dc6ab5d963cd5268f29f4ddb" title="Computes the perpendicular vector in &#45;90 degrees." alt="" coords="155,203,385,228"/>
-<area shape="rect" id="node7" href="$structstw_1_1_vector2.html#a6ae889efd824a466dc42b698cf20c057" title="Gets this vector normalized." alt="" coords="187,252,353,277"/>
-<area shape="rect" id="node10" href="$namespacestw_1_1algo.html#aa6a4bceafedfce73058ff83c2e81c4cb" title="Support function of the GJK algorithm." alt="" coords="208,303,332,328"/>
-<area shape="rect" id="node8" href="$structstw_1_1_vector2.html#a1666bb4fd644da42acaed89accb2d7dd" title="Gets the magnitude of this vector." alt="" coords="439,249,599,275"/>
-<area shape="rect" id="node9" href="$structstw_1_1_vector2.html#a28bc8b748231d2be6e56ac3a869af1d3" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="652,249,832,275"/>
-<area shape="rect" id="node11" href="$classstw_1_1_collider.html#ab3edc363855ad87c4332622e39ae7703" title="Find the furthest point in the specified direction." alt="" coords="433,299,604,339"/>
+<area shape="rect" id="node1" title="Find the manifold from the last simplex of the GJK algorithm." coords="5,153,107,179"/>
+<area shape="rect" id="node2" href="$structstw_1_1_simplex.html#a546969e8fbffd2f754cfc82ebc54a637" title=" " coords="203,5,337,31"/>
+<area shape="rect" id="node3" href="$structstw_1_1_vector2.html#a87dfc954795a3f9e2507b013f22bc77b" title="Computes the dot product between this and other." coords="210,55,330,80"/>
+<area shape="rect" id="node4" href="$structstw_1_1_manifold.html#aa25b3e0ded86b9102e1d65d7764ae98c" title="Gets an empty manifold with no collisions." coords="200,104,340,129"/>
+<area shape="rect" id="node5" href="$structstw_1_1_simplex.html#afd6a09bea27afceb1a617b4c7ea2f219" title=" " coords="209,153,331,179"/>
+<area shape="rect" id="node6" href="$structstw_1_1_vector2.html#ad522c8d8dc6ab5d963cd5268f29f4ddb" title="Computes the perpendicular vector in &#45;90 degrees." coords="155,203,385,228"/>
+<area shape="rect" id="node7" href="$structstw_1_1_vector2.html#a6ae889efd824a466dc42b698cf20c057" title="Gets this vector normalized." coords="187,252,353,277"/>
+<area shape="rect" id="node10" href="$namespacestw_1_1algo.html#aa6a4bceafedfce73058ff83c2e81c4cb" title="Support function of the GJK algorithm." coords="208,303,332,328"/>
+<area shape="rect" id="node8" href="$structstw_1_1_vector2.html#a1666bb4fd644da42acaed89accb2d7dd" title="Gets the magnitude of this vector." coords="439,249,599,275"/>
+<area shape="rect" id="node9" href="$structstw_1_1_vector2.html#a28bc8b748231d2be6e56ac3a869af1d3" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." coords="652,249,832,275"/>
+<area shape="rect" id="node11" href="$classstw_1_1_collider.html#ab3edc363855ad87c4332622e39ae7703" title="Find the furthest point in the specified direction." coords="433,299,604,339"/>
 </map>

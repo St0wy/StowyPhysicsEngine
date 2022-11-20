@@ -1,7 +1,7 @@
 <map id="include/dynamics/Rigidbody.hpp" name="include/dynamics/Rigidbody.hpp">
-<area shape="rect" id="node1" title="Contains the Rigidbody struct." alt="" coords="217,5,424,31"/>
-<area shape="rect" id="node2" href="$_dynamics_world_8hpp.html" title="Contains the DynamicsWorld class." alt="" coords="23,79,205,119"/>
-<area shape="rect" id="node4" href="$_rigidbody_8cpp.html" title=" " alt="" coords="229,86,412,111"/>
-<area shape="rect" id="node5" href="$_solver_8cpp.html" title=" " alt="" coords="436,86,600,111"/>
-<area shape="rect" id="node3" href="$_dynamics_world_8cpp.html" title=" " alt="" coords="5,167,223,192"/>
+<area shape="rect" id="node1" title="Contains the Rigidbody struct." coords="217,5,424,31"/>
+<area shape="rect" id="node2" href="$_dynamics_world_8hpp.html" title="Contains the DynamicsWorld class." coords="23,79,205,119"/>
+<area shape="rect" id="node4" href="$_rigidbody_8cpp.html" title=" " coords="229,86,412,111"/>
+<area shape="rect" id="node5" href="$_solver_8cpp.html" title=" " coords="436,86,600,111"/>
+<area shape="rect" id="node3" href="$_dynamics_world_8cpp.html" title=" " coords="5,167,223,192"/>
 </map>

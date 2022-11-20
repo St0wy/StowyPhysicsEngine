@@ -1,4 +1,4 @@
 <map id="stw::DynamicsWorld" name="stw::DynamicsWorld">
-<area shape="rect" id="node1" title="A world with dynamics in it." alt="" coords="5,79,144,104"/>
-<area shape="rect" id="node2" href="$classstw_1_1_collision_world.html" title="Represents a world where collisions can happen. It does not have dynamics, for this you will need the..." alt="" coords="9,5,140,31"/>
+<area shape="rect" id="node1" title="A world with dynamics in it." coords="5,79,144,104"/>
+<area shape="rect" id="node2" href="$classstw_1_1_collision_world.html" title="Represents a world where collisions can happen. It does not have dynamics, for this you will need the..." coords="9,5,140,31"/>
 </map>

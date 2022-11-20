@@ -1,4 +1,4 @@
 <map id="stw::algo::Support" name="stw::algo::Support">
-<area shape="rect" id="node1" title="Support function of the GJK algorithm." alt="" coords="5,13,129,38"/>
-<area shape="rect" id="node2" href="$classstw_1_1_collider.html#ab3edc363855ad87c4332622e39ae7703" title="Find the furthest point in the specified direction." alt="" coords="177,5,348,45"/>
+<area shape="rect" id="node1" title="Support function of the GJK algorithm." coords="5,13,129,38"/>
+<area shape="rect" id="node2" href="$classstw_1_1_collider.html#ab3edc363855ad87c4332622e39ae7703" title="Find the furthest point in the specified direction." coords="177,5,348,45"/>
 </map>

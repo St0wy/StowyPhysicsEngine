@@ -1,5 +1,5 @@
 <map id="stw::Vector2::NewMagnitude" name="stw::Vector2::NewMagnitude">
-<area shape="rect" id="node1" title="Sets the magnitude of this vector." alt="" coords="5,5,192,31"/>
-<area shape="rect" id="node2" href="$structstw_1_1_vector2.html#a1666bb4fd644da42acaed89accb2d7dd" title="Gets the magnitude of this vector." alt="" coords="240,5,400,31"/>
-<area shape="rect" id="node3" href="$structstw_1_1_vector2.html#a28bc8b748231d2be6e56ac3a869af1d3" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="448,5,628,31"/>
+<area shape="rect" id="node1" title="Sets the magnitude of this vector." coords="5,5,192,31"/>
+<area shape="rect" id="node2" href="$structstw_1_1_vector2.html#a1666bb4fd644da42acaed89accb2d7dd" title="Gets the magnitude of this vector." coords="240,5,400,31"/>
+<area shape="rect" id="node3" href="$structstw_1_1_vector2.html#a28bc8b748231d2be6e56ac3a869af1d3" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." coords="448,5,628,31"/>
 </map>

@@ -1,11 +1,12 @@
 <map id="stw::CollisionWorld::ResolveCollisions" name="stw::CollisionWorld::ResolveCollisions">
-<area shape="rect" id="node1" title="Resolves all the collisions that happened in this world." alt="" coords="5,215,136,255"/>
-<area shape="rect" id="node2" href="$classstw_1_1_collision_body.html#a160a77fa3277c75494b05655497e95f4" title="Gets the collider of the body." alt="" coords="195,5,347,31"/>
-<area shape="rect" id="node3" href="$classstw_1_1_broad_phase_grid.html#a845369fa1fa33a506043b4d141ee8469" title="Find all the pair of objects that are in the same cell. Doesn&#39;t contain any duplicates." alt="" coords="199,55,343,95"/>
-<area shape="rect" id="node4" href="$classstw_1_1_collision_body.html#a1db1adeb5b419542ac981e0bd9109df4" title="A boolean saying if the collider is a trigger collider. This means that it will not have a collision ..." alt="" coords="207,119,334,159"/>
-<area shape="rect" id="node5" href="$classstw_1_1_collision_world.html#a0c8143a417be43afdb6343511272d551" title="Calls the callbacks of all the bodies in each collisions." alt="" coords="189,183,353,223"/>
-<area shape="rect" id="node6" href="$classstw_1_1_collision_world.html#ae287806c95edcea6ef1a80b5d7f27217" title="Solves the collisions with the provided solvers." alt="" coords="205,247,336,287"/>
-<area shape="rect" id="node7" href="$classstw_1_1_collider.html#ae0b50314f782e269beee2795e847de18" title="Tests the collision against a generic collider." alt="" coords="184,312,357,337"/>
-<area shape="rect" id="node8" href="$classstw_1_1_collision_body.html#aa9187db8deaf257f511981cd2da27e64" title="Gets the transform of the body." alt="" coords="207,362,334,402"/>
-<area shape="rect" id="node9" href="$classstw_1_1_broad_phase_grid.html#ad81da4c7d00140b06fee427ef1448b30" title="Updates the layout of the grid." alt="" coords="199,426,343,466"/>
+<area shape="rect" id="node1" title="Resolves all the collisions that happened in this world." coords="5,213,136,253"/>
+<area shape="rect" id="node2" href="$classstw_1_1_collision_world.html#a073a1e7e0662ff4cce311110f2593134" title=" " coords="201,85,331,125"/>
+<area shape="rect" id="node7" href="$classstw_1_1_broad_phase_grid.html#a845369fa1fa33a506043b4d141ee8469" title="Find all the pair of objects that are in the same cell. Doesn&#39;t contain any duplicates." coords="194,149,338,189"/>
+<area shape="rect" id="node8" href="$classstw_1_1_collision_world.html#a0c8143a417be43afdb6343511272d551" title="Calls the callbacks of all the bodies in each collisions." coords="184,213,348,253"/>
+<area shape="rect" id="node9" href="$classstw_1_1_collision_world.html#ae287806c95edcea6ef1a80b5d7f27217" title="Solves the collisions with the provided solvers." coords="201,277,331,317"/>
+<area shape="rect" id="node10" href="$classstw_1_1_broad_phase_grid.html#ad81da4c7d00140b06fee427ef1448b30" title="Updates the layout of the grid." coords="194,341,338,381"/>
+<area shape="rect" id="node3" href="$classstw_1_1_collision_body.html#a160a77fa3277c75494b05655497e95f4" title="Gets the collider of the body." coords="407,5,559,31"/>
+<area shape="rect" id="node4" href="$classstw_1_1_collision_body.html#a1db1adeb5b419542ac981e0bd9109df4" title="A boolean saying if the collider is a trigger collider. This means that it will not have a collision ..." coords="419,55,546,95"/>
+<area shape="rect" id="node5" href="$classstw_1_1_collider.html#ae0b50314f782e269beee2795e847de18" title="Tests the collision against a generic collider." coords="396,120,569,145"/>
+<area shape="rect" id="node6" href="$classstw_1_1_collision_body.html#aa9187db8deaf257f511981cd2da27e64" title="Gets the transform of the body." coords="419,170,546,210"/>
 </map>

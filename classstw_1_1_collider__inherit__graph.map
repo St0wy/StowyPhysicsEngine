@@ -1,6 +1,6 @@
 <map id="stw::Collider" name="stw::Collider">
-<area shape="rect" id="node1" title="A pure virtual struct that represents colliders." alt="" coords="163,5,255,31"/>
-<area shape="rect" id="node2" href="$classstw_1_1_aabb_collider.html" title="An Axis Aligned Bounding Box collider." alt="" coords="5,79,128,104"/>
-<area shape="rect" id="node3" href="$classstw_1_1_box_collider.html" title="A rotatable box collider." alt="" coords="152,79,267,104"/>
-<area shape="rect" id="node4" href="$classstw_1_1_circle_collider.html" title="A circle collider." alt="" coords="291,79,416,104"/>
+<area shape="rect" id="node1" title="A pure virtual struct that represents colliders." coords="163,5,255,31"/>
+<area shape="rect" id="node2" href="$classstw_1_1_aabb_collider.html" title="An Axis Aligned Bounding Box collider." coords="5,79,128,104"/>
+<area shape="rect" id="node3" href="$classstw_1_1_box_collider.html" title="A rotatable box collider." coords="152,79,267,104"/>
+<area shape="rect" id="node4" href="$classstw_1_1_circle_collider.html" title="A circle collider." coords="291,79,416,104"/>
 </map>

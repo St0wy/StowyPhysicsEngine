@@ -105,8 +105,8 @@ Inheritance diagram for stw::DynamicsWorld:</div>
 <div class="dyncontent">
 <div class="center"><img src="classstw_1_1_dynamics_world__inherit__graph.png" border="0" usemap="#astw_1_1_dynamics_world_inherit__map" alt="Inheritance graph"/></div>
 <map name="astw_1_1_dynamics_world_inherit__map" id="astw_1_1_dynamics_world_inherit__map">
-<area shape="rect" title="A world with dynamics in it." alt="" coords="5,79,144,104"/>
-<area shape="rect" href="classstw_1_1_collision_world.html" title="Represents a world where collisions can happen. It does not have dynamics, for this you will need the..." alt="" coords="9,5,140,31"/>
+<area shape="rect" title="A world with dynamics in it." coords="5,79,144,104"/>
+<area shape="rect" href="classstw_1_1_collision_world.html" title="Represents a world where collisions can happen. It does not have dynamics, for this you will need the..." coords="9,5,140,31"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -114,9 +114,9 @@ Collaboration diagram for stw::DynamicsWorld:</div>
 <div class="dyncontent">
 <div class="center"><img src="classstw_1_1_dynamics_world__coll__graph.png" border="0" usemap="#astw_1_1_dynamics_world_coll__map" alt="Collaboration graph"/></div>
 <map name="astw_1_1_dynamics_world_coll__map" id="astw_1_1_dynamics_world_coll__map">
-<area shape="rect" title="A world with dynamics in it." alt="" coords="8,168,147,193"/>
-<area shape="rect" href="classstw_1_1_collision_world.html" title="Represents a world where collisions can happen. It does not have dynamics, for this you will need the..." alt="" coords="12,93,143,119"/>
-<area shape="rect" href="classstw_1_1_broad_phase_grid.html" title="A grid in which the physical object are placed in. This is used to optimize performance by only check..." alt="" coords="5,5,149,31"/>
+<area shape="rect" title="A world with dynamics in it." coords="8,168,147,193"/>
+<area shape="rect" href="classstw_1_1_collision_world.html" title="Represents a world where collisions can happen. It does not have dynamics, for this you will need the..." coords="12,93,143,119"/>
+<area shape="rect" href="classstw_1_1_broad_phase_grid.html" title="A grid in which the physical object are placed in. This is used to optimize performance by only check..." coords="5,5,149,31"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -166,9 +166,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad8550312e85291aeda9ca908900bb070 inherit pub_methods_classstw_1_1_collision_world"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstw_1_1_collision_world.html#ad8550312e85291aeda9ca908900bb070">ResolveCollisions</a> (float deltaTime)</td></tr>
 <tr class="memdesc:ad8550312e85291aeda9ca908900bb070 inherit pub_methods_classstw_1_1_collision_world"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves all the collisions that happened in this world.  <a href="classstw_1_1_collision_world.html#ad8550312e85291aeda9ca908900bb070">More...</a><br /></td></tr>
 <tr class="separator:ad8550312e85291aeda9ca908900bb070 inherit pub_methods_classstw_1_1_collision_world"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a073a1e7e0662ff4cce311110f2593134 inherit pub_methods_classstw_1_1_collision_world"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstw_1_1_collision_world.html#a073a1e7e0662ff4cce311110f2593134">FindCollisions</a> (std::uint64_t firstId, std::uint64_t secondId, std::vector&lt; <a class="el" href="structstw_1_1_collision.html">Collision</a> &gt; &amp;collisions, std::vector&lt; <a class="el" href="structstw_1_1_collision.html">Collision</a> &gt; &amp;triggers)</td></tr>
+<tr class="separator:a073a1e7e0662ff4cce311110f2593134 inherit pub_methods_classstw_1_1_collision_world"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_classstw_1_1_collision_world"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classstw_1_1_collision_world')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classstw_1_1_collision_world.html">stw::CollisionWorld</a></td></tr>
+<tr class="memitem:aa2a998af56269030c9a9dd280bbc15bb inherit pub_attribs_classstw_1_1_collision_world"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstw_1_1_collision_world.html#aa2a998af56269030c9a9dd280bbc15bb">useSpacePartitioning</a> = true</td></tr>
+<tr class="separator:aa2a998af56269030c9a9dd280bbc15bb inherit pub_attribs_classstw_1_1_collision_world"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classstw_1_1_collision_world"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classstw_1_1_collision_world')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classstw_1_1_collision_world.html">stw::CollisionWorld</a></td></tr>
 <tr class="memitem:a12ef7527de24d2e9ae0f325bc63e1bfb inherit pro_attribs_classstw_1_1_collision_world"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::uint64_t, <a class="el" href="classstw_1_1_collision_body.html">CollisionBody</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstw_1_1_collision_world.html#a12ef7527de24d2e9ae0f325bc63e1bfb">_bodies</a></td></tr>
 <tr class="separator:a12ef7527de24d2e9ae0f325bc63e1bfb inherit pro_attribs_classstw_1_1_collision_world"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,10 +215,10 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classstw_1_1_dynamics_world_a56bf557e86080bcbd9ef07ef3c6ed35a_cgraph.png" border="0" usemap="#aclassstw_1_1_dynamics_world_a56bf557e86080bcbd9ef07ef3c6ed35a_cgraph" alt=""/></div>
 <map name="aclassstw_1_1_dynamics_world_a56bf557e86080bcbd9ef07ef3c6ed35a_cgraph" id="aclassstw_1_1_dynamics_world_a56bf557e86080bcbd9ef07ef3c6ed35a_cgraph">
-<area shape="rect" title="Adds a rigidbody in the world." alt="" coords="5,69,144,109"/>
-<area shape="rect" href="classstw_1_1_collision_world.html#ad437b2a6774d4641995b1d96c8218228" title="Adds a collision body to the world." alt="" coords="221,5,351,45"/>
-<area shape="rect" href="structstw_1_1_rigidbody.html#a6cd869a95abd2d0dfee06e5adfe8145c" title="Sets the gravity force." alt="" coords="200,69,372,109"/>
-<area shape="rect" href="structstw_1_1_rigidbody.html#a02984fcce62e110606f5b818a79ed216" title="Gets a boolean indicating whether this body takes gravity." alt="" coords="192,134,380,159"/>
+<area shape="rect" title="Adds a rigidbody in the world." coords="5,69,144,109"/>
+<area shape="rect" href="classstw_1_1_collision_world.html#ad437b2a6774d4641995b1d96c8218228" title="Adds a collision body to the world." coords="221,5,351,45"/>
+<area shape="rect" href="structstw_1_1_rigidbody.html#a6cd869a95abd2d0dfee06e5adfe8145c" title="Sets the gravity force." coords="200,69,372,109"/>
+<area shape="rect" href="structstw_1_1_rigidbody.html#a02984fcce62e110606f5b818a79ed216" title="Gets a boolean indicating whether this body takes gravity." coords="192,134,380,159"/>
 </map>
 </div>
 
@@ -318,18 +323,19 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classstw_1_1_dynamics_world_a291618fd7cfaabcd1ecb31d6b844a9c7_cgraph.png" border="0" usemap="#aclassstw_1_1_dynamics_world_a291618fd7cfaabcd1ecb31d6b844a9c7_cgraph" alt=""/></div>
 <map name="aclassstw_1_1_dynamics_world_a291618fd7cfaabcd1ecb31d6b844a9c7_cgraph" id="aclassstw_1_1_dynamics_world_a291618fd7cfaabcd1ecb31d6b844a9c7_cgraph">
-<area shape="rect" title="Steps the world." alt="" coords="5,151,144,191"/>
-<area shape="rect" href="classstw_1_1_dynamics_world.html#a576f8389fd291d1035cc5c5226bc38bb" title="Applies the gravity to all the rigidbody." alt="" coords="192,87,331,127"/>
-<area shape="rect" href="classstw_1_1_dynamics_world.html#abe4e5a659323191dcdf3244525fa3402" title="Moves all the rigidbodies." alt="" coords="192,151,331,191"/>
-<area shape="rect" href="classstw_1_1_collision_world.html#ad8550312e85291aeda9ca908900bb070" title="Resolves all the collisions that happened in this world." alt="" coords="196,215,327,255"/>
-<area shape="rect" href="classstw_1_1_collision_body.html#a160a77fa3277c75494b05655497e95f4" title="Gets the collider of the body." alt="" coords="389,5,541,31"/>
-<area shape="rect" href="classstw_1_1_broad_phase_grid.html#a845369fa1fa33a506043b4d141ee8469" title="Find all the pair of objects that are in the same cell. Doesn&#39;t contain any duplicates." alt="" coords="393,55,537,95"/>
-<area shape="rect" href="classstw_1_1_collision_body.html#a1db1adeb5b419542ac981e0bd9109df4" title="A boolean saying if the collider is a trigger collider. This means that it will not have a collision ..." alt="" coords="402,119,529,159"/>
-<area shape="rect" href="classstw_1_1_collision_world.html#a0c8143a417be43afdb6343511272d551" title="Calls the callbacks of all the bodies in each collisions." alt="" coords="383,183,547,223"/>
-<area shape="rect" href="classstw_1_1_collision_world.html#ae287806c95edcea6ef1a80b5d7f27217" title="Solves the collisions with the provided solvers." alt="" coords="400,247,531,287"/>
-<area shape="rect" href="classstw_1_1_collider.html#ae0b50314f782e269beee2795e847de18" title="Tests the collision against a generic collider." alt="" coords="379,312,552,337"/>
-<area shape="rect" href="classstw_1_1_collision_body.html#aa9187db8deaf257f511981cd2da27e64" title="Gets the transform of the body." alt="" coords="402,362,529,402"/>
-<area shape="rect" href="classstw_1_1_broad_phase_grid.html#ad81da4c7d00140b06fee427ef1448b30" title="Updates the layout of the grid." alt="" coords="393,426,537,466"/>
+<area shape="rect" title="Steps the world." coords="5,149,144,189"/>
+<area shape="rect" href="classstw_1_1_dynamics_world.html#a576f8389fd291d1035cc5c5226bc38bb" title="Applies the gravity to all the rigidbody." coords="192,85,331,125"/>
+<area shape="rect" href="classstw_1_1_dynamics_world.html#abe4e5a659323191dcdf3244525fa3402" title="Moves all the rigidbodies." coords="192,149,331,189"/>
+<area shape="rect" href="classstw_1_1_collision_world.html#ad8550312e85291aeda9ca908900bb070" title="Resolves all the collisions that happened in this world." coords="196,213,327,253"/>
+<area shape="rect" href="classstw_1_1_collision_world.html#a073a1e7e0662ff4cce311110f2593134" title=" " coords="395,85,526,125"/>
+<area shape="rect" href="classstw_1_1_broad_phase_grid.html#a845369fa1fa33a506043b4d141ee8469" title="Find all the pair of objects that are in the same cell. Doesn&#39;t contain any duplicates." coords="389,149,533,189"/>
+<area shape="rect" href="classstw_1_1_collision_world.html#a0c8143a417be43afdb6343511272d551" title="Calls the callbacks of all the bodies in each collisions." coords="379,213,543,253"/>
+<area shape="rect" href="classstw_1_1_collision_world.html#ae287806c95edcea6ef1a80b5d7f27217" title="Solves the collisions with the provided solvers." coords="395,277,526,317"/>
+<area shape="rect" href="classstw_1_1_broad_phase_grid.html#ad81da4c7d00140b06fee427ef1448b30" title="Updates the layout of the grid." coords="389,341,533,381"/>
+<area shape="rect" href="classstw_1_1_collision_body.html#a160a77fa3277c75494b05655497e95f4" title="Gets the collider of the body." coords="601,5,753,31"/>
+<area shape="rect" href="classstw_1_1_collision_body.html#a1db1adeb5b419542ac981e0bd9109df4" title="A boolean saying if the collider is a trigger collider. This means that it will not have a collision ..." coords="614,55,741,95"/>
+<area shape="rect" href="classstw_1_1_collider.html#ae0b50314f782e269beee2795e847de18" title="Tests the collision against a generic collider." coords="591,120,764,145"/>
+<area shape="rect" href="classstw_1_1_collision_body.html#aa9187db8deaf257f511981cd2da27e64" title="Gets the transform of the body." coords="614,170,741,210"/>
 </map>
 </div>
 

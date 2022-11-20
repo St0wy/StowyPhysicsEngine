@@ -1,4 +1,4 @@
 <map id="stw::Rigidbody::SetTakesGravity" name="stw::Rigidbody::SetTakesGravity">
-<area shape="rect" id="node1" title="Sets a boolean indicating whether this body takes gravity." alt="" coords="5,5,172,45"/>
-<area shape="rect" id="node2" href="$structstw_1_1_rigidbody.html#a6cd869a95abd2d0dfee06e5adfe8145c" title="Sets the gravity force." alt="" coords="220,5,392,45"/>
+<area shape="rect" id="node1" title="Sets a boolean indicating whether this body takes gravity." coords="5,5,172,45"/>
+<area shape="rect" id="node2" href="$structstw_1_1_rigidbody.html#a6cd869a95abd2d0dfee06e5adfe8145c" title="Sets the gravity force." coords="220,5,392,45"/>
 </map>

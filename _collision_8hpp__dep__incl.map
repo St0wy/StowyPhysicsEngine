@@ -1,9 +1,9 @@
 <map id="include/collision/Collision.hpp" name="include/collision/Collision.hpp">
-<area shape="rect" id="node1" title="Contains the Collision struct." alt="" coords="243,5,433,31"/>
-<area shape="rect" id="node2" href="$_solver_8hpp.html" title="Contains the Solver struct." alt="" coords="114,79,301,104"/>
-<area shape="rect" id="node6" href="$_collision_world_8cpp.html" title=" " alt="" coords="276,247,477,273"/>
-<area shape="rect" id="node7" href="$_solver_8cpp.html" title=" " alt="" coords="221,159,385,185"/>
-<area shape="rect" id="node3" href="$_collision_world_8hpp.html" title="Contains the CollisionWorld class." alt="" coords="31,152,197,192"/>
-<area shape="rect" id="node4" href="$_dynamics_world_8hpp.html" title="Contains the DynamicsWorld class." alt="" coords="23,240,205,280"/>
-<area shape="rect" id="node5" href="$_dynamics_world_8cpp.html" title=" " alt="" coords="5,328,223,353"/>
+<area shape="rect" id="node1" title="Contains the Collision struct." coords="243,5,433,31"/>
+<area shape="rect" id="node2" href="$_solver_8hpp.html" title="Contains the Solver struct." coords="114,79,301,104"/>
+<area shape="rect" id="node6" href="$_collision_world_8cpp.html" title=" " coords="276,247,477,273"/>
+<area shape="rect" id="node7" href="$_solver_8cpp.html" title=" " coords="221,159,385,185"/>
+<area shape="rect" id="node3" href="$_collision_world_8hpp.html" title="Contains the CollisionWorld class." coords="31,152,197,192"/>
+<area shape="rect" id="node4" href="$_dynamics_world_8hpp.html" title="Contains the DynamicsWorld class." coords="23,240,205,280"/>
+<area shape="rect" id="node5" href="$_dynamics_world_8cpp.html" title=" " coords="5,328,223,353"/>
 </map>

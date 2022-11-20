@@ -1,4 +1,4 @@
 <map id="stw::Vector2::RotateAround" name="stw::Vector2::RotateAround">
-<area shape="rect" id="node1" title="Rotates this vector around the provided axis." alt="" coords="5,5,184,31"/>
-<area shape="rect" id="node2" href="$structstw_1_1_vector2.html#a8dc5ab9810a68be8a054a418cc34f408" title=" " alt="" coords="232,5,377,31"/>
+<area shape="rect" id="node1" title="Rotates this vector around the provided axis." coords="5,5,184,31"/>
+<area shape="rect" id="node2" href="$structstw_1_1_vector2.html#a8dc5ab9810a68be8a054a418cc34f408" title=" " coords="232,5,377,31"/>
 </map>

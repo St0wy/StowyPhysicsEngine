@@ -1,4 +1,4 @@
 <map id="stw::SmoothPositionSolver" name="stw::SmoothPositionSolver">
-<area shape="rect" id="node1" title="A solver to smooth out collision with collider that are in a tower placement." alt="" coords="5,79,184,104"/>
-<area shape="rect" id="node2" href="$classstw_1_1_solver.html" title="Generic class for all solvers." alt="" coords="51,5,138,31"/>
+<area shape="rect" id="node1" title="A solver to smooth out collision with collider that are in a tower placement." coords="5,79,184,104"/>
+<area shape="rect" id="node2" href="$classstw_1_1_solver.html" title="Generic class for all solvers." coords="51,5,138,31"/>
 </map>
