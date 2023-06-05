@@ -1,5 +1,7 @@
 <map id="stw::AabbCollider" name="stw::AabbCollider">
-<area shape="rect" id="node1" title="An Axis Aligned Bounding Box collider." coords="5,168,128,193"/>
-<area shape="rect" id="node2" href="$classstw_1_1_collider.html" title="A pure virtual struct that represents colliders." coords="21,93,113,119"/>
-<area shape="rect" id="node3" href="$structstw_1_1_vector2.html" title="A struct representing a 2D Vector." coords="19,5,114,31"/>
+<area shape="rect" id="Node000001" title="An Axis Aligned Bounding Box collider." alt="" coords="5,169,127,195"/>
+<area shape="rect" id="Node000002" href="$classstw_1_1_collider.html" title="A pure virtual struct that represents colliders." alt="" coords="20,94,112,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,135,69,169,63,169,63,135"/>
+<area shape="rect" id="Node000003" href="$structstw_1_1_vector2.html" title="A struct representing a 2D Vector." alt="" coords="19,5,113,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="69,46,69,94,63,94,63,46"/>
 </map>

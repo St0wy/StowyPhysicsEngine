@@ -1,9 +1,17 @@
 <map id="stw::algo::FindCircleCircleManifold" name="stw::algo::FindCircleCircleManifold">
-<area shape="rect" id="node1" title="Finds the collision manifold between A and B." coords="5,99,176,139"/>
-<area shape="rect" id="node2" href="$structstw_1_1_manifold.html#aa25b3e0ded86b9102e1d65d7764ae98c" title="Gets an empty manifold with no collisions." coords="247,5,387,31"/>
-<area shape="rect" id="node3" href="$structstw_1_1_vector2.html#a1666bb4fd644da42acaed89accb2d7dd" title="Gets the magnitude of this vector." coords="459,156,619,181"/>
-<area shape="rect" id="node5" href="$structstw_1_1_vector2.html#a16508fe9c7290034a1bc1d0c3848cfbb" title="Gets the biggest component of this vector." coords="251,107,383,132"/>
-<area shape="rect" id="node6" href="$structstw_1_1_vector2.html#aedf4bca8d27b146ea26914945ea746d0" title="Sets the magnitude of this vector." coords="224,156,411,181"/>
-<area shape="rect" id="node7" href="$structstw_1_1_vector2.html#a6ae889efd824a466dc42b698cf20c057" title="Gets this vector normalized." coords="235,205,400,231"/>
-<area shape="rect" id="node4" href="$structstw_1_1_vector2.html#a28bc8b748231d2be6e56ac3a869af1d3" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." coords="667,156,847,181"/>
+<area shape="rect" id="Node000001" title="Finds the collision manifold between A and B." alt="" coords="5,99,175,140"/>
+<area shape="rect" id="Node000002" href="$structstw_1_1_manifold.html#aa25b3e0ded86b9102e1d65d7764ae98c" title="Gets an empty manifold with no collisions." alt="" coords="246,5,386,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,96,222,48,257,34,259,39,224,53,129,101"/>
+<area shape="rect" id="Node000003" href="$structstw_1_1_vector2.html#a1666bb4fd644da42acaed89accb2d7dd" title="Gets the magnitude of this vector." alt="" coords="457,156,616,182"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="169,96,223,86,284,80,347,81,410,92,465,115,509,145,507,149,462,120,408,97,347,86,284,86,224,92,170,101"/>
+<area shape="rect" id="Node000005" href="$structstw_1_1_vector2.html#a16508fe9c7290034a1bc1d0c3848cfbb" title="Gets the biggest component of this vector." alt="" coords="250,107,382,132"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="175,117,235,117,235,122,175,122"/>
+<area shape="rect" id="Node000006" href="$structstw_1_1_vector2.html#aedf4bca8d27b146ea26914945ea746d0" title="Sets the magnitude of this vector." alt="" coords="223,156,409,182"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="176,135,240,150,239,155,174,141"/>
+<area shape="rect" id="Node000007" href="$structstw_1_1_vector2.html#a6ae889efd824a466dc42b698cf20c057" title="Gets this vector normalized." alt="" coords="234,205,398,231"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="124,138,170,166,224,192,241,198,239,203,222,197,168,170,121,143"/>
+<area shape="rect" id="Node000004" href="$structstw_1_1_vector2.html#a28bc8b748231d2be6e56ac3a869af1d3" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="664,156,844,182"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="617,166,649,166,649,172,617,172"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="409,166,442,166,442,172,409,172"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="376,202,461,183,462,188,377,207"/>
 </map>

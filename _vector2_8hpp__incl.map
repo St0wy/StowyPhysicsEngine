@@ -1,4 +1,5 @@
 <map id="include/math/Vector2.hpp" name="include/math/Vector2.hpp">
-<area shape="rect" id="node1" title="Contains the Vector2 struct." coords="5,5,175,31"/>
-<area shape="rect" id="node2" title=" " coords="63,79,117,104"/>
+<area shape="rect" id="Node000001" title="Contains the Vector2 struct." alt="" coords="5,5,174,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="63,79,116,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,31,92,64,87,64,87,31"/>
 </map>

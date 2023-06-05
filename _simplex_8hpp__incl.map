@@ -1,6 +1,9 @@
 <map id="include/collision/Simplex.hpp" name="include/collision/Simplex.hpp">
-<area shape="rect" id="node1" title="Contains the Simplex struct." coords="5,5,193,31"/>
-<area shape="rect" id="node2" title=" " coords="18,79,69,104"/>
-<area shape="rect" id="node3" href="$_vector2_8hpp.html" title="Contains the Vector2 struct." coords="93,79,217,104"/>
-<area shape="rect" id="node4" title=" " coords="128,152,183,177"/>
+<area shape="rect" id="Node000001" title="Contains the Simplex struct." alt="" coords="5,5,193,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="20,79,69,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,33,65,69,60,65,88,30"/>
+<area shape="rect" id="Node000003" href="$_vector2_8hpp.html" title="Contains the Vector2 struct." alt="" coords="93,79,217,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="110,30,139,65,134,69,106,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="128,153,182,178"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="158,105,158,138,152,138,152,105"/>
 </map>

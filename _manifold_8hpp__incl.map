@@ -1,6 +1,9 @@
 <map id="include/collision/Manifold.hpp" name="include/collision/Manifold.hpp">
-<area shape="rect" id="node1" title="Contains the Manifold class." coords="5,5,196,31"/>
-<area shape="rect" id="node2" title=" " coords="14,79,73,104"/>
-<area shape="rect" id="node3" href="$_vector2_8hpp.html" title="Contains the Vector2 struct." coords="97,79,221,104"/>
-<area shape="rect" id="node4" title=" " coords="132,152,187,177"/>
+<area shape="rect" id="Node000001" title="Contains the Manifold class." alt="" coords="5,5,196,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="14,79,72,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,33,64,69,60,66,89,30"/>
+<area shape="rect" id="Node000003" href="$_vector2_8hpp.html" title="Contains the Vector2 struct." alt="" coords="96,79,220,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="112,30,141,66,137,69,108,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="131,153,185,178"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="161,105,161,138,155,138,155,105"/>
 </map>

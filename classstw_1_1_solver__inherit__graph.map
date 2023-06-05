@@ -1,5 +1,7 @@
 <map id="stw::Solver" name="stw::Solver">
-<area shape="rect" id="node1" title="Generic class for all solvers." coords="117,5,204,31"/>
-<area shape="rect" id="node2" href="$classstw_1_1_impulse_solver.html" title="Solver with impulse and friction." coords="5,79,137,104"/>
-<area shape="rect" id="node3" href="$classstw_1_1_smooth_position_solver.html" title="A solver to smooth out collision with collider that are in a tower placement." coords="162,79,341,104"/>
+<area shape="rect" id="Node000001" title="Generic class for all solvers." alt="" coords="118,5,203,31"/>
+<area shape="rect" id="Node000002" href="$classstw_1_1_impulse_solver.html" title="Solver with impulse and friction." alt="" coords="5,79,137,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,42,88,81,84,77,132,38"/>
+<area shape="rect" id="Node000003" href="$classstw_1_1_smooth_position_solver.html" title="A solver to smooth out collision with collider that are in a tower placement." alt="" coords="161,79,338,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="188,38,236,77,233,81,185,42"/>
 </map>

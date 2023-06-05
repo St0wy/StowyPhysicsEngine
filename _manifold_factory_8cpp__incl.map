@@ -1,17 +1,40 @@
 <map id="src/collision/ManifoldFactory.cpp" name="src/collision/ManifoldFactory.cpp">
-<area shape="rect" id="node1" title=" " coords="335,5,546,31"/>
-<area shape="rect" id="node2" href="$_manifold_factory_8hpp.html" title="Contains the algo namespace which contains the functions to detect a collision." coords="126,79,315,104"/>
-<area shape="rect" id="node3" href="$_collider_8hpp.html" title="Contains all the Colliders classes." coords="225,152,315,177"/>
-<area shape="rect" id="node5" href="$_manifold_8hpp.html" title="Contains the Manifold class." coords="409,225,504,251"/>
-<area shape="rect" id="node11" href="$_simplex_8hpp.html" title="Contains the Simplex struct." coords="5,152,97,177"/>
-<area shape="rect" id="node12" title=" " coords="441,79,515,104"/>
-<area shape="rect" id="node13" title=" " coords="539,79,598,104"/>
-<area shape="rect" id="node14" title=" " coords="622,79,675,104"/>
-<area shape="rect" id="node15" title=" " coords="699,79,758,104"/>
-<area shape="rect" id="node10" href="$_transform_8hpp.html" title="Contains the Transform struct." coords="100,225,205,251"/>
-<area shape="rect" id="node4" title=" " coords="25,225,75,251"/>
-<area shape="rect" id="node7" href="$_vector2_8hpp.html" title="Contains the Vector2 struct." coords="185,299,309,324"/>
-<area shape="rect" id="node9" href="$_projection_8hpp.html" title="Contains the Projection struct." coords="230,225,334,251"/>
-<area shape="rect" id="node6" title=" " coords="427,299,486,324"/>
-<area shape="rect" id="node8" title=" " coords="220,372,275,397"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="333,5,543,31"/>
+<area shape="rect" id="Node000002" href="$_manifold_factory_8hpp.html" title="Contains the algo namespace which contains the functions to detect a collision." alt="" coords="124,79,312,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="401,34,270,77,268,71,400,29"/>
+<area shape="rect" id="Node000003" href="$_collider_8hpp.html" title="Contains all the Colliders classes." alt="" coords="224,153,313,178"/>
+<area shape="poly" id="edge21_Node000001_Node000003" title=" " alt="" coords="426,33,295,145,292,141,422,29"/>
+<area shape="rect" id="Node000005" href="$_manifold_8hpp.html" title="Contains the Manifold class." alt="" coords="407,226,501,252"/>
+<area shape="poly" id="edge22_Node000001_Node000005" title=" " alt="" coords="437,32,428,79,428,115,432,151,447,212,442,213,427,152,423,116,423,79,432,31"/>
+<area shape="rect" id="Node000011" href="$_simplex_8hpp.html" title="Contains the Simplex struct." alt="" coords="5,153,97,178"/>
+<area shape="poly" id="edge23_Node000001_Node000011" title=" " alt="" coords="332,33,205,52,150,66,112,81,97,94,84,109,64,141,59,138,79,106,93,90,110,77,148,60,204,47,332,27"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="438,79,512,105"/>
+<area shape="poly" id="edge17_Node000001_Node000012" title=" " alt="" coords="446,30,464,65,460,67,441,32"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="536,79,593,105"/>
+<area shape="poly" id="edge18_Node000001_Node000013" title=" " alt="" coords="460,29,532,69,529,74,458,34"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="617,79,669,105"/>
+<area shape="poly" id="edge19_Node000001_Node000014" title=" " alt="" coords="473,29,604,74,602,79,472,34"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="693,79,750,105"/>
+<area shape="poly" id="edge20_Node000001_Node000015" title=" " alt="" coords="491,29,679,76,678,81,490,34"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="228,103,253,139,249,142,224,106"/>
+<area shape="poly" id="edge12_Node000002_Node000005" title=" " alt="" coords="242,103,326,150,426,215,423,220,323,155,239,108"/>
+<area shape="rect" id="Node000010" href="$_transform_8hpp.html" title="Contains the Transform struct." alt="" coords="100,226,205,252"/>
+<area shape="poly" id="edge16_Node000002_Node000010" title=" " alt="" coords="215,106,166,214,161,212,210,104"/>
+<area shape="poly" id="edge13_Node000002_Node000011" title=" " alt="" coords="190,108,94,149,91,144,188,103"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="26,226,76,252"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="232,181,90,228,89,223,231,176"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="301,176,409,218,407,223,299,181"/>
+<area shape="rect" id="Node000007" href="$_vector2_8hpp.html" title="Contains the Vector2 struct." alt="" coords="184,300,307,326"/>
+<area shape="poly" id="edge11_Node000003_Node000007" title=" " alt="" coords="294,176,317,190,337,208,350,229,351,241,347,253,325,278,298,296,295,291,322,274,342,251,345,241,345,231,333,212,314,195,292,181"/>
+<area shape="rect" id="Node000009" href="$_projection_8hpp.html" title="Contains the Projection struct." alt="" coords="229,226,332,252"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="273,178,279,211,273,212,268,179"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="250,181,185,221,183,216,247,177"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="425,300,483,326"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="456,252,456,285,451,285,451,252"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="419,255,296,297,294,292,418,250"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="219,374,272,399"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="248,326,248,359,243,359,243,326"/>
+<area shape="poly" id="edge10_Node000010_Node000007" title=" " alt="" coords="170,250,220,289,217,293,167,255"/>
+<area shape="poly" id="edge14_Node000011_Node000004" title=" " alt="" coords="54,179,54,211,48,211,48,179"/>
+<area shape="poly" id="edge15_Node000011_Node000007" title=" " alt="" coords="40,181,27,196,15,214,10,233,16,250,39,267,77,280,170,299,169,305,75,285,36,271,12,254,5,233,11,212,23,193,36,177"/>
 </map>

@@ -1,12 +1,27 @@
 <map id="include/collision/ManifoldFactory.hpp" name="include/collision/ManifoldFactory.hpp">
-<area shape="rect" id="node1" title="Contains the algo namespace which contains the functions to detect a collision." coords="220,5,387,45"/>
-<area shape="rect" id="node2" href="$_collider_8hpp.html" title="Contains all the Colliders classes." coords="195,93,284,119"/>
-<area shape="rect" id="node4" href="$_manifold_8hpp.html" title="Contains the Manifold class." coords="5,167,100,192"/>
-<area shape="rect" id="node9" href="$_transform_8hpp.html" title="Contains the Transform struct." coords="304,167,409,192"/>
-<area shape="rect" id="node10" href="$_simplex_8hpp.html" title="Contains the Simplex struct." coords="413,93,505,119"/>
-<area shape="rect" id="node3" title=" " coords="434,167,485,192"/>
-<area shape="rect" id="node6" href="$_vector2_8hpp.html" title="Contains the Vector2 struct." coords="200,240,324,265"/>
-<area shape="rect" id="node8" href="$_projection_8hpp.html" title="Contains the Projection struct." coords="175,167,279,192"/>
-<area shape="rect" id="node5" title=" " coords="23,240,82,265"/>
-<area shape="rect" id="node7" title=" " coords="235,313,289,339"/>
+<area shape="rect" id="Node000001" title="Contains the algo namespace which contains the functions to detect a collision." alt="" coords="219,5,385,46"/>
+<area shape="rect" id="Node000002" href="$_collider_8hpp.html" title="Contains all the Colliders classes." alt="" coords="194,94,282,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="288,48,259,84,255,80,284,45"/>
+<area shape="rect" id="Node000004" href="$_manifold_8hpp.html" title="Contains the Manifold class." alt="" coords="5,168,100,193"/>
+<area shape="poly" id="edge11_Node000001_Node000004" title=" " alt="" coords="267,49,183,96,83,161,80,157,180,92,264,44"/>
+<area shape="rect" id="Node000009" href="$_transform_8hpp.html" title="Contains the Transform struct." alt="" coords="302,168,406,193"/>
+<area shape="poly" id="edge15_Node000001_Node000009" title=" " alt="" coords="311,45,348,153,343,154,306,47"/>
+<area shape="rect" id="Node000010" href="$_simplex_8hpp.html" title="Contains the Simplex struct." alt="" coords="410,94,501,120"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="341,44,420,84,417,89,339,49"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="431,168,480,193"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="276,118,417,164,416,169,274,123"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="207,123,99,164,97,159,205,118"/>
+<area shape="rect" id="Node000006" href="$_vector2_8hpp.html" title="Contains the Vector2 struct." alt="" coords="199,241,322,267"/>
+<area shape="poly" id="edge10_Node000002_Node000006" title=" " alt="" coords="215,122,193,136,173,153,161,172,161,182,164,192,185,216,211,233,208,237,181,220,160,195,155,183,156,171,169,150,189,132,212,118"/>
+<area shape="rect" id="Node000008" href="$_projection_8hpp.html" title="Contains the Projection struct." alt="" coords="174,168,278,193"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="238,120,233,153,228,153,233,119"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="259,118,323,157,321,162,256,122"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="23,241,82,267"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="55,194,55,226,50,226,50,194"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="89,191,212,233,210,239,87,196"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="234,315,287,341"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="263,267,263,300,258,300,258,267"/>
+<area shape="poly" id="edge9_Node000009_Node000006" title=" " alt="" coords="340,196,289,234,286,230,336,192"/>
+<area shape="poly" id="edge13_Node000010_Node000003" title=" " alt="" coords="458,120,458,153,453,153,453,120"/>
+<area shape="poly" id="edge14_Node000010_Node000006" title=" " alt="" coords="470,118,483,134,496,154,501,175,495,195,470,213,431,227,337,246,336,241,429,222,467,208,490,192,496,175,491,156,479,137,466,122"/>
 </map>

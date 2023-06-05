@@ -1,4 +1,5 @@
 <map id="stw::Manifold" name="stw::Manifold">
-<area shape="rect" id="node1" title=" " coords="5,123,104,148"/>
-<area shape="rect" id="node2" href="$structstw_1_1_vector2.html" title="A struct representing a 2D Vector." coords="7,5,102,31"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,124,103,150"/>
+<area shape="rect" id="Node000002" href="$structstw_1_1_vector2.html" title="A struct representing a 2D Vector." alt="" coords="7,5,101,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="57,46,57,123,51,123,51,46"/>
 </map>

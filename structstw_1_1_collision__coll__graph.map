@@ -1,8 +1,15 @@
 <map id="stw::Collision" name="stw::Collision">
-<area shape="rect" id="node1" title="Struct representing a collision." coords="183,328,282,353"/>
-<area shape="rect" id="node2" href="$classstw_1_1_collision_body.html" title="A body that can receive collisions." coords="113,225,240,251"/>
-<area shape="rect" id="node3" href="$structstw_1_1_transform.html" title="A transform of an object. Contains position, scale and rotation." coords="5,123,113,148"/>
-<area shape="rect" id="node4" href="$structstw_1_1_vector2.html" title="A struct representing a 2D Vector." coords="136,5,231,31"/>
-<area shape="rect" id="node5" href="$classstw_1_1_collider.html" title="A pure virtual struct that represents colliders." coords="137,123,229,148"/>
-<area shape="rect" id="node6" href="$structstw_1_1_manifold.html" title=" " coords="239,174,338,199"/>
+<area shape="rect" id="Node000001" title="Struct representing a collision." alt="" coords="184,331,281,357"/>
+<area shape="rect" id="Node000002" href="$classstw_1_1_collision_body.html" title="A body that can receive collisions." alt="" coords="113,228,240,253"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,265,228,330,223,332,188,268"/>
+<area shape="rect" id="Node000003" href="$structstw_1_1_transform.html" title="A transform of an object. Contains position, scale and rotation." alt="" coords="5,124,113,150"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="64,163,69,184,80,202,97,215,117,225,114,229,94,220,76,205,64,186,59,165"/>
+<area shape="rect" id="Node000004" href="$structstw_1_1_vector2.html" title="A struct representing a 2D Vector." alt="" coords="136,5,230,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="152,42,131,57,96,93,70,125,66,122,92,90,128,53,149,37"/>
+<area shape="rect" id="Node000005" href="$classstw_1_1_collider.html" title="A pure virtual struct that represents colliders." alt="" coords="137,124,229,150"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="186,46,186,123,180,123,180,46"/>
+<area shape="rect" id="Node000006" href="$structstw_1_1_manifold.html" title=" " alt="" coords="238,176,336,202"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="215,39,229,53,250,86,266,120,286,174,281,176,261,122,245,88,225,57,211,42"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="179,164,177,174,178,227,172,227,172,173,174,164"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="286,217,277,261,260,308,245,332,240,330,255,306,271,259,281,216"/>
 </map>

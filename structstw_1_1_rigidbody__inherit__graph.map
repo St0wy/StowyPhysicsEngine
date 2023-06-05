@@ -1,4 +1,5 @@
 <map id="stw::Rigidbody" name="stw::Rigidbody">
-<area shape="rect" id="node1" title="A Rigidbody that has dynamics." coords="16,79,121,104"/>
-<area shape="rect" id="node2" href="$classstw_1_1_collision_body.html" title="A body that can receive collisions." coords="5,5,132,31"/>
+<area shape="rect" id="Node000001" title="A Rigidbody that has dynamics." alt="" coords="16,79,121,105"/>
+<area shape="rect" id="Node000002" href="$classstw_1_1_collision_body.html" title="A body that can receive collisions." alt="" coords="5,5,132,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,46,71,79,66,79,66,46"/>
 </map>

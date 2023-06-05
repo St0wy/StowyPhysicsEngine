@@ -1,13 +1,25 @@
 <map id="stw::algo::NextSimplex" name="stw::algo::NextSimplex">
-<area shape="rect" id="node1" title="Finds the next simplex for the GJK algorithm." coords="5,55,157,80"/>
-<area shape="rect" id="node2" href="$namespacestw_1_1algo.html#a644f2a27fe45086686ce2a887e2f4a39" title="Line case for the NextSimplex function." coords="217,5,321,31"/>
-<area shape="rect" id="node8" href="$structstw_1_1_simplex.html#a07da8e8e08501b9ddc2babbbfcdbbc03" title="Gets the size of the array." coords="205,104,332,129"/>
-<area shape="rect" id="node9" href="$namespacestw_1_1algo.html#a1a3ec5804472e721b9aaa83cc5f827de" title="Triangle case for the NextSimplex function." coords="206,55,331,80"/>
-<area shape="rect" id="node3" href="$structstw_1_1_vector2.html#aee164df346978e9d8a3cbfa95174f9e1" title="Normalizes the given vector." coords="389,55,548,80"/>
-<area shape="rect" id="node7" href="$structstw_1_1_vector2.html#af64b7cbdc9e752e69b0f44671a9dda41" title="Compute the triple product with all of these vectors as 3d vectors with z = 0. p = a x (b x c)" coords="380,5,557,31"/>
-<area shape="rect" id="node4" href="$structstw_1_1_vector2.html#a6ae889efd824a466dc42b698cf20c057" title="Gets this vector normalized." coords="605,55,771,80"/>
-<area shape="rect" id="node5" href="$structstw_1_1_vector2.html#a1666bb4fd644da42acaed89accb2d7dd" title="Gets the magnitude of this vector." coords="819,55,979,80"/>
-<area shape="rect" id="node6" href="$structstw_1_1_vector2.html#a28bc8b748231d2be6e56ac3a869af1d3" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." coords="1027,55,1207,80"/>
-<area shape="rect" id="node10" href="$namespacestw_1_1algo.html#a55703bedaf0bd4e3ec75adee9eb5cea7" title="Finds if both vectors are going in the same direction." coords="387,104,551,129"/>
-<area shape="rect" id="node11" href="$structstw_1_1_vector2.html#a87dfc954795a3f9e2507b013f22bc77b" title="Computes the dot product between this and other." coords="628,104,748,129"/>
+<area shape="rect" id="Node000001" title="Finds the next simplex for the GJK algorithm." alt="" coords="5,55,157,80"/>
+<area shape="rect" id="Node000002" href="$namespacestw_1_1algo.html#a644f2a27fe45086686ce2a887e2f4a39" title="Line case for the NextSimplex function." alt="" coords="216,5,319,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,51,201,33,203,38,133,57"/>
+<area shape="rect" id="Node000008" href="$structstw_1_1_simplex.html#a07da8e8e08501b9ddc2babbbfcdbbc03" title="Gets the size of the array." alt="" coords="205,104,330,130"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="133,78,203,97,201,102,132,84"/>
+<area shape="rect" id="Node000009" href="$namespacestw_1_1algo.html#a1a3ec5804472e721b9aaa83cc5f827de" title="Triangle case for the NextSimplex function." alt="" coords="205,55,330,80"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="157,65,191,65,191,70,157,70"/>
+<area shape="rect" id="Node000003" href="$structstw_1_1_vector2.html#aee164df346978e9d8a3cbfa95174f9e1" title="Normalizes the given vector." alt="" coords="388,55,545,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="320,28,398,48,397,53,319,33"/>
+<area shape="rect" id="Node000007" href="$structstw_1_1_vector2.html#af64b7cbdc9e752e69b0f44671a9dda41" title="Compute the triple product with all of these vectors as 3d vectors with z = 0. p = a x (b x c)" alt="" coords="378,5,554,31"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="319,16,363,16,363,21,319,21"/>
+<area shape="rect" id="Node000004" href="$structstw_1_1_vector2.html#a6ae889efd824a466dc42b698cf20c057" title="Gets this vector normalized." alt="" coords="602,55,767,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="545,65,587,65,587,70,545,70"/>
+<area shape="rect" id="Node000005" href="$structstw_1_1_vector2.html#a1666bb4fd644da42acaed89accb2d7dd" title="Gets the magnitude of this vector." alt="" coords="815,55,974,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="767,65,800,65,800,70,767,70"/>
+<area shape="rect" id="Node000006" href="$structstw_1_1_vector2.html#a28bc8b748231d2be6e56ac3a869af1d3" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="1022,55,1201,80"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="974,65,1007,65,1007,70,974,70"/>
+<area shape="poly" id="edge9_Node000009_Node000003" title=" " alt="" coords="330,65,372,65,372,70,330,70"/>
+<area shape="poly" id="edge12_Node000009_Node000007" title=" " alt="" coords="322,51,397,33,398,38,323,57"/>
+<area shape="rect" id="Node000010" href="$namespacestw_1_1algo.html#a55703bedaf0bd4e3ec75adee9eb5cea7" title="Finds if both vectors are going in the same direction." alt="" coords="385,104,548,130"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="323,78,398,97,397,102,322,84"/>
+<area shape="rect" id="Node000011" href="$structstw_1_1_vector2.html#a87dfc954795a3f9e2507b013f22bc77b" title="Computes the dot product between this and other." alt="" coords="625,104,744,130"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="548,114,611,114,611,120,548,120"/>
 </map>

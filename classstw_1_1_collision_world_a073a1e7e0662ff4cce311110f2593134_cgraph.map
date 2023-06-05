@@ -1,7 +1,11 @@
 <map id="stw::CollisionWorld::FindCollisions" name="stw::CollisionWorld::FindCollisions">
-<area shape="rect" id="node1" title=" " coords="5,85,136,125"/>
-<area shape="rect" id="node2" href="$classstw_1_1_collision_body.html#a160a77fa3277c75494b05655497e95f4" title="Gets the collider of the body." coords="195,5,347,31"/>
-<area shape="rect" id="node3" href="$classstw_1_1_collision_body.html#a1db1adeb5b419542ac981e0bd9109df4" title="A boolean saying if the collider is a trigger collider. This means that it will not have a collision ..." coords="207,55,334,95"/>
-<area shape="rect" id="node4" href="$classstw_1_1_collider.html#ae0b50314f782e269beee2795e847de18" title="Tests the collision against a generic collider." coords="184,120,357,145"/>
-<area shape="rect" id="node5" href="$classstw_1_1_collision_body.html#aa9187db8deaf257f511981cd2da27e64" title="Gets the transform of the body." coords="207,170,334,210"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,85,136,125"/>
+<area shape="rect" id="Node000002" href="$classstw_1_1_collision_body.html#a160a77fa3277c75494b05655497e95f4" title="Gets the collider of the body." alt="" coords="194,5,346,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,82,183,41,202,34,204,39,185,46,106,86"/>
+<area shape="rect" id="Node000003" href="$classstw_1_1_collision_body.html#a1db1adeb5b419542ac981e0bd9109df4" title="A boolean saying if the collider is a trigger collider. This means that it will not have a collision ..." alt="" coords="207,55,333,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="136,93,192,84,193,89,137,98"/>
+<area shape="rect" id="Node000004" href="$classstw_1_1_collider.html#ae0b50314f782e269beee2795e847de18" title="Tests the collision against a generic collider." alt="" coords="184,120,356,146"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="137,111,169,116,168,121,136,117"/>
+<area shape="rect" id="Node000005" href="$classstw_1_1_collision_body.html#aa9187db8deaf257f511981cd2da27e64" title="Gets the transform of the body." alt="" coords="207,170,333,211"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="115,123,185,156,199,162,197,166,183,161,112,128"/>
 </map>

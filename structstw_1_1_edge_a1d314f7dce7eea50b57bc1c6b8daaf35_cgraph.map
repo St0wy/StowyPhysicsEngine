@@ -1,5 +1,7 @@
 <map id="stw::Edge::VecDot" name="stw::Edge::VecDot">
-<area shape="rect" id="node1" title=" " coords="5,31,132,56"/>
-<area shape="rect" id="node2" href="$structstw_1_1_vector2.html#a87dfc954795a3f9e2507b013f22bc77b" title="Computes the dot product between this and other." coords="195,5,315,31"/>
-<area shape="rect" id="node3" href="$structstw_1_1_edge.html#abd1d3bc398a53ce192b977738b116647" title=" " coords="180,55,331,80"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,132,56"/>
+<area shape="rect" id="Node000002" href="$structstw_1_1_vector2.html#a87dfc954795a3f9e2507b013f22bc77b" title="Computes the dot product between this and other." alt="" coords="195,5,315,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,32,180,26,181,31,132,38"/>
+<area shape="rect" id="Node000003" href="$structstw_1_1_edge.html#abd1d3bc398a53ce192b977738b116647" title=" " alt="" coords="180,55,330,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="132,49,165,53,164,59,132,54"/>
 </map>

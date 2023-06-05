@@ -1,5 +1,7 @@
 <map id="stw::BoxCollider" name="stw::BoxCollider">
-<area shape="rect" id="node1" title="A rotatable box collider." coords="5,168,120,193"/>
-<area shape="rect" id="node2" href="$classstw_1_1_collider.html" title="A pure virtual struct that represents colliders." coords="17,93,109,119"/>
-<area shape="rect" id="node3" href="$structstw_1_1_vector2.html" title="A struct representing a 2D Vector." coords="15,5,110,31"/>
+<area shape="rect" id="Node000001" title="A rotatable box collider." alt="" coords="5,169,119,195"/>
+<area shape="rect" id="Node000002" href="$classstw_1_1_collider.html" title="A pure virtual struct that represents colliders." alt="" coords="16,94,108,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="65,135,65,169,59,169,59,135"/>
+<area shape="rect" id="Node000003" href="$structstw_1_1_vector2.html" title="A struct representing a 2D Vector." alt="" coords="15,5,109,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="65,46,65,94,59,94,59,46"/>
 </map>

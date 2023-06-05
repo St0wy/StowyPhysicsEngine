@@ -1,7 +1,11 @@
 <map id="stw::BoxCollider::GetAxes" name="stw::BoxCollider::GetAxes">
-<area shape="rect" id="node1" title=" " coords="5,31,176,56"/>
-<area shape="rect" id="node2" href="$structstw_1_1_vector2.html#a6ae889efd824a466dc42b698cf20c057" title="Gets this vector normalized." coords="255,5,420,31"/>
-<area shape="rect" id="node5" href="$structstw_1_1_vector2.html#a3ae489315b2b9630639877141293de97" title="Computes the perpendicular vector in +90 degrees." coords="224,55,451,80"/>
-<area shape="rect" id="node3" href="$structstw_1_1_vector2.html#a1666bb4fd644da42acaed89accb2d7dd" title="Gets the magnitude of this vector." coords="499,5,659,31"/>
-<area shape="rect" id="node4" href="$structstw_1_1_vector2.html#a28bc8b748231d2be6e56ac3a869af1d3" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." coords="707,5,887,31"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,175,56"/>
+<area shape="rect" id="Node000002" href="$structstw_1_1_vector2.html#a6ae889efd824a466dc42b698cf20c057" title="Gets this vector normalized." alt="" coords="253,5,418,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,32,238,25,239,31,175,37"/>
+<area shape="rect" id="Node000005" href="$structstw_1_1_vector2.html#a3ae489315b2b9630639877141293de97" title="Computes the perpendicular vector in +90 degrees." alt="" coords="223,55,448,80"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="175,49,208,52,208,58,175,54"/>
+<area shape="rect" id="Node000003" href="$structstw_1_1_vector2.html#a1666bb4fd644da42acaed89accb2d7dd" title="Gets the magnitude of this vector." alt="" coords="496,5,655,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="418,16,481,16,481,21,418,21"/>
+<area shape="rect" id="Node000004" href="$structstw_1_1_vector2.html#a28bc8b748231d2be6e56ac3a869af1d3" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="703,5,883,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="656,16,688,16,688,21,656,21"/>
 </map>

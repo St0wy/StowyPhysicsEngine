@@ -1,6 +1,9 @@
 <map id="src/collision/Edge.cpp" name="src/collision/Edge.cpp">
-<area shape="rect" id="node1" title=" " coords="5,5,153,31"/>
-<area shape="rect" id="node2" href="$_edge_8hpp.html" title=" " coords="16,79,143,104"/>
-<area shape="rect" id="node3" href="$_vector2_8hpp.html" title="Contains the Vector2 struct." coords="17,152,141,177"/>
-<area shape="rect" id="node4" title=" " coords="52,225,107,251"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,153,31"/>
+<area shape="rect" id="Node000002" href="$_edge_8hpp.html" title=" " alt="" coords="16,79,142,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,31,82,64,76,64,76,31"/>
+<area shape="rect" id="Node000003" href="$_vector2_8hpp.html" title="Contains the Vector2 struct." alt="" coords="17,153,141,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="82,105,82,138,76,138,76,105"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="52,226,106,252"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="82,179,82,211,76,211,76,179"/>
 </map>

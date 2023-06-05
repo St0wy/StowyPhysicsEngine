@@ -1,10 +1,17 @@
 <map id="stw::algo::Triangle" name="stw::algo::Triangle">
-<area shape="rect" id="node1" title="Triangle case for the NextSimplex function." coords="5,55,131,80"/>
-<area shape="rect" id="node2" href="$structstw_1_1_vector2.html#aee164df346978e9d8a3cbfa95174f9e1" title="Normalizes the given vector." coords="188,5,347,31"/>
-<area shape="rect" id="node6" href="$namespacestw_1_1algo.html#a55703bedaf0bd4e3ec75adee9eb5cea7" title="Finds if both vectors are going in the same direction." coords="185,55,349,80"/>
-<area shape="rect" id="node8" href="$structstw_1_1_vector2.html#af64b7cbdc9e752e69b0f44671a9dda41" title="Compute the triple product with all of these vectors as 3d vectors with z = 0. p = a x (b x c)" coords="179,104,356,129"/>
-<area shape="rect" id="node3" href="$structstw_1_1_vector2.html#a6ae889efd824a466dc42b698cf20c057" title="Gets this vector normalized." coords="404,5,569,31"/>
-<area shape="rect" id="node4" href="$structstw_1_1_vector2.html#a1666bb4fd644da42acaed89accb2d7dd" title="Gets the magnitude of this vector." coords="617,5,777,31"/>
-<area shape="rect" id="node5" href="$structstw_1_1_vector2.html#a28bc8b748231d2be6e56ac3a869af1d3" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." coords="825,5,1005,31"/>
-<area shape="rect" id="node7" href="$structstw_1_1_vector2.html#a87dfc954795a3f9e2507b013f22bc77b" title="Computes the dot product between this and other." coords="427,55,547,80"/>
+<area shape="rect" id="Node000001" title="Triangle case for the NextSimplex function." alt="" coords="5,55,130,80"/>
+<area shape="rect" id="Node000002" href="$structstw_1_1_vector2.html#aee164df346978e9d8a3cbfa95174f9e1" title="Normalizes the given vector." alt="" coords="187,5,345,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,51,196,33,198,38,123,57"/>
+<area shape="rect" id="Node000006" href="$namespacestw_1_1algo.html#a55703bedaf0bd4e3ec75adee9eb5cea7" title="Finds if both vectors are going in the same direction." alt="" coords="184,55,348,80"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="130,65,169,65,169,70,130,70"/>
+<area shape="rect" id="Node000008" href="$structstw_1_1_vector2.html#af64b7cbdc9e752e69b0f44671a9dda41" title="Compute the triple product with all of these vectors as 3d vectors with z = 0. p = a x (b x c)" alt="" coords="178,104,354,130"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="123,78,198,97,196,102,122,84"/>
+<area shape="rect" id="Node000003" href="$structstw_1_1_vector2.html#a6ae889efd824a466dc42b698cf20c057" title="Gets this vector normalized." alt="" coords="402,5,566,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="345,16,387,16,387,21,345,21"/>
+<area shape="rect" id="Node000004" href="$structstw_1_1_vector2.html#a1666bb4fd644da42acaed89accb2d7dd" title="Gets the magnitude of this vector." alt="" coords="614,5,774,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="567,16,599,16,599,21,567,21"/>
+<area shape="rect" id="Node000005" href="$structstw_1_1_vector2.html#a28bc8b748231d2be6e56ac3a869af1d3" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="822,5,1001,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="774,16,807,16,807,21,774,21"/>
+<area shape="rect" id="Node000007" href="$structstw_1_1_vector2.html#a87dfc954795a3f9e2507b013f22bc77b" title="Computes the dot product between this and other." alt="" coords="425,55,544,80"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="348,65,410,65,410,70,348,70"/>
 </map>
