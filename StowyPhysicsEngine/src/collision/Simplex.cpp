@@ -1,8 +1,10 @@
 #include "collision/Simplex.hpp"
 
+#include <algorithm>
+
 namespace stw
 {
-Simplex& Simplex::operator=(std::initializer_list<Vector2> list)
+Simplex &Simplex::operator=(std::initializer_list<Vector2> list)
 {
     for (auto v = list.begin(); v != list.end(); v++)
     {
@@ -31,7 +33,7 @@ std::size_t Simplex::Size() const
 
 void Simplex::IncrementSize()
 {
-    _size = std::min(_size + 1, MAX_SIZE);
+    _size = std::min(_size + 1ull, MAX_SIZE);
 }
 
 std::array<Vector2, Simplex::MAX_SIZE>::const_iterator Simplex::End() const
@@ -43,4 +45,4 @@ std::array<Vector2, Simplex::MAX_SIZE>::const_iterator Simplex::Begin() const
 {
     return _points.begin();
 }
-}
+} // namespace stw
