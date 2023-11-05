@@ -8,11 +8,11 @@ if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE Debug)
 endif()
 
-option(spe_build_demo "Set this to on to build the SFML demo of the project.")
+option(SPE_BUILD_DEMO "Set this to ON to build the SFML demo of the project.")
 
 add_subdirectory("StowyPhysicsEngine")
 
-if(spe_build_demo)
+if(SPE_BUILD_DEMO)
   add_subdirectory("Demo")
 endif()
 
