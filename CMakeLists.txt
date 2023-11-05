@@ -15,5 +15,3 @@ add_subdirectory("StowyPhysicsEngine")
 if(SPE_BUILD_DEMO)
   add_subdirectory("Demo")
 endif()
-
-add_subdirectory("benchmark")
