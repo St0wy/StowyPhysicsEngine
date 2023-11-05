@@ -1,20 +1,20 @@
 <map id="stw::AabbCollider::TestCollision" name="stw::AabbCollider::TestCollision">
 <area shape="rect" id="Node000001" title="Tests the collision against a circle collider." alt="" coords="5,125,133,165"/>
 <area shape="rect" id="Node000002" href="$namespacestw_1_1algo.html#a098e02863db7488db44552b67157e8d7" title="Finds the collision manifold between A and B." alt="" coords="181,125,347,165"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,142,166,142,166,148,133,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,142,165,142,165,148,133,148"/>
 <area shape="rect" id="Node000003" href="$structstw_1_1_manifold.html#aa25b3e0ded86b9102e1d65d7764ae98c" title="Gets an empty manifold with no collisions." alt="" coords="419,5,558,31"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="287,122,335,85,394,48,425,34,427,39,396,53,338,89,291,126"/>
 <area shape="rect" id="Node000004" href="$structstw_1_1_vector2.html#a1666bb4fd644da42acaed89accb2d7dd" title="Gets the magnitude of this vector." alt="" coords="629,156,789,182"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="347,138,459,136,582,142,636,150,635,155,581,147,459,142,347,143"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="347,138,459,136,582,142,635,150,634,155,581,147,459,142,347,143"/>
 <area shape="rect" id="Node000005" href="$structstw_1_1_vector2.html#a28bc8b748231d2be6e56ac3a869af1d3" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="837,131,1016,156"/>
-<area shape="poly" id="edge10_Node000002_Node000005" title=" " alt="" coords="347,127,395,121,509,116,624,117,822,130,822,135,624,122,509,121,395,126,348,132"/>
+<area shape="poly" id="edge10_Node000002_Node000005" title=" " alt="" coords="347,127,395,121,509,116,624,117,822,130,821,135,624,122,509,121,395,126,348,132"/>
 <area shape="rect" id="Node000006" href="$structstw_1_1_vector2.html#a16508fe9c7290034a1bc1d0c3848cfbb" title="Gets the biggest component of this vector." alt="" coords="423,157,554,183"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="347,152,408,158,408,164,347,157"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="347,152,407,158,406,164,347,157"/>
 <area shape="rect" id="Node000007" href="$structstw_1_1_vector2.html#aedf4bca8d27b146ea26914945ea746d0" title="Sets the magnitude of this vector." alt="" coords="395,207,581,232"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="316,163,396,193,418,200,417,205,394,198,314,168"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="316,163,396,193,418,200,416,205,394,198,314,168"/>
 <area shape="rect" id="Node000008" href="$structstw_1_1_vector2.html#a6ae889efd824a466dc42b698cf20c057" title="Gets this vector normalized." alt="" coords="406,256,570,282"/>
 <area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="288,163,335,204,396,242,409,248,407,253,394,247,332,208,285,168"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="789,157,821,153,822,158,789,162"/>
-<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="547,203,635,183,636,188,548,209"/>
-<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="550,253,580,242,632,216,676,188,679,193,634,221,582,247,552,258"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="789,157,821,153,821,158,789,162"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="547,203,634,183,636,188,548,209"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="550,253,580,242,631,216,675,189,678,193,634,221,582,247,552,258"/>
 </map>

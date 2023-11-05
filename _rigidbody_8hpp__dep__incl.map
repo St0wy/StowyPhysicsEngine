@@ -1,11 +1,11 @@
 <map id="include/dynamics/Rigidbody.hpp" name="include/dynamics/Rigidbody.hpp">
 <area shape="rect" id="Node000001" title="Contains the Rigidbody struct." alt="" coords="218,5,423,31"/>
 <area shape="rect" id="Node000002" href="$_dynamics_world_8hpp.html" title="Contains the DynamicsWorld class." alt="" coords="22,79,205,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="276,39,166,81,164,76,274,34"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="275,39,166,81,164,76,273,34"/>
 <area shape="rect" id="Node000004" href="$_rigidbody_8cpp.html" title=" " alt="" coords="229,87,411,112"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="323,46,323,86,318,86,318,46"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="323,47,323,86,318,86,318,47"/>
 <area shape="rect" id="Node000005" href="$_solver_8cpp.html" title=" " alt="" coords="436,87,599,112"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="365,35,488,84,486,88,363,39"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="366,35,488,84,486,88,364,40"/>
 <area shape="rect" id="Node000003" href="$_dynamics_world_8cpp.html" title=" " alt="" coords="5,168,222,193"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="116,135,116,167,111,167,111,135"/>
 </map>

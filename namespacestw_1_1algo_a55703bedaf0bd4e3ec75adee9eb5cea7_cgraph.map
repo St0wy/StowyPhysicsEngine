@@ -1,5 +1,5 @@
 <map id="stw::algo::SameDirection" name="stw::algo::SameDirection">
 <area shape="rect" id="Node000001" title="Finds if both vectors are going in the same direction." alt="" coords="5,5,169,31"/>
 <area shape="rect" id="Node000002" href="$structstw_1_1_vector2.html#a87dfc954795a3f9e2507b013f22bc77b" title="Computes the dot product between this and other." alt="" coords="217,5,336,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,16,202,16,202,21,169,21"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,16,201,16,201,21,169,21"/>
 </map>

@@ -5,7 +5,7 @@ var searchData=
   ['removesolver_2',['RemoveSolver',['../classstw_1_1_collision_world.html#a02ab3397daeb7de4ace6343db77be5df',1,'stw::CollisionWorld']]],
   ['resolvecollisions_3',['ResolveCollisions',['../classstw_1_1_collision_world.html#ad8550312e85291aeda9ca908900bb070',1,'stw::CollisionWorld']]],
   ['restitution_4',['Restitution',['../structstw_1_1_rigidbody.html#a0c45fa92044ea1725aeda89bbf9b9568',1,'stw::Rigidbody']]],
-  ['rigidbody_5',['Rigidbody',['../structstw_1_1_rigidbody.html#aadcc212f3d888a8db7728c35ae9ff0c2',1,'stw::Rigidbody::Rigidbody()'],['../structstw_1_1_rigidbody.html',1,'stw::Rigidbody']]],
+  ['rigidbody_5',['rigidbody',['../structstw_1_1_rigidbody.html',1,'stw::Rigidbody'],['../structstw_1_1_rigidbody.html#aadcc212f3d888a8db7728c35ae9ff0c2',1,'stw::Rigidbody::Rigidbody()']]],
   ['rigidbody_2ecpp_6',['Rigidbody.cpp',['../_rigidbody_8cpp.html',1,'']]],
   ['rigidbody_2ehpp_7',['Rigidbody.hpp',['../_rigidbody_8hpp.html',1,'']]],
   ['rotatearound_8',['RotateAround',['../structstw_1_1_vector2.html#a4159cd5c107accb4a35790387de1d419',1,'stw::Vector2']]],

@@ -1,5 +1,5 @@
 <map id="stw::CircleCollider::TestCollision" name="stw::CircleCollider::TestCollision">
 <area shape="rect" id="Node000001" title="Tests the collision against a generic collider." alt="" coords="5,5,130,46"/>
 <area shape="rect" id="Node000002" href="$classstw_1_1_collider.html#ae0b50314f782e269beee2795e847de18" title="Tests the collision against a generic collider." alt="" coords="178,13,350,39"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,23,163,23,163,28,130,28"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,23,162,23,162,28,130,28"/>
 </map>

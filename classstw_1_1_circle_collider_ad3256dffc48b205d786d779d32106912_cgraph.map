@@ -1,57 +1,57 @@
 <map id="stw::CircleCollider::TestCollision" name="stw::CircleCollider::TestCollision">
 <area shape="rect" id="Node000001" title="Tests the collision against a box collider." alt="" coords="5,184,130,225"/>
 <area shape="rect" id="Node000002" href="$namespacestw_1_1algo.html#a9f8f83c7e871deee77bf892df2b5c0e5" title="Finds the collision manifold between A and B." alt="" coords="178,184,336,225"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,202,163,202,163,207,130,207"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,202,162,202,162,207,130,207"/>
 <area shape="rect" id="Node000003" href="$namespacestw_1_1algo.html#a69c1965d1435987193eb64db3cab9fc0" title="Finds the collision manifold between A and B." alt="" coords="384,184,542,225"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="336,202,369,202,369,207,336,207"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="336,202,368,202,368,207,336,207"/>
 <area shape="rect" id="Node000004" href="$namespacestw_1_1algo.html#a20e26c892b13dd78217d58d51d175525" title="Finds the manifold between A and B using GJK." alt="" coords="590,192,689,217"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="543,202,575,202,575,207,543,207"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="543,202,574,202,574,207,543,207"/>
 <area shape="rect" id="Node000005" href="$structstw_1_1_vector2.html#a87dfc954795a3f9e2507b013f22bc77b" title="Computes the dot product between this and other." alt="" coords="1470,141,1590,167"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="647,190,682,143,707,117,735,94,789,63,835,46,883,36,945,26,1074,7,1127,3,1177,4,1226,9,1278,20,1335,37,1401,62,1458,94,1505,129,1501,133,1456,98,1399,67,1333,43,1277,25,1226,14,1177,9,1127,9,1074,13,945,31,884,41,836,51,791,68,738,99,710,121,686,147,651,193"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="647,190,682,143,707,117,735,94,789,63,835,46,883,36,945,26,1074,7,1127,3,1177,4,1226,9,1278,20,1335,37,1401,62,1458,93,1504,128,1501,133,1455,98,1399,67,1333,43,1277,25,1226,14,1177,9,1127,9,1074,13,945,31,884,41,836,51,791,68,738,99,710,121,686,147,651,193"/>
 <area shape="rect" id="Node000006" href="$structstw_1_1_manifold.html#aa25b3e0ded86b9102e1d65d7764ae98c" title="Gets an empty manifold with no collisions." alt="" coords="991,41,1130,67"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="656,189,692,164,736,140,796,114,860,94,976,66,977,71,861,99,798,119,738,144,695,169,660,193"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="656,189,692,164,736,140,796,115,859,94,975,66,976,71,861,99,798,120,738,144,695,169,660,193"/>
 <area shape="rect" id="Node000007" href="$namespacestw_1_1algo.html#a4d44542fedffc786fb08e0a7d7d3e521" title="Find the manifold from the last simplex of the GJK algorithm." alt="" coords="767,192,867,217"/>
-<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="689,202,752,202,752,207,689,207"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="689,202,751,202,751,207,689,207"/>
 <area shape="rect" id="Node000014" href="$namespacestw_1_1algo.html#aa6a4bceafedfce73058ff83c2e81c4cb" title="Support function of the GJK algorithm." alt="" coords="999,90,1122,116"/>
 <area shape="poly" id="edge31_Node000004_Node000014" title=" " alt="" coords="688,189,736,177,985,117,986,123,737,182,690,194"/>
 <area shape="rect" id="Node000016" href="$namespacestw_1_1algo.html#a09f389dc69c69931ca044f1a457c799e" title="Finds the next simplex for the GJK algorithm." alt="" coords="741,417,893,443"/>
-<area shape="poly" id="edge17_Node000004_Node000016" title=" " alt="" coords="653,216,799,404,795,407,649,220"/>
+<area shape="poly" id="edge17_Node000004_Node000016" title=" " alt="" coords="653,216,798,403,794,407,649,220"/>
 <area shape="rect" id="Node000018" href="$structstw_1_1_vector2.html#aee164df346978e9d8a3cbfa95174f9e1" title="Normalizes the given vector." alt="" coords="1233,490,1390,516"/>
-<area shape="poly" id="edge28_Node000004_Node000018" title=" " alt="" coords="645,217,651,262,667,325,695,393,715,425,739,453,766,476,795,496,859,524,929,540,1001,546,1072,545,1139,538,1248,518,1249,523,1139,544,1072,550,1001,552,928,545,858,529,792,500,762,481,735,457,710,428,690,396,662,327,646,263,639,218"/>
+<area shape="poly" id="edge28_Node000004_Node000018" title=" " alt="" coords="645,217,651,262,667,325,695,393,715,425,739,453,765,476,795,495,859,524,929,540,1000,546,1071,545,1138,538,1248,518,1249,523,1139,544,1071,550,1000,552,928,545,858,529,792,500,762,481,735,457,710,428,690,396,662,327,646,263,639,218"/>
 <area shape="rect" id="Node000023" href="$structstw_1_1_simplex.html#a4161f78f6b269f598ced75231ad40090" title="Adds a point in the simplex." alt="" coords="737,592,897,617"/>
-<area shape="poly" id="edge29_Node000004_Node000023" title=" " alt="" coords="643,218,644,280,655,373,666,425,683,477,707,527,739,571,752,582,748,586,735,574,703,529,679,479,661,427,649,374,639,280,638,218"/>
-<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="867,190,945,177,1086,163,1227,155,1455,151,1455,156,1227,161,1086,169,945,182,868,196"/>
+<area shape="poly" id="edge29_Node000004_Node000023" title=" " alt="" coords="643,218,644,280,655,373,666,425,683,477,707,527,739,571,751,582,748,586,735,574,703,529,679,479,661,427,649,374,639,280,638,218"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="867,190,945,177,1086,163,1226,156,1455,151,1455,156,1227,161,1086,169,945,182,868,196"/>
 <area shape="poly" id="edge9_Node000007_Node000006" title=" " alt="" coords="825,190,871,134,905,102,944,76,975,63,977,68,946,80,908,106,875,137,829,193"/>
 <area shape="rect" id="Node000008" href="$structstw_1_1_simplex.html#a546969e8fbffd2f754cfc82ebc54a637" title=" " alt="" coords="994,192,1127,217"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="867,202,979,202,979,207,867,207"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="867,202,978,202,978,207,867,207"/>
 <area shape="rect" id="Node000009" href="$structstw_1_1_simplex.html#afd6a09bea27afceb1a617b4c7ea2f219" title=" " alt="" coords="999,241,1121,267"/>
-<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="868,212,985,236,984,241,867,217"/>
+<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="868,212,984,236,983,241,867,217"/>
 <area shape="rect" id="Node000010" href="$structstw_1_1_vector2.html#ad522c8d8dc6ab5d963cd5268f29f4ddb" title="Computes the perpendicular vector in &#45;90 degrees." alt="" coords="945,290,1175,316"/>
-<area shape="poly" id="edge11_Node000007_Node000010" title=" " alt="" coords="838,216,886,247,946,277,966,283,964,289,944,282,883,251,835,220"/>
+<area shape="poly" id="edge11_Node000007_Node000010" title=" " alt="" coords="838,216,886,247,946,277,965,283,963,288,944,282,883,251,835,220"/>
 <area shape="rect" id="Node000011" href="$structstw_1_1_vector2.html#a6ae889efd824a466dc42b698cf20c057" title="Gets this vector normalized." alt="" coords="1448,416,1612,441"/>
-<area shape="poly" id="edge12_Node000007_Node000011" title=" " alt="" coords="829,216,875,272,908,302,946,326,1010,351,1066,364,1118,368,1167,366,1271,361,1331,364,1400,377,1446,391,1488,407,1486,412,1444,396,1399,382,1331,370,1271,366,1167,371,1117,373,1065,369,1008,356,944,331,905,306,871,275,825,220"/>
+<area shape="poly" id="edge12_Node000007_Node000011" title=" " alt="" coords="829,216,875,272,908,302,946,326,1010,351,1066,364,1118,368,1167,366,1271,361,1331,364,1400,377,1446,390,1487,407,1485,412,1444,395,1399,382,1331,370,1271,366,1167,371,1117,373,1065,369,1008,356,944,331,905,306,871,275,825,220"/>
 <area shape="poly" id="edge15_Node000007_Node000014" title=" " alt="" coords="840,189,944,133,986,118,988,123,946,138,842,194"/>
 <area shape="rect" id="Node000012" href="$structstw_1_1_vector2.html#a1666bb4fd644da42acaed89accb2d7dd" title="Gets the magnitude of this vector." alt="" coords="1660,416,1819,441"/>
 <area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="1612,426,1645,426,1645,431,1612,431"/>
 <area shape="rect" id="Node000013" href="$structstw_1_1_vector2.html#a28bc8b748231d2be6e56ac3a869af1d3" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="1867,416,2047,441"/>
 <area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="1820,426,1852,426,1852,431,1820,431"/>
 <area shape="rect" id="Node000015" href="$classstw_1_1_collider.html#ab3edc363855ad87c4332622e39ae7703" title="Find the furthest point in the specified direction." alt="" coords="1226,76,1397,117"/>
-<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="1122,99,1211,97,1212,102,1122,104"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="1122,99,1211,97,1211,102,1122,104"/>
 <area shape="rect" id="Node000017" href="$namespacestw_1_1algo.html#a644f2a27fe45086686ce2a887e2f4a39" title="Line case for the NextSimplex function." alt="" coords="1009,490,1112,516"/>
-<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="849,441,946,477,994,489,993,494,944,482,848,446"/>
+<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="849,441,946,477,994,489,992,494,944,482,848,446"/>
 <area shape="rect" id="Node000020" href="$structstw_1_1_simplex.html#a07da8e8e08501b9ddc2babbbfcdbbc03" title="Gets the size of the array." alt="" coords="998,441,1123,467"/>
-<area shape="poly" id="edge22_Node000016_Node000020" title=" " alt="" coords="893,435,983,444,982,449,893,440"/>
+<area shape="poly" id="edge22_Node000016_Node000020" title=" " alt="" coords="893,435,982,444,982,449,893,440"/>
 <area shape="rect" id="Node000021" href="$namespacestw_1_1algo.html#a1a3ec5804472e721b9aaa83cc5f827de" title="Triangle case for the NextSimplex function." alt="" coords="998,392,1122,417"/>
-<area shape="poly" id="edge23_Node000016_Node000021" title=" " alt="" coords="893,419,983,410,983,415,893,425"/>
-<area shape="poly" id="edge19_Node000017_Node000018" title=" " alt="" coords="1112,501,1218,501,1218,506,1112,506"/>
+<area shape="poly" id="edge23_Node000016_Node000021" title=" " alt="" coords="893,419,982,410,983,415,893,425"/>
+<area shape="poly" id="edge19_Node000017_Node000018" title=" " alt="" coords="1112,501,1217,501,1217,506,1112,506"/>
 <area shape="rect" id="Node000019" href="$structstw_1_1_vector2.html#af64b7cbdc9e752e69b0f44671a9dda41" title="Compute the triple product with all of these vectors as 3d vectors with z = 0. p = a x (b x c)" alt="" coords="1223,441,1400,467"/>
-<area shape="poly" id="edge21_Node000017_Node000019" title=" " alt="" coords="1112,491,1228,468,1229,473,1113,496"/>
-<area shape="poly" id="edge20_Node000018_Node000011" title=" " alt="" coords="1364,487,1399,477,1483,445,1485,450,1401,482,1366,492"/>
-<area shape="poly" id="edge24_Node000021_Node000018" title=" " alt="" coords="1123,408,1150,415,1177,426,1192,439,1202,452,1210,465,1225,477,1234,482,1231,487,1222,481,1206,469,1197,455,1189,442,1174,431,1149,420,1122,413"/>
-<area shape="poly" id="edge27_Node000021_Node000019" title=" " alt="" coords="1123,414,1229,435,1228,440,1122,419"/>
+<area shape="poly" id="edge21_Node000017_Node000019" title=" " alt="" coords="1112,491,1227,468,1228,473,1113,496"/>
+<area shape="poly" id="edge20_Node000018_Node000011" title=" " alt="" coords="1364,487,1399,477,1482,445,1484,450,1401,482,1366,492"/>
+<area shape="poly" id="edge24_Node000021_Node000018" title=" " alt="" coords="1123,408,1150,415,1177,426,1192,439,1202,452,1210,465,1225,477,1233,481,1231,486,1222,481,1206,469,1197,455,1189,442,1174,431,1149,420,1122,413"/>
+<area shape="poly" id="edge27_Node000021_Node000019" title=" " alt="" coords="1123,414,1228,435,1227,440,1122,419"/>
 <area shape="rect" id="Node000022" href="$namespacestw_1_1algo.html#a55703bedaf0bd4e3ec75adee9eb5cea7" title="Finds if both vectors are going in the same direction." alt="" coords="1230,392,1393,417"/>
-<area shape="poly" id="edge25_Node000021_Node000022" title=" " alt="" coords="1123,402,1215,402,1215,407,1123,407"/>
+<area shape="poly" id="edge25_Node000021_Node000022" title=" " alt="" coords="1123,402,1214,402,1214,407,1123,407"/>
 <area shape="poly" id="edge26_Node000022_Node000005" title=" " alt="" coords="1322,389,1506,176,1510,180,1326,393"/>
 <area shape="rect" id="Node000024" href="$structstw_1_1_simplex.html#a837f29559688afbff9c5b8dd39869e01" title="Increments the size of the simplex with a max at MAX_SIZE." alt="" coords="969,592,1152,617"/>
-<area shape="poly" id="edge30_Node000023_Node000024" title=" " alt="" coords="898,602,954,602,954,607,898,607"/>
+<area shape="poly" id="edge30_Node000023_Node000024" title=" " alt="" coords="898,602,953,602,953,607,898,607"/>
 </map>

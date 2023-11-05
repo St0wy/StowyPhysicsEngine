@@ -1,9 +1,9 @@
 <map id="stw::Collider" name="stw::Collider">
 <area shape="rect" id="Node000001" title="A pure virtual struct that represents colliders." alt="" coords="162,5,253,31"/>
 <area shape="rect" id="Node000002" href="$classstw_1_1_aabb_collider.html" title="An Axis Aligned Bounding Box collider." alt="" coords="5,79,127,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,40,91,81,89,76,169,36"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,41,91,81,89,76,169,36"/>
 <area shape="rect" id="Node000003" href="$classstw_1_1_box_collider.html" title="A rotatable box collider." alt="" coords="151,79,264,105"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="210,46,210,79,205,79,205,46"/>
 <area shape="rect" id="Node000004" href="$classstw_1_1_circle_collider.html" title="A circle collider." alt="" coords="288,79,412,105"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="246,36,327,76,324,81,243,40"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="246,36,327,76,324,81,244,41"/>
 </map>

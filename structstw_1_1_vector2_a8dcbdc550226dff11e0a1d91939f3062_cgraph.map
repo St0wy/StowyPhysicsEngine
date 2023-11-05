@@ -1,9 +1,9 @@
 <map id="stw::Vector2::Angle" name="stw::Vector2::Angle">
 <area shape="rect" id="Node000001" title="Computes the angle between this and other." alt="" coords="5,31,138,56"/>
 <area shape="rect" id="Node000002" href="$structstw_1_1_vector2.html#a87dfc954795a3f9e2507b013f22bc77b" title="Computes the dot product between this and other." alt="" coords="206,5,325,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,32,191,25,191,30,138,37"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,32,190,25,191,31,138,37"/>
 <area shape="rect" id="Node000003" href="$structstw_1_1_vector2.html#a1666bb4fd644da42acaed89accb2d7dd" title="Gets the magnitude of this vector." alt="" coords="186,55,345,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="138,49,171,53,170,58,138,54"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="138,49,170,53,170,58,138,54"/>
 <area shape="rect" id="Node000004" href="$structstw_1_1_vector2.html#a28bc8b748231d2be6e56ac3a869af1d3" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="393,55,572,80"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="345,65,378,65,378,70,345,70"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="345,65,377,65,377,70,345,70"/>
 </map>

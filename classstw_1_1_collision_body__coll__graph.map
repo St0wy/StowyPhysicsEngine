@@ -1,10 +1,10 @@
 <map id="stw::CollisionBody" name="stw::CollisionBody">
 <area shape="rect" id="Node000001" title="A body that can receive collisions." alt="" coords="57,213,184,238"/>
 <area shape="rect" id="Node000002" href="$structstw_1_1_transform.html" title="A transform of an object. Contains position, scale and rotation." alt="" coords="5,109,113,135"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="58,150,58,169,65,187,76,200,91,210,88,215,72,204,60,190,53,170,52,150"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="58,150,58,169,65,187,76,200,91,210,88,215,72,204,60,190,53,171,52,151"/>
 <area shape="rect" id="Node000003" href="$structstw_1_1_vector2.html" title="A struct representing a 2D Vector." alt="" coords="74,5,167,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="104,45,96,56,67,110,62,107,91,54,100,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="104,45,96,56,67,110,62,107,91,54,99,42"/>
 <area shape="rect" id="Node000004" href="$classstw_1_1_collider.html" title="A pure virtual struct that represents colliders." alt="" coords="137,109,229,135"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="138,42,178,107,173,110,133,45"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="176,150,155,190,135,214,130,211,150,187,171,147"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="138,43,178,107,173,110,133,46"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="175,151,155,190,135,214,130,211,150,187,170,148"/>
 </map>

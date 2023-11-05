@@ -1,12 +1,12 @@
 <map id="include/collision/Simplex.hpp" name="include/collision/Simplex.hpp">
 <area shape="rect" id="Node000001" title="Contains the Simplex struct." alt="" coords="202,5,389,31"/>
 <area shape="rect" id="Node000002" href="$_manifold_factory_8hpp.html" title="Contains the algo namespace which contains the functions to detect a collision." alt="" coords="92,79,259,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="267,41,206,81,203,76,264,37"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="266,42,206,81,203,76,263,37"/>
 <area shape="rect" id="Node000004" href="$_manifold_factory_8cpp.html" title=" " alt="" coords="190,168,401,193"/>
 <area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="298,46,298,167,293,167,293,46"/>
 <area shape="rect" id="Node000005" href="$_simplex_8cpp.html" title=" " alt="" coords="333,87,498,112"/>
 <area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="327,37,398,84,395,88,324,42"/>
 <area shape="rect" id="Node000003" href="$_collider_8cpp.html" title=" " alt="" coords="5,168,167,193"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="144,132,102,169,98,165,141,128"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="219,126,278,165,275,169,216,130"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="144,132,102,169,98,165,140,128"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="219,126,278,165,275,169,216,131"/>
 </map>

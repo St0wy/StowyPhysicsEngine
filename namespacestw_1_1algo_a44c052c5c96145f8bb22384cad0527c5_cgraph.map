@@ -1,29 +1,29 @@
 <map id="stw::algo::Sat" name="stw::algo::Sat">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,133,104,159"/>
 <area shape="rect" id="Node000002" href="$structstw_1_1_manifold.html#aa25b3e0ded86b9102e1d65d7764ae98c" title="Gets an empty manifold with no collisions." alt="" coords="189,5,328,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="62,131,96,86,121,61,150,40,174,29,176,34,153,44,125,65,100,90,66,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="62,131,96,86,121,61,150,40,173,30,175,34,153,44,125,65,100,90,66,135"/>
 <area shape="rect" id="Node000003" href="$classstw_1_1_box_collider.html#aac08703edfbccb871c6939033546090a" title=" " alt="" coords="174,55,343,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="74,131,109,109,151,89,170,82,172,87,153,94,111,114,77,135"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="74,131,109,109,151,89,169,83,171,88,153,94,111,114,77,135"/>
 <area shape="rect" id="Node000008" href="$structstw_1_1_projection.html#a8c655c13499231200c04063ac2c78dae" title=" " alt="" coords="169,104,348,130"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="104,137,154,129,155,134,104,142"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="104,137,153,129,154,135,104,142"/>
 <area shape="rect" id="Node000009" href="$classstw_1_1_box_collider.html#aa3cbcad5c3f7fa165612fcbd10f6a4fc" title="Gets the transformed vertices of the box." alt="" coords="152,154,365,195"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="104,150,137,155,136,160,104,156"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="104,150,136,155,136,160,104,156"/>
 <area shape="rect" id="Node000012" href="$structstw_1_1_projection.html#a513307e219827646a0a312cc36ce0b44" title=" " alt="" coords="176,219,341,244"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="75,157,110,181,153,204,175,212,173,217,151,209,107,186,72,162"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="75,157,110,181,153,204,174,211,172,216,151,209,107,186,72,162"/>
 <area shape="rect" id="Node000013" href="$classstw_1_1_box_collider.html#aed57cb708b2cfdba63957e2753768f07" title=" " alt="" coords="178,268,339,294"/>
-<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="66,158,99,206,124,232,153,255,166,261,163,266,150,259,121,236,95,209,61,161"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="66,158,99,206,124,232,153,255,165,261,162,265,150,259,121,236,95,209,61,161"/>
 <area shape="rect" id="Node000004" href="$structstw_1_1_vector2.html#a6ae889efd824a466dc42b698cf20c057" title="Gets this vector normalized." alt="" coords="444,31,608,56"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="343,57,428,50,429,55,344,63"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="343,57,428,50,428,55,344,63"/>
 <area shape="rect" id="Node000007" href="$structstw_1_1_vector2.html#a3ae489315b2b9630639877141293de97" title="Computes the perpendicular vector in +90 degrees." alt="" coords="413,80,638,106"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="344,73,399,78,398,83,343,78"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="344,73,398,78,398,83,343,78"/>
 <area shape="rect" id="Node000005" href="$structstw_1_1_vector2.html#a1666bb4fd644da42acaed89accb2d7dd" title="Gets the magnitude of this vector." alt="" coords="686,31,846,56"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="608,41,672,41,672,46,608,46"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="608,41,671,41,671,46,608,46"/>
 <area shape="rect" id="Node000006" href="$structstw_1_1_vector2.html#a28bc8b748231d2be6e56ac3a869af1d3" title="Gets the squared magnitude of this vector. It is faster that Magnitude, so it should be used for size..." alt="" coords="894,31,1073,56"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="846,41,879,41,879,46,846,46"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="846,41,878,41,878,46,846,46"/>
 <area shape="rect" id="Node000010" href="$structstw_1_1_vector2.html#a4159cd5c107accb4a35790387de1d419" title="Rotates this vector around the provided axis." alt="" coords="437,161,615,187"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="365,172,422,172,422,177,365,177"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="365,172,421,172,421,177,365,177"/>
 <area shape="rect" id="Node000011" href="$structstw_1_1_vector2.html#a8dc5ab9810a68be8a054a418cc34f408" title=" " alt="" coords="694,161,838,187"/>
-<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="615,172,679,172,679,177,615,177"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="615,172,678,172,678,177,615,177"/>
 <area shape="rect" id="Node000014" href="$structstw_1_1_vector2.html#a87dfc954795a3f9e2507b013f22bc77b" title="Computes the dot product between this and other." alt="" coords="466,268,585,294"/>
 <area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="339,278,451,278,451,284,339,284"/>
 </map>

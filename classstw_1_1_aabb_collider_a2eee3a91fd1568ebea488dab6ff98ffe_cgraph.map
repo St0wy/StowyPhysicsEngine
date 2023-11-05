@@ -1,5 +1,5 @@
 <map id="stw::AabbCollider::TestCollision" name="stw::AabbCollider::TestCollision">
 <area shape="rect" id="Node000001" title="Tests the collision against a box collider." alt="" coords="5,5,133,46"/>
 <area shape="rect" id="Node000002" href="$structstw_1_1_manifold.html#aa25b3e0ded86b9102e1d65d7764ae98c" title="Gets an empty manifold with no collisions." alt="" coords="181,13,320,39"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,23,166,23,166,28,133,28"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,23,165,23,165,28,133,28"/>
 </map>

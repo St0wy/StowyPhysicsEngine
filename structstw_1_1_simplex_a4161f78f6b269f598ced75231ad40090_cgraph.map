@@ -1,5 +1,5 @@
 <map id="stw::Simplex::PushFront" name="stw::Simplex::PushFront">
 <area shape="rect" id="Node000001" title="Adds a point in the simplex." alt="" coords="5,5,166,31"/>
 <area shape="rect" id="Node000002" href="$structstw_1_1_simplex.html#a837f29559688afbff9c5b8dd39869e01" title="Increments the size of the simplex with a max at MAX_SIZE." alt="" coords="214,5,397,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,16,199,16,199,21,166,21"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,16,198,16,198,21,166,21"/>
 </map>

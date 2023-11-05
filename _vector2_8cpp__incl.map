@@ -1,13 +1,13 @@
 <map id="src/math/Vector2.cpp" name="src/math/Vector2.cpp">
 <area shape="rect" id="Node000001" title=" " alt="" coords="161,5,306,31"/>
 <area shape="rect" id="Node000002" href="$_vector2_8hpp.html" title="Contains the Vector2 struct." alt="" coords="5,79,129,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,34,110,75,107,70,204,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,34,110,75,108,70,204,29"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="153,79,227,105"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="229,33,207,68,202,65,224,30"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="229,33,207,67,203,64,224,30"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="250,79,308,105"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="243,30,266,65,261,68,239,33"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="243,30,266,64,261,67,239,33"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="332,79,400,105"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="257,29,332,69,330,74,255,34"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="257,29,331,69,329,74,255,34"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="40,153,94,178"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="70,105,70,138,64,138,64,105"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="70,105,70,137,64,137,64,105"/>
 </map>

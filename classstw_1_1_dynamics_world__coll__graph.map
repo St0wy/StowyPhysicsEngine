@@ -3,5 +3,5 @@
 <area shape="rect" id="Node000002" href="$classstw_1_1_collision_world.html" title="Represents a world where collisions can happen. It does not have dynamics, for this you will need the..." alt="" coords="12,94,142,120"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,135,80,169,74,169,74,135"/>
 <area shape="rect" id="Node000003" href="$classstw_1_1_broad_phase_grid.html" title="A grid in which the physical object are placed in. This is used to optimize performance by only check..." alt="" coords="5,5,149,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="80,46,80,94,74,94,74,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="80,47,80,94,74,94,74,47"/>
 </map>
