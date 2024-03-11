@@ -25,7 +25,7 @@ and / or dynamics between them.
 
 **Collider**
 
-A collider is the thing that defines the shape that will collide with other collider. 
+A collider defines the shape that will collide with other objects. 
 It can be of many shapes and they dictate how collisions are solved between objects.
 
 **Manifold**
@@ -48,3 +48,4 @@ In this documentation I often mention "With Dynamics" and "Without Dynamics".
 Having dynamics means that after a collision is detected, 
 it is solved by a solver to make the objects not collide anymore.
 Using the "Without Dynamics" version means that the collisions will be detected, but that's all.
+It is similar to the concept of "triggers" in Unity for example.

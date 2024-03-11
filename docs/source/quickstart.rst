@@ -22,9 +22,20 @@ Here are the steps to make a world with collisions :
 
     CollisionWorld world;
 
+	auto impulseSolver = std::make_unique<stw::ImpulseSolver>();
+    auto smoothPositionSolver = std::make_unique<stw::SmoothPositionSolver>();
+	world.AddSolver(impulseSolver.get());
+    world.AddSolver(smoothPositionSolver.get());
+
     std::vector<std::unique_ptr<CollisionBody>> bodies;
 
     auto body = std::make_unique<CollisionBody>();
+	body->SetTransform(stw::Transform{position, {1.0f, 1.0f}, 0.0f});
+	body->SetTakesGravity(true);
+    body->SetIsKinematic(true);
+    body->SetRestitution(0.5f);
+    body->SetMass(10.0f);
+
     auto collider = std::make_unique<CircleCollider>(1.0f); // radius = 1
     body->SetCollider(collider.get());
     body->SetCollisionCallback([](const Collision &col, float deltaTime)
@@ -33,6 +44,8 @@ Here are the steps to make a world with collisions :
     );
 
     bodies.push_back(std::move(body));
+
+	world.AddCollisionBody(bodies[bodies.size() - 1].get());
 
     while (true)
     {
@@ -64,10 +77,18 @@ Here are the steps to make a world with collisions :
     std::vector<std::unique_ptr<Rigidbody>> bodies;
 
     auto body = std::make_unique<Rigidbody>();
+	body->SetTransform(stw::Transform{position, {1.0f, 1.0f}, 0.0f});
+	body->SetTakesGravity(true);
+    body->SetIsKinematic(true);
+    body->SetRestitution(0.5f);
+    body->SetMass(10.0f);
+
     auto collider = std::make_unique<CircleCollider>(1.0f); // radius = 1
     body->SetCollider(collider.get());
 
     bodies.push_back(std::move(body));
+
+	world.AddRigidbody(bodies[bodies.size() - 1].get());
 
     while (true) 
     {
