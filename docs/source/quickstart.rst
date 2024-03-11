@@ -31,10 +31,7 @@ Here are the steps to make a world with collisions :
 
     auto body = std::make_unique<CollisionBody>();
     body->SetTransform(stw::Transform{position, {1.0f, 1.0f}, 0.0f});
-    body->SetTakesGravity(true);
     body->SetIsKinematic(true);
-    body->SetRestitution(0.5f);
-    body->SetMass(10.0f);
 
     auto collider = std::make_unique<CircleCollider>(1.0f); // radius = 1
     body->SetCollider(collider.get());
