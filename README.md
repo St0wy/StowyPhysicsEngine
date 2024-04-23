@@ -2,6 +2,8 @@
 
 This project is a 2D physics engine written in C++.
 
+Please note that this is an old project that I did with less than 1 year of experience with C++. I would not make the same choices today if I had to make a project like that again :)
+
 The wiki is hosted on [Read The Docs](https://stowy-physics-engine.readthedocs.io/en/latest/)
 and the API Documentation (Doxygen) on [GitHub Pages](https://st0wy.github.io/StowyPhysicsEngine/).
 
